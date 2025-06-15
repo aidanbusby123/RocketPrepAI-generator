@@ -1,0 +1,342 @@
+Step 1: Choose the Question Type and Core Logic
+
+First, decide on the type and the underlying logic that will structure the question. This choice determines the path for the following steps.
+
+A) For a TEXTUAL Command of Evidence question:
+
+    Choose Sub-type:
+
+        Find the Quote: Present a claim about a text's meaning, purpose, or a character's trait. The task will be to find the quotation that best illustrates this claim. (Typically Medium to Hard difficulty).
+
+        Find the Finding: Present a scientific/academic claim, hypothesis, or conclusion. The task will be to identify a hypothetical experimental result or observation that would most directly support (or weaken) it. (Difficulty can range from Easy to Hard).
+
+    Define the Claim:
+
+        For "Find the Quote": Write a clear, one-sentence claim about a literary or argumentative work (e.g., "In the essay, the author argues that historical progress is often driven by accident rather than intention."). For Hard difficulty, make the claim nuanced or focused on the author's tone or a complex relationship.
+
+        For "Find the Finding": Write a clear scientific hypothesis. (e.g., "Researchers claim that Ferrocene-based polymers can self-heal micro-fractures through molecular re-stitching."). For Hard difficulty, the claim should have multiple conditions or components (e.g., "...improves digestibility and makes beans more nutritious by reducing compounds X and Y.").
+
+B) For a QUANTITATIVE Command of Evidence question:
+
+    Define the Task:
+
+        Data Completion (Easy/Medium): The student will complete a sentence by finding one or two specific data points.
+
+        Data Support (Hard): The student will identify a data trend or relationship that supports a complex conclusion presented in the text.
+
+    Create a Graphic: Design a simple, clear bar chart, line graph, or table with a title and labeled axes/columns.
+
+    Establish the Connection: Write a one-sentence conclusion or an incomplete observation that the data in the graphic will support or complete. For Hard questions, this conclusion should not be about a single data point but about a comparison, relationship, or pattern across multiple data points (e.g., "The data support the claim that the treatment is most effective in high-salinity environments," which requires comparing its effectiveness in different environments).
+
+Step 2: Write the Text and Question Stem
+
+    Draft the Text: Write a short, self-contained passage (3-7 sentences) that establishes the context for the claim or observation defined in Step 1.
+
+        For Textual questions, introduce the author, the work, or the researchers and their claim.
+
+        For Quantitative questions, introduce the topic of the graphic and present the claim or incomplete sentence that the student must address using the data.
+
+    Write the Question Stem: Use a standardized stem based on the question type.
+
+        For "Find the Quote": "Which quotation from [the work] most effectively illustrates the claim?"
+
+        For "Find the Finding": "Which finding, if true, would most directly support the team's conclusion?"
+
+        For Quantitative: "Which choice most effectively uses data from the graph/table to complete the [example/statement]?" OR "Which choice most effectively uses data from the table to support the research team's conclusion?"
+
+Step 3: Craft the Answer Choices
+
+This is the most critical step for controlling difficulty.
+
+    Write the Correct Answer (Key): This answer must be the evidence you designed in Step 1. It must be unambiguously correct and directly address the specific claim in the text.
+
+        For a Hard Quantitative question, the correct answer should describe a relative difference or a pattern, not just a single "highest" or "lowest" value.
+
+    Write Three Plausible Distractors: Design distractors that are tempting but demonstrably flawed.
+
+        The Misleading Focus (Textual/Quantitative): Provides a factually correct piece of information from the text or graphic, but it supports a different, unstated claim or is irrelevant to the specific conclusion being tested.
+
+        The Contradiction (Textual/Quantitative): Presents a finding, quote, or data interpretation that directly weakens or contradicts the claim in the text. For a hard question, this can be subtle (e.g., a finding that supports one part of a claim but contradicts another).
+
+        The Out-of-Scope (Textual/Quantitative): Makes a statement that is related to the topic but cannot be verified or disproven with the provided information alone. It requires an unsupported assumption.
+
+        The Factual Error (Quantitative): Misreads the data from the graphic (e.g., mixes up bars, confuses X and Y axes, cites a value from the wrong cell).
+
+Step 4: Write the Rationale
+
+    For the Correct Answer: Briefly explain why the choice is correct, explicitly linking the evidence back to the specific claim in the text.
+
+    For the Distractors: For each incorrect choice, explain its specific flaw using the terminology from Step 3 (e.g., "This choice is incorrect because it contradicts the text's assertion that X is more durable than Y," or "This choice is incorrect because it focuses on an irrelevant comparison that does not support the conclusion about the treatment's relative effectiveness.").
+
+
+##
+
+Annual Car Production in the United States, 1910–1925
+Year Number of cars produced Number of companies producing cars
+1910 123,990 320
+1915 548,139 224
+1920 1,651,625 197
+1925 3,185,881 80
+A student is using the table as part of a social studies class presentation on the US auto industry in the early
+twentieth century. The student notes that, according to the table, from 1910 to 1925 ______
+Which choice most effectively uses data from the table to complete the statement?
+A. the number of cars produced increased but the number of companies producing cars decreased.
+B. both the number of cars produced and the number of companies producing cars remained unchanged.
+C. the number of cars produced decreased but the number of companies producing cars remained
+unchanged.
+D. both the number of cars produced and the number of companies producing cars increased.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer because it most effectively uses data from the table to complete the statement about the US
+auto industry in the early twentieth century. The table shows the number of cars produced annually and number of
+companies producing cars in the United States between 1910 and 1925 in increments of five years. According to the table,
+the number of cars produced consistently increased from one increment to the next, going from 123,990 cars in 1910 to
+3,185,881 cars in 1925. At the same time, the table shows that the number of companies producing cars consistently
+decreased, going from 320 companies in 1910 to only 80 companies in 1925. Thus, the table shows that the number of cars
+produced increased from 1910 to 1925, even as the number of companies producing cars decreased.
+Choice B is incorrect. The table shows that the number of cars produced in the US increased, going from 123,990 in 1910 to
+3,185,881 in 1925, instead of remaining unchanged, and the table also shows that the number of companies producing cars
+decreased from 320 to 80 instead of remaining unchanged. Choice C is incorrect because the table indicates that the
+number of cars produced consistently increased from 1910 to 1925, going from 123,990 cars to 3,185,881 cars, instead of
+decreasing; moreover, the table shows that the number of companies producing cars from 1910 to 1925 declined from 320
+to 80 instead of remaining unchanged. Choice D is incorrect because the table indicates that the number of companies
+producing cars consistently decreased from 1910 to 1925, going from 320 companies to only 80 companies.
+Question Difficulty: Easy
+
+##
+
+Plants like potatoes, tomatoes, and soybeans are susceptible to bacterial wilt disease caused by the bacteria
+Ralstonia solanacearum. A multinational team of scientists led by Zhong Wei studied whether other microbes
+in the soil might influence the degree to which plants are affected by the disease. The team sampled soil
+surrounding individual tomato plants over time and compared the results of plants that became diseased
+with those that remained healthy. They concluded that the presence of certain microbes in the soil might
+explain the difference between healthy and diseased plants.
+Which finding, if true, would most directly support the team’s conclusion?
+A. The soil surrounding healthy plants contained significantly higher concentrations of microbes known to
+inhibit Ralstonia solanacearum than the soil surrounding diseased plants did.
+B. The soil surrounding the plants contained high concentrations of Ralstonia solanacearum regardless of
+whether the plants were affected by wilt disease.
+C. The soil surrounding healthy plants tended to have significantly higher moisture levels than the soil
+surrounding diseased plants did.
+D. By the end of the experiment, over half the plants had been affected by wilt disease regardless of
+differences in the types and concentrations of microbes in the surrounding soil.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. This choice provides evidence that directly links the presence of R. solanacearum-inhibiting
+microbes in the soil to the health of tomato plants.
+Choice B is incorrect. This choice would weaken the team’s conclusion. It suggests that the presence of the disease-causing
+bacteria had no effect on the health of the tomato plants. Choice C is incorrect. This choice doesn’t support the team’s
+conclusion. The conclusion is about microbes, not soil moisture. Choice D is incorrect. This choice would weaken the team’s
+conclusion. It suggests that the presence of the bacteria-inhibiting microbe in soil had no effect on the health of the tomato
+plants.
+Question Difficulty: Medium
+
+##
+
+Art collectives, like the United States- and Vietnam-based collective The Propeller Group or Cuba’s Los
+Carpinteros, are groups of artists who agree to work together: perhaps for stylistic reasons, or to advance
+certain shared political ideals, or to help mitigate the costs of supplies and studio space. Regardless of the
+reasons, art collectives usually involve some collaboration among the artists. Based on a recent series of
+interviews with various art collectives, an arts journalist claims that this can be difficult for artists who are
+often used to having sole control over their work.
+Which quotation from the interviews best illustrates the journalist’s claim?
+A. “The first collective I joined included many amazingly talented artists, and we enjoyed each other’s
+company, but because we had a hard time sharing credit and responsibility for our work, the collective
+didn’t last.”
+B. “We work together, but that doesn’t mean that individual projects are equally the work of all of us. Many of
+our projects are primarily the responsibility of whoever originally proposed the work to the group.”
+C. “Having worked as a member of a collective for several years, it’s sometimes hard to recall what it was
+like to work alone without the collective’s support. But that support encourages my individual expression
+rather than limits it.”
+D. “Sometimes an artist from outside the collective will choose to collaborate with us on a project, but all of
+those projects fit within the larger themes of the work the collective does on its own.”
+
+Correct Answer: A
+Rationale
+Choice A is the best answer because it presents the quotation that best illustrates the journalist’s claim. By indicating that a
+collective didn’t continue because it was hard to share credit and responsibilities within the group even though the company
+was enjoyable, the quotation shows that working collaboratively can be difficult for artists who are used to having complete
+control over their work.
+Choice B is incorrect because the quotation indicates that members of a collective are able to collaborate together and have
+agreed on a fair way to manage their responsibilities; this doesn’t demonstrate the challenge of sharing control among
+members of a collective. Choice C is incorrect because the quotation highlights the support and encouragement of
+individual expression an artist experiences due to working in a collective; these positive aspects don’t demonstrate the
+challenge of sharing control among members of a collective. Choice D is incorrect because the quotation doesn’t address
+any challenges of sharing control among members of a collective; it simply indicates that artists sometimes choose to work
+with collectives without having to be a member. Therefore, the quotation doesn’t illustrate the journalist’s claim.
+Question Difficulty: Hard
+
+##
+
+Scientists have long believed that giraffes are mostly silent and communicate only visually with one another.
+But biologist Angela Stöger and her team analyzed hundreds of hours of recordings of giraffes in three
+European zoos and found that giraffes make a very low-pitched humming sound. The researchers claim that
+the giraffes use these sounds to communicate when it’s not possible for them to signal one another visually.
+Which finding, if true, would most directly support Stöger and her team’s claim?
+A. Giraffes have an excellent sense of vision and can see in color.
+B. The giraffes only produced the humming sounds at night when they couldn’t see one another.
+C. Wild giraffes have never been recorded making humming sounds.
+D. Researchers observed other animals in European zoos humming.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer because it presents a finding that, if true, would support Stöger and her team’s claim that
+giraffes use humming to communicate when they cannot signal to one another visually. The text indicates that scientists
+have long thought that giraffes produce little sound and exclusively rely on visual signals to communicate with one another.
+The text goes on to say, however, that Stöger and her team have recorded giraffes in three European zoos making a low-
+pitched humming sound, which the team claims the giraffes use to communicate when they cannot see each other. If the
+giraffes produced these sounds when visual communication was impossible and never produced them otherwise, that
+would support Stöger and her team’s claim about the circumstance in which giraffes make the sound.
+Choice A is incorrect because finding that giraffes have excellent vision and can see in color would have no bearing on
+Stöger and her team’s claim that giraffes produce a low-pitched humming noise to communicate when they cannot
+communicate visually. As presented in the text, Stöger and her team’s claim is restricted to circumstances in which giraffes
+cannot signal one another visually; if the giraffes are unable to signal visually, their sense of vision is irrelevant to their
+communication. Choice C is incorrect because finding that wild giraffes have never been recorded making humming noises
+would not support Stöger and her team’s claim about the function of the humming noise that the researchers recorded from
+the giraffes in European zoos. The text provides no information about whether researchers have even attempted to record
+low-pitched humming in wild giraffes, so nothing can be concluded about the implications of the lack of such recordings.
+Choice D is incorrect because finding that other animals in European zoos had been observed humming would not support
+Stöger and her team’s claim, since it would not indicate anything about why giraffes produce humming sounds. Different
+species could produce similar sounds for different purposes, so scientists could not conclude anything about the function of
+giraffe humming from a finding that some other animals in zoos also hum.
+Question Diﬃculty: Easy
+
+##
+
+Although most songbirds build open, cupped nests, some species build domed nests with roofs that provide
+much more protection. Many ecologists have assumed that domed nests would provide protection from
+weather conditions and thus would allow species that build them to have larger geographic ranges than
+species that build open nests do. To evaluate this assumption, a research team led by evolutionary biologist
+Iliana Medina analyzed data for over 3,000 species of songbirds.
+Which finding from Medina and her colleagues’ study, if true, would most directly challenge the assumption
+in the underlined sentence?
+A. Species that build open nests tend to have higher extinction rates than species that build domed nests.
+B. Species that build open nests tend to be smaller in size than species that build domed nests.
+C. Species that build open nests tend to use fewer materials to build their nests than species that build
+domed nests do.
+D. Species that build open nests tend to have larger ranges than species that build domed nests.
+
+Correct Answer: D
+Rationale
+Choice D is the best answer because it presents a finding that, if true, would challenge the assumption that many ecologists
+have made about the connection between the building of domed nests and geographic range in songbirds. The text says that
+many ecologists have assumed that since domed nests provide protection from weather conditions, songbird species that
+build such nests should be able to have larger geographic ranges than songbird species that build open nests do. If Medina
+and her colleagues found that species that build open nests tend to have larger geographic ranges than species that build
+domed nests do, their finding would show the opposite of what the ecologists have assumed. It would therefore challenge
+the ecologists’ assumption.
+Choice A is incorrect because nothing in the text suggests that there’s a relationship between songbird species’ extinction
+rates and their geographic ranges. The finding that species that build open nests tend to have higher extinction rates than
+species that build domed nests do would therefore have no clear bearing on the ecologists’ assumption that domed nests
+allow species that build them to have larger geographic ranges than those of species that build open nests. Choice B is
+incorrect because nothing in the text suggests that there’s a relationship between songbird species’ sizes and their
+geographic ranges. The finding that species that build open nests tend to be smaller in size than species that build domed
+nests are would therefore have no clear bearing on the ecologists’ assumption that domed nests allow species that build
+them to have larger geographic ranges than those of species that build open nests. Choice C is incorrect because although
+the text indicates that many ecologists have assumed that there’s a connection between how songbird species build their
+nests and the species’ geographic ranges, the text says that this assumption is based on the shape of the nests—that is,
+whether the nests are domed or open—not the number of materials used. The finding that species that build open nests tend
+to use fewer materials to build their nests than species that build domed nests do would therefore have no clear bearing on
+the ecologists’ assumption that domed nests allow species that build them to have larger geographic ranges than those of
+species that build open nests.
+Question Difficulty: Medium
+
+##
+
+Percentage of Available Eggs Eaten by Cane Toad Tadpoles
+Amphibian species (common
+name)
+Percentage of eggs
+eaten
+Native to
+Australia
+Produces
+bufadienolide
+Little red tree frog 1% yes no
+Cane toad 90% no yes
+Short-footed frog 7% yes no
+Striped burrowing frog 10% yes no
+Dainty green tree frog 1% yes no
+Native to Latin America, the cane toad was introduced to Australia in the 1930s. In recent decades, tadpoles
+in the Australian population have been shown to consume eggs of their own species. A 2022 study showed
+that when presented with cane toad eggs as well as eggs of native Australian amphibians, cane toad
+tadpoles disproportionately consumed eggs of their own species. This behavior results from their attraction
+to bufadienolide, a chemical produced by the eggs of cane toads but not by the eggs of native amphibians.
+However, using data from this study, a student wishes to argue that the presence of bufadienolide doesn’t
+entirely explain the cane toad tadpoles’ preference for certain eggs over others.
+Which choice best describes data from the table that support the student’s argument?
+A. The tadpoles consumed a higher percentage of the striped burrowing frog eggs than they did of the eggs
+of the dainty green tree frog.
+B. The tadpoles left a certain percentage of the eggs of each of the five species unharmed, thus ultimately
+allowing them to hatch.
+C. The tadpoles consumed a lower percentage of the short-footed frog eggs than they did of the eggs of
+their own species.
+D. The tadpoles consumed the same percentage of the dainty green tree frog eggs as they did of the little
+red tree frog eggs.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer because it most effectively uses data from the table to support the student’s argument about
+the role of bufadienolide in the egg preferences of cane toad tadpoles. For each of five amphibian species included in the
+2022 study, the table gives the percentage of available eggs that the cane toad tadpoles ate. According to the table, the
+tadpoles ate 10% of striped burrowing frog eggs and 1% of dainty green tree frog eggs, which suggests a preference for
+striped burrowing frog eggs over dainty green tree frog eggs. The table also indicates that neither of these species’ eggs
+produces bufadienolide. Thus, these data suggest that something other than the presence or absence of bufadienolide is
+needed to adequately explain the tadpoles’ egg preferences.
+Choice B is incorrect. Although the table shows that for each of the five amphibian species, the cane toad tadpoles ate less
+than 100% of that species’ eggs, which demonstrates that the tadpoles did indeed leave some eggs for each species
+unharmed, this fact alone is irrelevant to the tadpoles’ preferences for some species’ eggs over other species’ eggs. Choice
+C is incorrect. Although the table indicates that the cane toad tadpoles ate 90% of the cane toad eggs and 7% of the short-
+footed frog eggs, which suggests that they prefer cane toad eggs over short-footed frog eggs, the table also indicates that
+cane toad eggs produce bufadienolide, whereas short-footed frog eggs do not. Therefore, these data are not sufficient to
+exclude that bufadienolide alone could explain the tadpoles’ preference for some species’ eggs over other species’ eggs.
+Choice D is incorrect. Although the table shows that for both dainty green tree frog eggs and little red tree frog eggs, the
+cane toad tadpoles ate 1% of those species’ eggs, it also indicates that neither produces bufadienolide. Thus, these data
+alone don’t indicate bufadienolide’s role in the tadpoles’ egg preferences.
+Question Difficulty: Hard
+
+##
+
+Partial List of Candidate Species for De-extinction
+Common name Scientific name Became extinct
+Huia Heteralocha acutirostris 1907
+Caribbean monk seal Monachus tropicalis 1952
+Passenger pigeon Ectopistes migratorius 1914
+Saber-toothed cat Smilodon 11,000 years before present
+Woolly mammoth Mammuthus primigenius 6,400 years before present
+The passage of time is among the many obstacles faced by scientists who are pursuing de-extinction efforts
+—that is, efforts to use breeding or a mixture of cloning and genetic engineering to bring back extinct
+species. Specifically, researchers are concerned that the longer a species has been extinct, the less likely it is
+that a suitable habitat still exists for that species. Among candidate species for de-extinction, this problem
+would be especially concerning for the ______
+Which choice most effectively uses data from the table to complete the statement?
+A. passenger pigeon (Ectopistes migratorius), which became extinct only a few years after the huia
+(Heteralocha acutirostris).
+B. saber-toothed cat (Smilodon), which became extinct 11,000 years ago.
+C. woolly mammoth (Mammuthus primigenius), which became extinct several thousand years before the
+saber-toothed cat (Smilodon).
+D. Caribbean monk seal (Monachus tropicalis), which became extinct in 1952.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer because it uses data from the table to complete the statement regarding a species for which the
+problem of finding a suitable habitat would be especially concerning. For each candidate species, the table lists its common
+name, scientific name, and when the species became extinct. The text explains that scientists pursuing de-extinction for the
+candidate species also consider the length of time that has passed since the species’ extinction, noting that the longer the
+animal has been extinct, the less likely it is that a suitable habitat would exist for the species today. The possibility of not
+having a suitable habitat would be especially concerning for the candidate species for which the most time has passed since
+its extinction. According to the table this species would be the saber-toothed cat, which became extinct 11,000 years before
+present.
+Choice A is incorrect because it compares the time since the extinction of the passenger pigeon to the time since the
+extinction of the huia instead of citing the species listed in the table that has been extinct the longest (the saber-toothed
+cat). The text indicates that the longer a species has been extinct, the lower the chances are that a suitable habitat exists for
+it today. Neither the table nor the text supports the claim that the passenger pigeon is especially vulnerable to this problem.
+Choice C is incorrect because the text states that the longer a species has been extinct, the less likely it is that there would
+be a suitable habitat available for the species today. So, the problem would be especially concerning for the saber-toothed
+cat, which became extinct several thousand years before the woolly mammoth did—not the other way around. Choice D is
+incorrect because the text states that the longer a species has been extinct, the lower the chances are that a suitable habitat
+would be available for that species today. According to the table, the Caribbean monk seal became extinct in 1952, which is
+the most recent extinction listed for a candidate species in the table.
+Question Difficulty: Medium

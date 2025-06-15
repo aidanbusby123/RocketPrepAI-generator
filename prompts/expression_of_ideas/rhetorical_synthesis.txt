@@ -1,0 +1,338 @@
+Step 1: Select a Topic and Define a Relationship
+Choose a topic that allows for clear, factual statements (e.g., a scientific process, a historical event, a biographical detail, a comparison between two objects/concepts). The key is to pre-define the relationship between the facts you will present (e.g., cause and effect, comparison and contrast, process and result, claim and evidence).
+
+Step 2: Generate Factual Notes
+Write 4-6 concise, objective bullet points based on the topic. These are the raw materials. Ensure that the information needed for the correct answer is spread across at least two bullet points. Include extra details that can be used to build convincing distractors.
+
+Step 3: Define the Rhetorical Goal
+This is the most important step and determines the question's difficulty. The goal must be a clear directive for how to use the information.
+
+    DO: Use precise verbs like "introduce," "explain," "compare," "emphasize," "support a generalization," "place in context," "differentiate."
+
+    DO NOT: Use vague goals. The goal itself must be unambiguous.
+
+Step 4: Construct the Correct Answer
+Write a single, grammatically correct sentence that perfectly achieves the rhetorical goal. This sentence MUST synthesize information from multiple bullet points. It should not simply rephrase one note. It must be the most effective choice at fulfilling the explicit goal.
+
+Step 5: Construct Plausible Distractors
+Create three incorrect but tempting answer choices. Distractors should be flawed rhetorically, not factually (unless they misrepresent the notes). Use these common patterns for distractors:
+
+    Incomplete Synthesis: The choice is factually accurate but omits a key piece of information required by the rhetorical goal.
+
+    Wrong Goal: The choice uses information from the notes to achieve a different, unstated rhetorical goal.
+
+    Misrepresentation: The choice subtly distorts a fact or the relationship between facts from the notes.
+
+    Irrelevant Focus: The choice focuses on a minor detail from the notes that does not help accomplish the main goal.
+
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Rhetorical Goal: Use a very direct goal, such as "introduce [a person/thing]," "explain the origin of [a name]," or "emphasize [a simple fact]."
+
+    Notes: The necessary information should be explicit and easy to find. There should be a clear path from the notes to the correct answer.
+
+    Correct Answer: A straightforward combination of 2-3 facts.
+
+    Distractors: The flaws should be obvious. For example, a distractor might only state one fact without synthesis, or focus on a completely different subject mentioned in the notes.
+
+MEDIUM Difficulty:
+
+    Rhetorical Goal: Use a more nuanced goal, like "specify the reason for a change," "begin a narrative about [an event]," or "emphasize whose point of view is being presented."
+
+    Notes: May contain more details, requiring the student to filter what is and isn't relevant to the specific goal. The relationship between the notes might be a sequence of events or a cause-and-effect.
+
+    Correct Answer: Requires combining ideas with appropriate transitions or phrasing to show a relationship (e.g., "Inspired by X, Y did Z.").
+
+    Distractors: More plausible. They may partially accomplish the goal or synthesize facts for a slightly different purpose.
+
+HARD Difficulty:
+
+    Rhetorical Goal: The goal must be abstract and analytical. Use phrases that require complex synthesis:
+
+        "compare the disadvantages of X and Y"
+
+        "make and support a generalization about..."
+
+        "emphasize the relative difference between..."
+
+        "place [an idea] within its historical context by..."
+
+        "explain the underlying mechanism that connects..."
+
+    Notes: The notes should present contrasting, complex, or conditional information. Include data that requires interpretation or facts where the logical connection is not immediately apparent.
+
+    Correct Answer: Must demonstrate a sophisticated synthesis. It will often use concessive language ("Although X, Y..."), comparative structures ("While X does this, Y does that..."), or show a complex cause-and-effect ("X had a lasting impact, resulting in Y and Z.").
+
+    Distractors: Must be very subtle. See the special instructions below for crafting sophisticated distractors.
+
+Special Directive for HARD Questions: Creating Sophisticated Distractors
+
+A common failure is making the correct answer for a hard question "too perfect," so it stands out against distractors with simple flaws. To prevent this, you must engineer highly deceptive distractors. For HARD questions, adhere to the following rules for distractors:
+
+    Maintain Syntactic Complexity: All three distractors should also be complex, well-written sentences that synthesize multiple facts from the notes. They should look and feel as dense as the correct answer.
+
+    Focus on Subtle Rhetorical Flaws: The incorrectness of a hard distractor must stem from a subtle failure to meet the rhetorical goal, not a simple factual error or omission. Use these advanced distractor archetypes:
+
+        The Accurate-but-Off-Target Synthesis: This is the most effective hard distractor. Craft a choice that is a perfectly true and complex synthesis of the notes, but which addresses a slightly different rhetorical goal. For example, if the goal is to "make and support a generalization about the relationship between two inventions," this distractor might make an excellent, supported generalization about the era's technological trends using the inventions as evidence. It's true, it's a synthesis, but it misses the specific target of the prompt.
+
+        The Misleading Logical Connector: Construct a sentence that uses a complex transition word (e.g., although, because, therefore, while) to forge a logical link that is not quite supported by the notes. For instance, it might reverse cause and effect or set up a contrast where one doesn't exist. The sentence will appear logical at a glance but falls apart under scrutiny against the notes.
+
+        The Subtle Mischaracterization: Build a choice that is almost entirely correct but contains a single word or phrase that overstates or misrepresents the nuance of the information. For example, using an adverb like "unambiguously" or a verb like "proved" when the notes only suggest or imply a conclusion. This tests the student's precision.
+
+    Example questions:
+
+##
+
+While researching a topic, a student has taken the following notes:
+• Pauline Hopkins (1859-1930) was an African American writer.
+• In her career, she created many genre-defining stories.
+• Her serialized novel Hagar’s Daughter was published from 1901 to 1902 in The Colored American Magazine.
+• It is considered the first African American mystery novel.
+The student wants to introduce Pauline Hopkins to an audience unfamiliar with her career. Which choice
+most effectively uses relevant information from the notes to accomplish this goal?
+A. Pauline Hopkins is the author of Hagar’s Daughter, a serialized novel published from 1901 to 1902.
+B. African American writer Pauline Hopkins created many genre-defining stories during her career, including
+the first African American mystery novel, Hagar’s Daughter.
+C. Published in The Colored American Magazine from 1901 to 1902, Hagar’s Daughter is a serialized novel by
+Pauline Hopkins.
+D. Hagar’s Daughter by Pauline Hopkins is considered the first African American mystery novel.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The sentence introduces Pauline Hopkins to an audience unfamiliar with her career, identifying
+her as a genre-defining African American writer and noting a career accomplishment.
+Choice A is incorrect. The sentence emphasizes that Pauline Hopkins wrote a serialized novel but doesn’t introduce Hopkins
+to an audience unfamiliar with her career. Choice C is incorrect. The sentence introduces Hopkins’s novel; it doesn’t
+introduce Hopkins. Choice D is incorrect. The sentence explains that a novel written by Hopkins is considered the first
+African American mystery novel; it doesn’t introduce Hopkins to an audience unfamiliar with her career.
+Question Difficulty: Easy
+
+##
+
+While researching a topic, a student has taken the following notes:
+• By interlocking their bodies, ants can form bridges to help fellow ants cross gaps.
+• In 2020, Yasemin Ozkan-Aydin was inspired by ant behavior to design collaborative quadruped robots.
+• Over the course of a year, she designed, built, tested, and refined her robots.
+• Each robot is programmed to send a signal to another robot upon encountering a gap in a path.
+• The signaled robot connects to the back of the signaler robot via magnetic sensors and pushes it across the gap.
+The student wants to begin a narrative about the creation of the robots. Which choice most effectively uses
+relevant information from the notes to accomplish this goal?
+A. When one of Yasemin Ozkan-Aydin’s robots encounters a gap in its path, it sends a signal to another
+robot; the signaled robot connects to the back of the signaler and pushes it across the gap.
+B. After a year, Yasemin Ozkan-Aydin had designed, built, tested, and refined her robots.
+C. Inspired by ants, which form bridges with their interlocked bodies to help fellow ants cross gaps, Yasemin
+Ozkan-Aydin set out to design quadruped robots capable of similarly collaborative behavior.
+D. Ants, which have inspired the design of robots, form bridges by interlocking their bodies.
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The sentence effectively begins a narrative about the creation of the robots, explaining that
+ants’ gap-crossing technique inspired Yasemin Ozkan-Aydin to "set out to design" robots that could collaborate in a similar
+manner.
+Choice A is incorrect. The sentence describes how the robots work together to cross gaps; it doesn’t effectively begin a
+narrative about the creation of the robots. Choice B is incorrect. The sentence provides an overview of the steps Ozkan-Aydin
+took in creating the robots; it doesn’t effectively begin a narrative about their creation. Choice D is incorrect. The sentence
+explains how ants form bridges; it doesn’t effectively begin a narrative about the creation of the robots.
+Question Difficulty: Medium
+
+##
+
+While researching a topic, a student has taken the following notes:
+• Ulaanbaatar is the capital of Mongolia.
+• The city’s population is 907,802.
+• Ulaanbaatar contains 31.98 percent of Mongolia’s population.
+• Hanoi is the capital of Vietnam.
+• The city’s population is 7,781,631.
+• Hanoi contains 8.14 percent of Vietnam’s population.
+The student wants to emphasize the relative sizes of the two capitals’ populations. Which choice most
+effectively uses information from the given sentences to emphasize the relative sizes of the two capitals’
+populations?
+A. Mongolia’s capital is Ulaanbaatar, which has 907,802 people, and Vietnam’s capital is Hanoi, which has
+7,781,631 people.
+B. Comparing Vietnam and Mongolia, 7,781,631 is 8.14 percent of Vietnam’s population, and 907,802 is
+31.98 percent of Mongolia’s.
+C. Even though Hanoi (population 7,781,631) is larger than Ulaanbaatar (population 907,802), Ulaanbaatar
+accounts for more of its country’s population.
+D. The populations of the capitals of Mongolia and Vietnam are 907,802 (Ulaanbaatar) and 7,781,631
+(Hanoi), respectively.
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The sentence emphasizes the relative sizes of the capital cities’ populations, noting that even
+though Hanoi has more people overall, Ulaanbaatar accounts for a larger percentage of the people in its country.
+Choice A is incorrect. While the sentence indicates the population size of each capital, it fails to emphasize their sizes
+relative to each other or to their countries’ overall population sizes. Choice B is incorrect. The sentence emphasizes the
+population sizes of the two countries; it fails to mention the capitals. Choice D is incorrect. While the sentence indicates the
+population size of each capital, it fails to emphasize their sizes relative to each other or to their countries’ overall population
+sizes.
+Question Difficulty: Hard
+
+##
+
+While researching a topic, a student has taken the following notes:
+• In 2013, paleontology professor Hesham Sallam and his students from Mansoura University in Egypt made a
+discovery.
+• The team found a partial dinosaur skeleton at a site in Egypt’s Dakhla Oasis.
+• The skeleton belonged to a dinosaur species that lived approximately 80 million years ago.
+• The new species was named Mansourasaurus to recognize the team that discovered it.
+The student wants to explain the origin of the species’ name. Which choice most effectively uses relevant
+information from the notes to accomplish this goal?
+A. Mansourasaurus, a new species discovered in Egypt in 2013, lived approximately 80 million years ago.
+B. A partial dinosaur skeleton found in Egypt’s Dakhla Oasis belonged to a species named Mansourasaurus.
+C. Mansourasaurus, a species that lived approximately 80 million years ago, was discovered in 2013 by
+Egyptian paleontologist Hesham Sallam and a team of university students.
+D. The new species was named Mansourasaurus to recognize the team that discovered it, a professor and
+students from Mansoura University.
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. It explains where the dinosaur’s name came from.
+Choice A is incorrect. This choice does not explain the origin of the dinosaur’s name. Choice B is incorrect. This choice does
+not explain the origin of the dinosaur’s name. Choice C is incorrect. This choice does not explain the origin of the dinosaur’s
+name.
+Question Difficulty: Easy
+
+##
+
+While researching a topic, a student has taken the following notes:
+• Thailand’s annual Songkran Water Festival is held each April.
+• It marks Songkran, the traditional Thai New Year.
+• People splash and spray each other for fun at the festival’s community-wide water fights.
+• In Bangkok, thousands gather along Silom Road for the city’s largest water fight.
+• In Chiang Mai, thousands gather at a historical monument called the Tha Phae Gate for the city’s largest water fight.
+The student wants to emphasize a similarity in how people in Bangkok and Chiang Mai celebrate Songkran.
+Which choice most effectively uses relevant information from the notes to accomplish this goal?
+A. The largest water fight in Bangkok takes place along a city street, whereas the largest water fight in
+Chiang Mai takes place at a historical monument.
+B. In both Bangkok and Chiang Mai, thousands gather to celebrate Songkran with water fights.
+C. People in both Bangkok and Chiang Mai celebrate Songkran, but they don’t do so in exactly the same way.
+D. Each April, people in Thailand celebrate Songkran, the traditional Thai New Year.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The sentence emphasizes a similarity in how people in Bangkok and Chiang Mai celebrate
+Songkran, indicating that people in both cities gather to celebrate with water fights.
+Choice A is incorrect. The sentence notes the different locations of the largest water fight in Bangkok and the largest water
+fight in Chiang Mai; it doesn’t emphasize a similarity in how people in Bangkok and Chiang Mai celebrate Songkran. Choice C
+is incorrect. The sentence indicates that people in Bangkok and Chiang Mai don’t celebrate Songkran in exactly the same
+way; it doesn’t emphasize a similarity in how people in the two cities celebrate Songkran. Choice D is incorrect. The sentence
+explains when people in Thailand celebrate Songkran; it doesn’t emphasize a similarity in how people in Bangkok and Chiang
+Mai celebrate Songkran.
+Question Difficulty: Medium
+
+##
+
+While researching a topic, a student has taken the following notes:
+• Leigh Torres is a marine ecologist.
+• She conducted a study of blue whales in New Zealand’s South Taranaki Bight region.
+• She wanted to know how ocean temperature affects where the whales forage for krill in that region.
+• She found that during a marine heat wave, the whales foraged farther offshore than they had during cooler periods.
+• The offshore waters, which were colder than areas closer to shore, had a higher relative abundance of krill.
+The student wants to emphasize the aim of the research study. Which choice most effectively uses relevant
+information from the notes to accomplish this goal?
+A. Analyzing ocean temperature data, Torres found that during a marine heat wave, blue whales foraged
+farther offshore than they had during cooler periods.
+B. In her study, Torres sought to determine how ocean temperature affects where blue whales forage for krill
+in the South Taranaki Bight region.
+C. Torres’s study revealed that blue whales were attracted to offshore waters with a relatively high
+abundance of krill.
+D. Torres, a marine ecologist, studied blue whales in the South Taranaki Bight region, where the whales
+forage.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The sentence emphasizes the aim, or goal, of the research study, noting that Torres sought to
+determine how ocean temperature affects where blue whales forage for krill.
+Choice A is incorrect. The sentence emphasizes the results of the study, noting what Torres found at the end; it doesn’t
+emphasize the aim, or goal, of the study, which is what Torres sought at the beginning. Choice C is incorrect. The sentence
+makes a claim about the study’s results; it doesn’t emphasize the aim, or goal, of the study. Choice D is incorrect. The
+sentence indicates the location of Torres’s study; it doesn’t emphasize the aim, or goal, of the study.
+Question Difficulty: Hard
+
+##
+
+While researching a topic, a student has taken the following notes:
+• In 1897, African American inventor Andrew Beard invented an automatic coupler.
+• It improved on the existing design of train car couplers.
+• It made the job of connecting train cars safer.
+• In 1938, African American inventor Frederick Jones invented a mobile refrigeration system.
+• It improved on the existing design of food transport trucks.
+• It enabled trucks to carry perishable foods farther.
+The student wants to emphasize a similarity between Beard’s invention and Jones’s invention. Which choice
+most effectively uses relevant information from the notes to accomplish this goal?
+A. Beard’s automatic coupler and Jones’s mobile refrigeration system both improved on existing designs.
+B. In 1897, Beard invented an automatic coupler, which made the job of connecting train cars safer.
+C. Beard’s invention made the job of connecting train cars safer, whereas Jones’s invention enabled food
+transport trucks to carry perishables farther.
+D. Jones’s mobile refrigeration system, which he invented in 1938, made it possible for food transport trucks
+to carry perishable foods farther.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. It compares Beard’s and Jones’s inventions to one another, and emphasizes what they have in
+common.
+Choice B is incorrect. This choice doesn’t emphasize a similarity. It only mentions Beard’s invention. It doesn’t compare it to
+Jones’s invention. Choice C is incorrect. This choice doesn’t emphasize a similarity between the two inventions. Instead, it
+emphasizes a difference. Choice D is incorrect. This choice doesn’t emphasize a similarity. It only mentions Jones’s
+invention. It doesn’t compare it to Beard’s invention.
+Question Difficulty: Easy
+
+##
+
+While researching a topic, a student has taken the following notes:
+• Elizabeth Catlett’s sculpture Recognition (1970) shows two African American figures with rounded, indistinct
+features.
+• The figures reach out to each other in a pose that symbolizes a close, supportive relationship.
+• Her sculpture Students Aspire (1978) shows two African American figures with sharply defined features.
+• The figures hold an equal sign above their heads with one hand and embrace each other with the other hand.
+• This pose symbolizes their support for each other in the pursuit of equality.
+The student wants to emphasize a similarity between the two sculptures. Which choice most effectively uses
+relevant information from the notes to accomplish this goal?
+A. Catlett’s Students Aspire depicts two figures supporting each other in the pursuit of equality.
+B. Recognition and Students Aspire both show African American figures in poses that symbolize supportive
+relationships.
+C. Catlett completed Recognition in 1970 and Students Aspire in 1978.
+D. The figures in Recognition have features that are rounded and indistinct, while the figures in Students
+Aspire have sharply defined features.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The sentence emphasizes a similarity between the sculptures Recognition and Students Aspire,
+noting that both sculptures show African American figures in poses that symbolize supportive relationships.
+Choice A is incorrect. The sentence describes one of the sculptures; it doesn’t emphasize a similarity between the two
+sculptures. Choice C is incorrect. The sentence specifies the different years the sculptures were completed in; it doesn’t
+emphasize a similarity between the two sculptures. Choice D is incorrect. The sentence emphasizes a difference between
+the two sculptures, noting that the figures in the sculptures have different feature definition; it doesn’t emphasize a similarity
+between the two sculptures.
+Question Difficulty: Medium
+
+##
+
+While researching a topic, a student has taken the following notes:
+• The magnificent frigatebird (fregata magnificens) is a species of seabird that feeds mainly on fish, tuna, squid, and
+other small sea animals.
+• It is unusual among seabirds in that it doesn’t dive into the water for prey.
+• One way it acquires food is by using its hook-tipped bill to snatch prey from the surface of the water.
+• Another way it acquires food is by taking it from weaker birds by force.
+• This behavior is known as kleptoparasitism.
+The student wants to emphasize a similarity between the two ways a magnificent frigatebird acquires food.
+Which choice most effectively uses relevant information from the notes to accomplish this goal?
+A. A magnificent frigatebird never dives into the water, instead using its hook-tipped bill to snatch prey from
+the surface.
+B. Neither of a magnificent frigatebird’s two ways of acquiring food requires the bird to dive into the water.
+C. Of the magnificent frigatebird’s two ways of acquiring food, only one is known as kleptoparasitism.
+D. In addition to snatching prey from the water with its hook-tipped bill, a magnificent frigatebird takes food
+from other birds by force.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The sentence emphasizes a similarity between the two ways a magnificent frigatebird acquires
+food, noting that neither way requires the seabird to dive into the water.
+Choice A is incorrect. The sentence describes how a magnificent frigatebird captures prey without diving into water; it
+doesn’t emphasize a similarity between the two ways the seabird acquires food. Choice C is incorrect. The sentence notes
+the term used to describe one of the two ways that magnificent frigatebirds acquire food; it doesn’t emphasize a similarity
+between the two ways. Choice D is incorrect. The sentence describes the two ways that a magnificent frigatebird acquires
+food; it doesn’t emphasize a similarity between the two ways.
+Question Difficulty: Hard

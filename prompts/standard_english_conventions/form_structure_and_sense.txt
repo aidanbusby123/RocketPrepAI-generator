@@ -1,0 +1,285 @@
+Core Structure of the Question:
+
+    Text: A 1-3 sentence passage on a topic from science, history, arts, or literature. The passage will contain a blank (___).
+
+    Question: "Which choice completes the text so that it conforms to the conventions of Standard English?"
+
+    Answer Choices: Four choices (A, B, C, D) that logically and grammatically complete the sentence. One choice is correct; three are plausible distractors.
+
+General Formula:
+
+Step 1: Select a Specific Grammatical Concept to Test
+Choose a single concept as the core of the question from this list:
+
+    Verb Tense/Form: Using the correct verb tense for context or choosing between a finite and non-finite verb form.
+
+    Subject-Verb Agreement: Matching a verb to its subject in number.
+
+    Pronoun-Antecedent Agreement: Matching a pronoun to its antecedent in number.
+
+    Modifier Placement: Ensuring a modifier logically attaches to its subject.
+
+Step 2: Craft the Sentence(s) to Target the Concept
+Write a high-quality sentence where the grammatical logic depends on the chosen concept. Place the blank (___) at the point where the grammatical decision must be made. The sentence's structure is the primary tool for controlling difficulty.
+
+Step 3: Write the Correct Answer
+Provide the choice that makes the sentence grammatically sound and logical.
+
+Step 4: Design Common-Error Distractors
+Create three incorrect choices, each representing a specific grammatical or logical error related to the core concept.
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Concept Focus: Use a straightforward application of a rule.
+
+        Verb Tense: The context will clearly point to one tense (e.g., "In 1925, she..." requires a past tense verb).
+
+        Finite Verb: The main clause will be missing its only verb.
+
+        S-V/P-A Agreement: The subject/antecedent will be immediately next to the verb/pronoun.
+
+    Sentence Structure: Keep sentences short and direct.
+
+    Distractors: The incorrect verb tenses or the wrong number for agreement.
+
+MEDIUM Difficulty:
+
+    Concept Focus: Use concepts that involve common confusions or slightly more complex structures.
+
+        Modifier Placement: Use a simple introductory phrase (-ing phrase or prepositional phrase) followed by a blank. The subject must be the "doer" of the action.
+
+        Pronoun Agreement: Test common mix-ups like its/it's/its' or their/they're/there. The antecedent might be a few words away from the pronoun.
+
+    Sentence Structure: Sentences can be longer or compound, requiring the student to track relationships.
+
+    Distractors: For modifier placement, the distractors will be other nouns from the sentence that illogically perform the action. For pronouns, the distractors will be the commonly confused homophones.
+
+HARD Difficulty:
+
+    Core Strategy: Misdirection. The goal is to make a simple grammatical rule difficult to apply by using a complex and deceptive sentence structure.
+
+    Techniques for Creating Hard Questions:
+
+        Separation: Intentionally separate the subject and verb (or pronoun and antecedent) with a long, distracting phrase or clause. This intervening element should contain one or more "decoy" nouns.
+
+        Decoys: The decoy nouns should be the opposite number of the true subject/antecedent. If the subject is singular (e.g., "the report"), load the interrupting phrase with plural decoys (e.g., "...on the migratory patterns of various species..."). This tempts the student to choose a plural verb that agrees with the decoy, not the true subject.
+
+        Complex Modifiers: For modifier placement questions, make the introductory modifying phrase long and complex. The choices should also be structurally complex, forcing the student to identify the precise noun that must logically follow the modifier, not just a related idea.
+
+    Example Hard Structure (S-V Agreement): [Singular Subject], which describes the [Plural Decoy 1] and [Plural Decoy 2], ___ [verb]... The correct answer is a singular verb, but the distractors will offer the tempting plural form.
+
+    Hard Distractors: The distractors must be grammatically "attractive" but logically flawed. For agreement questions, this is the verb/pronoun of the wrong number. For complex modifier questions, the distractors are noun phrases that are thematically related but are not the logical subject of the modifier.
+
+Examples:
+
+##
+
+The alga species Chlorella vulgaris is very efficient at making oxygen. For this reason, scientists are currently
+exploring ways to use this species in space. C. vulgaris might be used, for example, to build future biological
+air exchange systems that ______ oxygen for astronauts.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. are producing
+B. produced
+C. produce
+D. have produced
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The convention being tested is the use of verbs to express tense. Simple present tense verbs
+can be used to describe actions that tend to occur, including in a hypothetical or future scenario. In this case, the simple
+present tense verb “produce” indicates what the air exchange systems might be able to do in the future (produce oxygen for
+astronauts).
+Choice A is incorrect. The present progressive tense verb “are producing” suggests that the oxygen is currently being
+produced, not that it might be produced in the future. Choice B is incorrect because the past tense verb “produced” suggests
+that the oxygen was produced in the past, not that it might be produced in the future. Choice D is incorrect because the
+present perfect tense verb “have produced” suggests that the oxygen has been produced from a point in the past up to the
+present, not that it might be produced in the future.
+Question Difficulty: Easy
+
+##
+
+Oglala Lakota poet Layli Long Soldier’s star quilt poems offer an unusually open-ended reading experience.
+With ______ eight panels of text stitched together in the shape of a traditional eight-pointed Lakota star quilt,
+the poems present viewers with a seemingly infinite number of ways to read them.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. their
+B. it’s
+C. they’re
+D. its
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is the use of possessive determiners. The plural possessive
+determiner "their" agrees in number with the plural noun "the poems," thus indicating that the poems had eight panels of text
+stitched together in the shape of a traditional eight-pointed Lakota star quilt.
+Choice B is incorrect because "it’s" is the contraction for "it is" or "it has," not a possessive determiner. Choice C is incorrect
+because "they’re" is the contraction for "they are," not a possessive determiner. Choice D is incorrect because the singular
+possessive determiner "its" doesn’t agree in number with the plural noun "the poems."
+Question Difficulty: Medium
+
+##
+
+Entomologists Yash Sondhi and Samuel Fabian have tried to explain why moths fly erratically around light
+sources at night. Knowing that flying insects keep their backs pointed toward sunlight during the day, ______
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. the researchers theorize that moths, mistaking nighttime lights for the Sun, continually try to reorient their
+bodies while flying near such lights.
+B. the researchers’ theory is that moths mistake nighttime lights for the Sun, continually trying to reorient
+their bodies while flying near such lights.
+C. moths mistake nighttime lights for the Sun and continually try to reorient their bodies while flying near
+such lights, the researchers theorize.
+D. moths continually try to reorient their bodies while flying near nighttime lights, the researchers theorize,
+mistaking such lights for the Sun.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is subject-modifier placement. This choice makes the noun phrase
+"the researchers" the subject of the sentence and places it immediately after the modifying phrase "knowing…day." In doing
+so, this choice clearly establishes that the researchers—and not another noun in the sentence—know that flying insects keep
+their backs pointed toward sunlight during the day.
+Choice B is incorrect because it results in a dangling modifier. The placement of the noun phrase "the researchers’ theory"
+immediately after the modifying phrase illogically suggests that the researchers’ theory knows that flying insects keep their
+backs pointed toward sunlight during the day. Choice C is incorrect because it results in a dangling modifier. The placement
+of the noun "moths" immediately after the modifying phrase illogically suggests that moths know that flying insects keep
+their backs pointed toward sunlight during the day. Choice D is incorrect because it results in a dangling modifier. The
+placement of the noun "moths" immediately after the modifying phrase illogically suggests that moths know that flying
+insects keep their backs pointed toward sunlight during the day.
+Question Difficulty: Hard
+
+##
+
+To survive when water is scarce, embryos inside African turquoise killifish eggs ______ a dormant state
+known as diapause. In this state, embryonic development is paused for as long as two years—longer than the
+life span of an adult killifish.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. enter
+B. to enter
+C. having entered
+D. entering
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is finite and nonfinite verb forms within a sentence. A main clause
+requires a finite verb to perform the action of the subject (in this case, “embryos”), and this choice supplies the clause with
+the finite present tense verb “enter” to indicate how the embryos achieve diapause.
+Choice B is incorrect because the nonfinite to-infinitive “to enter” doesn’t supply the main clause with a finite verb. Choice C
+is incorrect because the nonfinite participle “having entered” doesn’t supply the main clause with a finite verb. Choice D is
+incorrect because the nonfinite participle “entering” doesn’t supply the main clause with a finite verb.
+Question Difficulty: Easy
+
+##
+
+Based on genetic evidence, archaeologists have generally agreed that reindeer domestication began in the
+eleventh century CE. However, since uncovering fragments of a 2,000-year-old reindeer training harness in
+northern Siberia, ______ may have begun much earlier.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. researcher Robert Losey has argued that domestication
+B. researcher Robert Losey’s argument is that domestication
+C. domestication, researcher Robert Losey has argued,
+D. the argument researcher Robert Losey has made is that domestication
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is subject-modifier placement. This choice makes the noun phrase
+“researcher Robert Losey” the subject of the sentence and places it immediately after the modifying phrase “since…Siberia.”
+In doing so, this choice clearly establishes that researcher Robert Losey—and not another noun in the sentence—is who
+uncovered fragments of a 2,000-year-old reindeer training harness in northern Siberia.
+Choice B is incorrect because it results in a dangling modifier. The placement of the noun phrase “researcher Robert Losey’s
+argument” immediately after the modifying phrase illogically suggests that the “argument” is what uncovered fragments of a
+2,000-year-old reindeer training harness in northern Siberia. Choice C is incorrect because it results in a dangling modifier.
+The placement of the noun “domestication” immediately after the modifying phrase illogically suggests that “domestication”
+is what uncovered fragments of a 2,000-year-old reindeer training harness in northern Siberia. Choice D is incorrect because
+it results in a dangling modifier. The placement of the noun phrase “the argument” immediately after the modifying phrase
+illogically suggests that the “argument” is what uncovered fragments of a 2,000-year-old reindeer training harness in
+northern Siberia.
+Question Difficulty: Medium
+
+##
+
+When a given industry—water and electricity are two well-known examples—carries high infrastructural start-
+up costs and other barriers that discourage competition, ______ of just one or two suppliers per municipality.
+Such industries are known as natural monopolies.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. these often consist
+B. they often consist
+C. it often consists
+D. this often consists
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The convention being tested is pronoun-antecedent agreement. The singular pronoun "it" agrees
+in number with the singular antecedent "industry" and clearly indicates that the industry consists of just one or two suppliers
+per municipality.
+Choice A is incorrect. The plural pronoun "these" neither agrees in number with the singular antecedent "industry" nor clearly
+indicates that the industry—not another plural noun in the sentence, such as "start-up costs" or "barriers"—consists of just
+one or two suppliers per municipality. Choice B is incorrect because the plural pronoun "they" doesn’t agree in number with
+the singular antecedent "industry." Choice D is incorrect because the singular pronoun "this" is ambiguous in this context; the
+resulting sentence leaves unclear what consists of just one or two suppliers per municipality.
+Question Difficulty: Hard
+
+##
+
+Like other amphibians, the wood frog (Rana sylvatica) is unable to generate its own heat, so during periods of
+subfreezing temperatures, it ______ by producing large amounts of glucose, a sugar that helps prevent
+damaging ice from forming inside its cells.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. had survived
+B. survived
+C. would survive
+D. survives
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. The convention being tested is the use of verbs to express tense. In this choice, the present
+tense verb “survives” correctly indicates that the wood frog regularly survives subfreezing temperatures by producing large
+amounts of glucose.
+Choice A is incorrect because the past perfect verb “had survived” doesn’t indicate that the wood frog regularly survives
+subfreezing temperatures by producing large amounts of glucose. Choice B is incorrect because the past tense verb
+“survived” doesn’t indicate that the wood frog regularly survives subfreezing temperatures by producing large amounts of
+glucose. Choice C is incorrect because the conditional verb “would survive” doesn’t indicate that the wood frog regularly
+survives subfreezing temperatures by producing large amounts of glucose.
+Question Difficulty: Easy
+
+##
+
+In 1930, Japanese American artist Chiura Obata depicted the natural beauty of Yosemite National Park in
+two memorable woodcuts: Evening at Carl Inn and Lake Basin in the High Sierra. In 2019, ______ exhibited
+alongside 150 of Obata’s other works in a single-artist show at the Smithsonian American Art Museum.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. it was
+B. they were
+C. this was
+D. some were
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The convention being tested is pronoun–antecedent agreement. The plural pronoun “they”
+agrees in number with the plural antecedent “woodcuts” and clearly identifies what was exhibited at the Smithsonian
+American Art Museum.
+Choice A is incorrect because the singular pronoun “it” doesn’t agree in number with the plural antecedent “woodcuts.”
+Choice C is incorrect because the singular pronoun “this” doesn’t agree in number with the plural antecedent “woodcuts.”
+Choice D is incorrect because the plural pronoun “some” is illogical in this context (referring to “some” of two woodcuts).
+Question Difficulty: Medium
+
+##
+
+A species of Byropsis algae produces toxins to avoid being eaten by predators. However, in some cases, the
+toxins the organism uses to protect itself from predation actually ______ its attractiveness to predators. The
+Hawaiian sea slug, for example, not only tolerates Byropsis toxins but actually uses them for protection in the
+same way the algae does.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. is increasing
+B. increase
+C. increases
+D. has increased
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The convention being tested is subject-verb agreement. The plural verb "increase" agrees in
+number with the plural subject "toxins."
+Choice A is incorrect because the singular verb "is increasing" doesn’t agree in number with the plural subject "toxins."
+Choice C is incorrect because the singular verb "increases" doesn’t agree in number with the plural subject "toxins." Choice D
+is incorrect because the singular verb "has increased" doesn’t agree in number with the plural subject "toxins."
+Question Difficulty: Hard
+

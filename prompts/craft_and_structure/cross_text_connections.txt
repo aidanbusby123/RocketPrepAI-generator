@@ -1,0 +1,463 @@
+
+    Choose a Topic: Select an academic or literary topic suitable for a college-level audience. Good topics are often drawn from:
+
+        Science: A debate over a hypothesis, the revision of a scientific theory, a problem with a research method and a proposed solution.
+
+        Social Science/History: A traditional interpretation of a historical event vs. a revisionist one, a description of a social phenomenon vs. a critical analysis of it, a problem in a field vs. a new approach.
+
+        Arts/Humanities: A description of an artist's work vs. a different interpretation of it, a claim about a literary genre vs. a qualifying counterexample.
+
+    Define the Rhetorical Relationship: The core of the question is the specific, nuanced relationship between the two texts. Do not make them simply agree or disagree. Choose one of the following sophisticated relationships:
+
+        Qualification/Complication: Text 1 makes a general or somewhat simplistic claim. Text 2 qualifies this claim by introducing a new factor, a counterexample, or a more complex context. Text 2 says, "Yes, but..." or "It's more complicated than that."
+
+        Problem/Solution: Text 1 describes a specific challenge, obstacle, or problem within a field (e.g., a limitation of a research method, a difficulty in interpretation). Text 2 presents a new discovery, technique, or approach that directly addresses or solves the problem outlined in Text 1.
+
+        Disagreement on Interpretation/Assumption: The texts examine the same or similar evidence/phenomenon, but Text 2 challenges a key assumption underlying Text 1's interpretation. It focuses on why Text 1's conclusion is flawed, not just that it is.
+
+        Contrastive Illustration: Text 1 describes a standard practice, outcome, or situation in a given field. Text 2 describes the situation in a different field where that practice is absent, leading to a contrasting outcome. The goal is to highlight the significance of the practice in Text 1 by showing the consequences of its absence in Text 2.
+
+        Correction with Concession: Text 1 presents an older or initial hypothesis. Text 2 presents a newer finding that corrects or revises it, but importantly, Text 2 also acknowledges why the initial hypothesis was plausible ("even though it looked that way at first...").
+
+Step 2: Write the Two Texts
+
+    Draft Text 1: Write a short passage (4-6 sentences) that clearly and concisely presents one side of the relationship you defined in Step 1. It should contain a central claim, finding, or argument that can be easily isolated.
+
+    Draft Text 2: Write a second short passage (4-6 sentences) that presents the other side of the relationship. It should be topically linked to Text 1 but introduce the complication, solution, or counter-argument. Use specific language that creates the nuanced relationship (e.g., "however," "qualifies," "it depends," "while this is the intention..."). Ensure Text 2 is not a simple negation of Text 1.
+
+Step 3: Formulate the Question Stem
+
+    Identify the Target: Pinpoint a specific claim, argument, or conclusion in one of the texts. This is often the main point of the text. For clarity, you can specify this by using a direct quote or referring to "the conclusion," "the discussion," or "the researchers' finding."
+
+    Write the Stem: Use a standard format. The most common and effective stem is:
+
+        "Based on the texts, how would the author/researchers of Text 2 most likely respond to [the specific claim/finding] in Text 1?"
+
+        Alternative: "Based on the texts, what would [the subject of Text 2] most likely say about the [underlined portion/interpretation presented] in Text 1?"
+
+Step 4: Craft the Answer Choices (The 4-Option Multiple Choice)
+
+This is the most critical step for determining difficulty.
+
+    Write the Correct Answer (Key):
+
+        The correct answer must accurately capture the nuanced relationship defined in Step 1.
+
+        It should not be a direct quote from either text but a synthesis of their interaction.
+
+        Use precise, academic language. For a Hard question, the answer should reflect a complex interaction, such as:
+
+            "By conceding [the premise of Text 1] but questioning [the inevitability or success of its outcome]."
+
+            "By pointing out that [the practice in Text 1] largely prevents the kind of problem discussed in Text 2."
+
+            "By arguing that their approach is specifically suited to overcome the unique challenges described in Text 1."
+
+    Write Three Plausible Distractors: Design distractors that tempt students but are ultimately incorrect for specific reasons. Common distractor types include:
+
+        The Overstatement/Exaggeration: Takes a point from a text and makes it too extreme (e.g., changing "some" to "all," or "can transform" to "always erases").
+
+        The Mischaracterization: Correctly identifies the topic but incorrectly describes the relationship (e.g., presents a qualification as a total denial, or a correction as a confirmation).
+
+        The Factual Error: Makes a claim that is contradicted by a detail in one of the texts (e.g., "dating the fossils directly" when the text says "dating the surrounding rock"). This is a very effective distractor for hard questions.
+
+        The Plausible but Irrelevant Statement: Makes a statement that might be true in the real world or seems related to the topic, but is not supported by the information within the two texts.
+
+Step 5: Write the Rationale
+
+    Rationale for the Correct Answer: Briefly explain why this option is the best choice, explicitly referencing how it reflects the synthesis of both texts.
+
+    Rationale for Incorrect Answers: For each distractor, explain precisely why it is wrong, referencing one of the error types from Step 4 (e.g., "This choice is an overstatement of the claim in Text 2," or "This choice mischaracterizes the relationship as a denial rather than a qualification.").
+
+Generated Example (Difficulty: Hard)
+
+Using the prompt above, here is a new, generated question.
+
+Text 1
+In evolutionary biology, the "Red Queen" hypothesis is often used to explain the prevalence of sexual reproduction. The theory posits that in a coevolutionary arms race between hosts and their parasites, sexual reproduction is advantageous because it rapidly creates novel gene combinations in offspring. This genetic diversity allows hosts to stay one step ahead of parasites, which are constantly evolving to infect them. Asexual organisms, by producing genetically uniform clones, are thus thought to be more vulnerable to parasitic infection over time.
+
+Text 2
+A team of biologists led by Dr. Levi Morran studied the nematode worm C. elegans, which can reproduce both sexually and asexually. When exposing populations of C. elegans to a pathogenic bacterium, Morran’s team found that sexually reproducing populations did indeed maintain higher resistance. However, this advantage disappeared in genetically homogenous host populations. This suggests that the benefits of sexual reproduction described by the Red Queen hypothesis are not absolute, but are contingent on the presence of existing genetic variation for natural selection to act upon.
+
+Based on the texts, how would Dr. Morran’s team (Text 2) most likely respond to the general principle of the Red Queen hypothesis as described in Text 1?
+
+A. By arguing that sexual reproduction is no more effective than asexual reproduction in combating parasitic infection.
+B. By asserting that the coevolutionary arms race between hosts and parasites rarely occurs in the natural world.
+C. By denying that producing genetically uniform clones makes asexual organisms especially vulnerable to parasites.
+D. By qualifying its depiction of sexual reproduction’s benefits, suggesting they are conditional rather than guaranteed.
+
+Correct Answer: D
+
+Rationale:
+
+    Choice D is the best answer because it accurately captures the nuanced relationship between the two texts. Text 1 describes the general principle of the Red Queen hypothesis: sexual reproduction confers an advantage against parasites. Text 2 presents findings that complicate this, showing the advantage is not guaranteed but is "contingent on the presence of existing genetic variation." Thus, Morran's team would qualify the principle, framing the benefit as conditional, which is precisely what option D states.
+
+    Choice A is incorrect because it mischaracterizes the findings. Morran’s team did find that sexual reproduction was advantageous under certain conditions, so they would not claim it is "no more effective." This is an overstatement.
+
+    Choice B is incorrect because it makes a broad claim about the natural world that is not supported by the specific study in Text 2. Morran's work focuses on the conditions of the arms race, not its general existence.
+
+    Choice C is incorrect because it is a direct contradiction of the findings in Text 2, which support the idea that asexual populations (which are more uniform) can be more vulnerable. It misrepresents Text 2's position as a complete denial rather than a qualification.
+
+
+# Example questions: 
+
+##
+
+Text 1
+Films and television shows commonly include a long list of credits naming the people involved in a
+production. Credit sequences may not be exciting, but they generally ensure that everyone’s contributions are
+duly acknowledged. Because they are highly standardized, film and television credits are also valuable to
+anyone researching the careers of pioneering cast and crew members who have worked in the mediums.
+Text 2
+Video game scholars face a major challenge in the industry’s failure to consistently credit the artists,
+designers, and other contributors involved in making video games. Without a reliable record of which people
+worked on which games, questions about the medium’s development can be difficult to answer, and the
+accomplishments of all but its best-known innovators can be difficult to trace.
+Based on the texts, how would the author of Text 1 most likely respond to the discussion in Text 2?
+A. By recommending that the scholars mentioned in Text 2 consider employing the methods regularly used
+by film and television researchers
+B. By pointing out that credits have a different intended purpose in film and television than in the medium
+addressed by the scholars mentioned in Text 2
+C. By suggesting that the scholars mentioned in Text 2 rely more heavily on credits as a source of
+information than film and television researchers do
+D. By observing that a widespread practice in film and television largely prevents the kind of problem faced
+by the scholars mentioned in Text 2
+
+Correct Answer: D
+Rationale
+Choice D is the best answer because it reflects how the author of Text 1 would most likely respond to Text 2 based on the
+information provided. Text 2 discusses how the inconsistent use of credits to identify the contributors to video games can
+pose an obstacle to scholars of the medium, who rely on such credits to answer questions about the medium’s development.
+Text 1 notes that in film and television, on the other hand, credits are used consistently and are valuable to researchers
+studying the cast and crew members in these mediums. Since Text 1 asserts how the consistent use of credits benefits
+scholars of film and television, it can be inferred that this text’s author would respond to the discussion in Text 2 by
+observing that the kind of problem faced by scholars of video games—the inability to know who contributed to a particular
+production and how—is, in film and television studies, largely prevented by the widespread practice of credits in these
+mediums.
+Choice A is incorrect. Although Text 1 discusses a method used by film and television researchers—namely, relying on
+credits to research the careers of cast and crew members—the author doesn’t explicitly recommend that or any other
+method. Moreover, Text 1 states that films and television shows themselves, not their researchers, regularly use the method
+of listing credits. Choice B is incorrect. It can be inferred from Text 2 that when video games do feature credits, they have
+essentially the same function as credits in film and television—namely, to identify the individuals who worked on a particular
+production. Therefore, it is unlikely that the author of Text 1 would characterize video game credits as differing in purpose
+from film and television credits. Choice C is incorrect because, as Text 2 explains, credits are not consistently used in video
+games. Therefore, it is unlikely that the author of Text 1 would argue that scholars of the medium discussed in this text—
+video games—rely more heavily on credits than scholars of film and television, two mediums where credits consistently
+appear.
+Question Difficulty: Hard
+
+##
+
+Text 1
+A tiny, unusual fossil in a piece of 99-million-year-old amber is of the extinct species Oculudentavis
+khaungraae. The O. khaungraae fossil consists of a rounded skull with a thin snout and a large eye socket.
+Because these features look like they are avian, or related to birds, researchers initially thought that the fossil
+might be the smallest avian dinosaur ever found.
+Text 2
+Paleontologists were excited to discover a second small fossil that is similar to the strange O. khaungraae
+fossil but has part of the lower body along with a birdlike skull. Detailed studies of both fossils revealed
+several traits that are found in lizards but not in dinosaurs or birds. Therefore, paleontologists think the two
+creatures were probably unusual lizards, even though the skulls looked avian at first.
+Based on the texts, what would the paleontologists in Text 2 most likely say about the researchers’ initial
+thought in Text 1?
+A. It is understandable because the fossil does look like it could be related to birds, even though O.
+khaungraae is probably a lizard.
+B. It is confusing because it isn’t clear what caused the researchers to think that O. khaungraae might be
+related to birds.
+C. It is flawed because the researchers mistakenly assumed that O. khaungraae must be a lizard.
+D. It is reasonable because the O. khaungraae skull is about the same size as the skull of the second fossil
+but is shaped differently.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer because it reflects what the paleontologists in Text 2 would most likely say about what the
+researchers in Text 1 initially thought. Text 1 focuses on the discovery of a strange fossil consisting of the skull of the extinct
+species Oculudentavis khaungraae. According to Text 1, the fossil has features that appear to be avian, or related to birds,
+which led researchers to initially think that the fossil might be a very small avian dinosaur. Text 2 begins by noting the
+discovery of a second fossil similar to the one discussed in Text 1, then explains that based on detailed studies of both
+fossils, paleontologists think that the two creatures were probably unusual lizards, even though the skulls appeared avian at
+first. This suggests that the paleontologists in Text 2 recognize that the fossils do indeed look like they could be related to
+birds. For this reason, the paleontologists in Text 2 would most likely say that the initial thought of the researchers in Text 1—
+that the fossil was avian—is understandable, even if the fossil is probably not avian but rather is from a lizard.
+Choice B is incorrect because Text 2 indicates that the fossils initially looked avian, so the paleontologists described in Text
+2 wouldn’t be confused by the researchers in Text 1 initially thinking that O. khaungraae might be related to birds. The
+paleontologists would find that initial thought understandable, not confusing. Choice C is incorrect because Text 1 never
+mentions lizards, so it wouldn’t make sense for the paleontologists in Text 2 to say that the researchers in Text 1 mistakenly
+assumed that O. khaungraae must be a lizard. Choice D is incorrect. Although the paleontologists in Text 2 might agree that
+the initial thought of the researchers in Text 1 was reasonable, nothing in Text 2 suggests that the two skulls were shaped
+differently.
+Question Difficulty: Medium
+
+##
+
+Text 1
+Growth in the use of novel nanohybrids—materials created from the conjugation of multiple distinct
+nanomaterials, such as iron oxide and gold nanomaterials conjugated for use in magnetic imaging—has
+outpaced studies of nanohybrids’ environmental risks. Unfortunately, risk evaluations based on nanohybrids’
+constituents are not reliable: conjugation may alter constituents’ physiochemical properties such that
+innocuous nanomaterials form a nanohybrid that is anything but.
+Text 2
+The potential for enhanced toxicity of nanohybrids relative to the toxicity of constituent nanomaterials has
+drawn deserved attention, but the effects of nanomaterial conjugation vary by case. For instance, it was
+recently shown that a nanohybrid of silicon dioxide and zinc oxide preserved the desired optical transparency
+of zinc oxide nanoparticles while mitigating the nanoparticles’ potential to damage DNA.
+Based on the texts, how would the author of Text 2 most likely respond to the assertion in the underlined
+portion of Text 1?
+A. By concurring that the risk described in Text 1 should be evaluated but emphasizing that the risk is more
+than offset by the potential benefits of nanomaterial conjugation
+B. By arguing that the situation described in Text 1 may not be representative but conceding that the effects
+of nanomaterial conjugation are harder to predict than researchers had expected
+C. By denying that the circumstance described in Text 1 is likely to occur but acknowledging that many
+aspects of nanomaterial conjugation are still poorly understood
+D. By agreeing that the possibility described in Text 1 is a cause for concern but pointing out that
+nanomaterial conjugation does not inevitably produce that result
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. The author of Text 2 acknowledges that nanohybrids may be more toxic than their constituent
+parts, but also provides an example of a nanohybrid that has reduced toxicity compared to its components: silicon dioxide
+and zinc oxide together have all the benefits of zinc oxide nanoparticles without any of the DNA harm zinc oxide has on its
+own.
+Choice A is incorrect. While the author of Text 2 gives an example of a nanohybrid that isn’t as toxic as its constituent parts,
+they don’t argue that the benefit outweighs the risk. They merely argue that “the effects of nanomaterial conjugation vary by
+case.” Choice B is incorrect. The author of Text 2 states that the effects of nanomaterial conjugation “vary by case,” and that
+the attention that their potential toxicity has drawn is warranted. If the situation in Text 1 weren’t representative, then there
+would be less attention to the potential danger of these materials. Furthermore, neither passage suggests that researchers
+had expected that they could predict the effects of nanomaterial conjugation. Choice C is incorrect. The author of Text 2
+agrees that the potential toxicity of nanohybrids “has drawn deserved attention,” so they aren’t denying the problem.
+Question Difficulty: Hard
+
+##
+
+Text 1
+In a study of the benefits of having free time, Marissa Sharif found that the reported sense of life satisfaction
+tended to plateau when participants had two hours of free time per day and actually began to fall when they
+had five hours of free time per day. After further research, Sharif concluded that this dip in life satisfaction
+mainly occurred when individuals spent all their free time unproductively, such as by watching TV or playing
+games.
+Text 2
+Psychologist James Maddux cautions against suggesting an ideal amount of free time. The human desire
+for both free time and productivity is universal, but Maddux asserts that individuals have unique needs for life
+satisfaction. Furthermore, he points out that there is no objective definition for what constitutes productivity;
+reading a book might be considered a productive activity by some, but idleness by others.
+Based on the texts, how would Maddux (Text 2) most likely respond to the conclusion Sharif (Text 1) reached
+after her further research?
+A. By acknowledging that free time is more likely to enhance life satisfaction when it is spent productively
+than when it is spent unproductively
+B. By challenging the reasoning in Text 1, as it has not been proved that productivity commonly contributes
+to individuals’ life satisfaction
+C. By warning against making an overly broad assumption, as there is no clear consensus in distinguishing
+between productive and unproductive activities
+D. By claiming that the specific activities named in Text 1 are actually examples of productive activities
+rather than unproductive ones
+
+Correct Answer: C
+Rationale
+Choice C is the best answer because it characterizes how Maddux would most likely respond to the conclusion Sharif
+reached after her research. Text 1 describes Sharif’s study of the benefits of free time, saying that the reported sense of
+satisfaction plateaued at two hours per day and began to decline at five hours per day. Further research led Sharif to
+conclude that time spent doing tasks she defines as unproductive, such as watching TV or playing games, correlated with a
+drop in life satisfaction. However, in Text 2 Maddux says that there is no objective definition of what constitutes productive
+behavior, giving the example that reading a book might be considered productive by some but unproductive by others. It can
+be inferred that Maddux would also assert that whether watching TV or playing games is productive or unproductive is a
+matter of subjective judgment. Thus, Maddux would most likely caution against making an overly broad assumption, as
+there is no clear consensus in distinguishing between productive and unproductive activities.
+Choice A is incorrect because Maddux asserts that individuals have unique needs for life satisfaction: some may want to
+spend that time productively, others unproductively, and what counts as productive is subjective. Therefore, Maddux would
+likely not consider it universally true that free time is more likely to enhance life satisfaction when it is spent productively.
+Choice B is incorrect because the study described in Text 1 concerns whether free time contributes to life satisfaction, not
+whether productivity contributes to life satisfaction. The dip in life satisfaction that Sharif claims to observe in Text 1
+happens only after five hours, and mainly if the time is spent unproductively—that is, two hours of free time spent
+productively might increase life satisfaction just as much as two hours spent unproductively. Choice D is incorrect because
+Maddux holds the opinion that whether an activity is productive or unproductive is subjective and depends on the individual;
+therefore, he would most likely claim that watching TV or playing games might be productive for some and unproductive for
+others.
+Question Difficulty: Medium
+
+##
+
+Text 1
+Fossils of the hominin Australopithecus africanus have been found in the Sterkfontein Caves of South Africa,
+but assigning an age to the fossils is challenging because of the unreliability of dating methods in this
+context. The geology of Sterkfontein has caused soil layers from different periods to mix, impeding
+stratigraphic dating, and dates cannot be reliably imputed from those of nearby animal bones since the
+bones may have been relocated by flooding.
+Text 2
+Archaeologists used new cosmogenic nuclide dating techniques to reevaluate the ages of A. africanus
+fossils found in the Sterkfontein Caves. This technique involves analyzing the cosmogenic nucleotides in the
+breccia—the matrix of rock fragments immediately surrounding the fossils. The researchers assert that this
+approach avoids the potential for misdating associated with assigning ages based on Sterkfontein’s soil
+layers or animal bones.
+Based on the texts, how would the researchers in Text 2 most likely respond to the underlined portion in Text
+1?
+A. They would emphasize the fact that the A. africanus fossils found in the Sterkfontein Caves may have
+been corrupted in some way over the years.
+B. They would contend that if analyses of surrounding layers and bones in the Sterkfontein Caves were
+combined, then the dating of the fossils there would be more accurate.
+C. They would argue that their techniques are better suited than other methods to the unique challenges
+posed by the Sterkfontein Caves.
+D. They would claim that cosmogenic nuclide dating is reliable in the context of the Sterkfontein Caves
+because it is applied to the fossils directly.
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. Text 2 states that the researchers used cosmogenic nuclide dating to "avoid the potential for
+misdating" caused by the geology of Sterkfontein, which Text 1 describes as "challenging" and unreliable.
+Choice A is incorrect. Neither text suggests that the A. africanus fossils have been "corrupted," but only that traditional dating
+methods are difficult in Sterkfontein because of floods and soil mixing where the fossils were found. Nothing is implied to
+have compromised the fossils themselves. Choice B is incorrect. This choice misreads Text 2. Text 2 agrees that
+stratigraphy and other methods are prone to error in the context of Sterkfontein: there’s a "potential for misdating" when
+evaluating age based on soil layers and bones. Choice D is incorrect. Text 2 does not state that cosmogenic nuclide dating is
+applied to the fossils directly but rather to the breccia that surrounds them.
+Question Difficulty: Hard
+
+##
+
+Text 1
+Stage lighting theorist Adolphe Appia was perhaps the first to argue that light must be considered alongside
+all the various elements of a stage to create a single, unified performance. Researcher Kelly Bremner,
+however, has noted that Appia lacked technical expertise in the use of light in the theater. As a result of
+Appia’s inexperience, Bremner argues, Appia’s theory of light called for lighting practices that weren’t
+possible until after the advent of electricity around 1881.
+Text 2
+Adolphe Appia was not an amateur in the practice of lighting. Instead, it is precisely his exposure to lighting
+techniques at the time that contributed to his theory on the importance of light. When working as an
+apprentice for a lighting specialist in his youth, Appia observed the use of portable lighting devices that could
+be operated by hand. This experience developed his understanding of what was possible in the coordination
+of elements on the stage.
+Based on the texts, how would the author of Text 2 most likely respond to the claim about Appia’s level of
+technical expertise made by Bremner in Text 1?
+A. Many lighting technicians dismissed Appia’s ideas about light on the stage.
+B. Appia likely gained a level of technical expertise during his time as an apprentice.
+C. Theater practitioners who worked with Appia greatly admired his work.
+D. Appia was unfamiliar with the use of music and sound in theater.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The author of Text 2 directly contradicts Bremner’s claim that Appia lacked technical expertise
+by stating that Appia was “not an amateur in the practice of lighting.” His experience as a lighting specialist’s apprentice
+would have, the author of Text 2 argues, allowed Appia to “[develop] his understanding of what was possible” with the
+elements of theatrical design.
+Choice A is incorrect. Neither text describes how other lighting technicians responded to Appia’s ideas. Furthermore, this
+claim isn’t relevant to Bremner’s evaluation of Appia’s technical expertise. Choice C is incorrect. Neither text mentions
+anything about the opinions of theater practitioners who worked with Appia, so this answer choice does not relate to the
+claim about Appia’s level of technical expertise made by Bremner in Text 1. Choice D is incorrect. Neither text mentions
+anything about Appia’s familiarity with or ignorance of the use of music and sound in theater. Both focus on his expertise (or
+lack thereof) in lighting.
+
+Question Difficulty: Medium
+
+
+##
+
+Text 1
+Italian painters in the 1500s rarely depicted themselves in their work. Even more rare were self-portrait
+paintings that portrayed the artist as a painter. At the time, painting was not yet respected as a profession, so
+painters mostly chose to emphasize other qualities in their self-portraits, like their intellect or social status. In
+the city of Bologna, the first artist to depict themself painting was a man named Annibale Carracci. A
+painting of his from around 1585 shows Carracci in front of an easel holding a palette.
+Text 2
+In their self-portraits, Bolognese artists typically avoided referring to the act of painting until the mid-1600s.
+However, Lavinia Fontana’s 1577 painting, Self-Portrait at the Keyboard, stands out as the earliest example of
+such a work by an artist from Bologna. Although the artist is depicted playing music, in the background, one
+can spot a painting easel by a window.
+Based on the texts, how would the author of Text 2 most likely respond to the underlined claim in Text 1?
+A. Carracci and Fontana were among the most well-respected painters in Bologna at the time.
+B. The depiction of Fontana in Self-Portrait at the Keyboard was intended to underscore the artist’s creativity.
+C. Fontana likely inspired the reference to an easel and palette in Carracci’s painting.
+D. Self-Portrait at the Keyboard was painted earlier than Carracci’s painting and also refers to the artist’s
+craft.
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. The author of Text 2 states that Fontana’s painting, which depicts a painting easel in the
+background, was made in 1577, eight years before Carracci’s painting. Therefore, they might argue that Caracci was not “the
+first artist” to depict themself as a painter.
+Choice A is incorrect. The texts don’t support this choice. Neither text mentions the reputation or status of either Carracci or
+Fontana. Choice B is incorrect. The author of Text 2 does not comment on the intention or meaning of Fontana’s self-
+depiction in Self-Portrait at the Keyboard. This choice also holds little connection to the underlined claim. Choice C is
+incorrect. The texts don’t support this choice. The author of Text 2 does not suggest any inspirational relationship between
+Fontana and Carracci. The author of Text 2 is concerned with showing that Fontana’s painting is the earliest example of an
+artist referring to painting in their self-portrait, but makes no mention of her influence on others.
+
+Question Difficulty: Easy
+
+##
+
+Text 1
+Flamingos are known for their vibrant pink coloring, but they’re actually born with gray feathers. Their pink
+color comes from eating brine shrimp, but brine shrimp aren’t naturally pink either. Animals can’t produce
+carotenoids, the pigments that provide the pink hue. The algae that brine shrimp feed on, however, can
+produce these pigments. Thus, the pinker the flamingo, the more shrimp it has eaten.
+Text 2
+Ecologist Juan Amat has found that flamingos apply a kind of makeup to make themselves appear pinker. A
+gland near their tail contains pigments that come from the food they eat. When the flamingos groom
+themselves using the pigments, their feathers become pinker. Flamingos may do this to improve their
+success during mating season, when they would benefit from looking pinker.
+Based on the texts, how would the ecologist in Text 2 most likely respond to the author’s conclusion in Text
+1?
+A. By emphasizing that flamingos’ tail feathers are pinker than their other feathers are
+B. By claiming that the coloring of flamingos’ feathers doesn’t change significantly enough for most
+observers to notice
+C. By pointing out that the amount of shrimp eaten isn’t the only thing that influences flamingos’ coloring
+D. By arguing that flamingos’ diet doesn’t include much shrimp except during mating season
+
+Correct Answer: C
+Rationale
+Choice C is the best answer because it describes how the ecologist in Text 2 would most likely respond to the author’s
+conclusion in Text 1 based on the information provided. The author of Text 1 states that the pink color of flamingo feathers
+comes from pigments carried by the brine shrimp flamingos consume. The author of Text 1 concludes that this means that a
+flamingo that is pinker than another flamingo must have eaten more shrimp. However, according to Text 2, ecologist Juan
+Amat has found that flamingos can also affect how pink they look through grooming, when they move ingested pigments
+from a gland near the tail to their feathers. This indicates that not all the pigments available from the shrimp a flamingo has
+eaten automatically end up coloring the flamingo’s feathers; some may or may not be applied later. Since grooming is also a
+factor, the ecologist (Amat) in Text 2 would most likely respond to the conclusion in Text 1 that pinker flamingos have eaten
+more shrimp by pointing out that the amount of shrimp eaten isn’t the only thing that influences flamingos’ coloring.
+Choice A is incorrect. Although Text 2 states that the ecologist has found that flamingos can move pigments to their
+feathers from a gland near their tail, there is no indication that their tail feathers are pinker than their other feathers.
+Moreover, the point that tail feathers are pinker than other feathers wouldn’t logically address the idea that the quantity of
+shrimp eaten is what determines a flamingo’s coloring. Choice B is incorrect because Text 2 indicates that the ecologist has
+found that flamingos’ feathers do sometimes look pinker and gives no indication that this change in color is particularly
+subtle. Moreover, the point that most observers wouldn’t notice a change wouldn’t logically address the idea that the quantity
+of shrimp eaten is what determines a flamingo’s coloring. Choice D is incorrect because nothing in Text 2 suggests that the
+ecologist would argue about flamingos’ shrimp consumption. Although Text 2 indicates that the ecologist has found that
+flamingos may make themselves look pinker during mating season, this is addressed in terms of grooming habits; apart
+from referring to food as a source of pigments, Text 2 doesn’t discuss the diet of flamingos at all.
+Question Difficulty: Easy
+
+##
+
+Text 1
+Historians studying pre-Inca Peru have looked to ceramic vessels to understand daily life among the Moche
+people. These mold-made sculptures present plants, animals, and human faces in precise ways—vessels
+representing human faces are so detailed that scholars have interpreted facial markings to represent scars
+and other skin irregularities. Some historians have even used these objects to identify potential skin diseases
+that may have afflicted people at the time.
+Text 2
+Art historian and archaeologist Lisa Trever has argued that the interpretation of Moche “portrait” vessels as
+hyper-realistic portrayals of identifiable people may inadvertently disregard the creativity of the objects’
+creators. Moche ceramic vessels, Trever argues, are artworks in which sculptors could free their imagination,
+using realistic objects and people around them as inspiration to explore more abstract concepts.
+Based on the texts, what would Lisa Trever (Text 2) most likely say about the interpretation presented in the
+underlined portion of Text 1?
+A. Depictions of human faces are significantly more realistic than depictions of plants and other animals are.
+B. It is likely that some depictions of human faces with extensive markings are intended to portray the same
+historical individual.
+C. Some vessels may have been damaged during their excavation and thus provide little insight into Moche
+culture.
+D. Markings on depictions of human faces are not necessarily intended to portray particular details about
+the physical appearance of individuals.
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. Trever thinks that the “hyper-realistic portrayal of identifiable people” interpretation ignores the
+sculptors’ imagination and creativity. We can infer that Trevor thinks the facial markings on the sculptures may not have
+represented real skin blemishes on real people.
+Choice A is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this
+way. Neither text compares the depictions of human faces to the depictions of plants or animals, so we have no basis to
+draw this conclusion. Choice B is incorrect. The text gives us no reason to think that Trever would respond to the underlined
+interpretation in this way. There’s nothing in either text about multiple depictions representing the same person, so we have
+no basis to draw this conclusion. Choice C is incorrect. The text gives us no reason to think that Trever would respond to the
+underlined interpretation in this way. Neither text mentions the state of the vessels (damaged or intact), so we have no basis
+to draw this conclusion.
+Question Difficulty: Easy

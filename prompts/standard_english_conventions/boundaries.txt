@@ -1,0 +1,297 @@
+Step 1: Select a Specific Punctuation Rule to Test
+Choose a single, specific rule about sentence boundaries as the core of your question. Examples include:
+
+    Separating two independent clauses.
+
+    Separating an introductory phrase/clause from a main clause.
+
+    Setting off a non-essential (non-restrictive) element.
+
+    Integrating an essential (restrictive) element.
+
+    Using a colon to introduce an explanation or list.
+
+    Using paired punctuation (commas, dashes, parentheses).
+
+Step 2: Craft the Sentence(s)
+Write a high-quality, engaging sentence that creates a clear need for the chosen punctuation rule. Place the blank (___) at the precise point where the boundary decision must be made. The content of the sentence is important; use it to guide the student or, for harder questions, to misdirect them.
+
+Step 3: Write the Correct Answer
+Provide the word or phrase plus the grammatically correct punctuation that satisfies the rule from Step 1.
+
+Step 4: Design Common-Error Distractors
+Create three incorrect choices. These must be based on common, predictable student errors related to the rule being tested. Every distractor should correspond to a specific grammatical mistake. The most common errors to use are:
+
+    Comma Splice: Incorrectly joining two independent clauses with only a comma.
+
+    Run-On (Fused) Sentence: Joining two independent clauses with no punctuation or conjunction.
+
+    Sentence Fragment: Creating an incomplete sentence by using a period incorrectly.
+
+    Incorrect Conjunction Use: e.g., using ", and" to join a dependent and independent clause, or using just "and" between two long independent clauses where a comma is conventional.
+
+    Mismatched Paired Punctuation: e.g., starting a parenthetical with a dash and ending with a comma.
+
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Rule Focus: Use a single, fundamental rule in a short, clear sentence. Good rules to test are:
+
+        Joining two independent clauses with a period.
+
+        Joining two independent clauses with a comma and a FANBOYS conjunction (for, and, nor, but, or, yet, so).
+
+        Setting off a simple introductory phrase with a comma.
+
+    Distractors: Use the most common errors directly: a comma splice, a run-on, and perhaps one other obvious misuse of punctuation like a semicolon.
+
+MEDIUM Difficulty:
+
+    Rule Focus: Use slightly more complex rules or sentence structures.
+
+        Setting off a non-essential element in the middle of a sentence using paired commas or paired dashes.
+
+        Using a semicolon to join two closely related independent clauses.
+
+        Using a colon to introduce a list or simple explanation.
+
+    Sentence Structure: The sentences can be longer, requiring the student to track the relationship between clauses across more words.
+
+    Distractors: The distractors should still be clear errors but can be more varied, such as testing mismatched paired punctuation or misusing a colon.
+
+HARD Difficulty:
+
+    Rule Focus: The difficulty must come from subtlety, misdirection, or testing exceptions to common rules. Do not just make the sentence longer; make the grammatical decision itself more complex.
+
+    Techniques for Creating Hard Questions:
+
+        The "Punctuation Void" (Testing Restrictive Elements): This is the most effective technique. Create a sentence where the correct answer is the absence of punctuation. This is difficult because it's counter-intuitive. Frame the sentence so it looks like it needs a comma, but the grammar forbids it.
+
+            Example Structure: [Complex Noun Phrase] that [essential clause]. Place the blank before "that."
+
+            Example Structure: [Title] [Name] or [Noun] [Prepositional Phrase] where the name/phrase is essential to the sentence's meaning (restrictive). Place the blank between the elements to tempt the student into adding a comma.
+
+        Grammatical Misdirection: Use a familiar sentence pattern to disguise a different underlying structure.
+
+            Example: Use a list structure (A, B, and C) where "C" is immediately followed by an essential "that" clause. The student will be tempted to put a comma after "C" because of the list pattern, but the restrictive clause forbids it.
+
+        Rule Stacking: Create a boundary that requires the correct application of two rules simultaneously.
+
+            Example: A choice that must correctly set off a supplementary phrase with a comma and use a colon to introduce the next clause, all within one answer option. The distractors will get one part right but the other wrong.
+
+    Hard Distractors: The distractors for a hard question must be sophisticated. They should also use punctuation and appear to be grammatically complex, but contain a subtle, fatal flaw based on the techniques above. Avoid simple run-ons or comma splices as distractors here; they make the correct answer too obvious.
+
+
+Examples:
+
+
+##
+
+Dolores Huerta’s advocacy on behalf of farmworkers was rooted in her experience as a schoolteacher in
+Stockton, California, in the early 1950s. Hoping to help her students and their families outside the ______
+Huerta left teaching to start the Stockton chapter of the Community Service Organization, a group focused
+on the needs of local farmworkers.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. classroom.
+B. classroom;
+C. classroom,
+D. classroom
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The convention being tested is the use of punctuation within a sentence. This choice correctly
+uses a comma to mark the boundary between the introductory participial phrase ("Hoping…classroom") and the main clause
+("Huerta…farmworkers").
+Choice A is incorrect because it results in a rhetorically unacceptable sentence fragment beginning with "hoping." Choice B is
+incorrect because a semicolon can’t be used in this way to mark the boundary between the participial phrase ("Hoping…
+classroom") and the main clause ("Huerta…farmworkers"). Choice D is incorrect because it fails to mark the boundary
+between the participial phrase ("Hoping…classroom") and the main clause ("Huerta…farmworkers").
+Question Difficulty: Easy
+
+
+##
+
+Eli Eisenberg, a genetics expert at Tel Aviv University in Israel, recently discovered that ______ have a special
+genetic ability called RNA editing that confers evolutionary advantages.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. cephalopods, ocean dwellers that include the squid, the octopus, and the cuttlefish
+B. cephalopods—ocean dwellers—that include the squid, the octopus, and the cuttlefish,
+C. cephalopods, ocean dwellers that include: the squid, the octopus, and the cuttlefish,
+D. cephalopods—ocean dwellers that include the squid, the octopus, and the cuttlefish—
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. The convention being tested is the punctuation of a supplementary element within a sentence.
+In this choice, the dash after "cephalopods" pairs with the dash after "cuttlefish" to clearly separate the supplementary
+element "ocean dwellers that include the squid, the octopus, and the cuttlefish" from the rest of the sentence. This
+supplementary element functions to explain what cephalopods are, and the pair of dashes indicates that this element could
+be removed without affecting the grammatical coherence of the sentence.
+Choice A is incorrect because it fails to use appropriate punctuation to separate the supplementary element that explains
+what cephalopods are from the rest of the sentence. Choice B is incorrect because it fails to use appropriate punctuation to
+separate the supplementary element that explains what cephalopods are from the rest of the sentence. Choice C is incorrect
+because it fails to use appropriate punctuation to separate the supplementary element that explains what cephalopods are
+from the rest of the sentence.
+Question Difficulty: Medium
+
+##
+
+On March 23, 2021, a gust of wind wreaked havoc on global trade. Ever Given, an international shipping
+container vessel, became lodged in Egypt’s Suez Canal, a major shipping route between Europe and Asia. The
+vessel took six days to ______ it’s as heavy as two thousand blue whales when fully loaded.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. dislodge in part due to its sheer size,
+B. dislodge, in part due to its sheer size:
+C. dislodge, in part due to its sheer size,
+D. dislodge, in part, due to its sheer size
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The convention being tested is punctuation between main clauses and a supplementary
+element. This choice correctly uses a comma to mark the boundary between the main clause ("The vessel took six days to
+dislodge") and the supplementary element ("in part due to its sheer size") that provides additional information on why the
+vessel was difficult to dislodge. Additionally, this choice correctly uses a colon to introduce another main clause that
+describes the vessel’s size ("it’s as heavy as two thousand blue whales when fully loaded").
+Choice A is incorrect because it results in a comma splice. A comma can’t be used in this way to mark the boundary between
+two main clauses ("The vessel…size" and "it’s…loaded"). Additionally, it fails to mark the boundary between the main clause
+("The vessel took six days to dislodge") and the supplementary element ("in part due to its sheer size"). Choice C is incorrect
+because it results in a comma splice. A comma can’t be used in this way to mark the boundary between two main clauses
+("The vessel…size" and "it’s…loaded"). Choice D is incorrect because it results in a run-on sentence. The two main clauses
+("The vessel…size" and "it’s…loaded") are fused without punctuation and/or a conjunction.
+Question Difficulty: Hard
+
+##
+
+In 2000, Nora de Hoyos Comstock, herself an owner of a successful consulting firm, sought to increase
+Latina representation in corporate ______ founded Las Comadres para las Americas, an international
+community that for over two decades has served as a resource and information network for Latina business
+professionals.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. settings she
+B. settings, she
+C. settings and she
+D. settings. She
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. It appropriately uses a period to mark the end of one independent clause ("In 2000…settings")
+and the start of another ("She founded…professionals").
+Choice A is incorrect. This choice results in a run-on sentence error. Both the clause before the blank ("In 2000…settings")
+and the clause after the blank ("she…professionals") are independent clauses, so they need to be separated by punctuation.
+Choice B is incorrect. This choice results in a comma splice error. It incorrectly joins two independent clauses with just a
+comma. Linking two independent clauses with a comma also requires the use of a coordinating conjunction (like for, and,
+nor, but, or, yet, or so). Choice C is incorrect. This choice results in a run-on sentence, an error caused when two independent
+clauses are joined without punctuation or appropriate conjunctions. Since both the clause before the blank ("In 2000…
+settings") and the clause after the blank ("she…professionals") are independent, a comma would be required in addition to
+the coordinating conjunction "and."
+Question Difficulty: Easy
+
+##
+
+Po’Pay was a Tewa leader from Ohkay Owingeh, a pueblo located about twenty-five miles north of present-
+day Santa Fe, New Mexico. He was instrumental in organizing the Pueblo Revolt of ______ as a result of his
+leadership, the Spanish colonizers were expelled from the region for a time.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. 1680
+B. 1680 and
+C. 1680,
+D. 1680, and
+
+Correct Answer: D
+Rationale
+Choice D is the best answer. The convention being tested is the coordination of main clauses within a sentence. This choice
+correctly uses a comma and the coordinating conjunction “and” to join the first main clause (“He…1680”) and the second
+main clause (“as…time”).
+Choice A is incorrect because it results in a run-on sentence. The two main clauses are fused without punctuation and/or a
+conjunction. Choice B is incorrect because when coordinating two longer main clauses such as these, it’s conventional to
+use a comma before the coordinating conjunction. Choice C is incorrect because it results in a comma splice. Without a
+conjunction following it, a comma can’t be used in this way to join two main clauses.
+Question Difficulty: Medium
+
+Stomata, tiny pore structures in a leaf that absorb gases needed for plant growth, open when guard cells
+surrounding each pore swell with water. In a pivotal 2007 article, plant cell ______ showed that lipid molecules
+called phosphatidylinositol phosphates are responsible for signaling guard cells to open stomata.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. biologist, Yuree Lee
+B. biologist Yuree Lee,
+C. biologist Yuree Lee
+D. biologist, Yuree Lee,
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The convention being tested is the use of punctuation between titles and proper nouns. No
+punctuation is needed to offset the proper noun "Yuree Lee" from the title "plant cell biologist" that describes Lee.
+Choice A is incorrect because no punctuation is needed. Choice B is incorrect because no punctuation is needed. Choice D
+is incorrect because no punctuation is needed around the proper noun "Yuree Lee." Setting the phrase off with punctuation
+suggests that it could be removed without affecting the coherence of the sentence, which isn’t the case.
+Question Difficulty: Hard
+
+##
+
+Typically, underlines, scribbles, and notes left in the margins by a former owner lower a book’s ______ when
+the former owner is a famous poet like Walt Whitman, such markings, known as marginalia, can be a gold
+mine to literary scholars.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. value, but
+B. value
+C. value,
+D. value but
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is the coordination of independent clauses within a sentence. An
+independent clause is a phrase containing a subject and a verb that can stand on its own as a sentence. This choice uses a
+comma and the coordinating conjunction “but” to join the first independent clause (“underlines…lower a book’s value”) and
+the second independent clause (“such markings…can be a gold mine to scholars”) to create a compound sentence.
+Choice B is incorrect because it results in a run-on sentence. The two independent clauses are fused without punctuation
+and/or a conjunction. Choice C is incorrect because it results in a comma splice. A comma can’t be used in this way to mark
+the boundary between two independent clauses. Choice D is incorrect because a comma is needed to mark the boundary
+between two coordinated independent clauses.
+Question Difficulty: Easy
+
+##
+
+By analyzing the level of radioactive decay within a fossil specimen, scientists can establish the age of that
+fossil with a high degree of precision. When radioactive elements aren’t present, scientists turn to ______
+analysis of Earth’s sediment layers (strata)—to estimate how old a fossil is based on the age of the strata in
+which the fossil is found.
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. stratigraphy—the
+B. stratigraphy (the
+C. stratigraphy: the
+D. stratigraphy, the
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The convention being tested is the use of punctuation within a sentence. The dash after
+"stratigraphy" pairs with the dash after "(strata)" to separate the supplementary element "the analysis of Earth’s sediment
+layers (strata)" from the rest of the sentence. This supplementary element functions to define the term "stratigraphy," and the
+pair of dashes indicates that this element could be removed without affecting the grammatical coherence of the sentence.
+Choice B is incorrect because a parenthesis can’t be paired with a dash in this way to separate the supplementary element
+from the rest of the sentence. Choice C is incorrect because a colon can’t be paired with a dash in this way to separate the
+supplementary element from the rest of the sentence. Choice D is incorrect because a comma can’t be paired with a dash in
+this way to separate the supplementary element from the rest of the sentence.
+Question Difficulty: Medium
+
+##
+
+Roughly 300 nights a year, when the cold air descending from the Andes Mountains meets the warm air
+rising from Venezuela’s coastal Lake Maracaibo, the result is a spectacular lightning storm, its strikes so
+bright, so localized, and so ______ that it has become known as “Maracaibo’s Lighthouse.”
+Which choice completes the text so that it conforms to the conventions of Standard English?
+A. dependable:
+B. dependable;
+C. dependable
+D. dependable,
+
+Correct Answer: C
+Rationale
+Choice C is the best answer. The convention being tested is the punctuation of an integrated relative clause. No punctuation
+is needed before the relative clause beginning with "that" because the content of the relative clause ("that...Lighthouse") is
+integral to the meaning of the coordinated adjectival phrase ("so bright, so localized, and so dependable") that it modifies.
+Choice A is incorrect because no punctuation is needed between the coordinated adjectival phrase ("so bright...dependable")
+and the integrated relative clause that modifies it. Choice B is incorrect because no punctuation is needed between the
+coordinated adjectival phrase ("so bright...dependable") and the integrated relative clause that modifies it. Choice D is
+incorrect because no punctuation is needed between the coordinated adjectival phrase ("so bright...dependable") and the
+integrated relative clause that modifies it.
+Question Difficulty: Hard

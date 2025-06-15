@@ -1,0 +1,347 @@
+Step 1: Choose a Core Logical Structure and Topic
+
+    Select a Logical Structure: The relationship between the premises in the text is the foundation of the question's logic. Choose one of the following patterns:
+
+        Cause-and-Effect: The text describes an event/action and its result, or an experiment and its outcome. The inference is the underlying principle. (e.g., Premise: Touching an object makes people willing to pay more for it. Conclusion: Physical interaction can increase an object's perceived value.)
+
+        Problem/Contradiction and Resolution: The text presents a known fact or belief, then introduces a new finding that contradicts it. The inference is the logical consequence of this contradiction. (e.g., Premise 1: A map was thought to be from the 1400s. Premise 2: Its ink contains a compound invented in the 1900s. Conclusion: The map could not have been made in the 1400s.)
+
+        Overcoming an Obstacle: The text establishes a challenge or limitation, but then shows how it was bypassed. The inference is what this success demonstrates. (e.g., Premise 1: A civilization's language is undeciphered. Premise 2: Archaeologists have still learned about their culture from artifacts. Conclusion: Knowledge of a language is not always necessary to learn about a civilization.)
+
+        Synthesis of Competing Views (for Hard difficulty): The text presents two different, sometimes conflicting, perspectives on the same topic. The inference is the underlying point of agreement or the logical common ground between them. (e.g., View 1: Artist says his new work is "one gesture." View 2: Historians say it "removes gesture." Conclusion: Both agree the new work has significantly fewer gestures than his earlier work.)
+
+        Principle and Application (for Hard difficulty): The text establishes a general rule or concept, then describes a specific case that adds a complication. The inference is how this specific case refines or challenges the general rule. (e.g., Principle: Bright colors are an "honest signal" of health. Case: Some birds use feather structure, not diet, to fake bright colors. Conclusion: This appearance can function as a "dishonest signal.")
+
+    Select a Topic: Choose a self-contained topic from science, social science, history, or the arts. The complexity of the topic should align with the intended difficulty. Abstract topics (art theory, philosophy) are better for Hard questions.
+
+Step 2: Write the Text
+
+    Draft the Text (4-9 sentences): Write a concise passage that lays out the premises according to your chosen logical structure.
+
+    End with a Concluding Phrase: The text must end with a phrase that cues the inference, such as:
+
+        "This finding suggests that ______"
+
+        "Therefore, the team concluded that ______"
+
+        "These facts lend added importance to X, which also ______"
+
+        "Therefore, regardless of their differences, both X and Y likely agree that ______"
+
+Step 3: Formulate the Question and Answer Choices
+
+    Write the Stem: The question stem is standardized: "Which choice most logically completes the text?"
+
+    Write the Correct Answer (The Key):
+
+        This answer must be the direct, logical consequence derived from the premises in the text and the structure you chose in Step 1.
+
+        It must be stated in careful, precise language and must not require any outside knowledge or assumptions. It is a conclusion that is warranted by the text alone.
+
+    Write Three Plausible Distractors: The quality of the distractors is key to the item's validity and difficulty. Use these archetypes:
+
+        The Overreach: A conclusion that makes a broader or more extreme claim than the text can support (e.g., turning "may" into "always," or extrapolating from a single experiment to a universal law).
+
+        The Unwarranted Assumption: A statement that might be true but requires an inferential leap that is not directly supported by the text's premises. This is a very effective distractor for Hard questions.
+
+        The Mischaracterization: A choice that uses keywords from the text but twists the relationship between them, reverses cause and effect, or misunderstands the core concept.
+
+        The Out-of-Scope Recommendation: A statement that suggests what should be done or what a person should believe, whereas the text is purely descriptive.
+
+Step 4: Write the Rationale
+
+    For the Correct Answer: Explain precisely how the premises in the text logically lead to this conclusion.
+
+    For the Distractors: For each incorrect choice, identify its specific flaw using the archetypes above (e.g., "This choice is an overreach because the text only discusses one species, not all birds," or "This choice makes an unwarranted assumption about the researchers' motives.").
+
+
+##
+
+One aspect of in-person shopping that online shopping can’t replicate is the opportunity to touch a product
+before buying it. Does this difference matter? In an experiment, researchers asked one group of participants
+to touch a mug and a toy, while another group was prohibited from touching the two items. The participants
+were then asked how much money they’d pay for the items. People who got to touch the items were willing to
+pay much more money for them than were people who weren’t allowed to touch the items. This finding
+suggests that ______
+Which choice most logically completes the text?
+A. people who mainly shop online probably spend more money every month than people who mainly shop in
+person do.
+B. in-person shopping may make products seem more valuable than they seem if only viewed online.
+C. retailers with in-person and online stores should charge the same price for a given product in both places.
+D. online retailers may be able to raise the prices they charge for products that are only available online.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. The text tells us that “people who got to touch the items were willing to pay much more money
+for them than people who weren’t allowed to touch” them. This suggests that being able to interact with a product in person
+may make it seem more valuable to a shopper.
+Choice A is incorrect. The text doesn’t discuss how much people spend each month, so there’s not much basis for this claim.
+Furthermore, since being able to touch a product tends to make people “willing to pay much more money” for it, we might
+predict that an online shopper would be willing to spend less on the same purchases as an in-person shopper. Choice C is
+incorrect. The text doesn’t discuss what retailers “should charge,” so there’s not much basis for this claim. Furthermore, the
+study in the text suggests that in-person stores may actually be able to charge more for a given product, since shoppers can
+touch it. Choice D is incorrect. The text doesn’t discuss products that are only available online, so there’s not much basis for
+this claim. Furthermore, products only available online would still have the problem of shoppers not being able to touch
+them, and the study suggests that this lowers the prices shoppers are willing to pay.
+Question Difficulty: Easy
+
+##
+
+Biologist Natacha Bodenhausen and colleagues analyzed the naturally occurring bacterial communities
+associated with leaves and roots of wild Arabidopsis thaliana, a small flowering plant. The researchers found
+many of the same bacterial genera in both the plants’ leaves and roots. To explain this, the researchers
+pointed to the general proximity of A. thaliana leaves to the ground and noted that rain splashing off soil
+could bring soil-based bacteria into contact with the leaves. Alternatively, the researchers noted that wind,
+which may be a source of bacteria in the aboveground portion of plants, could also bring bacteria to the soil
+and roots. Either explanation suggests that ______
+Which choice most logically completes the text?
+A. bacteria carried by wind are typically less beneficial to A. thaliana than soil-based bacteria are.
+B. some bacteria in A. thaliana leaves and roots may share a common source.
+C. many bacteria in A. thaliana leaves may have been deposited by means other than rain.
+D. A. thaliana leaves and roots are especially vulnerable to harmful bacteria.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. Both explanations suggest that the bacteria come from the same place: either they come from
+the ground and make their way to the leaves, or they come from above the ground and make their way to the roots.
+Choice A is incorrect. This inference isn’t supported. The text never discusses any benefits of any kind of bacteria. Choice C
+is incorrect. This conflicts with the text. One of the theories is that the bacteria in the leaves were deposited by rain splashing
+off soil. Choice D is incorrect. This inference isn’t supported. The text only discusses “naturally occurring” bacteria. It never
+mentions either the harms or benefits of these bacteria.
+Question Difficulty: Medium
+
+##
+
+“Gestures” in painting are typically thought of as bold, expressive brushstrokes. In the 1970s, American
+painter Jack Whitten built a 12-foot (3.7-meter) tool he named the “developer” to apply paint to an entire
+canvas in one motion, resulting in his series of “slab” paintings from that decade. Whitten described this
+process as making an entire painting in “one gesture,” signaling a clear departure from the prevalence of
+gestures in his work from the 1960s. Some art historians claim this shift represents “removing gesture” from
+the process. Therefore, regardless of whether using the developer constitutes a gesture, both Whitten and
+these art historians likely agree that ______
+Which choice most logically completes the text?
+A. any tool that a painter uses to create an artwork is capable of creating gestures.
+B. Whitten’s work from the 1960s exhibits many more gestures than his work from the 1970s does.
+C. Whitten became less interested in exploring the role of gesture in his work as his career progressed.
+D. Whitten’s work from the 1960s is much more realistic than his work from the 1970s is.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer. Whitten thinks the tool made “one gesture” paintings, while historians think the tool “removed
+gesture” from the process completely. But putting that debate aside, both Whitten and the historians would agree that the
+paintings he made with the tool in the ’70s have way fewer gestures than his paintings from the ’60s, in which gestures are
+“prevalent,” meaning widely and extensively present.
+Choice A is incorrect. This inference isn’t supported. The text only discusses the “developer”—it never mentions other tools.
+Choice C is incorrect. This inference isn’t supported. If anything, the text suggests the opposite: that Whitten became more
+interested in exploring the role of gesture in his work as his career progressed, as his earlier paintings had many gestures,
+and his ’70s paintings only had “one gesture.” Choice D is incorrect. This inference isn’t supported. The text never discusses
+the “realism” of Whitten’s art.
+Question Difficulty: Hard
+
+##
+
+To create the poems in her 2017 collection One Last Word, poet Nikki Grimes used a writing method called
+the golden shovel. This method often involves choosing a line from an existing poem and then using each
+word from that line as the last word of each line in a new poem. Grimes wanted the poems in One Last Word
+to honor important Black poets of the past, so she chose lines by poets such as Langston Hughes and
+Georgia Douglas Johnson. Writing in this way can be challenging and might seem as though it would
+produce awkward poems. However, reviewers praised One Last Word as a beautiful and powerful tribute to
+the poets who inspired it. This reaction suggests that ______
+Which choice most logically completes the text?
+A. most reviewers didn’t understand Grimes’s goal for One Last Word.
+B. Grimes successfully used the golden shovel method to achieve her goal for One Last Word.
+C. Langston Hughes and Georgia Douglas Johnson are two of Grimes’s favorite poets.
+D. Grimes inspired many other writers to create poems using the golden shovel method.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer because it most logically completes the text’s discussion of Nikki Grimes’s poetry collection One
+Last Word. The text explains that Grimes used a writing method called the golden shovel to create the poems in her book.
+According to the text, the method involves basing a new poem on a line from an existing poem. The text then mentions
+Langston Hughes and Georgia Douglas Johnson as examples of important Black poets whose lines of poetry form the basis
+of Grimes’s poems. The text goes on to say that this writing method is difficult and that the resulting poems can be awkward,
+but reviewers have positively reviewed Grimes’s book. If the reviewers of One Last Word specifically note that the work is a
+“beautiful and powerful tribute to the poets who inspired it,” then they must have appreciated how Grimes used the golden
+shovel method to pay tribute to other poets. This suggests that Grimes was successful in using the golden shovel method to
+achieve her goal of honoring Black poets in her book.
+Choice A is incorrect because the reaction suggests that most reviewers did understand Grimes’s goal for her book.
+According to the text, the reviewers noted that the poems in her book were a “beautiful and powerful tribute to the poets who
+inspired it.” Earlier, the text claims that Grimes intended the poems “to honor important Black poets of the past,” so in their
+praise of her book, the reviewers clearly indicated that they understood Grimes’s goal. Choice C is incorrect. Although it’s
+likely that Grimes sought to honor Hughes and Johnson in her book of poetry because they’re among her favorite poets, this
+fact isn’t suggested by the reviewers’ positive reaction to her book. Instead, the reaction suggests that Grimes was
+successful in her use of the golden shovel method. Choice D is incorrect because the text doesn’t discuss whether other
+writers were inspired by Grimes to use the golden shovel method in their poetry. The text mentions the poets Hughes and
+Johnson as examples of poets honored in Grimes’s book and describes reviewers’ positive reception of her book, but it
+doesn’t detail Grimes’s impact on other writers.
+Question Difficulty: Easy
+
+##
+
+When the Vinland Map, a map of the world purported to date to the mid-1400s, surfaced in 1957, some
+scholars believed it demonstrated that European knowledge of the eastern coast of present-day North
+America predated Christopher Columbus’s 1492 arrival. In 2021, a team including conservators Marie-France
+Lemay and Paula Zyats and materials scientist Anikó Bezur performed an extensive analysis of the map and
+the ink used. They found that the ink contains titanium dioxide, a compound that was first introduced in ink
+manufacturing in the early 1900s. Therefore, the team concluded that ______
+Which choice most logically completes the text?
+A. mid-1400s Europeans could not have known about the eastern coast of present-day North America.
+B. the Vinland Map could not have been drawn by mid-1400s mapmakers.
+C. mapmakers must have used titanium compounds in their ink in the 1400s.
+D. there isn’t enough information to determine when the ink was created.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer because it most logically completes the text’s discussion of Lemay, Zyats, and Bezur’s 2021
+analysis of the Vinland Map. The text indicates that while some scholars have believed that the map was drawn in the
+mid-1400s, the 2021 analysis showed the presence of the compound titanium dioxide in the ink used to draw the map. The
+text goes on to say that titanium dioxide wasn’t used to manufacture ink until the early 1900s, which means that ink
+containing this compound couldn’t have been available to mapmakers in the 1400s. Since mapmakers in the mid-1400s
+couldn’t have used ink with titanium dioxide, it follows that the Vinland Map couldn’t have been drawn by mid-1400s
+mapmakers.
+Choice A is incorrect because the 2021 finding that the ink used to draw the Vinland Map wasn’t available until the early
+1900s doesn’t imply that Europeans in the mid-1400s couldn’t have known about the eastern coast of North America. While
+this finding suggests that the map couldn’t have been created in the mid-1400s, it doesn’t preclude the possibility that
+Europeans nevertheless had knowledge—and perhaps even drew other maps that are no longer in existence or are yet to be
+discovered by researchers—of the eastern coast of present-day North America as early as the mid-1400s. Choice C is
+incorrect because there’s nothing in the text that suggests that the 2021 discovery of the presence of titanium dioxide in the
+ink used to draw the Vinland Map caused Lemay, Zyats, and Bezur to question or reach a new conclusion about when
+mapmakers began using ink containing titanium compounds. Instead, the text indicates that titanium dioxide wasn’t used in
+ink before the early 1900s. This knowledge led the team to conclude that the map, which was drawn with ink containing
+titanium dioxide, couldn’t have been created in the mid-1400s. Choice D is incorrect because although the text doesn’t
+indicate that Lemay, Zyats, and Bezur established an exact date for the creation of the ink that was used to draw the Vinland
+Map, the text does say that titanium dioxide was introduced in ink manufacturing in the early 1900s. This fact provides
+enough information to determine that the ink that was used to draw the map was created no earlier than the early 1900s.
+This finding, in turn, led the team to conclude that the Vinland Map couldn’t have been drawn in the mid-1400s.
+Question Difficulty: Medium
+
+##
+
+Indigenous cultures possess unique knowledge of the medicinal uses of plants. According to a 2021 study,
+73 percent of the medicinal uses of plants native to North America are reflected in the vocabulary of a single
+Indigenous language. However, as more and more Indigenous people exclusively speak a globally dominant
+language, such as English, their ancestral languages fade from daily use. These facts lend added importance
+to tribal nations’ efforts to preserve their languages. By ensuring the continued use of Cherokee, Ojibwe, and
+the hundreds of other Indigenous languages in what is now the United States, tribal nations are also ______
+Which choice most logically completes the text?
+A. increasing the number of medicinal plants represented in the vocabularies of Indigenous languages.
+B. transmitting terms for medicinal plants from Indigenous languages to globally dominant languages.
+C. preserving knowledge about the medicinal value of plants native to the tribal nations’ lands.
+D. ensuring that citizens of tribal nations have physical access to medicinal plants.
+
+Correct Answer: C
+Rationale
+Choice C is the best answer because it most logically completes the text’s discussion of the relationship between
+Indigenous languages and knowledge of the medicinal uses of plants. The text states that Indigenous cultures possess
+special knowledge of the medicinal uses of plants, which is reflected in their vocabulary. The text then discusses how tribal
+nations are working to preserve their languages, whose daily use is declining as globally dominant languages become
+increasingly dominant in Indigenous communities. Given that the languages of tribal nations in what is now the United
+States function as repositories of knowledge about plants’ medicinal uses, it logically follows that continued use of those
+languages will assist with passing on knowledge about the medicinal value of plants native to the tribal nations’ lands.
+Choice A is incorrect because the text states that preserving Indigenous languages will increase the knowledge, not the
+number, of medicinal plants. Choice B is incorrect because the text is concerned with how vocabulary about the medicinal
+value of plants can be preserved through the continued daily use of Indigenous languages, not with how such vocabulary can
+be incorporated into globally dominant, non-Indigenous languages. Moreover, the text explains that the exclusive use of
+globally dominant languages in Indigenous communities comes at an expense to the continued daily use of those
+communities’ languages. Given this relationship, it is unlikely globally dominant languages would borrow Indigenous
+vocabulary pertaining to plants’ medicinal uses. Choice D is incorrect because the text doesn’t discuss physical access to
+medicinal plants, instead focusing on Indigenous knowledge and language surrounding the medicinal uses of plants.
+Question Difficulty: Hard
+
+##
+
+Microbes that live in shallow lakes and ponds produce methane, a harmful greenhouse gas. Ecologist Ralf
+Aben and his team wanted to see how different types of shallow-water plants might affect the amount of
+methane that escapes into the atmosphere. Aben’s team set up some water tanks with soil and microbes
+from local ponds. Some tanks had a type of underwater plant that grows in the soil called watermilfoil. Other
+tanks had either duckweed, a type of plant that floats on the water’s surface, or algae. Aben and his team
+found that tanks with duckweed and algae released higher levels of methane than tanks with watermilfoil
+did. This finding suggests that ______
+Which choice most logically completes the text?
+A. the presence of some kinds of underwater plants like watermilfoil helps prevent methane from escaping
+shallow lakes and ponds.
+B. shallow lakes and ponds release more methane than deeper bodies of water because shallow bodies of
+water usually have more plants than deep bodies of water do.
+C. shallow lakes and ponds are more likely to contain algae than to contain either watermilfoil or duckweed.
+D. having a mix of algae, underwater plants, and floating plants is the best way to reduce the amount of
+methane in shallow lakes and ponds.
+
+Correct Answer: A
+Rationale
+Choice A is the best answer. The passage tells us that “tanks with duckweed (a floating plant) and algae released higher
+levels of methane than tanks with watermilfoil (an underwater plant) did.” This suggests that the presence of some kinds of
+underwater plants like watermilfoil may help prevent methane from escaping shallow lakes and ponds.
+Choice B is incorrect. The passage doesn’t mention deeper bodies of water at all, so there’s no basis for this inference.
+Choice C is incorrect. The passage doesn’t compare the likelihood of shallow lakes and ponds containing algae, watermilfoil,
+or duckweed. Choice D is incorrect. The study didn’t include any tanks with a mix of plants, so there’s no basis for this
+inference.
+Question Difficulty: Easy
+
+##
+
+The Indus River valley civilization flourished in South Asia from 3300 BCE to 1300 BCE. Many examples of
+the civilization’s writing system exist, but researchers haven’t yet deciphered it or identified which ancient
+language it represents. Nevertheless, archaeologists have found historical artifacts, such as clay figures and
+jewelry, that provide information about the civilization’s customs and how its communities were organized.
+The archaeologists’ findings therefore suggest that ______
+Which choice most logically completes the text?
+A. investigating an ancient civilization is easier without knowledge of the civilization’s language.
+B. knowing an ancient civilization’s language isn’t necessary in order to learn details about the civilization.
+C. archaeological research should focus on finding additional artifacts rather than deciphering ancient
+languages.
+D. examining the civilization’s historical artifacts has resolved the debate about this civilization’s language.
+
+Correct Answer: B
+Rationale
+Choice B is the best answer because it most logically completes the text’s discussion of the Indus River valley civilization.
+The text establishes that archaeologists haven’t been able to interpret the Indus River valley civilization’s writing system but
+have nevertheless acquired information about the civilization through historical artifacts. The fact that archaeologists have
+been able to learn about the Indus River valley civilization’s customs and community organization from historical artifacts
+suggests that it isn’t necessary to understand an ancient civilization’s language to learn about the civilization.
+Choice A is incorrect because the text doesn’t discuss how easy it is to investigate ancient civilizations with or without
+knowledge of the civilization’s language; rather, it states that even though researchers have not yet deciphered the language
+of the Indus River valley civilization, they are still able to learn about it through historical artifacts. Choice C is incorrect
+because the text doesn’t make any claims as to what the focus of archaeological research should be. Rather, the text
+discusses how archaeologists have been able to learn about an ancient civilization through historical artifacts despite not
+understanding the civilization’s language. Choice D is incorrect because the text states that the civilization’s language has
+not yet been interpreted; it makes no mention of a debate about the language. Instead, the text suggests that examination of
+the historical artifacts has allowed archaeologists to learn about the civilization but has not aided thus far in deciphering its
+language.
+Question Difficulty: Medium
+
+##
+
+Birds of many species ingest foods containing carotenoids, pigmented molecules that are converted into
+feather coloration. Coloration tends to be especially saturated in male birds’ feathers, and because
+carotenoids also confer health benefits, the deeply saturated colors generally serve to communicate what is
+known as an honest signal of a bird’s overall fitness to potential mates. However, ornithologist Allison J.
+Shultz and others have found that males in several species of the tanager genus Ramphocelus use
+microstructures in their feathers to manipulate light, creating the appearance of deeper saturation without
+the birds necessarily having to maintain a carotenoid-rich diet. These findings suggest that ______
+Which choice most logically completes the text?
+A. individual male tanagers can engage in honest signaling without relying on carotenoid consumption.
+B. feather microstructures may be less effective than deeply saturated feathers for signaling overall fitness.
+C. scientists have yet to determine why tanagers have a preference for mates with colorful appearances.
+D. a male tanager’s appearance may function as a dishonest signal of the individual’s overall fitness.
+
+Correct Answer: D
+Rationale
+Choice D is the best answer because it most logically completes the text’s discussion of Shultz’s finding about male
+tanagers. The text explains that because carotenoids both contribute to deeply saturated feathers and offer health benefits,
+having deeply saturated feathers is usually “an honest signal” (a true indication) that a bird is generally fit. However, Shultz
+and others have found that certain male tanagers can appear to have deeply saturated feathers even if they haven’t
+consumed a diet rich in carotenoids, thanks to microstructures in their feathers that manipulate light. If those birds aren’t
+necessarily eating carotenoid-rich diets, they may actually be less fit than other birds that appear to have similarly saturated
+feathers; this suggests that a male tanager’s appearance may function as a dishonest signal, or a false indication, of the
+bird’s overall fitness.
+Choice A is incorrect because Shultz’s finding suggests that some tanagers can signal fitness without consuming the
+carotenoids that contribute to fitness, thereby making those signals dishonest, not that tanagers can give honest signals of
+their fitness without consuming carotenoids. Choice B is incorrect because Shultz’s finding suggests that the
+microstructures in certain tanagers’ feathers can give a dishonest signal of fitness, not that the microstructures are less
+effective than actual pigmentation for signaling fitness. Whether the signal of fitness is honest or dishonest has no bearing
+on how effective the signal is: a signal is effective if potential mates behave as though it’s true, regardless of whether it’s
+actually true. Since there’s no information in the text about how potential mates respond to the dishonest signals of some
+tanagers, there’s no support for the idea that the dishonest signals are less effective than the honest signals. Choice C is
+incorrect because Shultz’s finding suggests that certain male tanagers may appear to be fitter than they actually are, not that
+scientists haven’t determined why tanagers prefer mates with colorful appearances.
+Question Difficulty: Hard

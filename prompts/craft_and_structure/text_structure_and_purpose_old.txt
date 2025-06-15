@@ -1,0 +1,239 @@
+Context:
+You are to generate SAT Reading and Writing section questions that assess a student’s skill in interpreting the structure and purpose of texts. Focus on the “Craft and Structure” domain and specifically target “Text Structure and Purpose.” Your task is to create a short, standalone passage and an associated question with four answer choices (one correct, three distractors), in line with the patterns, logic, and rigor of official SAT questions. You are given a difficulty of {difficulty}.
+
+Detailed Steps for Generation:
+
+    Passage Development
+        Write a concise (80–140 word) passage in an expository, informative, historical, scientific, or literary format.
+        Ensure the passage has a clear logical or rhetorical arc: describes a question or problem, development/experiment/study, and a resulting conclusion, discovery, or implication.
+        For function questions, explicitly identify (e.g., via underline) a sentence or phrase that serves a distinct role (defining, hypothesizing, concluding, etc.).
+        For structure or main purpose questions, ensure the entire passage has a well-defined intent or organizational flow (e.g., raising a question and resolving it, challenging an assumption, contrasting viewpoints, etc.).
+
+    Question Creation
+        For function: “Which choice best describes the function of the underlined portion/sentence in the text as a whole?”
+        For main purpose: “Which choice best states the main purpose of the text?”
+        For structure: “Which choice best describes the overall structure of the text?”
+
+    Answer Choice Formulation
+        Create four answer choices (A–D).
+        Correct answer: Expresses the segment’s function/purpose/structure in academic, abstract, or general terms that accurately reflect the passage (e.g., “It introduces a hypothesis the research seeks to test” or “To illustrate how a specific example challenges an existing theory”).
+        Distractors: Devise three plausible but incorrect choices by:
+            Making one choice too narrow/broad.
+            Shifting emphasis to a secondary detail.
+            Misattributing function or reversing causality/order.
+            (For harder questions) Making distractors subtle or reflecting common mis-readings.
+
+    Provide the Correct Answer and Rationale:
+        Clearly state the correct answer.
+        Explain why it is correct, referencing specific textual evidence.
+        Briefly explain why each distractor is incorrect.
+
+    Difficulty Control
+        For hard questions: The correct answer should require integrating information across at least two points of the passage. Distractors should be especially plausible and require careful reasoning to eliminate.
+        For medium/easy, answers and distractors can be more obvious or surface-level.
+
+    (Optional) Rationale (For internal use)
+        For the correct answer: Clearly state why it aligns with the segment’s purpose/function/structure.
+        For each distractor: Indicate the logical flaw or misreading it represents.
+
+Apply this systematically for the “Text Structure and Purpose” subcategory: ensuring each question requires an inference about rhetorical or structural roles, not just recall of details. The correct answer should generalize the segment’s role, while the distractors reflect plausible but incorrect interpretations. Match complexity to official SAT samples.
+
+# Few shot training examples
+
+# Category
+
+Domain: Craft and Structure
+Skill: Text Struture and Purpose
+
+##
+
+Jackie Ormes’s Torchy Brown in Dixie to Harlem (1937–38) was the first comic strip by a Black woman to
+appear in a widely read newspaper. The strip tells the story of Torchy, a young woman who leaves Mississippi
+to become a performer in New York City. Torchy’s story reflects the experience of the Great Migration (1910–
+1970), when millions of Black Americans left the South in search of opportunities in other parts of the United
+States. Torchy Brown thus shows how Ormes used comics to comment humorously on issues affecting
+Black Americans, which she continued to do throughout her career.
+Which choice best states the main purpose of the text?
+A. To show how Ormes’s Torchy Brown inspired other Black women to write comic strips in the 1930s
+B. To illustrate how the subjects Ormes addressed in her comic strips changed over the course of her career
+C. To give an example of how Ormes presented the experiences of Black Americans in her comic strips
+D. To claim that several characters in Torchy Brown were based on people that Ormes knew personally
+
+### Correct Answer: C
+## Rationale
+Choice C is the best answer. The text describes how Torchy Brown depicted the experiences of a young Black woman
+experiencing America’s Great Migration. It further states that Ormes continued to use comics throughout her career to
+humorously comment on important issues impacting Black Americans.
+Choice A is incorrect. The text never mentions other Black women comic strip writers. Choice B is incorrect. The text never
+mentions any changes in the subjects Ormes addressed. Choice D is incorrect. The text never mentions the inspiration for
+characters in Torchy Brown.
+Question Difficulty: Easy"
+
+##
+
+The majority of plastics today wind up in landfills or are, at best, recycled into materials that have a very
+limited range of applications. To address this problem, chemist Guoliang Liu and colleagues designed a
+reactor that melts polyethylene and polypropylene—two widely used plastics—into a wax. The wax can then
+be transformed into a surfactant (a chemical compound usable as a detergent). With this promising new
+method, plastic waste could be turned into a range of useful cleaning products.
+Which choice best states the function of the underlined portion of the text?
+A. It clarifies the meaning of a scientific term.
+B. It describes an environmental concern.
+C. It explains the significance of a scientific discovery.
+D. It identifies a result that confused the team.
+
+### Correct Answer: A
+### Rationale
+Choice A is the best answer because it most accurately describes how the underlined phrase functions in the text as a
+whole. The text states that the wax produced by Liu and colleagues’ reactor can be turned into a surfactant. The underlined
+phrase, which is set off with parentheses, then provides a definition for the term "surfactant," explaining that it’s a chemical
+compound that can be used as a detergent. Thus, the underlined portion of the text functions to clarify the meaning of a
+scientific term.
+Choice B is incorrect. Though the text as a whole focuses broadly on an environmental concern, the underlined phrase does
+not; it simply indicates what a surfactant is. Choice C is incorrect. Though the text as a whole focuses on a scientific
+discovery (Liu and colleagues’ solution to the problem of plastic recycling), the underlined phrase does not explain its
+significance; it simply defines a scientific term used in the discussion. Choice D is incorrect. Though the text as a whole
+includes discussion of the result found by Liu and colleagues, the underlined phrase does not discuss it; it simply defines a
+scientific term used in the discussion. Additionally, at no point in the text is it mentioned that the team was confused.
+Question Difficulty: Easy
+
+##
+
+
+Changes to vegetation cover and other human activities influence carbon and nitrogen levels in soil, though
+how deep these effects extend is unclear. Hypothesizing that differences in land use lead to differences in
+carbon and nitrogen levels that are not restricted to the topsoil layer (0–30 cm deep), Chukwuebuka Okolo
+and colleagues sampled soils across multiple land-use types (e.g., grazing land, cropland, forest) within each
+of several Ethiopian locations. They found, though, that across land-use types, carbon and nitrogen
+decreased to comparably low levels beyond depths of 30 cm.
+Which choice best describes the overall structure of the text?
+A. It describes a phenomenon that scientists do not fully understand, explains a research team’s hypothesis
+about that phenomenon, and then describes a finding that led the team to refine the hypothesis.
+B. It introduces an unresolved scientific question, presents a research team’s hypothesis pertaining to that
+question, and then describes an observation made by the team that conflicts with that hypothesis.
+C. It discusses a process that scientists are somewhat unclear about, introduces competing hypotheses
+about that process, and then explains how a research team concluded that one of those hypotheses is
+likely correct.
+D. It explains a hypothesis that has been the subject of scientific debate, discusses how a research team
+tested that hypothesis, and then presents data the team collected that validate the hypothesis.
+
+### Correct Answer: B
+### Rationale
+Choice B is the best answer because it most accurately describes the overall structure of the text. The text begins by
+explaining that human activities influence carbon and nitrogen levels in soil, but how deeply these effects are seen in the soil
+remains an unresolved question. Next, the text summarizes Okolo and colleagues’ hypothesis regarding this question—which
+is that the different effects on carbon and nitrogen levels associated with different types of land use would also be observed
+below the topsoil layer—and then briefly explains the methods they used to test this hypothesis. Finally, the text states that
+the researchers found that at depths below the topsoil layer, carbon and nitrogen decreased to similarly low levels across all
+land-use types, a finding that conflicts with the team’s hypothesis presented earlier in the text. Thus, the text introduces an
+unresolved scientific question, presents a research team’s hypothesis pertaining to that question, and then describes an
+observation that the team made that conflicted with their hypothesis.
+Choice A is incorrect. Although the text introduces a phenomenon (the fact that human activities influence carbon and
+nitrogen levels in the soil) that isn’t fully understood by scientists and explains a research team’s hypothesis about the
+phenomenon, the text doesn’t describe how the team refined their hypothesis when a research finding contradicted it. Choice
+C is incorrect because the text doesn’t discuss a process at all; rather, it poses an unsolved scientific question and presents
+a hypothesis that Okolo and colleagues tested to answer that question. Moreover, the text only describes one hypothesis; it
+doesn’t mention any competing hypotheses, nor does it suggest that Okolo’s team was able to determine which hypothesis
+was correct. Choice D is incorrect because the text doesn’t begin by presenting a hypothesis that is under scientific debate;
+rather, it presents a question that scientists have been unable to answer and then introduces a hypothesis formulated by
+Okolo and colleagues. While the text does explain how Okolo’s team tested their hypothesis, the text goes on to say that their
+data conflicted with their hypothesis, not that the data validated, or supported, their hypothesis.
+Question Difficulty: Hard
+
+##
+
+The following text is from the 1924 poem “Cycle” by D’Arcy McNickle, who was a citizen of the Confederated
+Salish and Kootenai Tribes.
+There shall be new roads wending,
+A new beating of the drum—
+Men’s eyes shall have fresh seeing,
+Grey lives reprise their span—
+But under the new sun’s being,
+Completing what night began,
+There’ll be the same backs bending,
+The same sad feet shall drum—
+When this night finds its ending
+And day shall have come.....
+Which choice best states the main purpose of the text?
+A. To consider how the repetitiveness inherent in human life can be both rewarding and challenging
+B. To question whether activities completed at one time of day are more memorable than those completed
+at another time of day
+C. To refute the idea that joy is a more commonly experienced emotion than sadness is
+D. To demonstrate how the experiences of individuals relate to the experiences of their communities
+
+### Correct Answer: A
+### Rationale
+Choice A is the best answer because it accurately states the main purpose of the text. The text begins by discussing the
+promise of the future, with positive references to renewal such as “new roads,” “new beating of the drum,” and “fresh seeing.”
+But with the “new sun,” the text continues, there will still be “the same backs bending” and “the same sad feet” drumming,
+indicating that these difficulties will follow people into this new day. The poem thus considers both the rewards and
+challenges associated with the repetitiveness of human life.
+Choice B is incorrect because the text doesn’t say anything about how memorable activities are, let alone compare the
+memorability of activities completed at different times of the day. Choice C is incorrect. Although the text contrasts hope
+with difficulty, it does not compare the relative frequency of joyful feelings with that of sad feelings. Choice D is incorrect
+because the text makes no distinction between the experiences of individuals and the experiences of their communities.
+Question Difficulty: Medium
+
+##
+
+Astronomers are confident that the star Betelgeuse will eventually consume all the helium in its core and
+explode in a supernova. They are much less confident, however, about when this will happen, since that
+depends on internal characteristics of Betelgeuse that are largely unknown. Astrophysicist Sarafina El-Badry
+Nance and colleagues recently investigated whether acoustic waves in the star could be used to determine
+internal stellar states but concluded that this method could not sufficiently reveal Betelgeuse’s internal
+characteristics to allow its evolutionary state to be firmly fixed.
+Which choice best describes the function of the second sentence in the overall structure of the text?
+A. It describes a serious limitation of the method used by Nance and colleagues.
+B. It presents the central finding reported by Nance and colleagues.
+C. It identifies the problem that Nance and colleagues attempted to solve but did not.
+D. It explains how the work of Nance and colleagues was received by others in the field.
+
+### Correct Answer: C
+### Rationale
+Choice C is the best answer because it best describes how the second sentence functions in the text as a whole. The first
+sentence establishes something astronomers believe with some certainty: that Betelgeuse will explode in a supernova. The
+second sentence then introduces a problem: astronomers aren’t certain when Betelgeuse will explode because they don’t
+have enough information about the star’s internal characteristics. Finally, the third sentence indicates that researcher
+Sarafina El-Badry Nance and colleagues investigated a possible method of obtaining the necessary information about
+Betelgeuse’s internal characteristics, though they found that the method wouldn’t be sufficient. Thus, the function of the
+second sentence is to identify the problem that Nance and colleagues attempted to solve but didn’t.
+Choice A is incorrect because the second sentence introduces the general problem Nance and colleagues hoped to solve,
+not a serious limitation of how Nance and colleagues tried to solve it. It is the third sentence that introduces Nance and
+colleagues, but no serious limitation of their approach to studying a method of determining internal stellar states is
+described. Choice B is incorrect because the second sentence introduces the general problem Nance and colleagues hoped
+to solve, not the central finding they ultimately reported. It is the third sentence that presents Nance and colleagues’
+conclusion that a potential method for determining internal stellar states would be insufficient. Choice D is incorrect because
+the second sentence doesn’t indicate how other astronomers or astrophysicists responded to the work done by Nance and
+colleagues; the text doesn’t address this information at all.
+Question Difficulty: Hard
+
+##
+
+Generally it takes Tule geese about four days to migrate south for the winter. From their summer breeding
+grounds in Cook Inlet, Alaska, the birds begin by flying over the Gulf of Alaska, keeping about 100 miles from
+the Canadian shore. They pause to rest on the Pacific Ocean, then fly toward Summer Lake, Oregon, before
+finally arriving at their winter destination of Sacramento Valley, California. In 2020, however, it took the geese
+over twice as long to make their way from Cook Inlet to Sacramento Valley. According to researchers, the
+reason was airborne pollutants.
+Which choice best states the function of the underlined portion in the text as a whole?
+A. It illustrates a change in Tule geese’s usual flight behavior.
+B. It suggests an explanation for why Tule geese breed in Alaska.
+C. It describes part of the Tule geese’s typical winter migration journey.
+D. It compares Tule geese to other birds that migrate south for the winter.
+
+### Correct Answer: C
+### Rationale
+Choice C is the best answer because it best states how the underlined portion functions in the text as a whole. The first
+sentence states that Tule geese typically take four days to migrate south. Then in the next sentence, which contains the
+underlined portion, the text describes the first part of that journey, which begins with the geese flying over the Gulf of Alaska
+while keeping about 100 miles from the Canadian shore. The rest of the text details the remainder of the geese’s typical
+journey and then mentions circumstances in 2020 that resulted in the geese taking an unusually long time to complete it.
+Thus, the underlined portion describes part of the Tule geese’s typical winter migration journey.
+Choice A is incorrect. Although the text concludes by stating that in 2020, Tule geese took twice as long to complete their
+typical migration, which suggests a change in their usual flight behavior, the underlined portion doesn’t discuss this. Instead,
+the underlined portion describes the first part of the Tule geese’s typical winter migration journey over the Gulf of Alaska.
+Choice B is incorrect. Although the sentence containing the underlined portion mentions that Tule geese breed in Alaska, the
+underlined portion doesn’t explain why the geese breed in that location. Rather, the text mentions Alaska to explain that it’s
+the starting point of the Tule geese’s typical winter migration. Choice D is incorrect because the underlined portion doesn’t
+discuss any other birds that migrate south for the winter. In fact, the text is only concerned with the migration of Tule geese.
+Question Difficulty: Medium

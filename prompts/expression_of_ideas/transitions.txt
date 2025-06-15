@@ -1,0 +1,144 @@
+Analysis of SAT Transitions Questions
+
+    Core Structure: The format is consistent: a short text of one to three sentences with a blank where a transition word or phrase is missing. The blank is almost always at the beginning of a sentence or clause, tasked with connecting the idea that follows to the idea(s) that came before. The question asks for the "most logical transition."
+
+    The "Mind" of the Question Writer: The writer's process is centered entirely on logical relationships. The question is not about grammar or style, but pure logic. The writer reverse-engineers the question from a chosen logical link.
+
+        Start with the Logic: The writer first decides on the specific logical bridge they want to test. For example: "I want to test if the student can identify a contrast between two ideas."
+
+        Craft the Sentences: They then write two sentences or clauses that embody this chosen relationship.
+
+            Idea A: "In his poetry, he was heartfelt and peaceful."
+
+            Idea B: "In his journalism, he was humorous and satirical."
+
+            These two ideas are in clear contrast.
+
+        Find the Perfect Word: The correct answer is simply the transition that explicitly signals this intended logical relationship. In the example above, "By contrast" is a perfect fit.
+
+        Create Logical Distractors: The incorrect answers are not random; they are other transition words that signal different, incorrect logical relationships. For the contrast example, the writer would include distractors that signal:
+
+            Restatement: "that is,"
+
+            Addition: "similarly,"
+
+            Concession: "granted,"
+            A student who misinterprets the logical relationship between the two ideas will select one of these incorrect options.
+
+    Achieving Complexity (The Key Differentiator): The difficulty is determined by the subtlety of the logical relationship and the plausibility of the distractors.
+
+        Easy: The logical link is unambiguous and common (e.g., simple sequence: "January... Later, in April..."). The distractors signal relationships that are clearly impossible in the context.
+
+        Medium: The logical link is slightly more complex, requiring the student to understand the overall argument (e.g., cause and effect: "He believed X... For this reason, he did Y."). Distractors might be tempting if the student only gets a vague sense of the connection.
+
+        Hard: The logical link is highly nuanced and specific. The passage may present a paradox, an exception to a rule, a concession followed by a counterpoint, or an emphatic elaboration. The correct transition word is often a less common one that fits this specific nuance perfectly. The distractors are often words that are almost right but are less precise.
+
+            Example (QID 4e564c4f): The relationship is "This thing seems X, but it is actually Y." "Nonetheless" ("in spite of that fact") captures this sense of contradiction against expectation better than a simple "However."
+
+            Example (QID 3b3445ed): The relationship is "One might assume X... On the contrary, Y is the reality." This tests the contrast between an assumption and the truth.
+
+            Example (QID c6b6128f): The relationship is "This thing is an outlier; indeed, this is how it differs from the norm." "Indeed" is used for emphasis and elaboration, a subtle distinction from simple addition ("in addition") or result ("consequently").
+
+Testing the Formula
+
+Generated Test Question (Hard Difficulty):
+
+    Topic: Bioluminescence in deep-sea creatures.
+
+    Logical Relationship (Hard): To present a prevailing assumption/explanation and then introduce a contradictory finding that complicates that assumption. The relationship is concession/contrast.
+
+    Generated Question:
+
+    For many deep-sea organisms, the ability to produce light, or bioluminescence, is a critical tool for survival, used to attract mates, lure prey, or startle predators. For decades, scientists assumed this ability came at a high metabolic cost, requiring significant energy that could otherwise be used for growth or reproduction. ___, a 2019 study by Séverine Martini and Steven Haddock revealed that for many species, the energy expenditure of creating light is surprisingly minimal, often less than 2% of their total energy budget.
+
+    Which choice completes the text with the most logical transition?
+
+    A. In short,
+    B. Correspondingly,
+    C. Nevertheless,
+    D. For example,
+
+    Evaluation: This is an effective "Hard" question.
+
+        Goal: The text sets up a long-held scientific assumption ("came at a high metabolic cost") and follows it with a study that directly challenges it ("energy expenditure... is surprisingly minimal").
+
+        Correct Answer (C): "Nevertheless" is the perfect transition. It means "in spite of that fact" or "despite what has just been said." It correctly signals that the study's findings are true in spite of the long-held assumption.
+
+        Distractor A: "In short," signals a summary, which is incorrect.
+
+        Distractor B: "Correspondingly," signals a parallel or resulting relationship, which is the opposite of the contradictory one present.
+
+        Distractor D: "For example," signals an example, but the study is a counterexample to the assumption, not an example of it.
+        The question's difficulty comes from requiring the student to recognize the nuanced relationship between a prevailing theory and a contradictory finding, and "Nevertheless" is the most precise word for that specific logical turn.
+
+Finished Prompt
+
+You are an expert test-question developer for the SAT Reading and Writing section. Your task is to generate questions for the "Expression of Ideas" domain, specifically focusing on the "Transitions" skill.
+
+These questions test a student's ability to understand the logical relationship between ideas and select the most appropriate transitional word or phrase to connect them.
+
+Follow this formula meticulously to create a question of a specified difficulty (Easy, Medium, or Hard).
+
+Step 1: Choose a Core Logical Relationship
+This is the most critical step. The entire question is built around this choice. First, select a category of relationship, then a specific type within it.
+
+    Addition/Elaboration:
+
+        Adding a new, similar point (Likewise, In addition)
+
+        Adding a supporting example (For example, For instance)
+
+        Restating an idea more simply (In other words, That is)
+
+        Emphasizing or confirming an idea (Indeed, In fact, Fittingly)
+
+    Contrast/Contradiction:
+
+        Direct opposition (By contrast, On the contrary, However)
+
+        An unexpected outcome or exception; something true "in spite of" a previous point (Nevertheless, Nonetheless, Still)
+
+        A contradiction between appearance and reality (In reality, Paradoxically)
+
+    Cause and Effect/Sequence:
+
+        A result of a previous event (Consequently, As a result, Thus, Therefore)
+
+        The reason for a subsequent action (For this reason)
+
+        A step-by-step sequence (In turn, Next, Then, Later, Previously, Ultimately)
+
+    Concession:
+
+        Acknowledging a point before countering it (Granted, Admittedly, To be sure, Of course)
+
+Step 2: Control Difficulty by Selecting the Relationship's Nuance
+
+    Easy: Use a highly common and unambiguous relationship (e.g., simple Chronology: Later; simple Contrast: However).
+
+    Medium: Use a more inferential relationship (e.g., Cause and Effect: For this reason; Addition of a supporting point: Moreover).
+
+    Hard: Use a highly specific and nuanced relationship (e.g., Exception to a rule: Nevertheless; Contradiction between assumption and reality: On the contrary; Emphatic elaboration: Indeed; Paradox: Paradoxically).
+
+Step 3: Write the Text Passage
+Create a 2-3 sentence passage that clearly embodies the chosen logical relationship.
+
+    Write the first sentence or clause (Idea A).
+
+    Write the second sentence or clause (Idea B) that connects to Idea A with your chosen logical link.
+
+    Place a blank (___) at the beginning of the clause/sentence containing Idea B.
+
+Step 4: Craft the Answer Choices
+There will be four choices: one correct answer and three distractors.
+
+    The Correct Answer: This is the transitional word or phrase that perfectly and precisely matches the logical relationship you designed in Step 1.
+
+    The Distractors: These must also be valid transition words, but they must signal different, incorrect logical relationships. For a Hard question, create distractors that are logically "close" but less precise than the correct answer. For example, if the correct answer is "Nevertheless" (an exception), a strong distractor would be "However" (a general contrast).
+
+Step 5: Write the Rationale
+For each choice, write a brief explanation.
+
+    For the correct answer, explain why the logical relationship it signals is the one present in the text.
+
+    For each incorrect answer, identify the type of logical relationship it signals and explain why that relationship does not exist between the ideas in the text.
