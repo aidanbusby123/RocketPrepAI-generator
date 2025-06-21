@@ -1,0 +1,69 @@
+.review-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .review-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .review-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .review-table th, .review-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .review-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .review-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .review-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .review-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .send-button, .back-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .send-button {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .send-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .back-button:hover {
+    background-color: #d32f2f;
+  }

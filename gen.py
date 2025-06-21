@@ -20,14 +20,14 @@ chatgpt_client = OpenAI(api_key=openai_api_key)
 gemini_api_key = os.environ["GEMINI_API_KEY"]
 gemini_client = genai.Client(api_key=gemini_api_key)
 
-parser = argparse.ArgumentParser(description="tool to generate questions for RocketPrepAI")
+'''parser = argparse.ArgumentParser(description="tool to generate questions for RocketPrepAI")
 parser.add_argument("--domains", nargs="+", choices=["all", "craft_and_structure", "information_and_ideas", "standard_english_conventions", "expression_of_ideas"], default="all")
 parser.add_argument("--difficulty", nargs="+", choices=["easy", "medium", "hard"], default="all")
 parser.add_argument("--batch_number", default=1)
 parser.add_argument("--epochs", default=1)
 
 args = parser.parse_args()
-
+'''
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred)
 
@@ -35,7 +35,8 @@ db = firestore.client()
 
 base_user_prompt = "Please generate a question, where the correct answer is {random_choice} and the difficulty is {difficulty}"
 
-central_ideas_and_details_samples = gemini_client.files.upload(file="docs/centralideas.pdf")
+central_ideas_and_details_samples = gemini_client.files.upload(file="sources/information_and_ideas/central_ideas_and_details.pdf")
+
 
 def load_prompts():
 
@@ -111,9 +112,9 @@ def format_question(raw_data, domain, skill_category, difficulty):
     print(gemini_response)
     return gemini_response
 
-def generate_question(system_prompt, user_prompt, messages, domain, skill_category, difficulty):
-    messages.append({"role": "system", "content": system_prompt})
-    messages.append({"role": "user", "content": user_prompt})
+def generate_question(system_prompt, user_prompt, domain, skill_category, difficulty, messages):
+    #messages.append({"role": "system", "content": system_prompt})
+    #messages.append({"role": "user", "parts": [user_prompt]})
 
     ''' response = chatgpt_client.chat.completions.create(
         model="o4-mini",
@@ -124,19 +125,19 @@ def generate_question(system_prompt, user_prompt, messages, domain, skill_catego
     if (skill_category == 'central_ideas_and_details'):
         gemini_response = gemini_client.models.generate_content(
             model="gemini-2.5-pro-preview-06-05",
-            contents=user_prompt,
+            contents=[central_ideas_and_details_samples, user_prompt],
             config=GenerateContentConfig(
                 system_instruction=[system_prompt],
-                temperature=1.2
+                temperature=1.05
             ),
         )
     else: 
         gemini_response = gemini_client.models.generate_content(
             model="gemini-2.5-pro-preview-06-05",
-            contents=[central_ideas_and_details_samples, user_prompt],
+            contents=[user_prompt],
             config=GenerateContentConfig(
                 system_instruction=[system_prompt],
-                temperature=1.2
+                temperature=1.05
             ),
         )
 
@@ -161,6 +162,8 @@ def add_question(question):
 
     db.collection("questions").document(question_id).set(question)
     return question_id
+
+args = None
 
 def generate():
     chatgpt_messages = []
@@ -204,4 +207,4 @@ def generate():
 
 
 
-generate()
+#generate()
