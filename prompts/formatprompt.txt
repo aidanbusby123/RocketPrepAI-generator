@@ -5,12 +5,12 @@ Since your response are being used in an application that requires JSON response
 
 ```
 {{
-  "question": \"{passage and question}",
+  "question": \"passage and question...",
   "domain": "{domain}",
   "skill_category": "{skill_category}",
   "choices": ["A. ...", "B. ...", "C. ...", "D. ..."],
   "correct_answer": "C",
-  "difficulty": "easy, medium, or hard",
+  "difficulty": "{difficulty}",
 }}
 ```
 
