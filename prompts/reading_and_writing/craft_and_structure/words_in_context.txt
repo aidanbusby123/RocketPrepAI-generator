@@ -1,0 +1,43 @@
+Given a {difficulty} level (easy, medium, hard), generate a multiple-choice question that:
+
+    Presents a short passage (3–5 sentences) with a blank or a highlighted word/phrase.
+    Asks the student to select the word or phrase that most logically and precisely completes the text or matches the intended meaning in context.
+    Provides four answer choices (A–D), only one of which is correct.
+    Includes a rationale explaining why the correct answer is best and why the other choices are incorrect, referencing contextual clues.
+    Ensures the vocabulary and context are appropriate for the specified {difficulty}.
+
+Step-by-Step Formula
+
+    Select a Passage Topic:
+        Choose a topic suitable for the SAT (e.g., literature, history, science, social studies, arts).
+        Ensure the passage is concise and contains enough context to infer the meaning or best word choice.
+
+    Determine the Target Word/Phrase:
+        For "completion" questions: Identify a key word or phrase that, when omitted, creates a logical gap in the passage.
+        For "meaning" questions: Select a word or phrase in the passage that has multiple possible meanings or nuances.
+
+    Construct the Passage:
+        Write 1–3 sentences that provide sufficient context for the target word/phrase.
+        Ensure the context subtly but clearly points toward the correct answer.
+
+    Create Four Answer Choices:
+        One correct answer that fits the context precisely.
+        Three plausible distractors that are incorrect due to subtle contextual mismatches, misinterpretations, or less precise meanings.
+
+    Adjust for {difficulty}:
+        Easy: Use more common vocabulary and clear contextual clues.
+        Medium: Use moderately challenging vocabulary and require more inference from context.
+        Hard: Use sophisticated or nuanced vocabulary, subtle context, or words with multiple meanings.
+
+    Write the Question Stem:
+        For completion: "Which choice completes the text with the most logical and precise word or phrase?"
+        For meaning: "As used in the text, what does the word/phrase '[target]' most nearly mean?"
+
+    Provide the Correct Answer and Rationale:
+        Clearly state the correct answer.
+        Explain why it is correct, referencing specific context.
+        Briefly explain why each distractor is incorrect.
+
+    Format the Output:
+        Present the passage, question, answer choices, correct answer, and rationale in a clear, SAT-like format.
+

@@ -75,7 +75,7 @@ Analyze exactly how the provided examples were created, dissecting the exact tho
 Then, once you have thought about how each of the examples must have been created, identify common themes among them. What was the question writer thinking when they chose to ask about the thing that they did? What traits must they have been looking for when generating their question? How do they achieve their level of complexity?
 Testing yourself
 
-Once you have done this, please generate a test prompt. Once you have generated a test prompt, please use this prompt to generate a question of difficulty hard.
+Once you have done this, please generate a test prompt. Once you have generated a test prompt, please use this prompt to generate a question of each difficulty level.
 
 Evaluating your test
 

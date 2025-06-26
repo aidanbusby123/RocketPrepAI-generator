@@ -1,0 +1,70 @@
+Step 1: Choose the Question Type and Core Logic
+
+First, decide on the type and the underlying logic that will structure the question. This choice determines the path for the following steps.
+
+A) For a TEXTUAL Command of Evidence question:
+
+    Choose Sub-type:
+
+        Find the Quote: Present a claim about a text's meaning, purpose, or a character's trait. The task will be to find the quotation that best illustrates this claim. (Typically Medium to Hard difficulty).
+
+        Find the Finding: Present a scientific/academic claim, hypothesis, or conclusion. The task will be to identify a hypothetical experimental result or observation that would most directly support (or weaken) it. (Difficulty can range from Easy to Hard).
+
+    Define the Claim:
+
+        For "Find the Quote": Write a clear, one-sentence claim about a literary or argumentative work (e.g., "In the essay, the author argues that historical progress is often driven by accident rather than intention."). For Hard difficulty, make the claim nuanced or focused on the author's tone or a complex relationship.
+
+        For "Find the Finding": Write a clear scientific hypothesis. (e.g., "Researchers claim that Ferrocene-based polymers can self-heal micro-fractures through molecular re-stitching."). For Hard difficulty, the claim should have multiple conditions or components (e.g., "...improves digestibility and makes beans more nutritious by reducing compounds X and Y.").
+
+B) For a QUANTITATIVE Command of Evidence question:
+
+    Define the Task:
+
+        Data Completion (Easy/Medium): The student will complete a sentence by finding one or two specific data points.
+
+        Data Support (Hard): The student will identify a data trend or relationship that supports a complex conclusion presented in the text.
+
+    Create a Graphic: Design a simple, clear bar chart, line graph, or table with a title and labeled axes/columns.
+
+    Establish the Connection: Write a one-sentence conclusion or an incomplete observation that the data in the graphic will support or complete. For Hard questions, this conclusion should not be about a single data point but about a comparison, relationship, or pattern across multiple data points (e.g., "The data support the claim that the treatment is most effective in high-salinity environments," which requires comparing its effectiveness in different environments).
+
+Step 2: Write the Text and Question Stem
+
+    Draft the Text: Write a short, self-contained passage (3-7 sentences) that establishes the context for the claim or observation defined in Step 1.
+
+        For Textual questions, introduce the author, the work, or the researchers and their claim.
+
+        For Quantitative questions, introduce the topic of the graphic and present the claim or incomplete sentence that the student must address using the data.
+
+    Write the Question Stem: Use a standardized stem based on the question type.
+
+        For "Find the Quote": "Which quotation from [the work] most effectively illustrates the claim?"
+
+        For "Find the Finding": "Which finding, if true, would most directly support the team's conclusion?"
+
+        For Quantitative: "Which choice most effectively uses data from the graph/table to complete the [example/statement]?" OR "Which choice most effectively uses data from the table to support the research team's conclusion?"
+
+Step 3: Craft the Answer Choices
+
+This is the most critical step for controlling difficulty.
+
+    Write the Correct Answer (Key): This answer must be the evidence you designed in Step 1. It must be unambiguously correct and directly address the specific claim in the text.
+
+        For a Hard Quantitative question, the correct answer should describe a relative difference or a pattern, not just a single "highest" or "lowest" value.
+
+    Write Three Plausible Distractors: Design distractors that are tempting but demonstrably flawed.
+
+        The Misleading Focus (Textual/Quantitative): Provides a factually correct piece of information from the text or graphic, but it supports a different, unstated claim or is irrelevant to the specific conclusion being tested.
+
+        The Contradiction (Textual/Quantitative): Presents a finding, quote, or data interpretation that directly weakens or contradicts the claim in the text. For a hard question, this can be subtle (e.g., a finding that supports one part of a claim but contradicts another).
+
+        The Out-of-Scope (Textual/Quantitative): Makes a statement that is related to the topic but cannot be verified or disproven with the provided information alone. It requires an unsupported assumption.
+
+        The Factual Error (Quantitative): Misreads the data from the graphic (e.g., mixes up bars, confuses X and Y axes, cites a value from the wrong cell).
+
+Step 4: Write the Rationale
+
+    For the Correct Answer: Briefly explain why the choice is correct, explicitly linking the evidence back to the specific claim in the text.
+
+    For the Distractors: For each incorrect choice, explain its specific flaw using the terminology from Step 3 (e.g., "This choice is incorrect because it contradicts the text's assertion that X is more durable than Y," or "This choice is incorrect because it focuses on an irrelevant comparison that does not support the conclusion about the treatment's relative effectiveness.").
+

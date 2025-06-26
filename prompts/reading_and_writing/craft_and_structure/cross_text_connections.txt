@@ -1,0 +1,100 @@
+
+    Choose a Topic: Select an academic or literary topic suitable for a college-level audience. Good topics are often drawn from:
+
+        Science: A debate over a hypothesis, the revision of a scientific theory, a problem with a research method and a proposed solution.
+
+        Social Science/History: A traditional interpretation of a historical event vs. a revisionist one, a description of a social phenomenon vs. a critical analysis of it, a problem in a field vs. a new approach.
+
+        Arts/Humanities: A description of an artist's work vs. a different interpretation of it, a claim about a literary genre vs. a qualifying counterexample.
+
+    Define the Rhetorical Relationship: The core of the question is the specific, nuanced relationship between the two texts. Do not make them simply agree or disagree. Choose one of the following sophisticated relationships:
+
+        Qualification/Complication: Text 1 makes a general or somewhat simplistic claim. Text 2 qualifies this claim by introducing a new factor, a counterexample, or a more complex context. Text 2 says, "Yes, but..." or "It's more complicated than that."
+
+        Problem/Solution: Text 1 describes a specific challenge, obstacle, or problem within a field (e.g., a limitation of a research method, a difficulty in interpretation). Text 2 presents a new discovery, technique, or approach that directly addresses or solves the problem outlined in Text 1.
+
+        Disagreement on Interpretation/Assumption: The texts examine the same or similar evidence/phenomenon, but Text 2 challenges a key assumption underlying Text 1's interpretation. It focuses on why Text 1's conclusion is flawed, not just that it is.
+
+        Contrastive Illustration: Text 1 describes a standard practice, outcome, or situation in a given field. Text 2 describes the situation in a different field where that practice is absent, leading to a contrasting outcome. The goal is to highlight the significance of the practice in Text 1 by showing the consequences of its absence in Text 2.
+
+        Correction with Concession: Text 1 presents an older or initial hypothesis. Text 2 presents a newer finding that corrects or revises it, but importantly, Text 2 also acknowledges why the initial hypothesis was plausible ("even though it looked that way at first...").
+
+Step 2: Write the Two Texts
+
+    Draft Text 1: Write a short passage (4-6 sentences) that clearly and concisely presents one side of the relationship you defined in Step 1. It should contain a central claim, finding, or argument that can be easily isolated.
+
+    Draft Text 2: Write a second short passage (4-6 sentences) that presents the other side of the relationship. It should be topically linked to Text 1 but introduce the complication, solution, or counter-argument. Use specific language that creates the nuanced relationship (e.g., "however," "qualifies," "it depends," "while this is the intention..."). Ensure Text 2 is not a simple negation of Text 1.
+
+Step 3: Formulate the Question Stem
+
+    Identify the Target: Pinpoint a specific claim, argument, or conclusion in one of the texts. This is often the main point of the text. For clarity, you can specify this by using a direct quote or referring to "the conclusion," "the discussion," or "the researchers' finding."
+
+    Write the Stem: Use a standard format. The most common and effective stem is:
+
+        "Based on the texts, how would the author/researchers of Text 2 most likely respond to [the specific claim/finding] in Text 1?"
+
+        Alternative: "Based on the texts, what would [the subject of Text 2] most likely say about the [underlined portion/interpretation presented] in Text 1?"
+
+Step 4: Craft the Answer Choices (The 4-Option Multiple Choice)
+
+This is the most critical step for determining difficulty.
+
+    Write the Correct Answer (Key):
+
+        The correct answer must accurately capture the nuanced relationship defined in Step 1.
+
+        It should not be a direct quote from either text but a synthesis of their interaction.
+
+        Use precise, academic language. For a Hard question, the answer should reflect a complex interaction, such as:
+
+            "By conceding [the premise of Text 1] but questioning [the inevitability or success of its outcome]."
+
+            "By pointing out that [the practice in Text 1] largely prevents the kind of problem discussed in Text 2."
+
+            "By arguing that their approach is specifically suited to overcome the unique challenges described in Text 1."
+
+    Write Three Plausible Distractors: Design distractors that tempt students but are ultimately incorrect for specific reasons. Common distractor types include:
+
+        The Overstatement/Exaggeration: Takes a point from a text and makes it too extreme (e.g., changing "some" to "all," or "can transform" to "always erases").
+
+        The Mischaracterization: Correctly identifies the topic but incorrectly describes the relationship (e.g., presents a qualification as a total denial, or a correction as a confirmation).
+
+        The Factual Error: Makes a claim that is contradicted by a detail in one of the texts (e.g., "dating the fossils directly" when the text says "dating the surrounding rock"). This is a very effective distractor for hard questions.
+
+        The Plausible but Irrelevant Statement: Makes a statement that might be true in the real world or seems related to the topic, but is not supported by the information within the two texts.
+
+Step 5: Write the Rationale
+
+    Rationale for the Correct Answer: Briefly explain why this option is the best choice, explicitly referencing how it reflects the synthesis of both texts.
+
+    Rationale for Incorrect Answers: For each distractor, explain precisely why it is wrong, referencing one of the error types from Step 4 (e.g., "This choice is an overstatement of the claim in Text 2," or "This choice mischaracterizes the relationship as a denial rather than a qualification.").
+
+Generated Example (Difficulty: Hard)
+
+Using the prompt above, here is a new, generated question.
+
+Text 1
+In evolutionary biology, the "Red Queen" hypothesis is often used to explain the prevalence of sexual reproduction. The theory posits that in a coevolutionary arms race between hosts and their parasites, sexual reproduction is advantageous because it rapidly creates novel gene combinations in offspring. This genetic diversity allows hosts to stay one step ahead of parasites, which are constantly evolving to infect them. Asexual organisms, by producing genetically uniform clones, are thus thought to be more vulnerable to parasitic infection over time.
+
+Text 2
+A team of biologists led by Dr. Levi Morran studied the nematode worm C. elegans, which can reproduce both sexually and asexually. When exposing populations of C. elegans to a pathogenic bacterium, Morran’s team found that sexually reproducing populations did indeed maintain higher resistance. However, this advantage disappeared in genetically homogenous host populations. This suggests that the benefits of sexual reproduction described by the Red Queen hypothesis are not absolute, but are contingent on the presence of existing genetic variation for natural selection to act upon.
+
+Based on the texts, how would Dr. Morran’s team (Text 2) most likely respond to the general principle of the Red Queen hypothesis as described in Text 1?
+
+A. By arguing that sexual reproduction is no more effective than asexual reproduction in combating parasitic infection.
+B. By asserting that the coevolutionary arms race between hosts and parasites rarely occurs in the natural world.
+C. By denying that producing genetically uniform clones makes asexual organisms especially vulnerable to parasites.
+D. By qualifying its depiction of sexual reproduction’s benefits, suggesting they are conditional rather than guaranteed.
+
+Correct Answer: D
+
+Rationale:
+
+    Choice D is the best answer because it accurately captures the nuanced relationship between the two texts. Text 1 describes the general principle of the Red Queen hypothesis: sexual reproduction confers an advantage against parasites. Text 2 presents findings that complicate this, showing the advantage is not guaranteed but is "contingent on the presence of existing genetic variation." Thus, Morran's team would qualify the principle, framing the benefit as conditional, which is precisely what option D states.
+
+    Choice A is incorrect because it mischaracterizes the findings. Morran’s team did find that sexual reproduction was advantageous under certain conditions, so they would not claim it is "no more effective." This is an overstatement.
+
+    Choice B is incorrect because it makes a broad claim about the natural world that is not supported by the specific study in Text 2. Morran's work focuses on the conditions of the arms race, not its general existence.
+
+    Choice C is incorrect because it is a direct contradiction of the findings in Text 2, which support the idea that asexual populations (which are more uniform) can be more vulnerable. It misrepresents Text 2's position as a complete denial rather than a qualification.
+

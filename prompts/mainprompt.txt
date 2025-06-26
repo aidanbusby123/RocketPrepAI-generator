@@ -1,9 +1,12 @@
 # Your job
-You are an AI model that is tasked with generating SAT-style practice questions that assess a student's skill at a particular skill category on the SAT. These questions should focus on the domain {domain}, specifically on skill category {skill_category}.
+You are an AI model that is tasked with generating SAT-style practice questions that assess a student's skill at a particular skill category on the SAT. These questions should be in the section {section} and focus on the domain {domain}, specifically on skill category {skill_category}.
 
 # Question Generation formula
 Given a difficulty level (easy, medium, hard): {difficulty}
 {formula}
 
+# Notes
+
+A lot of the questions have been expository. Try to had some literature as well!
 
 

@@ -1,0 +1,56 @@
+Step 1: Choose a Core Logical Structure and Topic
+
+    Select a Logical Structure: The relationship between the premises in the text is the foundation of the question's logic. Choose one of the following patterns:
+
+        Cause-and-Effect: The text describes an event/action and its result, or an experiment and its outcome. The inference is the underlying principle. (e.g., Premise: Touching an object makes people willing to pay more for it. Conclusion: Physical interaction can increase an object's perceived value.)
+
+        Problem/Contradiction and Resolution: The text presents a known fact or belief, then introduces a new finding that contradicts it. The inference is the logical consequence of this contradiction. (e.g., Premise 1: A map was thought to be from the 1400s. Premise 2: Its ink contains a compound invented in the 1900s. Conclusion: The map could not have been made in the 1400s.)
+
+        Overcoming an Obstacle: The text establishes a challenge or limitation, but then shows how it was bypassed. The inference is what this success demonstrates. (e.g., Premise 1: A civilization's language is undeciphered. Premise 2: Archaeologists have still learned about their culture from artifacts. Conclusion: Knowledge of a language is not always necessary to learn about a civilization.)
+
+        Synthesis of Competing Views (for Hard difficulty): The text presents two different, sometimes conflicting, perspectives on the same topic. The inference is the underlying point of agreement or the logical common ground between them. (e.g., View 1: Artist says his new work is "one gesture." View 2: Historians say it "removes gesture." Conclusion: Both agree the new work has significantly fewer gestures than his earlier work.)
+
+        Principle and Application (for Hard difficulty): The text establishes a general rule or concept, then describes a specific case that adds a complication. The inference is how this specific case refines or challenges the general rule. (e.g., Principle: Bright colors are an "honest signal" of health. Case: Some birds use feather structure, not diet, to fake bright colors. Conclusion: This appearance can function as a "dishonest signal.")
+
+    Select a Topic: Choose a self-contained topic from science, social science, history, or the arts. The complexity of the topic should align with the intended difficulty. Abstract topics (art theory, philosophy) are better for Hard questions.
+
+Step 2: Write the Text
+
+    Draft the Text (4-9 sentences): Write a concise passage that lays out the premises according to your chosen logical structure.
+
+    End with a Concluding Phrase: The text must end with a phrase that cues the inference, such as:
+
+        "This finding suggests that ______"
+
+        "Therefore, the team concluded that ______"
+
+        "These facts lend added importance to X, which also ______"
+
+        "Therefore, regardless of their differences, both X and Y likely agree that ______"
+
+Step 3: Formulate the Question and Answer Choices
+
+    Write the Stem: The question stem is standardized: "Which choice most logically completes the text?"
+
+    Write the Correct Answer (The Key):
+
+        This answer must be the direct, logical consequence derived from the premises in the text and the structure you chose in Step 1.
+
+        It must be stated in careful, precise language and must not require any outside knowledge or assumptions. It is a conclusion that is warranted by the text alone.
+
+    Write Three Plausible Distractors: The quality of the distractors is key to the item's validity and difficulty. Use these archetypes:
+
+        The Overreach: A conclusion that makes a broader or more extreme claim than the text can support (e.g., turning "may" into "always," or extrapolating from a single experiment to a universal law).
+
+        The Unwarranted Assumption: A statement that might be true but requires an inferential leap that is not directly supported by the text's premises. This is a very effective distractor for Hard questions.
+
+        The Mischaracterization: A choice that uses keywords from the text but twists the relationship between them, reverses cause and effect, or misunderstands the core concept.
+
+        The Out-of-Scope Recommendation: A statement that suggests what should be done or what a person should believe, whereas the text is purely descriptive.
+
+Step 4: Write the Rationale
+
+    For the Correct Answer: Explain precisely how the premises in the text logically lead to this conclusion.
+
+    For the Distractors: For each incorrect choice, identify its specific flaw using the archetypes above (e.g., "This choice is an overreach because the text only discusses one species, not all birds," or "This choice makes an unwarranted assumption about the researchers' motives.").
+

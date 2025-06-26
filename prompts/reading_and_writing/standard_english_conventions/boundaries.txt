@@ -1,0 +1,84 @@
+Step 1: Select a Specific Punctuation Rule to Test
+Choose a single, specific rule about sentence boundaries as the core of your question. Examples include:
+
+    Separating two independent clauses.
+
+    Separating an introductory phrase/clause from a main clause.
+
+    Setting off a non-essential (non-restrictive) element.
+
+    Integrating an essential (restrictive) element.
+
+    Using a colon to introduce an explanation or list.
+
+    Using paired punctuation (commas, dashes, parentheses).
+
+Step 2: Craft the Sentence(s)
+Write a high-quality, engaging sentence that creates a clear need for the chosen punctuation rule. Place the blank (___) at the precise point where the boundary decision must be made. The content of the sentence is important; use it to guide the student or, for harder questions, to misdirect them.
+
+Step 3: Write the Correct Answer
+Provide the word or phrase plus the grammatically correct punctuation that satisfies the rule from Step 1.
+
+Step 4: Design Common-Error Distractors
+Create three incorrect choices. These must be based on common, predictable student errors related to the rule being tested. Every distractor should correspond to a specific grammatical mistake. The most common errors to use are:
+
+    Comma Splice: Incorrectly joining two independent clauses with only a comma.
+
+    Run-On (Fused) Sentence: Joining two independent clauses with no punctuation or conjunction.
+
+    Sentence Fragment: Creating an incomplete sentence by using a period incorrectly.
+
+    Incorrect Conjunction Use: e.g., using ", and" to join a dependent and independent clause, or using just "and" between two long independent clauses where a comma is conventional.
+
+    Mismatched Paired Punctuation: e.g., starting a parenthetical with a dash and ending with a comma.
+
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Rule Focus: Use a single, fundamental rule in a short, clear sentence. Good rules to test are:
+
+        Joining two independent clauses with a period.
+
+        Joining two independent clauses with a comma and a FANBOYS conjunction (for, and, nor, but, or, yet, so).
+
+        Setting off a simple introductory phrase with a comma.
+
+    Distractors: Use the most common errors directly: a comma splice, a run-on, and perhaps one other obvious misuse of punctuation like a semicolon.
+
+MEDIUM Difficulty:
+
+    Rule Focus: Use slightly more complex rules or sentence structures.
+
+        Setting off a non-essential element in the middle of a sentence using paired commas or paired dashes.
+
+        Using a semicolon to join two closely related independent clauses.
+
+        Using a colon to introduce a list or simple explanation.
+
+    Sentence Structure: The sentences can be longer, requiring the student to track the relationship between clauses across more words.
+
+    Distractors: The distractors should still be clear errors but can be more varied, such as testing mismatched paired punctuation or misusing a colon.
+
+HARD Difficulty:
+
+    Rule Focus: The difficulty must come from subtlety, misdirection, or testing exceptions to common rules. Do not just make the sentence longer; make the grammatical decision itself more complex.
+
+    Techniques for Creating Hard Questions:
+
+        The "Punctuation Void" (Testing Restrictive Elements): This is the most effective technique. Create a sentence where the correct answer is the absence of punctuation. This is difficult because it's counter-intuitive. Frame the sentence so it looks like it needs a comma, but the grammar forbids it.
+
+            Example Structure: [Complex Noun Phrase] that [essential clause]. Place the blank before "that."
+
+            Example Structure: [Title] [Name] or [Noun] [Prepositional Phrase] where the name/phrase is essential to the sentence's meaning (restrictive). Place the blank between the elements to tempt the student into adding a comma.
+
+        Grammatical Misdirection: Use a familiar sentence pattern to disguise a different underlying structure.
+
+            Example: Use a list structure (A, B, and C) where "C" is immediately followed by an essential "that" clause. The student will be tempted to put a comma after "C" because of the list pattern, but the restrictive clause forbids it.
+
+        Rule Stacking: Create a boundary that requires the correct application of two rules simultaneously.
+
+            Example: A choice that must correctly set off a supplementary phrase with a comma and use a colon to introduce the next clause, all within one answer option. The distractors will get one part right but the other wrong.
+
+    Hard Distractors: The distractors for a hard question must be sophisticated. They should also use punctuation and appear to be grammatically complex, but contain a subtle, fatal flaw based on the techniques above. Avoid simple run-ons or comma splices as distractors here; they make the correct answer too obvious.
+

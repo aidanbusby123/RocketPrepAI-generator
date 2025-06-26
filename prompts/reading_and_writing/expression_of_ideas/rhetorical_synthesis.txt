@@ -1,0 +1,84 @@
+Step 1: Select a Topic and Define a Relationship
+Choose a topic that allows for clear, factual statements (e.g., a scientific process, a historical event, a biographical detail, a comparison between two objects/concepts). The key is to pre-define the relationship between the facts you will present (e.g., cause and effect, comparison and contrast, process and result, claim and evidence).
+
+Step 2: Generate Factual Notes
+Write 4-6 concise, objective bullet points based on the topic. These are the raw materials. Ensure that the information needed for the correct answer is spread across at least two bullet points. Include extra details that can be used to build convincing distractors.
+
+Step 3: Define the Rhetorical Goal
+This is the most important step and determines the question's difficulty. The goal must be a clear directive for how to use the information.
+
+    DO: Use precise verbs like "introduce," "explain," "compare," "emphasize," "support a generalization," "place in context," "differentiate."
+
+    DO NOT: Use vague goals. The goal itself must be unambiguous.
+
+Step 4: Construct the Correct Answer
+Write a single, grammatically correct sentence that perfectly achieves the rhetorical goal. This sentence MUST synthesize information from multiple bullet points. It should not simply rephrase one note. It must be the most effective choice at fulfilling the explicit goal.
+
+Step 5: Construct Plausible Distractors
+Create three incorrect but tempting answer choices. Distractors should be flawed rhetorically, not factually (unless they misrepresent the notes). Use these common patterns for distractors:
+
+    Incomplete Synthesis: The choice is factually accurate but omits a key piece of information required by the rhetorical goal.
+
+    Wrong Goal: The choice uses information from the notes to achieve a different, unstated rhetorical goal.
+
+    Misrepresentation: The choice subtly distorts a fact or the relationship between facts from the notes.
+
+    Irrelevant Focus: The choice focuses on a minor detail from the notes that does not help accomplish the main goal.
+
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Rhetorical Goal: Use a very direct goal, such as "introduce [a person/thing]," "explain the origin of [a name]," or "emphasize [a simple fact]."
+
+    Notes: The necessary information should be explicit and easy to find. There should be a clear path from the notes to the correct answer.
+
+    Correct Answer: A straightforward combination of 2-3 facts.
+
+    Distractors: The flaws should be obvious. For example, a distractor might only state one fact without synthesis, or focus on a completely different subject mentioned in the notes.
+
+MEDIUM Difficulty:
+
+    Rhetorical Goal: Use a more nuanced goal, like "specify the reason for a change," "begin a narrative about [an event]," or "emphasize whose point of view is being presented."
+
+    Notes: May contain more details, requiring the student to filter what is and isn't relevant to the specific goal. The relationship between the notes might be a sequence of events or a cause-and-effect.
+
+    Correct Answer: Requires combining ideas with appropriate transitions or phrasing to show a relationship (e.g., "Inspired by X, Y did Z.").
+
+    Distractors: More plausible. They may partially accomplish the goal or synthesize facts for a slightly different purpose.
+
+HARD Difficulty:
+
+    Rhetorical Goal: The goal must be abstract and analytical. Use phrases that require complex synthesis:
+
+        "compare the disadvantages of X and Y"
+
+        "make and support a generalization about..."
+
+        "emphasize the relative difference between..."
+
+        "place [an idea] within its historical context by..."
+
+        "explain the underlying mechanism that connects..."
+
+    Notes: The notes should present contrasting, complex, or conditional information. Include data that requires interpretation or facts where the logical connection is not immediately apparent.
+
+    Correct Answer: Must demonstrate a sophisticated synthesis. It will often use concessive language ("Although X, Y..."), comparative structures ("While X does this, Y does that..."), or show a complex cause-and-effect ("X had a lasting impact, resulting in Y and Z.").
+
+    Distractors: Must be very subtle. See the special instructions below for crafting sophisticated distractors.
+
+Special Directive for HARD Questions: Creating Sophisticated Distractors
+
+A common failure is making the correct answer for a hard question "too perfect," so it stands out against distractors with simple flaws. To prevent this, you must engineer highly deceptive distractors. For HARD questions, adhere to the following rules for distractors:
+
+    Maintain Syntactic Complexity: All three distractors should also be complex, well-written sentences that synthesize multiple facts from the notes. They should look and feel as dense as the correct answer.
+
+    Focus on Subtle Rhetorical Flaws: The incorrectness of a hard distractor must stem from a subtle failure to meet the rhetorical goal, not a simple factual error or omission. Use these advanced distractor archetypes:
+
+        The Accurate-but-Off-Target Synthesis: This is the most effective hard distractor. Craft a choice that is a perfectly true and complex synthesis of the notes, but which addresses a slightly different rhetorical goal. For example, if the goal is to "make and support a generalization about the relationship between two inventions," this distractor might make an excellent, supported generalization about the era's technological trends using the inventions as evidence. It's true, it's a synthesis, but it misses the specific target of the prompt.
+
+        The Misleading Logical Connector: Construct a sentence that uses a complex transition word (e.g., although, because, therefore, while) to forge a logical link that is not quite supported by the notes. For instance, it might reverse cause and effect or set up a contrast where one doesn't exist. The sentence will appear logical at a glance but falls apart under scrutiny against the notes.
+
+        The Subtle Mischaracterization: Build a choice that is almost entirely correct but contains a single word or phrase that overstates or misrepresents the nuance of the information. For example, using an adverb like "unambiguously" or a verb like "proved" when the notes only suggest or imply a conclusion. This tests the student's precision.
+
+    

@@ -1,0 +1,74 @@
+Core Structure of the Question:
+
+    Text: A 1-3 sentence passage on a topic from science, history, arts, or literature. The passage will contain a blank (___).
+
+    Question: "Which choice completes the text so that it conforms to the conventions of Standard English?"
+
+    Answer Choices: Four choices (A, B, C, D) that logically and grammatically complete the sentence. One choice is correct; three are plausible distractors.
+
+General Formula:
+
+Step 1: Select a Specific Grammatical Concept to Test
+Choose a single concept as the core of the question from this list:
+
+    Verb Tense/Form: Using the correct verb tense for context or choosing between a finite and non-finite verb form.
+
+    Subject-Verb Agreement: Matching a verb to its subject in number.
+
+    Pronoun-Antecedent Agreement: Matching a pronoun to its antecedent in number.
+
+    Modifier Placement: Ensuring a modifier logically attaches to its subject.
+
+Step 2: Craft the Sentence(s) to Target the Concept
+Write a high-quality sentence where the grammatical logic depends on the chosen concept. Place the blank (___) at the point where the grammatical decision must be made. The sentence's structure is the primary tool for controlling difficulty.
+
+Step 3: Write the Correct Answer
+Provide the choice that makes the sentence grammatically sound and logical.
+
+Step 4: Design Common-Error Distractors
+Create three incorrect choices, each representing a specific grammatical or logical error related to the core concept.
+Difficulty-Specific Instructions
+
+EASY Difficulty:
+
+    Concept Focus: Use a straightforward application of a rule.
+
+        Verb Tense: The context will clearly point to one tense (e.g., "In 1925, she..." requires a past tense verb).
+
+        Finite Verb: The main clause will be missing its only verb.
+
+        S-V/P-A Agreement: The subject/antecedent will be immediately next to the verb/pronoun.
+
+    Sentence Structure: Keep sentences short and direct.
+
+    Distractors: The incorrect verb tenses or the wrong number for agreement.
+
+MEDIUM Difficulty:
+
+    Concept Focus: Use concepts that involve common confusions or slightly more complex structures.
+
+        Modifier Placement: Use a simple introductory phrase (-ing phrase or prepositional phrase) followed by a blank. The subject must be the "doer" of the action.
+
+        Pronoun Agreement: Test common mix-ups like its/it's/its' or their/they're/there. The antecedent might be a few words away from the pronoun.
+
+    Sentence Structure: Sentences can be longer or compound, requiring the student to track relationships.
+
+    Distractors: For modifier placement, the distractors will be other nouns from the sentence that illogically perform the action. For pronouns, the distractors will be the commonly confused homophones.
+
+HARD Difficulty:
+
+    Core Strategy: Misdirection. The goal is to make a simple grammatical rule difficult to apply by using a complex and deceptive sentence structure.
+
+    Techniques for Creating Hard Questions:
+
+        Separation: Intentionally separate the subject and verb (or pronoun and antecedent) with a long, distracting phrase or clause. This intervening element should contain one or more "decoy" nouns.
+
+        Decoys: The decoy nouns should be the opposite number of the true subject/antecedent. If the subject is singular (e.g., "the report"), load the interrupting phrase with plural decoys (e.g., "...on the migratory patterns of various species..."). This tempts the student to choose a plural verb that agrees with the decoy, not the true subject.
+
+        Complex Modifiers: For modifier placement questions, make the introductory modifying phrase long and complex. The choices should also be structurally complex, forcing the student to identify the precise noun that must logically follow the modifier, not just a related idea.
+
+    Example Hard Structure (S-V Agreement): [Singular Subject], which describes the [Plural Decoy 1] and [Plural Decoy 2], ___ [verb]... The correct answer is a singular verb, but the distractors will offer the tempting plural form.
+
+    Hard Distractors: The distractors must be grammatically "attractive" but logically flawed. For agreement questions, this is the verb/pronoun of the wrong number. For complex modifier questions, the distractors are noun phrases that are thematically related but are not the logical subject of the modifier.
+
+

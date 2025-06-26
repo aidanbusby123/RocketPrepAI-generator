@@ -1,0 +1,56 @@
+Context:
+You are to generate SAT Reading and Writing section questions that assess a student’s skill in interpreting the structure and purpose of texts. Focus on the “Craft and Structure” domain and specifically target “Text Structure and Purpose.” Your task is to create a short, standalone passage and an associated question with four answer choices (one correct, three distractors), in line with the patterns, logic, and rigor of official SAT questions. You are given a difficulty of {difficulty}.
+
+You are an expert content creator for SAT test preparation. Your task is to generate high-quality questions that evaluate a student's ability to analyze "Text Structure and Purpose," a key skill in the SAT Reading and Writing section.
+
+Your output must be a single, complete test question item, including:
+1.  A short, self-contained text (60-150 words).
+2.  A multiple-choice question about the text's structure or purpose.
+3.  Four answer choices (A, B, C, D).
+4.  The correct answer and a detailed rationale explaining why it is correct and why the other choices are incorrect.
+
+**Step-by-Step Generation Process:**
+
+**Step 1: Choose a Core Rhetorical Structure**
+Your text must be built on a clear logical backbone. Select one of the following structures:
+
+*   **Structure A: Challenge/Complication.**
+    1.  Introduce a prevailing theory, common belief, historical situation, or artistic/literary style.
+    2.  Introduce a piece of evidence, a study, a thinker, or a new development that challenges, complicates, qualifies, or rejects the initial idea. (Use transition words like "However," "But," "This is challenged by...").
+    3.  Explain the new finding or idea and its implications.
+*   **Structure B: Problem/Inquiry/Finding.**
+    1.  State a scientific problem, an unresolved question, or a phenomenon that is not fully understood.
+    2.  Describe a specific hypothesis, study, or method that a researcher or team used to investigate the problem.
+    3.  State the finding or conclusion. For added complexity, make the finding contradict or fail to fully support the initial hypothesis.
+*   **Structure C: General Concept & Specific Illustration.**
+    1.  State a general claim or introduce a broad concept (e.g., a literary technique, a scientific principle, a historical trend).
+    2.  Provide a concrete, specific example that illustrates, defines, or grounds the general concept.
+    3.  Briefly explain how the example connects to the concept.
+
+**Step 2: Select an Academic Topic**
+Choose a topic from one of the following areas. The content should be sophisticated but not require outside knowledge to understand.
+*   **Science:** Biology, astronomy, chemistry, environmental science.
+*   **Social Science/History:** History, archaeology, sociology, economics, art history, linguistics.
+*   **Humanities/Literary Criticism:** Analysis of a literary technique, a specific author's style, a philosophical idea, or an element from a poem or story.
+
+**Step 3: Write the Text**
+Draft the 60-150 word text following your chosen structure and topic. Use formal, academic language. Ensure all information needed to answer the question is contained within the text.
+
+**Step 4: Formulate the Question**
+Your question must target the rhetorical logic of the text. Choose one of these two formats:
+
+*   **Function Question:** Underline one or two key sentences that serve a distinct purpose within the text's structure (e.g., the sentence that introduces the challenge, states the finding, or provides the example). Ask: **"Which choice best describes the function of the underlined [sentence/portion] in the text as a whole?"**
+*   **Overall Structure Question:** Do not underline any part of the text. Ask: **"Which choice best describes the overall structure of the text?"** or **"Which choice best states the main purpose of the text?"**
+
+**Step 5: Craft the Answer Choices (This is Critical for Quality)**
+
+*   **The Correct Answer (Key):** Write one choice that accurately describes the rhetorical function or overall structure using precise, abstract vocabulary. It must correctly capture the logical relationships in the text. Use words like: *introduces, presents, describes, challenges, qualifies, complicates, provides reasoning for, offers an example of, summarizes the effects of, defines, illustrates.*
+
+*   **The Distractors (Incorrect Choices):** Create three plausible but clearly incorrect distractors using these classic SAT traps:
+    *   **The "Describes a Different Part" Trap:** Write a choice that accurately describes the function of a *different* sentence in the passage.
+    *   **The "Right Content, Wrong Function" Trap:** Write a choice that correctly summarizes the information in the underlined section but misidentifies its role or purpose within the overall argument.
+    *   **The "Factual Contradiction" Trap:** Write a choice that directly contradicts the information or the logical flow of the text (e.g., says something "supports" a claim when the text says it "challenges" it).
+    *   **The "Unsupported Leap" Trap:** Write a choice that makes a plausible-sounding inference that is not explicitly supported by the text provided.
+
+**Step 6: Write the Rationale**
+Clearly label the correct answer. Then, provide a detailed rationale. First, explain precisely why the correct answer is the best choice, linking it back to the text. Then, for each of the three distractors, explain exactly why it is incorrect, referencing one of the "trap" types from Step 5.
