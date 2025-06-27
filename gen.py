@@ -99,17 +99,20 @@ def load_prompts():
     
     with open ("prompts/formatprompt.txt", "r") as f:
         format_prompt = f.read()
+
+    with open ("prompts/explanationprompt.txt", "r") as f:
+        explanation_prompt = f.read()
     
 
-    return {"craft_and_structure": {"words_in_context": words_in_context_prompt, "text_structure_and_purpose": text_structure_and_purpose_prompt, "cross_text_connections": cross_text_connections_prompt}, "information_and_ideas":{"central_ideas_and_details": central_ideas_and_details_prompt, "command_of_evidence": command_of_evidence_prompt, "inferences": inferences_prompt}, "standard_english_conventions": {"boundaries": boundaries_prompt, "form_structure_and_sense": form_structure_and_sense_prompt}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_prompt, "transitions": transitions_prompt}, "main_prompt": main_prompt, "format_prompt": format_prompt}
+    return {"craft_and_structure": {"words_in_context": words_in_context_prompt, "text_structure_and_purpose": text_structure_and_purpose_prompt, "cross_text_connections": cross_text_connections_prompt}, "information_and_ideas":{"central_ideas_and_details": central_ideas_and_details_prompt, "command_of_evidence": command_of_evidence_prompt, "inferences": inferences_prompt}, "standard_english_conventions": {"boundaries": boundaries_prompt, "form_structure_and_sense": form_structure_and_sense_prompt}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_prompt, "transitions": transitions_prompt}, "main_prompt": main_prompt, "format_prompt": format_prompt, "explanation_prompt": explanation_prompt}
 
 prompts = load_prompts()
 
 sources = load_sources()
 
-def format_question(raw_data, section, domain, skill_category, difficulty, difficulty_ranking):
+def format_question(raw_data, section, domain, skill_category, explanations, difficulty, difficulty_ranking):
     format_prompt = prompts["format_prompt"]
-    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
+    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, explanations=explanations, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
     format_messages = [{"role": "system", "content": format_prompt}]
     format_messages.append({"role": "user", "content": f"Please format this for me: {raw_data}"})
     '''response = chatgpt_client.chat.completions.create(
@@ -155,10 +158,21 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
             temperature=1.05
         ),
     )
+
+    explanation_prompt = f"Please generate the answer explanations for the following question: {gemini_response}. "
+
+    explanations_response = gemini_client.models.generate_content(
+        model="gemini-2.5-pro-preview-06-05",
+        contents=[explanation_prompt],
+        config=GenerateContentConfig(
+            system_instruction=[prompts["explanation_prompt"]]
+        )
+    )
+    explanations = explanations_response.text
     #response = response.choices[0].message.content
     #messages.append({"role": "assistant", "content": response})
 
-    formatted_response = format_question(gemini_response, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=0.5)
+    formatted_response = format_question(gemini_response, section=section, domain=domain, skill_category=skill_category, explanations=explanations, difficulty=difficulty, difficulty_ranking=0.5)
     
     question = re.search(r'\{.*\}', formatted_response, re.DOTALL)
 

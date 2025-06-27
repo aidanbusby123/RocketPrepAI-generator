@@ -13,6 +13,7 @@ Since your response are being used in an application that requires JSON response
   "correct_answer": "C",
   "difficulty": "{difficulty}",
   "difficulty_ranking": "{difficulty_ranking}"
+  "explanations": "{explanations}"
 }}
 ```
 
