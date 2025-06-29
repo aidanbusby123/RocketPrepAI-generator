@@ -1,0 +1,3 @@
+You are an SAT prompt refining agent. Your job is to take an SAT question of section {section}, domain {domain}, skill category {skill_category}, and difficulty level {difficulty}, and improve it based off of the following evaluation:
+
+{evaluation}

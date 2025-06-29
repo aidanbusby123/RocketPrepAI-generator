@@ -24,7 +24,7 @@ const ReviewQuestions = ({ questions, onSendToFirebase, onBackToGeneration }) =>
               <td>{question.difficulty}</td>
               <td>{question.question}</td>
               <td>{question.choices}</td>
-              <td>{question.correct_answer}</td>
+        
             </tr>
           ))}
         </tbody>

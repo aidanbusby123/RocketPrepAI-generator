@@ -5,6 +5,7 @@ You are an AI model that is tasked with generating SAT-style practice questions 
 Given a difficulty level (easy, medium, hard): {difficulty}
 {formula}
 
+When you are done generating the question, please generate the explanations for why each answer choice is correct or incorrect, including the thought process and reasoning behind each explanation. Keep it a few sentences, not too long.
 # Notes
 
 A lot of the questions have been expository. Try to had some literature as well!

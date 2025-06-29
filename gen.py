@@ -12,7 +12,7 @@ import uuid
 import firebase_admin
 from firebase_admin import credentials, firestore
 
-questions = []
+all_questions = []
 
 openai_api_key = os.environ["OPENAI_API_KEY"]
 chatgpt_client = OpenAI(api_key=openai_api_key)
@@ -35,6 +35,64 @@ db = firestore.client()
 
 base_user_prompt = "Please generate a question, where the correct answer is {random_choice} and the difficulty is {difficulty}"
 
+def load_questions_from_firebase(json_file="questions_data.json"):
+    """
+    Loads all questions from Firebase, saves them to a JSON file,
+    and returns the questions as a list of dictionaries.
+    """
+    try:
+        # Initialize Firebase Admin SDK (if not already initialized)
+        if not firebase_admin._apps:
+            cred = credentials.Certificate("serviceAccountKey.json")
+            firebase_admin.initialize_app(cred)
+
+        db = firestore.client()
+        questions_ref = db.collection("questions")
+        docs = questions_ref.stream()
+
+        all_questions = []
+        for doc in docs:
+            question_data = doc.to_dict()
+            all_questions.append(question_data)
+
+        # Save the questions to a JSON file
+        with open(json_file, "w") as f:
+            json.dump(all_questions, f, indent=4)
+
+        print(f"Successfully loaded {len(all_questions)} questions from Firebase and saved to {json_file}")
+        return all_questions
+
+    except Exception as e:
+        print(f"Error loading questions from Firebase: {e}")
+        return None
+
+def update_local_questions_data(new_question, json_file="questions_data.json"):
+    """
+    Updates the local JSON file with a new question.
+    """
+    try:
+        # Load existing questions from the JSON file
+        if os.path.exists(json_file):
+            with open(json_file, "r") as f:
+                questions = json.load(f)
+        else:
+            questions = []
+
+        # Add the new question to the list
+        questions.append(new_question)
+
+        # Save the updated list to the JSON file
+        with open(json_file, "w") as f:
+            json.dump(questions, f, indent=4)
+
+        print(f"Successfully updated {json_file} with new question.")
+
+        return questions
+
+    except Exception as e:
+        print(f"Error updating local questions data: {e}")
+
+all_questions = load_questions_from_firebase()
 
 
 def load_sources():
@@ -53,7 +111,7 @@ def load_sources():
     form_structure_and_sense_samples = gemini_client.files.upload(file="sources/reading_and_writing/standard_english_conventions/form_structure_and_sense.pdf")
 
 
-    return {"craft_and_structure": {"cross_text_connections": cross_text_connections_samples, "text_structure_and_purpose": text_structure_and_purpose_samples, "words_in_context": words_in_context_samples}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_samples, "transitions": transitions_samples}, "information_and_ideas": {"central_ideas_and_details": central_ideas_and_details_samples, "command_of_evidence": command_of_evidence_samples, "inferences": inferences_samples}, "standard_english_conventions": {"boundaries": boundaries_samples, "form_structure_and_sense": form_structure_and_sense_samples}}
+    return {"reading_and_writing": {"craft_and_structure": {"cross_text_connections": cross_text_connections_samples, "text_structure_and_purpose": text_structure_and_purpose_samples, "words_in_context": words_in_context_samples}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_samples, "transitions": transitions_samples}, "information_and_ideas": {"central_ideas_and_details": central_ideas_and_details_samples, "command_of_evidence": command_of_evidence_samples, "inferences": inferences_samples}, "standard_english_conventions": {"boundaries": boundaries_samples, "form_structure_and_sense": form_structure_and_sense_samples}}}
 def load_prompts():
 
     # Craft and Structure
@@ -102,19 +160,69 @@ def load_prompts():
 
     with open ("prompts/explanationprompt.txt", "r") as f:
         explanation_prompt = f.read()
-    
 
-    return {"craft_and_structure": {"words_in_context": words_in_context_prompt, "text_structure_and_purpose": text_structure_and_purpose_prompt, "cross_text_connections": cross_text_connections_prompt}, "information_and_ideas":{"central_ideas_and_details": central_ideas_and_details_prompt, "command_of_evidence": command_of_evidence_prompt, "inferences": inferences_prompt}, "standard_english_conventions": {"boundaries": boundaries_prompt, "form_structure_and_sense": form_structure_and_sense_prompt}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_prompt, "transitions": transitions_prompt}, "main_prompt": main_prompt, "format_prompt": format_prompt, "explanation_prompt": explanation_prompt}
+    with open ("prompts/evaluationprompt.txt", "r") as f:
+        evaluation_prompt = f.read()
+    
+    with open ("prompts/refineprompt.txt", "r") as f:
+        refine_prompt = f.read()
+
+    return {"craft_and_structure": {"words_in_context": words_in_context_prompt, "text_structure_and_purpose": text_structure_and_purpose_prompt, "cross_text_connections": cross_text_connections_prompt}, "information_and_ideas":{"central_ideas_and_details": central_ideas_and_details_prompt, "command_of_evidence": command_of_evidence_prompt, "inferences": inferences_prompt}, "standard_english_conventions": {"boundaries": boundaries_prompt, "form_structure_and_sense": form_structure_and_sense_prompt}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_prompt, "transitions": transitions_prompt}, "main_prompt": main_prompt, "format_prompt": format_prompt, "explanation_prompt": explanation_prompt, "evaluation_prompt": evaluation_prompt, "refine_prompt": refine_prompt}
 
 prompts = load_prompts()
 
 sources = load_sources()
 
-def format_question(raw_data, section, domain, skill_category, explanations, difficulty, difficulty_ranking):
+def evaluate_question_difficulty(raw_question_data, section, domain, skill_category, difficulty, target_difficulty_ranking, ref_system_prompt):
+    print("# Evaluating difficulty\n")
+    evaluation_system_prompt = prompts["evaluation_prompt"]
+    evaluation_prompt = f"Please evaluate the difficulty of the following question: {raw_question_data}.\nThe question is from the section {section}, domain {domain}, skill category {skill_category}, and is of difficulty {difficulty}.\n"
+    reference_prompt = f"Original system prompt, for reference: {ref_system_prompt}"
+    print("evaluating difficulty")
+    all_questions_text = json.dumps(all_questions)
+    response = gemini_client.models.generate_content(
+        model="gemini-2.5-pro-preview-06-05",
+        contents=[evaluation_prompt, all_questions_text, reference_prompt],
+        config=GenerateContentConfig(
+            system_instruction=[evaluation_system_prompt]
+        )
+    )
+
+    evaluation = response.text
+
+    print(evaluation)
+    evaluation = re.search(r'\{.*\}', evaluation, re.DOTALL)
+
+    print(evaluation)
+    evaluation_data = json.loads(evaluation.group(0))
+    print(evaluation)
+    evaluation = str(evaluation_data["evaluation"])
+    difficulty_ranking = str(evaluation_data["difficulty_ranking"])
+    
+    print(f"# Difficulty Evaluation: {evaluation}\n")
+    return (evaluation, difficulty_ranking)
+
+def refine_question(raw_question_data, question_evaluation, section, domain, skill_category, difficulty, target_difficulty_ranking, ref_system_prompt):
+    print ("#Refining question \n")
+    refine_system_prompt = prompts["refine_prompt"]
+    refine_system_prompt = refine_system_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, evaluation=question_evaluation)
+
+    response = gemini_client.models.generate_content(
+        model="gemini-2.5-pro-preview-06-05",
+        contents=[f"Please refine the following question: {raw_question_data}", f"Reference generation prompt: {ref_system_prompt}"],
+        config=GenerateContentConfig(
+            system_instruction=[refine_system_prompt]
+        )
+    )
+    print(f"# Refine notes: {response} ")
+    return response
+
+def format_question(raw_question_data, section, domain, skill_category, difficulty, difficulty_ranking):
     format_prompt = prompts["format_prompt"]
-    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, explanations=explanations, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
+    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
+    print("format prompt formatted")
     format_messages = [{"role": "system", "content": format_prompt}]
-    format_messages.append({"role": "user", "content": f"Please format this for me: {raw_data}"})
+    format_messages.append({"role": "user", "content": f"Please format this for me: {raw_question_data}."})
     '''response = chatgpt_client.chat.completions.create(
         model="gpt-4.1-mini",
         messages=format_messages
@@ -122,7 +230,7 @@ def format_question(raw_data, section, domain, skill_category, explanations, dif
 
     gemini_response = gemini_client.models.generate_content(
         model="gemini-2.5-pro-preview-06-05",
-        contents=f"Please format this for me: {raw_data}",
+        contents=f"Please format this for me: {raw_question_data}.",
         config=GenerateContentConfig(
             system_instruction=[format_prompt]
         ),
@@ -130,10 +238,12 @@ def format_question(raw_data, section, domain, skill_category, explanations, dif
 
     #response = response.choices[0].message.content
     gemini_response = gemini_response.text
+    
     print(gemini_response)
     return gemini_response
 
-def generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, messages):
+def generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, target_difficulty_ranking, messages):
+    print("# Generating Question\n")
     #messages.append({"role": "system", "content": system_prompt})
     #messages.append({"role": "user", "parts": [user_prompt]})
 
@@ -143,10 +253,10 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         temperature=1,
     )
     '''
-    generated_questions = f"Here are the existing questions. Make your next one different than these to ensure question diversity: {str(messages)}"
+    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity.\n Questions from this session: {str(messages)}\n Questions from database: {all_questions}"
 
-    print ("Generating questions!")
-    print(generated_questions)
+    #print ("Generating questions!")
+    #print(generated_questions)
 
     gemini_response = gemini_client.models.generate_content(
         model="gemini-2.5-pro-preview-06-05",
@@ -159,25 +269,32 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         ),
     )
 
-    explanation_prompt = f"Please generate the answer explanations for the following question: {gemini_response}. "
+    question = gemini_response.text
+    print(f"# Question: {question}")
 
-    explanations_response = gemini_client.models.generate_content(
-        model="gemini-2.5-pro-preview-06-05",
-        contents=[explanation_prompt],
-        config=GenerateContentConfig(
-            system_instruction=[prompts["explanation_prompt"]]
-        )
-    )
-    explanations = explanations_response.text
+   # explanations = re.search(r'\{.*\}', explanations_response.text, re.DOTALL)
+    '''
+    if explanations:
+        explanations = explanations.group(0)
+        explanations = json.loads(explanations)
+    else:
+        raise ValueError("No valid JSON found in response")
+    '''
     #response = response.choices[0].message.content
     #messages.append({"role": "assistant", "content": response})
 
-    formatted_response = format_question(gemini_response, section=section, domain=domain, skill_category=skill_category, explanations=explanations, difficulty=difficulty, difficulty_ranking=0.5)
+    evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    question = refine_question(question, evaluation, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+
+    formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
     
     question = re.search(r'\{.*\}', formatted_response, re.DOTALL)
 
     if question:
         question_json = question.group(0)
+        print (f"Question json generated: {json.loads(question_json)}")
+        update_local_questions_data(json.loads(question_json))
         return json.loads(question_json)
     else:
         raise ValueError("No valid JSON found in response")

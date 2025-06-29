@@ -36,9 +36,9 @@ def add_section_field():
             else:
                 print(f"Question with ID: {doc.id} already has a 'section' field.")
 
-            if "explanations" not in question_data:
+            if 1==1 :
                 question = question_data["question"]
-                explanation_prompt = f"Please generate the answer explanations for the following question: {question}. "
+                explanation_prompt = f"Please generate the answer explanations for the following question: {question_data}. "
 
                 explanations_response = gemini_client.models.generate_content(
                 model="gemini-2.5-pro-preview-06-05",

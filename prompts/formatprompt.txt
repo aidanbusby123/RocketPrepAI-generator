@@ -6,14 +6,14 @@ Since your response are being used in an application that requires JSON response
 ```
 {{
   "question": \"passage and question...",
-  "section": "{section}",
+  "section": "{section},
   "domain": "{domain}",
   "skill_category": "{skill_category}",
   "choices": ["A. ...", "B. ...", "C. ...", "D. ..."],
   "correct_answer": "C",
   "difficulty": "{difficulty}",
   "difficulty_ranking": "{difficulty_ranking}"
-  "explanations": "{explanations}"
+  "explanations": "should be a valid dictionary like so: {{"A": "A explanation", "B": "B explanation", etc}}"
 }}
 ```
 

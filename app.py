@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ValidationError
 from gen import generate_question, add_question, load_prompts
-from typing import List
+from typing import List, Dict
 import os
 import json
 import random
@@ -42,6 +42,7 @@ class Question(BaseModel):
     correct_answer: str
     difficulty: str
     difficulty_ranking: str
+    explanations: Dict[str, str]
 
 prompts = load_prompts()
 main_prompt = prompts["main_prompt"]
@@ -81,9 +82,20 @@ async def generate_questions(request: QuestionRequest):
             for difficulty in request.difficulties:
                 for _ in range(request.num_questions):
                     random_choice = random.choice(["A", "B", "C", "D"])
+                    if difficulty == "easy":
+                        target_difficulty_ranking = random.uniform(0, 0.33)
+                    elif difficulty == "medium":
+                        target_difficulty_ranking = random.uniform(0.33, 0.67)
+                    elif difficulty == "hard":
+                        target_difficulty_ranking = random.uniform(0.67, 1.0)
+                    else:
+                        raise ValueError("Invalid difficulty level. Must be 'easy', 'medium', or 'hard'.")
+                    
+
                     user_prompt = base_user_prompt.format(difficulty=difficulty, random_choice=random_choice)
                     system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[domain][skill_category], difficulty=difficulty)
-                    question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, generated_questions)
+                    question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, target_difficulty_ranking, generated_questions)
+                    print(f"question JSON: {question}")
                     generated_questions.append(question)
         print(generated_questions)
         return {"questions": generated_questions}
