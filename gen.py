@@ -20,6 +20,8 @@ chatgpt_client = OpenAI(api_key=openai_api_key)
 gemini_api_key = os.environ["GEMINI_API_KEY"]
 gemini_client = genai.Client(api_key=gemini_api_key)
 
+GEMINI_MODEL = "gemini-2.5-pro"
+
 '''parser = argparse.ArgumentParser(description="tool to generate questions for RocketPrepAI")
 parser.add_argument("--domains", nargs="+", choices=["all", "craft_and_structure", "information_and_ideas", "standard_english_conventions", "expression_of_ideas"], default="all")
 parser.add_argument("--difficulty", nargs="+", choices=["easy", "medium", "hard"], default="all")
@@ -95,23 +97,91 @@ def update_local_questions_data(new_question, json_file="questions_data.json"):
 all_questions = load_questions_from_firebase()
 
 
+SOURCES_FILE = "sources_data.json"
+
 def load_sources():
-    cross_text_connections_samples = gemini_client.files.upload(file="sources/reading_and_writing/craft_and_structure/cross_text_connections.pdf")
-    text_structure_and_purpose_samples = gemini_client.files.upload(file="sources/reading_and_writing/craft_and_structure/text_structure_and_purpose.pdf")
-    words_in_context_samples = gemini_client.files.upload(file="sources/reading_and_writing/craft_and_structure/words_in_context.pdf")
+    """
+    Loads sources from local storage or uploads them to Gemini if they don't exist.
+    """
+    sources = {}
 
-    rhetorical_synthesis_samples = gemini_client.files.upload(file="sources/reading_and_writing/expression_of_ideas/rhetorical_synthesis.pdf")
-    transitions_samples = gemini_client.files.upload(file="sources/reading_and_writing/expression_of_ideas/transitions.pdf")
+    # Load existing sources data from file, if it exists
+    try:
+        with open(SOURCES_FILE, "r") as f:
+            sources_data = json.load(f)
+    except FileNotFoundError:
+        sources_data = {}
 
-    central_ideas_and_details_samples = gemini_client.files.upload(file="sources/reading_and_writing/information_and_ideas/central_ideas_and_details.pdf")
-    command_of_evidence_samples = gemini_client.files.upload(file="sources/reading_and_writing/information_and_ideas/command_of_evidence.pdf")
-    inferences_samples = gemini_client.files.upload(file="sources/reading_and_writing/information_and_ideas/inferences.pdf")
+    def upload_or_reuse(filepath):
+        """
+        Uploads a file to Gemini if it doesn't exist, otherwise reuses the existing file ID.
+        """
+        filename = os.path.basename(filepath)
+        if filename in sources_data:
+            try:
+                # Check if the file still exists in Gemini
+                gemini_client.files.get(name=sources_data[filename])
+                print(f"Reusing existing file: {filename} with ID {sources_data[filename]}")
+                return sources_data[filename]
+            except Exception as e:
+                print(f"File {filename} with ID {sources_data[filename]} not found in Gemini, re-uploading...")
+                # File not found, remove from sources_data and re-upload
+                del sources_data[filename]
+        
+        # Upload the file
+        try:
+            uploaded_file = gemini_client.files.upload(file=filepath)
+            sources_data[filename] = uploaded_file.name
+            print(f"Uploaded new file: {filename} with ID {uploaded_file.name}")
+            return uploaded_file.name
+        except Exception as e:
+            print(f"Error uploading {filename}: {e}")
+            return None
 
-    boundaries_samples = gemini_client.files.upload(file="sources/reading_and_writing/standard_english_conventions/boundaries.pdf")
-    form_structure_and_sense_samples = gemini_client.files.upload(file="sources/reading_and_writing/standard_english_conventions/form_structure_and_sense.pdf")
+    # Craft and Structure
+    cross_text_connections_samples = upload_or_reuse("sources/reading_and_writing/craft_and_structure/cross_text_connections.pdf")
+    text_structure_and_purpose_samples = upload_or_reuse("sources/reading_and_writing/craft_and_structure/text_structure_and_purpose.pdf")
+    words_in_context_samples = upload_or_reuse("sources/reading_and_writing/craft_and_structure/words_in_context.pdf")
 
+    # Expression of Ideas
+    rhetorical_synthesis_samples = upload_or_reuse("sources/reading_and_writing/expression_of_ideas/rhetorical_synthesis.pdf")
+    transitions_samples = upload_or_reuse("sources/reading_and_writing/expression_of_ideas/transitions.pdf")
 
-    return {"reading_and_writing": {"craft_and_structure": {"cross_text_connections": cross_text_connections_samples, "text_structure_and_purpose": text_structure_and_purpose_samples, "words_in_context": words_in_context_samples}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_samples, "transitions": transitions_samples}, "information_and_ideas": {"central_ideas_and_details": central_ideas_and_details_samples, "command_of_evidence": command_of_evidence_samples, "inferences": inferences_samples}, "standard_english_conventions": {"boundaries": boundaries_samples, "form_structure_and_sense": form_structure_and_sense_samples}}}
+    # Information and Ideas
+    central_ideas_and_details_samples = upload_or_reuse("sources/reading_and_writing/information_and_ideas/central_ideas_and_details.pdf")
+    command_of_evidence_samples = upload_or_reuse("sources/reading_and_writing/information_and_ideas/command_of_evidence.pdf")
+    inferences_samples = upload_or_reuse("sources/reading_and_writing/information_and_ideas/inferences.pdf")
+
+    # Standard English Conventions
+    boundaries_samples = upload_or_reuse("sources/reading_and_writing/standard_english_conventions/boundaries.pdf")
+    form_structure_and_sense_samples = upload_or_reuse("sources/reading_and_writing/standard_english_conventions/form_structure_and_sense.pdf")
+
+    # Save the updated sources data to file
+    with open(SOURCES_FILE, "w") as f:
+        json.dump(sources_data, f, indent=4)
+
+    return {
+        "reading_and_writing": {
+            "craft_and_structure": {
+                "cross_text_connections": cross_text_connections_samples,
+                "text_structure_and_purpose": text_structure_and_purpose_samples,
+                "words_in_context": words_in_context_samples,
+            },
+            "expression_of_ideas": {
+                "rhetorical_synthesis": rhetorical_synthesis_samples,
+                "transitions": transitions_samples,
+            },
+            "information_and_ideas": {
+                "central_ideas_and_details": central_ideas_and_details_samples,
+                "command_of_evidence": command_of_evidence_samples,
+                "inferences": inferences_samples,
+            },
+            "standard_english_conventions": {
+                "boundaries": boundaries_samples,
+                "form_structure_and_sense": form_structure_and_sense_samples,
+            },
+        }
+    }
 def load_prompts():
 
     # Craft and Structure
@@ -181,7 +251,7 @@ def evaluate_question_difficulty(raw_question_data, section, domain, skill_categ
     print("evaluating difficulty")
     all_questions_text = json.dumps(all_questions)
     response = gemini_client.models.generate_content(
-        model="gemini-2.5-pro-preview-06-05",
+        model=GEMINI_MODEL,
         contents=[evaluation_prompt, all_questions_text, reference_prompt],
         config=GenerateContentConfig(
             system_instruction=[evaluation_system_prompt]
@@ -208,7 +278,7 @@ def refine_question(raw_question_data, question_evaluation, section, domain, ski
     refine_system_prompt = refine_system_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, evaluation=question_evaluation)
 
     response = gemini_client.models.generate_content(
-        model="gemini-2.5-pro-preview-06-05",
+        model=GEMINI_MODEL,
         contents=[f"Please refine the following question: {raw_question_data}", f"Reference generation prompt: {ref_system_prompt}"],
         config=GenerateContentConfig(
             system_instruction=[refine_system_prompt]
@@ -229,7 +299,7 @@ def format_question(raw_question_data, section, domain, skill_category, difficul
     )'''
 
     gemini_response = gemini_client.models.generate_content(
-        model="gemini-2.5-pro-preview-06-05",
+        model=GEMINI_MODEL,
         contents=f"Please format this for me: {raw_question_data}.",
         config=GenerateContentConfig(
             system_instruction=[format_prompt]
@@ -253,13 +323,13 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         temperature=1,
     )
     '''
-    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity.\n Questions from this session: {str(messages)}\n Questions from database: {all_questions}"
+    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)\n Questions from this session: {str(messages)}\n Questions from database: {all_questions}"
 
     #print ("Generating questions!")
     #print(generated_questions)
 
     gemini_response = gemini_client.models.generate_content(
-        model="gemini-2.5-pro-preview-06-05",
+        model=GEMINI_MODEL,
         #messages = str(messages)
         #print(generated_questions)
         contents=[generated_questions, sources[section][domain][skill_category], user_prompt],
@@ -284,6 +354,7 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     #messages.append({"role": "assistant", "content": response})
 
     evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    evaluation = evaluation + f"\n current difficulty ranking: {difficulty_ranking}"
     question = refine_question(question, evaluation, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
     evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
 

@@ -1,84 +1,129 @@
-Step 1: Select a Specific Punctuation Rule to Test
-Choose a single, specific rule about sentence boundaries as the core of your question. Examples include:
+Level 1: Easy Difficulty
 
-    Separating two independent clauses.
+Goal: To test fundamental, high-frequency punctuation rules in clear, simple sentence structures.
 
-    Separating an introductory phrase/clause from a main clause.
+Step 1: Choose an "Easy" Scenario (Select ONE)
 
-    Setting off a non-essential (non-restrictive) element.
+    A. Introductory Phrase/Clause: The sentence begins with a standard introductory element that must be separated from the main clause by a comma.
 
-    Integrating an essential (restrictive) element.
+        (See example ID e803340a: "Hoping to help..., Huerta left...")
 
-    Using a colon to introduce an explanation or list.
+    B. Joining Two Independent Clauses: The sentence connects two distinct, complete sentences using a comma plus a coordinating conjunction (for, and, nor, but, or, yet, so).
 
-    Using paired punctuation (commas, dashes, parentheses).
+        (See example ID 5631e99d: "Scientists had thought X, but the Lund team's finding...")
 
-Step 2: Craft the Sentence(s)
-Write a high-quality, engaging sentence that creates a clear need for the chosen punctuation rule. Place the blank (___) at the precise point where the boundary decision must be made. The content of the sentence is important; use it to guide the student or, for harder questions, to misdirect them.
+    C. Separating Two Independent Clauses: The sentence connects two distinct, complete sentences using end-stop punctuation (period or semicolon). The surrounding text should make the two-sentence structure logical.
 
-Step 3: Write the Correct Answer
-Provide the word or phrase plus the grammatically correct punctuation that satisfies the rule from Step 1.
+        (See example ID 562d4b57: "...in corporate settings. She founded...")
 
-Step 4: Design Common-Error Distractors
-Create three incorrect choices. These must be based on common, predictable student errors related to the rule being tested. Every distractor should correspond to a specific grammatical mistake. The most common errors to use are:
+    D. Non-essential "Such As" Phrase: An independent clause is followed by a non-essential example introduced by "such as." This requires a comma before "such as."
 
-    Comma Splice: Incorrectly joining two independent clauses with only a comma.
+        (See example ID 72ba319f: "...in a movie, such as the scent of roses...")
 
-    Run-On (Fused) Sentence: Joining two independent clauses with no punctuation or conjunction.
+Step 2: Construct the Sentence
 
-    Sentence Fragment: Creating an incomplete sentence by using a period incorrectly.
+    Write a clear sentence or two sentences based on your chosen scenario.
 
-    Incorrect Conjunction Use: e.g., using ", and" to join a dependent and independent clause, or using just "and" between two long independent clauses where a comma is conventional.
+    Keep the clauses relatively short and grammatically simple.
 
-    Mismatched Paired Punctuation: e.g., starting a parenthetical with a dash and ending with a comma.
+    Place the blank (___) at the exact point where the punctuation is required.
 
-Difficulty-Specific Instructions
+Step 3: Craft the Answer Choices
 
-EASY Difficulty:
+    Correct Answer: The choice that uses the correct punctuation for the simple scenario.
 
-    Rule Focus: Use a single, fundamental rule in a short, clear sentence. Good rules to test are:
+    Distractors:
 
-        Joining two independent clauses with a period.
+        A choice that creates a run-on sentence (no punctuation).
 
-        Joining two independent clauses with a comma and a FANBOYS conjunction (for, and, nor, but, or, yet, so).
+        A choice that creates a comma splice (a comma where a stronger boundary is needed).
 
-        Setting off a simple introductory phrase with a comma.
+        A choice that misuses a different punctuation mark (e.g., a semicolon where a comma is needed).
 
-    Distractors: Use the most common errors directly: a comma splice, a run-on, and perhaps one other obvious misuse of punctuation like a semicolon.
+Level 2: Medium Difficulty
 
-MEDIUM Difficulty:
+Goal: To test standard punctuation rules in sentences with slightly more complex structures or to test for common over-punctuation errors.
 
-    Rule Focus: Use slightly more complex rules or sentence structures.
+Step 1: Choose a "Medium" Scenario (Select ONE)
 
-        Setting off a non-essential element in the middle of a sentence using paired commas or paired dashes.
+    A. The Comma Splice Test: The blank separates two longer, complete independent clauses. The correct answer could be a period, a semicolon, or a comma plus a coordinating conjunction. The main task is for the student to recognize the two complete thoughts.
 
-        Using a semicolon to join two closely related independent clauses.
+        (See example ID bcaf68f5: "...service recovery paradox, and research suggests...")
 
-        Using a colon to introduce a list or simple explanation.
+    B. Paired Punctuation for an Aside: An interrupting phrase (an aside or non-essential appositive) is placed in the middle of a clause. One piece of punctuation (a comma or dash) is already provided; the student must supply the matching punctuation mark to close the pair.
 
-    Sentence Structure: The sentences can be longer, requiring the student to track the relationship between clauses across more words.
+        (See example ID b79670a7: "...of the figures, according to Swentzell, represents her idea...")
 
-    Distractors: The distractors should still be clear errors but can be more varied, such as testing mismatched paired punctuation or misusing a colon.
+    C. No Punctuation Between Subject and Verb: A long or complex subject is followed by its verb. The correct choice is no punctuation, but distractors will tempt students to add a comma, colon, or dash.
 
-HARD Difficulty:
+        (See example ID 9360277c: "...the Huntington Library in California ___ received a collection...")
 
-    Rule Focus: The difficulty must come from subtlety, misdirection, or testing exceptions to common rules. Do not just make the sentence longer; make the grammatical decision itself more complex.
+    D. Appositive Followed by a Modifier: An appositive (a noun phrase that renames another noun) is followed by a participial phrase. The student must correctly place a comma between these two supplementary elements.
 
-    Techniques for Creating Hard Questions:
+        (See example ID 8e27d086: "...mycology, the study of fungi, producing more than 350 paintings...")
 
-        The "Punctuation Void" (Testing Restrictive Elements): This is the most effective technique. Create a sentence where the correct answer is the absence of punctuation. This is difficult because it's counter-intuitive. Frame the sentence so it looks like it needs a comma, but the grammar forbids it.
+Step 2: Construct the Sentence
 
-            Example Structure: [Complex Noun Phrase] that [essential clause]. Place the blank before "that."
+    Write a sentence that is longer and contains more descriptive phrases than an Easy question.
 
-            Example Structure: [Title] [Name] or [Noun] [Prepositional Phrase] where the name/phrase is essential to the sentence's meaning (restrictive). Place the blank between the elements to tempt the student into adding a comma.
+    Embed prepositional phrases or other elements to slightly obscure the core sentence structure.
 
-        Grammatical Misdirection: Use a familiar sentence pattern to disguise a different underlying structure.
+Step 3: Craft the Answer Choices
 
-            Example: Use a list structure (A, B, and C) where "C" is immediately followed by an essential "that" clause. The student will be tempted to put a comma after "C" because of the list pattern, but the restrictive clause forbids it.
+    Correct Answer: The choice that correctly applies the medium-difficulty rule.
 
-        Rule Stacking: Create a boundary that requires the correct application of two rules simultaneously.
+    Distractors:
 
-            Example: A choice that must correctly set off a supplementary phrase with a comma and use a colon to introduce the next clause, all within one answer option. The distractors will get one part right but the other wrong.
+        Choices that show a lack of punctuation where some is needed, or unnecessary punctuation where none is needed.
 
-    Hard Distractors: The distractors for a hard question must be sophisticated. They should also use punctuation and appear to be grammatically complex, but contain a subtle, fatal flaw based on the techniques above. Avoid simple run-ons or comma splices as distractors here; they make the correct answer too obvious.
+        A choice that creates a comma splice.
 
+        A choice that fails to use matching punctuation for an aside (e.g., using a comma to open and a dash to close).
+
+Level 3: Hard Difficulty
+
+Goal: To test nuanced punctuation rules in grammatically complex and dense sentences, often requiring a deep understanding of clause and phrase types.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Complex Series with Semicolons: The sentence contains a list of three or more items, where the items themselves contain internal commas (e.g., to set off dates, locations, or descriptive phrases). This requires the use of semicolons to separate the main items in the list.
+
+        (See example ID 971ed23e: "...app, Chickasaw Basic, in 2009; an online television network, Chickasaw TV, in 2010; and a language course...")
+
+    B. Restrictive Appositive (No Punctuation): The sentence contains a noun phrase specified by an essential (restrictive) appositive. The correct choice is no punctuation. This is difficult because the appositive looks like it should be set off by commas, but it is essential for identifying the noun.
+
+        (See example ID 4cff8c23: "...twentieth-century US artists Thomas Hart Benton and Jackson Pollock...")
+
+    C. Long Introductory Clause: The sentence begins with a very long and complex introductory clause or phrase containing its own subordinate elements. The correct choice is still a single comma to separate it from the main clause, but the complexity will tempt students to use a stronger boundary marker.
+
+        (See example ID 80b2b9da: "With a blend of...and modern ones..., transitional design splits...")
+
+    D. Sentence Split with a Complex Modifier: The blank separates two full sentences, but the second sentence begins with a long introductory modifier (e.g., a participial phrase). This creates a very tempting comma splice trap; the correct answer must be a period or semicolon.
+
+        (See example ID 537fd30f: "...crowd-monitoring system. Analyzing video..., the AI algorithm...")
+
+Step 2: Construct the Sentence
+
+    Write a long, dense sentence with multiple phrases and clauses to increase cognitive load.
+
+    Use sophisticated vocabulary and formal academic tone.
+
+    Carefully place the blank (___) at the critical punctuation point defined by your hard scenario.
+
+Step 3: Craft the Answer Choices
+
+    Correct Answer: The choice that correctly applies the nuanced punctuation rule.
+
+    Distractors:
+
+        A choice that creates a comma splice (the most common trap in Hard questions).
+
+        A choice that misuses semicolons or periods within a single sentence.
+
+        A choice that incorrectly uses commas, often by setting off a restrictive element or failing to use semicolons in a complex list.
+
+        A choice that results in a run-on sentence.
+
+# Notes
+
+Try to mix up words a little better, it feels like the same trick is being used with a lot of the questions.

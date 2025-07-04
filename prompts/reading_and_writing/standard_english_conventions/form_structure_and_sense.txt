@@ -1,74 +1,89 @@
-Core Structure of the Question:
+Level 1: Easy Difficulty
 
-    Text: A 1-3 sentence passage on a topic from science, history, arts, or literature. The passage will contain a blank (___).
+Goal: To test fundamental grammatical rules in clear, straightforward sentences. The error should be obvious once the rule is known.
 
-    Question: "Which choice completes the text so that it conforms to the conventions of Standard English?"
+Step 1: Choose an "Easy" Scenario (Select ONE)
 
-    Answer Choices: Four choices (A, B, C, D) that logically and grammatically complete the sentence. One choice is correct; three are plausible distractors.
+    A. Plural vs. Possessive Nouns: The context clearly demands simple plural or possessive forms. The sentence will contain phrases like "multiple stories of multiple people" to guide the student.
 
-General Formula:
+        (See example ID df572c56: "tell the ___ who made..." requires plural stories and plural immigrants.)
 
-Step 1: Select a Specific Grammatical Concept to Test
-Choose a single concept as the core of the question from this list:
+    B. Verb Tense Consistency: A sentence describes a present, ongoing action or a simple past event. The correct verb must match the tense of other verbs in the sentence or the time context provided (e.g., "Each night," "In 1990").
 
-    Verb Tense/Form: Using the correct verb tense for context or choosing between a finite and non-finite verb form.
+        (See example ID 9557577d: "Each night... the source of the glow is... A lamp... ___ the green glass." requires present tense illuminates.)
 
-    Subject-Verb Agreement: Matching a verb to its subject in number.
+    C. Pronoun-Antecedent Agreement (Number): The sentence has a clear, singular antecedent (like a person's name) that requires a singular pronoun (he, she, it).
 
-    Pronoun-Antecedent Agreement: Matching a pronoun to its antecedent in number.
+        (See example ID 7128cc21: "Félix González-Torres... ___ created additional installations." requires singular He.)
 
-    Modifier Placement: Ensuring a modifier logically attaches to its subject.
+    D. Basic Finite vs. Non-finite Verb: A simple main clause is missing its main verb. The options include non-finite forms (-ing, to [verb]), with only one finite verb choice.
 
-Step 2: Craft the Sentence(s) to Target the Concept
-Write a high-quality sentence where the grammatical logic depends on the chosen concept. Place the blank (___) at the point where the grammatical decision must be made. The sentence's structure is the primary tool for controlling difficulty.
+        (See example ID 4ade5ddd: "A recent study ___ why..." requires a finite verb like explains.)
 
-Step 3: Write the Correct Answer
-Provide the choice that makes the sentence grammatically sound and logical.
+Step 2: Construct the Sentence and Choices
 
-Step 4: Design Common-Error Distractors
-Create three incorrect choices, each representing a specific grammatical or logical error related to the core concept.
-Difficulty-Specific Instructions
+    Write a clear sentence with a simple structure. Place the blank (___) where the grammatical form is needed.
 
-EASY Difficulty:
+    The correct answer will be the standard grammatical form.
 
-    Concept Focus: Use a straightforward application of a rule.
+    Distractors will be common errors: confusing plural and possessive (peoples for people's), using the wrong tense, mismatching pronoun number, or using a non-finite verb where a finite one is required.
 
-        Verb Tense: The context will clearly point to one tense (e.g., "In 1925, she..." requires a past tense verb).
+Level 2: Medium Difficulty
 
-        Finite Verb: The main clause will be missing its only verb.
+Goal: To test core grammatical rules in sentences with slightly more complex structures, often involving compound subjects, introductory phrases, or logical verb tense shifts.
 
-        S-V/P-A Agreement: The subject/antecedent will be immediately next to the verb/pronoun.
+Step 1: Choose a "Medium" Scenario (Select ONE)
 
-    Sentence Structure: Keep sentences short and direct.
+    A. Verb Tense in Context: The sentence describes events in the past, but the context requires a specific past tense (e.g., simple past vs. future-in-the-past). The student must use contextual clues (like dates or other verb tenses in the sentence) to choose the logical tense.
 
-    Distractors: The incorrect verb tenses or the wrong number for agreement.
+        (See example ID cf86d6fd: "By the time Hawaiian king Kamehameha III ___ the throne, the number... had drastically increased..." signals the simple past ascended is needed.)
 
-MEDIUM Difficulty:
+    B. Subject-Verb Agreement with an Intervening Phrase: The subject and verb are separated by a prepositional phrase containing a noun of a different number. This tests whether the student can correctly identify the true subject.
 
-    Concept Focus: Use concepts that involve common confusions or slightly more complex structures.
+        (See example ID 87eb538d: "Because a cycle [singular] of lunar phases [plural] ___ 29.5 days..." requires the singular verb takes.)
 
-        Modifier Placement: Use a simple introductory phrase (-ing phrase or prepositional phrase) followed by a blank. The subject must be the "doer" of the action.
+    C. Possessive Nouns with Pronoun Agreement: The choice requires both a correctly formed possessive noun and a possessive determiner (its/their) that agrees with it in number.
 
-        Pronoun Agreement: Test common mix-ups like its/it's/its' or their/they're/there. The antecedent might be a few words away from the pronoun.
+        (See example ID c709441f: "The [singular] phrase's simplicity masks [singular] its complexity." requires phrase's and its.)
 
-    Sentence Structure: Sentences can be longer or compound, requiring the student to track relationships.
+    D. Finite Verb in a Main Clause (with compound subject): A long sentence has a compound subject ("gestures and habit") and requires a finite verb to be complete. Distractors will offer non-finite forms that create sentence fragments.
 
-    Distractors: For modifier placement, the distractors will be other nouns from the sentence that illogically perform the action. For pronouns, the distractors will be the commonly confused homophones.
+        (See example ID 1007161b: "His energetic gestures...and his habit... ___ transform the role..." requires the finite verb helped.)
 
-HARD Difficulty:
+Step 2: Construct the Sentence and Choices
 
-    Core Strategy: Misdirection. The goal is to make a simple grammatical rule difficult to apply by using a complex and deceptive sentence structure.
+    Write a sentence with a more complex structure than an Easy question. Use introductory clauses or place descriptive phrases between the subject and verb.
 
-    Techniques for Creating Hard Questions:
+    The correct answer correctly applies the rule in this more complex context.
 
-        Separation: Intentionally separate the subject and verb (or pronoun and antecedent) with a long, distracting phrase or clause. This intervening element should contain one or more "decoy" nouns.
+    Distractors will represent common mistakes: agreeing the verb with the object of the preposition instead of the subject, using the wrong verb tense for the context, or creating a sentence fragment.
 
-        Decoys: The decoy nouns should be the opposite number of the true subject/antecedent. If the subject is singular (e.g., "the report"), load the interrupting phrase with plural decoys (e.g., "...on the migratory patterns of various species..."). This tempts the student to choose a plural verb that agrees with the decoy, not the true subject.
+Level 3: Hard Difficulty
 
-        Complex Modifiers: For modifier placement questions, make the introductory modifying phrase long and complex. The choices should also be structurally complex, forcing the student to identify the precise noun that must logically follow the modifier, not just a related idea.
+Goal: To test complex or less-common grammatical rules in dense, sophisticated sentences that require careful logical and structural analysis.
 
-    Example Hard Structure (S-V Agreement): [Singular Subject], which describes the [Plural Decoy 1] and [Plural Decoy 2], ___ [verb]... The correct answer is a singular verb, but the distractors will offer the tempting plural form.
+Step 1: Choose a "Hard" Scenario (Select ONE)
 
-    Hard Distractors: The distractors must be grammatically "attractive" but logically flawed. For agreement questions, this is the verb/pronoun of the wrong number. For complex modifier questions, the distractors are noun phrases that are thematically related but are not the logical subject of the modifier.
+    A. Subject-Modifier Placement (Dangling/Misplaced Modifiers): The sentence begins with a long introductory modifying phrase. The blank that follows must be filled with the noun that is logically being modified. All other choices create a dangling modifier.
 
+        (See example IDs 3b9318f2 and a38e3b40: "In assessing the films..., ___ have missed..." requires the noun being modified, many critics, to immediately follow the comma.)
 
+    B. Subject-Verb Agreement with a Complex Subject: The subject is a complex phrase like "each one of these plays," which is grammatically singular despite referring to multiple items. The student must identify the singular head of the noun phrase ("each one") and choose a singular verb.
+
+        (See example ID ff4676f7: "Although each one [singular] of these plays, which include...and..., ___ on a single figure..." requires the singular verb focuses.)
+
+    C. Finite Verb for a Clause (within complex sentences): The sentence contains multiple clauses, and a subordinate or relative clause is missing its finite verb. The context may require an unusual but logical verb form, like the future-in-the-past ("would acknowledge").
+
+        (See example IDs 638832ee and 7405d67a: "...the IAU ___ the contributions..." requires a finite verb like would finally acknowledge to complete the sentence.)
+
+    D. Pronoun Case and Logical Connection: The sentence requires a pronoun that not only agrees with its antecedent but also functions correctly as the subject of the subsequent clause, often establishing a logical connection (e.g., contrast). This can blend with Modifier Placement.
+
+        (This is a variant of the dangling modifier where the pronoun itself can create the error. E.g., "In assessing Kurosawa's films, it is often noted that..." would be incorrect because "it" is not what is doing the assessing.)
+
+Step 2: Construct the Sentence and Choices
+
+    Write a long, formal sentence with sophisticated vocabulary and multiple subordinate clauses or phrases to increase cognitive load and obscure the core grammatical relationships.
+
+    The correct choice will be the only one that creates a logically and grammatically sound sentence.
+
+    Distractors will be tempting because they might sound plausible at first glance but create subtle yet critical grammatical errors like dangling modifiers or subject-verb disagreement.

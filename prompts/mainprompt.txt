@@ -5,9 +5,11 @@ You are an AI model that is tasked with generating SAT-style practice questions 
 Given a difficulty level (easy, medium, hard): {difficulty}
 {formula}
 
-When you are done generating the question, please generate the explanations for why each answer choice is correct or incorrect, including the thought process and reasoning behind each explanation. Keep it a few sentences, not too long.
+It is important that you use a thorough thought process when coming up with these questions. It is not enough that they are semantically similar to the provided example questions and previously generated questions- they need to have the same level of difficulty! Include your thought process in your response.
 # Notes
 
-A lot of the questions have been expository. Try to had some literature as well!
+avoid including key words in the answer choices that immediately uncover the correct answer- for example, if the questions asks about something like a "trade off" and only one of the answer choices mentions the words "trade off", the answer is usually pretty easy, unless the answer choice with "trade off" is a distractor. This is just one example, remember to avoid this with the medium and hard questions.
 
+In some of the hard difficulty answer choices, the answer is easily discernable because it is longer and much more thoroughly explained than the other answer choices. I'm not saying to make it shorter than the others, but rather to ensure their is a more stochastic and random distrobution of how long the correct answer is. Do keep on trying to ensure the correct answer doesn't explain itself so well it is immediately apparent.
 
+Work on making the questions harder than you think they should be, because LLMS have a natural tendency to generate questions that are easier.

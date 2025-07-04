@@ -6,6 +6,8 @@ from typing import List, Dict
 import os
 import json
 import random
+import threading
+import queue
 
 app = FastAPI()
 
@@ -70,17 +72,12 @@ async def log_request_body(request: Request, call_next):
     response = await call_next(request)
     return response
 
-@app.post("/generate-questions")
-async def generate_questions(request: QuestionRequest):
-    generated_questions = []
-    section = request.section
-    try:
-        for skill_category in request.skill_categories:
-            domain = skill_category_to_domain.get(skill_category)
-            if not domain:
-                raise HTTPException(status_code=400, detail=f"Invalid skill category: {skill_category}")
-            for difficulty in request.difficulties:
-                for _ in range(request.num_questions):
+def generate_questions_for_skill_category(section: str, skill_category: str, difficulties: List[str], num_questions: int, generated_questions: List[Dict], question_queue: queue.Queue):
+    domain = skill_category_to_domain.get(skill_category)
+    if not domain:
+        raise HTTPException(status_code=400, detail=f"Invalid skill category: {skill_category}")
+    for difficulty in difficulties:
+                for _ in range(num_questions):
                     random_choice = random.choice(["A", "B", "C", "D"])
                     if difficulty == "easy":
                         target_difficulty_ranking = random.uniform(0, 0.33)
@@ -96,7 +93,24 @@ async def generate_questions(request: QuestionRequest):
                     system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[domain][skill_category], difficulty=difficulty)
                     question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, target_difficulty_ranking, generated_questions)
                     print(f"question JSON: {question}")
-                    generated_questions.append(question)
+                    question_queue.put(question)
+
+@app.post("/generate-questions")
+async def generate_questions(request: QuestionRequest):
+    generated_questions = []
+    section = request.section
+    question_queue = queue.Queue()
+    threads = []
+    try:
+        for skill_category in request.skill_categories:
+            thread = threading.Thread(target=generate_questions_for_skill_category, args=(section, skill_category, request.difficulties, request.num_questions, generated_questions, question_queue))
+            threads.append(thread)
+            thread.start()
+        for thread in threads:
+            thread.join()
+
+        while not question_queue.empty():
+            generated_questions.append(question_queue.get())
         print(generated_questions)
         return {"questions": generated_questions}
     except Exception as e:
