@@ -1,0 +1,233 @@
+[
+    {
+        "question": "A lay conception of history often treats it as a veridical chronicle of bygone eras, a straightforward ledger of events as they occurred. However, scholars working in the field of historical memory have long contended that this view is, at best, incomplete. They argue that what societies treat as their collective past is not a passive reflection but an active, and often contentious, construction. This process of remembering is profoundly shaped by present-day imperatives\u2014(by, for example, the need to forge a national identity or legitimize a political order)\u2014and is thus inherently selective. By this logic, the past that is \"remembered\" is less a definitive record and more a discursive field, a terrain where meanings are produced and contested, often with a teleological aim of explaining or justifying the present.\n\nWhich choice best states the main idea of the text?",
+        "section": "reading_and_writing",
+        "domain": "information_and_ideas",
+        "skill_category": "central_ideas_and_details",
+        "choices": [
+            "A. The text argues that contrary to the common perception of history as a factual record, scholarly analysis reveals it to be a selective construction of the past that is actively shaped by the concerns and goals of the present.",
+            "B. The text explains that the primary function of historical memory is to help societies forge a cohesive national identity and legitimize their existing political structures.",
+            "C. The text suggests that because historical memory is a discursive field where meanings are contested, it is impossible to arrive at any objective or truthful understanding of past events.",
+            "D. The text traces the academic shift from viewing history as a static record to understanding it as a dynamic field of contested meanings."
+        ],
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.85",
+        "explanations": {
+            "A": "This choice accurately synthesizes the text's central argument. It captures the contrast between the 'lay conception' of history as a 'veridical chronicle' (factual record) and the scholarly view that it is an 'active...construction' that is 'profoundly shaped by present-day imperatives' (shaped by the concerns and goals of the present).",
+            "B": "This is a 'Detail as Main Idea' error. The text offers 'the need to forge a national identity or legitimize a political order' as an explicit example of 'present-day imperatives,' but these are subordinate details used to support the broader claim, not the main idea itself.",
+            "C": "This is a 'Mischaracterization / Subtle Twist' error. The text calls the common view 'incomplete,' not entirely false, and describes meaning as 'produced and contested,' not non-existent. To claim that an objective understanding is 'impossible' is an extreme conclusion that the nuanced language of the passage ('at best, incomplete') does not support.",
+            "D": "This is an 'Out-of-Scope' error combined with a subtle wording flaw. While the text describes a conceptual shift, it does not 'trace' the history of that academic shift (i.e., it doesn't narrate how the field of historical memory developed over time). Instead, it presents a static contrast between a lay view and an established scholarly perspective."
+        }
+    },
+    {
+        "question": "**Text 1**\n\nThe \u201cGreat Man\u201d theory of history, a concept popularized in the 19th century, posits that historical change is driven primarily by the will and actions of exceptional individuals. Proponents of this view argue that figures like Napoleon Bonaparte or Julius Caesar were not merely products of their time but were, in fact, powerful catalysts whose singular vision and personal charisma fundamentally altered the course of events. In this framework, major historical turning points are seen as the direct result of the choices and leadership of these influential figures, without whom history would have unfolded very differently.\n\n**Text 2**\n\nHistorian Jia Li critiques the traditional \u201cGreat Man\u201d theory as overly simplistic. While acknowledging the significant impact of certain individuals, Li argues that their influence is largely contingent upon pre-existing societal conditions. For a leader\u2019s vision to be realized, the social, technological, and economic currents of the era must be receptive. According to Li, a figure like Napoleon could only rise to power because the French Revolution had already destabilized the old order and created a widespread desire for strong leadership. Thus, such individuals are better understood as successful navigators of historical forces rather than their originators.\n\nHow would the author of Text 2 most likely respond to the characterization of historical change presented in Text 1?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "cross_text_connections",
+        "choices": [
+            "A. By arguing that the \u201cGreat Man\u201d theory is only applicable to military leaders like Napoleon and Caesar.",
+            "B. By suggesting that influential individuals are actually less important to historical outcomes than economic forces.",
+            "C. By claiming that the actions of influential individuals are the most easily identifiable causes of historical change.",
+            "D. By accepting that such individuals are impactful but asserting that their success depends on favorable historical circumstances."
+        ],
+        "correct_answer": "D",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice is a mischaracterization. Text 2 critiques the theory's core premise, not its scope of application. The author doesn't limit the theory to military leaders but challenges its general explanatory power.",
+            "B": "This is an overstatement. Text 2 argues that individuals are 'contingent upon' societal conditions, not necessarily 'less important' than them. It reframes their role as 'navigators' rather than dismissing their importance relative to other forces.",
+            "C": "This is a plausible but irrelevant statement. Neither text discusses the ease of identifying historical causes. The debate is about the nature of causality, not the methodology of historical research.",
+            "D": "This choice accurately captures the relationship between the texts. Text 2 qualifies Text 1's claim. It 'accepts' that individuals are impactful ('acknowledging the significant impact') but 'asserts' that this impact is conditional ('contingent upon pre-existing societal conditions'). This reflects the nuanced 'Yes, but...' stance of Text 2."
+        }
+    },
+    {
+        "question": "Many animal species have evolved complex social behaviors that, while appearing selfless, ultimately enhance an individual's own long-term survival and reproductive success. ___, vampire bats have been observed sharing blood meals with unrelated roostmates who were unsuccessful in foraging, an act that strengthens social bonds and makes it more likely the donor will be helped in the future.",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "transitions",
+        "choices": [
+            "A. In contrast,",
+            "B. For example,",
+            "C. Consequently,",
+            "D. Meanwhile,"
+        ],
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.45",
+        "explanations": {
+            "A": "This choice is incorrect. 'In contrast,' signals an opposition or difference between two ideas. The behavior of the vampire bats is not a contrast to the principle described in the first sentence; rather, it is a clear illustration of it.",
+            "B": "This is the correct answer. The first sentence presents a general claim about animal behavior (seemingly selfless acts can provide long-term benefits). The second sentence provides a specific illustration of this claim (vampire bats sharing food to build social capital). 'For example,' correctly introduces a specific instance that supports a general statement.",
+            "C": "This choice is incorrect. 'Consequently,' indicates that the second idea is a direct result or effect of the first. The general principle of social evolution did not directly cause this specific bat behavior; instead, the behavior is an instance or manifestation of the principle.",
+            "D": "This choice is incorrect. 'Meanwhile,' is used to introduce an event happening at the same time as another but in a different place or context. It implies a parallel but separate relationship. The two ideas in the text are directly and logically connected as a principle and an example, not as two unrelated, simultaneous events."
+        }
+    },
+    {
+        "question": "An early conception of medieval European guilds cast them as benevolent, protective brotherhoods of artisans. This _______ view, however, has been significantly complicated by modern historians. Their research reveals that while guilds did offer members some security, they were also intensely monopolistic and exclusionary, often using their power to stifle competition and limit entry into their trades.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "words_in_context",
+        "choices": [
+            "A. rose-tinted",
+            "B. antiquated",
+            "C. meticulous",
+            "D. controversial"
+        ],
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "The text contrasts an early view of guilds as 'benevolent' and 'protective' with the modern historical understanding of them as 'monopolistic and exclusionary.' The word 'rose-tinted,' which means viewing something in an overly positive or optimistic way, perfectly captures the nature of this early, simplistic conception. The student must infer this overly positive quality from the contrast provided.",
+            "B": "This word means old-fashioned. While the view is indeed old, this choice is less precise than 'rose-tinted' because it only addresses the age of the view, not its specific flaw of being overly positive and incomplete, which is the main point of contrast in the text.",
+            "C": "This word means showing great attention to detail. This is the opposite of the kind of view described, which is a broad generalization that ignores complex negative details.",
+            "D": "This word means causing public disagreement. The text does not suggest that the early view was itself the subject of controversy when it was prevalent. Rather, the controversy exists between the early view and the modern historical analysis."
+        }
+    },
+    {
+        "question": "An analysis of regional dialects, with its detailed maps of vowel shifts and lexical variations, ___ a fascinating look into the evolution of language.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. offer",
+            "B. offers",
+            "C. offering",
+            "D. to offer"
+        ],
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.40",
+        "explanations": {
+            "A": "This choice is incorrect because the plural verb 'offer' does not agree with the singular subject of the sentence, 'An analysis'. The plural nouns in the intervening phrase ('dialects', 'maps', 'shifts', 'variations') are distractors.",
+            "B": "This is the correct answer. The subject of the sentence is 'An analysis', which is singular. The verb must also be singular to agree with the subject. 'Offers' is the correct singular, present-tense verb form.",
+            "C": "This choice is incorrect because 'offering' is a present participle, a non-finite verb form. Using it here would create a sentence fragment, as the main clause would lack a main verb.",
+            "D": "This choice is incorrect because 'to offer' is an infinitive, which is a non-finite verb form. Using it here would result in a sentence fragment because the main clause would be missing its main verb."
+        }
+    },
+    {
+        "question": "Many species of fungi form mycorrhizal associations with plant roots, a symbiotic relationship that benefits both ___ the fungus receives carbohydrates from the plant, while the plant gains enhanced access to water and nutrients from the soil.",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "boundaries",
+        "choices": [
+            "A. organisms",
+            "B. organisms,",
+            "C. organisms;",
+            "D. organisms:"
+        ],
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.45",
+        "explanations": {
+            "A": "This choice creates a run-on sentence by fusing two independent clauses without any punctuation. An independent clause is a complete thought that can stand alone as a sentence. Both the clause before and the clause after the blank are independent.",
+            "B": "This choice creates a comma splice. A comma alone is not strong enough to connect two independent clauses. This is a very common grammatical error.",
+            "C": "This is the correct answer. The sentence consists of two closely related independent clauses. A semicolon is the appropriate punctuation to connect them, showing their strong logical connection.",
+            "D": "This choice incorrectly uses a colon. A colon is used to introduce a list, an explanation, or an example that is directly cued by the preceding clause. The second clause here describes the reciprocal benefits in the relationship, but it doesn't serve as a direct explanation or itemization of the phrase 'benefits both organisms.' A semicolon is better for linking two balanced, related clauses."
+        }
+    },
+    {
+        "question": "While researching the history of keyboard layouts, a student has compiled the following notes:\n\n*   The QWERTY layout, designed by Christopher Latham Sholes in the 1870s, became standard on early mechanical typewriters.\n*   A primary design goal of QWERTY was to prevent the machine's internal mechanical arms from jamming.\n*   To achieve this, Sholes's layout intentionally separated commonly used letter pairs to slow down typing speed.\n*   In the 1930s, August Dvorak patented the Dvorak Simplified Keyboard.\n*   Dvorak\u2019s layout was engineered for maximum efficiency and ergonomic comfort, placing the most frequent letters on the home row to minimize finger movement.\n*   Despite studies showing Dvorak allows for faster typing with less effort, the QWERTY layout remains the dominant standard for keyboards worldwide.\n\nThe student wants to write a sentence introducing the Dvorak keyboard layout, explaining both its intended purpose and its relationship to the established QWERTY layout. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "rhetorical_synthesis",
+        "choices": [
+            "A. The Dvorak keyboard layout places the most frequently used letters on the home row to minimize finger movement and increase typing speed.",
+            "B. As a direct response to QWERTY's known inefficiencies, the Dvorak layout was later developed with the specific goal of maximizing typing speed and ergonomic comfort, though it has never achieved widespread adoption.",
+            "C. The QWERTY layout, designed in the 1870s, was an intentional effort to slow typists down by separating common letter pairs to prevent mechanical jams in early typewriters.",
+            "D. Because the Dvorak layout proved to be faster and more ergonomic, it quickly replaced the original QWERTY layout that was designed to prevent typewriter jams."
+        ],
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice accurately describes the design of the Dvorak keyboard but fails to accomplish the full rhetorical goal. It explains Dvorak's purpose (efficiency) but does not place it in its historical or competitive relationship with the QWERTY layout, which is a required part of the task.",
+            "B": "This choice successfully synthesizes all the required elements from the notes. It introduces the Dvorak layout by framing it as a \"response to QWERTY's known inefficiencies,\" explains its purpose (\"maximizing typing speed and ergonomic comfort\"), and describes its relationship to QWERTY's dominance (\"it has never achieved widespread adoption\").",
+            "C": "This choice provides a good summary of the origin of the QWERTY layout, synthesizing information from the first three bullet points. However, the student's stated goal is to introduce the Dvorak layout, not to explain the history of QWERTY. This choice accomplishes a different rhetorical task.",
+            "D": "This choice directly contradicts the information in the final bullet point. While it correctly identifies Dvorak's benefits, it falsely claims that Dvorak \"quickly replaced\" QWERTY, when the notes explicitly state that QWERTY remains the dominant standard."
+        }
+    },
+    {
+        "question": "The \"edge effect\" is a significant ecological principle that describes the changes in population or community structures that occur at the boundary, or \"edge,\" of two habitats. When a forest is fragmented by a road or a clear-cut, for example, a new edge habitat is created. This transitional zone often experiences altered environmental conditions, such as increased sunlight, higher temperatures, and greater wind exposure, compared to the forest interior. These changes can be beneficial for some \"edge generalist\" species, which are adapted to more variable conditions. However, \"interior specialist\" species that rely on the stable, sheltered environment of the deep forest may struggle to survive. Consequently, while the creation of edges can sometimes lead to a local increase in the total number of species, it often comes at the cost of losing those species most dependent on intact, core habitats.\n\nWhich choice best states the main idea of the text?",
+        "section": "reading_and_writing",
+        "domain": "information_and_ideas",
+        "skill_category": "central_ideas_and_details",
+        "choices": [
+            "A. The text focuses on how human activities like road building fragment habitats, thereby creating transitional zones with altered environmental conditions.",
+            "B. The text warns that the edge effect is ultimately harmful, as the new habitats it creates are less stable and supportive for most species than the original forest interior.",
+            "C. The text explains that the edge effect involves the creation of habitat boundaries with unique conditions that benefit some species while leading to the decline of others.",
+            "D. The text indicates that the primary result of the edge effect is a sharp decline in the total number of species that can live in a fragmented landscape."
+        ],
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.65",
+        "explanations": {
+            "A": "This choice is incorrect because it describes a supporting detail, not the main idea. While the text does mention that human activities create edges with altered conditions, this is the cause of the edge effect, not the central point about its complex impact on biodiversity.",
+            "B": "This choice is incorrect because it mischaracterizes the text's claims. The text presents a trade-off, noting that the edge effect can be 'beneficial for some' species. By stating it is 'ultimately harmful' and less supportive for 'most species,' this choice presents a value judgment and generalization that the text does not make.",
+            "C": "This choice accurately synthesizes the main idea of the text. It captures the definition of the edge effect (creation of boundaries with unique conditions) and its dual consequences: the positive impact on some species ('benefit some') and the negative impact on others ('decline of others').",
+            "D": "This choice is incorrect because it contradicts a specific point made in the text. The passage explicitly states that the creation of edges 'can sometimes lead to a local increase in the total number of species,' which is the opposite of the 'sharp decline' this choice claims is the primary result."
+        }
+    },
+    {
+        "question": "For decades, scientists understood that sleep was crucial for memory consolidation, but the precise mechanism remained unclear. Was sleep simply a quiet period allowing memories to solidify passively, or did the brain take a more active role? <u>To investigate this question, neuroscientists Matthew Wilson and Bruce McNaughton monitored the brain activity of rats, first as they learned to navigate a maze and then during subsequent periods of slow-wave sleep.</u> They discovered that the specific patterns of hippocampal neurons that fired while the rats were learning were reactivated during sleep. This finding provided strong evidence that memory consolidation is an active process involving neural replay.\n\nWhich choice best describes the function of the underlined sentence in the text as a whole?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "text_structure_and_purpose",
+        "choices": [
+            "A. It outlines the experimental approach used to resolve the uncertainty introduced in the previous sentence.",
+            "B. It summarizes the key finding that emerged from the study discussed in the text.",
+            "C. It offers evidence to support the idea that spatial memories are particularly dependent on sleep.",
+            "D. It questions the adequacy of a prevailing model of memory consolidation."
+        ],
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice is correct. The preceding sentence poses a question about whether memory consolidation is passive or active. The underlined sentence, starting with 'To investigate this question,' directly explains the experimental method (monitoring rats in a maze) used to answer it.",
+            "B": "This choice is incorrect. The underlined sentence describes the study's method, not its results. The key finding is presented in the sentence that follows: 'They discovered that the specific patterns of hippocampal neurons... were reactivated during sleep.'",
+            "C": "This choice is incorrect. Although the study uses a maze, which involves spatial memory, the primary purpose of this sentence is to describe the experiment's design, not to offer evidence specifically about spatial memories. It explains *how* the researchers investigated the broader question of memory consolidation.",
+            "D": "This choice is incorrect. The text describes the mechanism as 'unclear' and presents two possibilities, not a single 'prevailing model' that is being challenged. The study's aim was to clarify an unknown, not to question an established theory."
+        }
+    },
+    {
+        "question": "Researchers in cognitive science are exploring the \"bilingual advantage\" hypothesis. A more specific version of this theory, proposed by a team led by Dr. Anya Sharma, hypothesizes that cognitive benefits, particularly in executive functions like task-switching, are most pronounced in late bilinguals\u2014individuals who acquired a second language after age ten. Sharma\u2019s team contends that this advantage stems not from merely knowing two languages, but from the continuous mental effort required to manage interference from and suppress their dominant first language.\n\nWhich finding, if true, would most directly support the researchers' hypothesis?",
+        "section": "reading_and_writing",
+        "domain": "information_and_ideas",
+        "skill_category": "command_of_evidence",
+        "choices": [
+            "A. In a study comparing monolinguals, early bilinguals, and late bilinguals on a task requiring them to rapidly switch between sorting objects by color and by shape, the late bilinguals demonstrated significantly better performance than the other two groups.",
+            "B. Brain imaging studies revealed that when speaking their second language, late bilinguals show heightened activity in brain regions associated with cognitive control compared to early bilinguals.",
+            "C. When tested on vocabulary size and grammatical complexity in their shared native language, both early and late bilinguals performed at a level equivalent to their monolingual peers.",
+            "D. A large-scale survey indicated that both early and late bilinguals report a subjective sense of being better at multitasking in their daily lives than their monolingual peers."
+        ],
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice directly supports the team's specific hypothesis. The hypothesis claims a benefit in 'task-switching' that is 'most pronounced in late bilinguals.' This finding shows exactly that: late bilinguals outperformed both early bilinguals and monolinguals on a task-switching exercise, confirming the key components of the claim.",
+            "B": "This is a misleading focus. While this finding supports the proposed *mechanism* for the advantage (the mental effort of 'cognitive control'), it doesn't confirm the hypothesized *outcome* (better task-switching performance). The most direct support for the overall hypothesis would be evidence of the effect itself, making choice A a better answer.",
+            "C": "This is out-of-scope. The hypothesis is about cognitive functions (task-switching), not linguistic proficiency (vocabulary size or grammar). This finding is irrelevant to the claim being tested.",
+            "D": "This is an overly general finding. The hypothesis specifies that the benefit is *most pronounced* in late bilinguals, creating a distinction between early and late bilinguals. This finding groups both types of bilinguals together, failing to support that specific distinction. Furthermore, it relies on a 'subjective sense' rather than objective performance data."
+        }
+    },
+    {
+        "question": "An influential but long-held assumption in genetics was that complex, instinctual behaviors in animals, such as the multigenerational migration of monarch butterflies, were likely governed by a single, critical \"migration gene.\" This gene was presumed to act as a primary switch, being active in migratory populations and inactive in non-migratory ones. However, a 2014 genomic study challenged this view. After sequencing the DNA of both migratory and non-migratory monarchs, researchers found no single gene that could account for the behavior. Instead, they discovered that migratory ability is linked to a collection of different genes related to muscle function and metabolism, and that the differing *expression* of these genes is what distinguishes the two groups. This finding suggests that ______\n\nWhich choice most logically completes the text?",
+        "section": "reading_and_writing",
+        "domain": "information_and_ideas",
+        "skill_category": "inferences",
+        "choices": [
+            "A. the genetic mechanisms controlling migration are likely similar across most butterfly species.",
+            "B. there is no fundamental genetic difference between migratory and non-migratory monarch butterflies.",
+            "C. the capacity for long-distance migration in monarchs is not determined by the presence or absence of one specific gene but by a more complex genetic regulation.",
+            "D. the primary evolutionary advantage of non-migratory monarch populations is the conservation of energy."
+        ],
+        "correct_answer": "C",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice makes a generalization that is not supported by the text. The passage discusses a finding specific to 'monarch butterflies.' There is no information provided to suggest that these findings would apply to 'most butterfly species.' A student must infer only what the text warrants, and generalizing from one species to many is a classic inferential error.",
+            "B": "This choice incorrectly interprets the study's findings. While the study found 'no single gene' that acted as a simple switch, it did find that migratory ability is 'linked to a collection of different genes.' This means there are genetic differences, making the claim that there is 'no fundamental genetic difference' a direct contradiction of the evidence presented. This distractor preys on a misreading of 'no single gene' as 'no genes at all.'",
+            "C": "The text presents a direct contrast between an old assumption and a new finding. The old assumption was that a 'single, critical \\\"migration gene\\\"' was responsible for the behavior. The new finding is that 'no single gene' is responsible; rather, it is a 'collection of different genes' and their 'differing *expression*.' The correct choice, C, perfectly synthesizes this contrast by stating that migration is determined not by a single gene's presence/absence but by 'a more complex genetic regulation,' which is a precise summary of the role of gene expression across a suite of genes.",
+            "D": "This choice makes a plausible-sounding leap that is not supported by the text. The passage mentions that the relevant genes are related to 'metabolism,' which is linked to energy. However, the text is purely descriptive of the genetic mechanism; it makes no claims about the *evolutionary advantages* of either migrating or not migrating. Concluding that energy conservation is the 'primary evolutionary advantage' is an assumption that goes beyond the scope of the provided information."
+        }
+    }
+]

@@ -1,0 +1,63 @@
+Level 1: Easy Difficulty
+
+Goal: To test the direct translation of simple scenarios into algebraic inequalities or the basic interpretation of a graphed inequality.
+
+Step 1: Choose an "Easy" Scenario (Select ONE)
+
+    A. Model a Simple Word Problem: A verbal description of a situation involving a constraint (e.g., "at least," "at most," "under," "no more than"). The student must select the correct inequality.
+
+    B. Model a Range: A verbal description of a minimum and maximum value for a variable. The student must select the correct compound inequality.
+
+    C. Identify Inequality from Graph: Show a graph of a shaded region with a clear boundary line (integer slope and y-intercept). Ask the student to identify the corresponding inequality.
+
+Step 2: Construct the Question
+
+    Use clear, unambiguous keywords (at least -> ≥, under -> <).
+
+    Keep the algebraic expressions simple (x + a ≥ b or ax + by < c).
+
+    Distractors should test common errors: reversing the inequality sign, mixing up coefficients, or choosing the wrong y-intercept from the graph.
+
+Level 2: Medium Difficulty
+
+Goal: To test the ability to model slightly more complex scenarios or to identify solutions to a given inequality.
+
+Step 1: Choose a "Medium" Scenario (Select ONE)
+
+    A. Model with a Preliminary Step: The word problem requires a simple calculation before the inequality can be set up (e.g., calculating remaining capacity or budget).
+
+    B. Model and Solve: The student must set up a one-variable inequality from a word problem and then solve for the variable. The answer may require interpretation (e.g., finding the maximum integer solution).
+
+    C. Identify a Solution Point on a Graph: Show a graph of a shaded region and provide four (x, y) coordinate pairs as options. The student must identify the one point that lies in the solution area.
+
+Step 2: Construct the Question
+
+    The context requires two logical steps to solve.
+
+    The language might be slightly more abstract ("the minimum value of x is...").
+
+    Distractors should represent plausible misinterpretations of the problem's setup or calculation errors during solving.
+
+Level 3: Hard Difficulty
+
+Goal: To test the ability to model complex, multi-layered scenarios or to verify solutions for a given inequality.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Complex Modeling: The word problem involves multiple interacting variables and constraints, often including percentages or other embedded calculations, leading to a complex inequality (e.g., Lower_Bound ≤ expression ≤ Upper_Bound).
+
+    B. Test Solutions from a Table: Provide an inequality and multiple tables of (x, y) values. The student must identify the one table where all pairs are solutions. This requires systematically testing multiple points.
+
+    C. Solve a System of Inequalities: Provide a system of two linear inequalities and ask which of the given points is a solution. This requires checking the point in both inequalities.
+
+    D. Model and Solve a Complex Verbal Inequality: Provide a complex verbal statement (e.g., "A number x is at most k less than n times the value of y"), give a value for one variable, and ask for the maximum/minimum possible value of the other.
+
+Step 2: Construct the Question
+
+    Word problems should contain nuanced language that can be easily misinterpreted (e.g., confusing total sales with total earnings).
+
+    The task often involves tedious but precise work, such as testing 9-12 points in the table-based questions.
+
+    Distractors for table-based questions should be tables where one or two points fail the inequality, making them very tempting.
+
+    Student-produced response formats are particularly effective for solving questions.

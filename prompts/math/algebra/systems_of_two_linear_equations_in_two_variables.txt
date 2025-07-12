@@ -1,0 +1,63 @@
+Level 1: Easy Difficulty
+
+Goal: To test basic, procedural fluency in solving simple systems of equations or reading a solution from a graph.
+
+Step 1: Choose an "Easy" Scenario (Select ONE)
+
+    A. Solve by Substitution: Provide a system where one equation is already solved for a variable (e.g., x = 5 or y = 2x + 1).
+
+    B. Solve by Simple Elimination: Provide a system where the coefficients of one variable are already opposites (e.g., 3x + 2y = 8 and -3x + 5y = 6).
+
+    C. Graphical Solution: Provide a graph showing two intersecting lines with a clear integer intersection point. Ask for the solution (x, y).
+
+Step 2: Construct the Question
+
+    Use simple integer coefficients and solutions.
+
+    The question should directly ask for the value of x, y, or the solution point (x, y).
+
+    Distractors should include common errors like finding the value of the wrong variable, sign errors, or misreading the graph's axes.
+
+Level 2: Medium Difficulty
+
+Goal: To test the standard methods of solving systems that require one preparatory step, or to model a common word problem.
+
+Step 1: Choose a "Medium" Scenario (Select ONE)
+
+    A. Solve by Elimination with Multiplication: Provide a system where one equation must be multiplied by a constant to allow for elimination.
+
+    B. Solve for an Expression: Provide a system that is set up to easily solve for an expression (e.g., 13x) rather than for x or y individually.
+
+    C. Model a Word Problem: Create a word problem involving two different items with two different totals (e.g., total distance and total time; total cost for two different stores). The task is to identify the correct system of equations.
+
+    D. Conceptual (Infinite Solutions): Give one linear equation and ask the student to identify which of the options would create a system with infinitely many solutions.
+
+Step 2: Construct the Question
+
+    The problem will require a clear strategy (e.g., "I should multiply the second equation by -2") or a translation from a verbal description.
+
+    The question can ask for x, y, an expression, or the system itself.
+
+    Distractors for modeling questions should represent common setup errors (e.g., swapping coefficients, mixing up the totals).
+
+Level 3: Hard Difficulty
+
+Goal: To test deep conceptual understanding of systems or to require the synthesis of multiple algebraic and geometric concepts.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Conceptual (No Solution): Give a system with an unknown constant t. The student must find the value of t that results in the system having no solution. This requires setting the slopes equal to each other while ensuring the y-intercepts are different. The equations may first need to be rearranged into slope-intercept form.
+
+    B. Conceptual (Number of Solutions): Give a system where the equations look different but are either parallel (no solution) or equivalent (infinite solutions). The student must first manipulate the equations and then determine the number of solutions.
+
+    C. Multi-step Modeling and Solving: Create a complex word problem that requires the student to both set up the system of two equations and then solve it for one of the variables.
+
+    D. Synthesizing Graphical and Algebraic Information: Provide the graph of a two-line system. Then, provide a third linear equation. The question asks for the number of solutions to the new three-equation system. This requires the student to first find the solution (x, y) from the graph and then test whether that point satisfies the third equation.
+
+Step 2: Construct the Question
+
+    Problems often have multiple layers of logic. The setup should be complex enough that the solution path is not immediately obvious.
+
+    Use a mix of student-produced response and multiple-choice formats.
+
+    Distractors must be sophisticated, targeting common conceptual misunderstandings, such as the conditions for no solution vs. infinite solutions, or errors in multi-step calculations.

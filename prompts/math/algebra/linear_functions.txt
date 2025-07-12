@@ -1,0 +1,71 @@
+Level 1: Easy Difficulty
+
+Goal: To test foundational skills: evaluating a function, interpreting parameters in a simple context, or finding an equation from basic information.
+
+Step 1: Choose an "Easy" Scenario (Select ONE)
+
+    A. Interpret a Parameter: Given a linear function f(x) = mx + b in a word problem context, ask for the real-world meaning of m (the rate) or b (the initial value/y-intercept).
+
+    B. Evaluate the Function: Given a function f(x) = mx + b and a specific input value for x, ask for the output value. This can be presented as a word problem.
+
+    C. Model a Simple Scenario: Provide a simple real-world scenario with a constant rate and a fixed fee/starting amount. Ask the student to select the correct function f(x) = mx + b that models it.
+
+    D. Find an Equation from the y-intercept and a Point: Give the value of f(0) and f(1) and ask for the equation of the function f.
+
+    E. Identify a Feature on a Graph: Show a graph of a line and ask the student to identify a key feature like the x-intercept, y-intercept, or slope.
+
+Step 2: Construct the Question
+
+    Keep numbers simple (integers or easy fractions).
+
+    Use clear, unambiguous language in word problems.
+
+    For interpretation questions, ensure the distractors misinterpret the roles of slope and intercept.
+
+Level 2: Medium Difficulty
+
+Goal: To test multi-step procedural problems that combine function concepts with algebraic manipulation.
+
+Step 1: Choose a "Medium" Scenario (Select ONE)
+
+    A. Find an Unknown Constant: Provide a linear function with an unknown constant (e.g., f(x) = mx - 28) and a table of values. The student must use one (x,y) pair to solve for m.
+
+    B. Solve for the Input: Provide a function (e.g., f(x) = 2x + 5) and ask for the value of x for which f(x) equals a certain number. This often involves solving an equation with fractions.
+
+    C. Create an Equation from Slope and a Point: Verbally describe the slope (e.g., "For every increase in x by 1, y increases by 8") and provide one (x,y) pair. The student must find the full equation.
+
+    D. Function Transformations: Provide the graph of a transformed function, such as y = f(x) + k, and ask for the equation of the original function f(x).
+
+    E. Operations on Functions: Define two functions, f(x) and g(x), and ask the student to compute a value like k * f(a) + j * g(a).
+
+Step 2: Construct the Question
+
+    Problems will require at least two distinct logical steps (e.g., find slope, then find intercept; evaluate two functions, then combine).
+
+    Use a mix of presentation formats: table, graph, algebraic, verbal.
+
+    Student-produced response (grid-in) questions are effective here.
+
+Level 3: Hard Difficulty
+
+Goal: To test complex modeling from verbal descriptions or abstract understanding of linear function properties.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Complex Modeling with (x-k): Create a word problem involving a fixed initial cost for a certain duration (e.g., "first day," "first two hours") and an additional charge for each additional unit of time. The correct model will involve a term like Rate * (x - k).
+
+    B. Conceptual Interpretation of Intercepts and Slope: Verbally describe a linear function. Ask for the best interpretation of a specific parameter (e.g., the x-intercept). The distractors must be plausible but incorrect interpretations of other parameters (the y-intercept and the slope).
+
+    C. System of Equations from a Table: Provide a table of values for a linear function f(x) = ax + b. Ask for the value of an expression involving a and b (e.g., a - b). This requires using two points from the table to create a system of two linear equations and solving for a and b.
+
+    D. Rate of Change Application: Give a linear function that models a real-world conversion (e.g., Celsius to Fahrenheit). Ask for the change in the output variable given a specific change in the input variable. This purely tests the understanding of slope as a multiplier for the change in x.
+
+Step 2: Construct the Question
+
+    Word problems should have nuanced language that requires careful parsing.
+
+    The required algebra may be simple, but the setup is complex.
+
+    The question often asks for something other than a direct calculation (e.g., asks for an equation, an interpretation, or the value of an expression like a - b).
+
+    Distractors should represent common misinterpretations of the setup (e.g., for Scenario A, modeling the cost as Rate * x instead of Rate * (x-k)).

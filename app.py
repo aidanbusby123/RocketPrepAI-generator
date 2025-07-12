@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ValidationError
-from gen import generate_question, add_question, load_prompts
+from gen import generate_question, add_question, load_prompts, load_questions_from_firebase, get_human_feedback, save_human_feedback, load_feedback_log
 from typing import List, Dict
 import os
 import json
@@ -9,7 +9,9 @@ import random
 import threading
 import queue
 
+
 app = FastAPI()
+
 
 origins = [
     os.getenv("FRONTEND_ORIGIN", "http://localhost:3000"),
@@ -46,12 +48,17 @@ class Question(BaseModel):
     difficulty_ranking: str
     explanations: Dict[str, str]
 
+class FeedbackRequest(BaseModel):
+    index: int
+    content: str
+
 prompts = load_prompts()
 main_prompt = prompts["main_prompt"]
 
 base_user_prompt = "Please generate a question, where the correct answer is {random_choice} and the difficulty is {difficulty}, and try to make the question different from the previous one!"
 
 skill_category_to_domain = {
+    # Reading and Writing Skills
     "words_in_context": "craft_and_structure",
     "text_structure_and_purpose": "craft_and_structure",
     "cross_text_connections": "craft_and_structure",
@@ -62,7 +69,34 @@ skill_category_to_domain = {
     "form_structure_and_sense": "standard_english_conventions",
     "rhetorical_synthesis": "expression_of_ideas",
     "transitions": "expression_of_ideas",
+
+    # Math Skills
+    "linear_equations_in_one_variable": "algebra",
+    "linear_equations_in_two_variables": "algebra",
+    "linear_functions": "algebra",
+    "systems_of_two_linear_equations_in_two_variables": "algebra",
+    "linear_inequalities_in_one_or_two_variables": "algebra",
+
+    "equivalent_expressions": "advanced_math",
+    "nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables": "advanced_math",
+    "nonlinear_functions": "advanced_math",
+
+    "ratios_rates_proportional_relationships_and_units": "problem_solving_and_data_analysis",
+    "percentages": "problem_solving_and_data_analysis",
+    "one_variable_data_distributions_and_measures_of_center_and_spread": "problem_solving_and_data_analysis",
+    "two_variable_data_models_and_scatterplots": "problem_solving_and_data_analysis",
+    "probability_and_conditional_probability": "problem_solving_and_data_analysis",
+    "inference_from_sample_statistics_and_margin_of_error": "problem_solving_and_data_analysis",
+    "evaluating_statistical_claims_observational_studies_and_experiments": "problem_solving_and_data_analysis",
+
+    "area_and_volume": "geometry_and_trigonometry",
+    "lines_angles_and_triangles": "geometry_and_trigonometry",
+    "right_triangles_and_trigonometry": "geometry_and_trigonometry",
+    "circles": "geometry_and_trigonometry",
 }
+
+generated_questions = []
+
 
 @app.middleware("http")
 async def log_request_body(request: Request, call_next):
@@ -90,14 +124,29 @@ def generate_questions_for_skill_category(section: str, skill_category: str, dif
                     
 
                     user_prompt = base_user_prompt.format(difficulty=difficulty, random_choice=random_choice)
-                    system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[domain][skill_category], difficulty=difficulty)
-                    question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, target_difficulty_ranking, generated_questions)
+                    print(f"domain: {domain}, section: {section}")
+                    system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[section][domain][skill_category], difficulty=difficulty, evaluation_formula=prompts["evaluation_prompt"], refine_formula=prompts["refine_prompt"])
+                    question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, generated_questions)
                     print(f"question JSON: {question}")
                     question_queue.put(question)
 
+def save_pending_questions(questions: List[Dict]):
+    with open ("pending_questions.json", "w") as f:
+        json.dump(questions, f, indent=4)
+
+def load_pending_questions() -> List[Dict] : 
+    try:
+        with open ("pending_questions.json", "r") as f:
+            return json.load(f)
+        
+    except FileNotFoundError:
+        return []
+    
+generated_questions = load_pending_questions()
+
 @app.post("/generate-questions")
 async def generate_questions(request: QuestionRequest):
-    generated_questions = []
+
     section = request.section
     question_queue = queue.Queue()
     threads = []
@@ -112,11 +161,56 @@ async def generate_questions(request: QuestionRequest):
         while not question_queue.empty():
             generated_questions.append(question_queue.get())
         print(generated_questions)
+        save_pending_questions(generated_questions)
         return {"questions": generated_questions}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/remove-question")
+async def remove_question(request: Request):
+    try:
+        data = await request.json()
+        index_to_remove = data.get("index")
 
+        if index_to_remove is None:
+            raise HTTPException(status_code=400, detail="Missing question index")
+
+        global generated_questions
+
+        if not (0 <= index_to_remove < len(generated_questions)):
+            raise HTTPException(status_code=404, detail=f"No question at index {index_to_remove}")
+
+        # Actually remove by index
+        removed_question = generated_questions.pop(index_to_remove)
+
+        save_pending_questions(generated_questions)
+
+        return {
+            "questions": generate_questions
+        }
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/human-feedback")
+async def human_feedback(request: FeedbackRequest):
+    question_index = request.index
+    feedback_content = request.content
+
+    if not (0 <= question_index < len(generated_questions)):
+        raise HTTPException(status_code=404, detail=f"No question at index {question_index}")
+
+    original_question = generated_questions[question_index]
+    old_difficulty_rating = original_question.get("difficulty_ranking", "unknown")
+
+    revised_question = get_human_feedback(original_question, question_index, feedback_content, prompts["main_prompt"])
+    generated_questions[question_index] = revised_question  # Update in place
+
+
+
+    save_pending_questions(generated_questions)
+
+    return {"questions": generated_questions}
 
 @app.post("/send-questions")
 async def send_questions(request: Request):
@@ -126,12 +220,40 @@ async def send_questions(request: Request):
 
         questions: List[Question] = [Question(**q) for q in questions_data]
         print("Received questions:", questions)
-        for question in questions:
+
+        feedback_log = load_feedback_log()
+        for idx, question in enumerate(questions):
             question_data = question.dict()
-            add_question(question_data)  # Send each question to Firebase
+            question_id = add_question(question_data)  # Get unique ID from Firebase
+
+            # Find matching feedback by index
+            for entry in feedback_log:
+                print(entry)
+                if entry["question_index"] == idx:
+                    entry["question_id"] = question_id  # Add the unique ID here
+                    print("saving feedback")
+                    save_human_feedback(
+                        feedback=entry,
+                        question_id=question_id,
+                    )
+                    
+
+        load_questions_from_firebase()
+        with open("pending_questions.json", "w") as f:
+            json.dump([], f)
+
+# Clear feedback log
+        with open("feedback_log.json", "w") as f:
+            json.dump([], f)
         return {"message": "Questions successfully sent to Firebase"}
     except ValidationError as e:
         print("Validation error:", e.json())
         raise HTTPException(status_code=422, detail=e.errors())
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+@app.get('/load-pending-questions')
+def load_pending_questions_from_file():
+    pending_questions = load_pending_questions()
+    return {"questions": pending_questions}

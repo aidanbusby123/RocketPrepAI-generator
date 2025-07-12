@@ -12,7 +12,7 @@ Since your response are being used in an application that requires JSON response
   "choices": ["A. ...", "B. ...", "C. ...", "D. ..."],
   "correct_answer": "C",
   "difficulty": "{difficulty}",
-  "difficulty_ranking": "{difficulty_ranking}"
+  "difficulty_ranking": "difficulty_ranking. should be present in question data. Needs to be a string"
   "explanations": "should be a valid dictionary like so: {{"A": "A explanation", "B": "B explanation", etc}}"
 }}
 ```

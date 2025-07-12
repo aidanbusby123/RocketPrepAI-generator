@@ -11,6 +11,7 @@ from datetime import datetime
 import uuid
 import firebase_admin
 from firebase_admin import credentials, firestore
+import logging
 
 all_questions = []
 
@@ -49,13 +50,19 @@ def load_questions_from_firebase(json_file="questions_data.json"):
             firebase_admin.initialize_app(cred)
 
         db = firestore.client()
-        questions_ref = db.collection("questions")
-        docs = questions_ref.stream()
+        questions_ref = db.collection("questions").document("SAT")
+        questions_collections = questions_ref.collections()
 
-        all_questions = []
-        for doc in docs:
-            question_data = doc.to_dict()
-            all_questions.append(question_data)
+        questions_docs = {}
+
+        all_questions = {}
+        for questions_collection in questions_collections:
+            questions_docs = questions_collection.stream()
+            for question_doc in questions_docs:
+                question_data = question_doc.to_dict()
+                print(question_data["id"])
+                all_questions.setdefault("SAT", {}).setdefault(questions_collection.id, []).append(question_data)
+
 
         # Save the questions to a JSON file
         with open(json_file, "w") as f:
@@ -67,18 +74,73 @@ def load_questions_from_firebase(json_file="questions_data.json"):
     except Exception as e:
         print(f"Error loading questions from Firebase: {e}")
         return None
+def load_feedback_from_firebase(json_file="feedback.json"):
+    """
+    Loads all feedback entries from Firebase and saves them to a JSON file,
+    organized by section and question_id.
+    """
+    try:
+        if not firebase_admin._apps:
+            cred = credentials.Certificate("serviceAccountKey.json")
+            firebase_admin.initialize_app(cred)
 
-def update_local_questions_data(new_question, json_file="questions_data.json"):
+        db = firestore.client()
+
+        feedback_ref = db.collection("feedback").document("SAT")
+
+        all_feedback = {}
+
+        # List all section-level subcollections (e.g., "reading_and_writing")
+        section_collections = feedback_ref.collections()
+
+        for section_collection in section_collections:
+            section_id = section_collection.id
+            print(f"Processing section: {section_id}")
+            all_feedback[section_id] = {}
+
+            # Each document here represents a question_id
+            question_docs = section_collection.stream()
+            for question_doc in question_docs:
+                question_id = question_doc.id
+                print(f"Processing question ID: {question_id}")
+                entries_ref = section_collection.document(question_id).collection("entries")
+                entries = entries_ref.stream()
+
+                all_feedback[section_id][question_id] = []
+                for entry in entries:
+                    entry_data = entry.to_dict()
+                    all_feedback[section_id][question_id].append(entry_data)
+
+        # Save to file
+        with open(json_file, "w") as f:
+            json.dump(all_feedback, f, indent=4)
+
+        print(f"Successfully loaded feedback from Firebase and saved to {json_file}")
+        return all_feedback
+
+    except Exception as e:
+        print(f"Error loading feedback from Firebase: {e}")
+        return None
+
+
+def update_local_questions_data(new_question, json_file="pending_questions.json"):
     """
     Updates the local JSON file with a new question.
     """
+    questions = [] # Initialize as an empty list to start
     try:
         # Load existing questions from the JSON file
         if os.path.exists(json_file):
             with open(json_file, "r") as f:
-                questions = json.load(f)
-        else:
-            questions = []
+                # Corrected line: Assign the loaded JSON data to 'questions'
+                loaded_data = json.load(f)
+                # Add a check to ensure the loaded data is actually a list,
+                # as discussed in the previous turn. This makes it more robust.
+                if isinstance(loaded_data, list):
+                    questions = loaded_data
+                else:
+                    print(f"Warning: {json_file} contains non-list data. Initializing questions as empty list.")
+                    questions = [] # Re-initialize if the file content is not a list
 
         # Add the new question to the list
         questions.append(new_question)
@@ -89,12 +151,29 @@ def update_local_questions_data(new_question, json_file="questions_data.json"):
 
         print(f"Successfully updated {json_file} with new question.")
 
-        return questions
+        return questions # Return the updated list of questions
 
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON from {json_file}: {e}. File might be corrupted. Initializing with new question.")
+        # If the file is corrupted, start fresh with the new question
+        questions = [new_question]
+        with open(json_file, "w") as f:
+            json.dump(questions, f, indent=4)
+        return questions
     except Exception as e:
-        print(f"Error updating local questions data: {e}")
+        print(f"An unexpected error occurred updating local questions data: {e}")
+        # In case of other errors, try to load and return existing or empty list
+        try:
+            if os.path.exists(json_file):
+                with open(json_file, "r") as f:
+                    return json.load(f) # Try to load what's there
+        except:
+            return [] # Return empty list if even recovery fails
+        return []
 
 all_questions = load_questions_from_firebase()
+
+all_feedback = load_feedback_from_firebase()
 
 
 SOURCES_FILE = "sources_data.json"
@@ -138,6 +217,7 @@ def load_sources():
             print(f"Error uploading {filename}: {e}")
             return None
 
+    # Reading and Writing Sources
     # Craft and Structure
     cross_text_connections_samples = upload_or_reuse("sources/reading_and_writing/craft_and_structure/cross_text_connections.pdf")
     text_structure_and_purpose_samples = upload_or_reuse("sources/reading_and_writing/craft_and_structure/text_structure_and_purpose.pdf")
@@ -155,6 +235,38 @@ def load_sources():
     # Standard English Conventions
     boundaries_samples = upload_or_reuse("sources/reading_and_writing/standard_english_conventions/boundaries.pdf")
     form_structure_and_sense_samples = upload_or_reuse("sources/reading_and_writing/standard_english_conventions/form_structure_and_sense.pdf")
+
+
+    # Math Sources
+    # Algebra
+    linear_equations_in_one_variable_samples = upload_or_reuse("sources/math/algebra/linear_equations_in_one_variable.pdf")
+    linear_equations_in_two_variables_samples = upload_or_reuse("sources/math/algebra/linear_equations_in_two_variables.pdf")
+    linear_functions_samples = upload_or_reuse("sources/math/algebra/linear_functions.pdf")
+    systems_of_two_linear_equations_in_two_variables_samples = upload_or_reuse("sources/math/algebra/systems_of_two_linear_equations_in_two_variables.pdf")
+    linear_inequalities_in_one_or_two_variables_samples = upload_or_reuse("sources/math/algebra/linear_inequalities_in_one_or_two_variables.pdf")
+
+    # Advanced Math
+    equivalent_expressions_samples = upload_or_reuse("sources/math/advanced_math/equivalent_expressions.pdf")
+    nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables_samples = upload_or_reuse("sources/math/advanced_math/nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables.pdf")
+    nonlinear_functions_samples = upload_or_reuse("sources/math/advanced_math/nonlinear_functions.pdf")
+
+    # Problem-Solving and Data Analysis
+    ratios_rates_proportional_relationships_and_units_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/ratios_rates_proportional_relationships_and_units.pdf")
+    percentages_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/percentages.pdf")
+    one_variable_data_distributions_and_measures_of_center_and_spread_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/one_variable_data_distributions_and_measures_of_center_and_spread.pdf")
+    two_variable_data_models_and_scatterplots_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/two_variable_data_models_and_scatterplots.pdf")
+    probability_and_conditional_probability_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/probability_and_conditional_probability.pdf")
+    inference_from_sample_statistics_and_margin_of_error_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/inference_from_sample_statistics_and_margin_of_error.pdf")
+    evaluating_statistical_claims_observational_studies_and_experiments_samples = upload_or_reuse("sources/math/problem_solving_and_data_analysis/evaluating_statistical_claims_observational_studies_and_experiments.pdf")
+
+    # Geometry and Trigonometry
+    area_and_volume_samples = upload_or_reuse("sources/math/geometry_and_trigonometry/area_and_volume.pdf")
+    lines_angles_and_triangles_samples = upload_or_reuse("sources/math/geometry_and_trigonometry/lines_angles_and_triangles.pdf")
+    right_triangles_and_trigonometry_samples = upload_or_reuse("sources/math/geometry_and_trigonometry/right_triangles_and_trigonometry.pdf")
+    circles_samples = upload_or_reuse("sources/math/geometry_and_trigonometry/circles.pdf")
+
+
+
 
     # Save the updated sources data to file
     with open(SOURCES_FILE, "w") as f:
@@ -180,8 +292,60 @@ def load_sources():
                 "boundaries": boundaries_samples,
                 "form_structure_and_sense": form_structure_and_sense_samples,
             },
+        },
+        "math": { # NEW MATH SECTION
+            "algebra": {
+                "linear_equations_in_one_variable": linear_equations_in_one_variable_samples,
+                "linear_equations_in_two_variables": linear_equations_in_two_variables_samples,
+                "linear_functions": linear_functions_samples,
+                "systems_of_two_linear_equations_in_two_variables": systems_of_two_linear_equations_in_two_variables_samples,
+                "linear_inequalities_in_one_or_two_variables": linear_inequalities_in_one_or_two_variables_samples,
+            },
+            "advanced_math": {
+                "equivalent_expressions": equivalent_expressions_samples,
+                "nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables": nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables_samples,
+                "nonlinear_functions": nonlinear_functions_samples,
+            },
+            "problem_solving_and_data_analysis": {
+                "ratios_rates_proportional_relationships_and_units": ratios_rates_proportional_relationships_and_units_samples,
+                "percentages": percentages_samples,
+                "one_variable_data_distributions_and_measures_of_center_and_spread": one_variable_data_distributions_and_measures_of_center_and_spread_samples,
+                "two_variable_data_models_and_scatterplots": two_variable_data_models_and_scatterplots_samples,
+                "probability_and_conditional_probability": probability_and_conditional_probability_samples,
+                "inference_from_sample_statistics_and_margin_of_error": inference_from_sample_statistics_and_margin_of_error_samples,
+                "evaluating_statistical_claims_observational_studies_and_experiments": evaluating_statistical_claims_observational_studies_and_experiments_samples,
+            },
+            "geometry_and_trigonometry": {
+                "area_and_volume": area_and_volume_samples,
+                "lines_angles_and_triangles": lines_angles_and_triangles_samples,
+                "right_triangles_and_trigonometry": right_triangles_and_trigonometry_samples,
+                "circles": circles_samples,
+            },
         }
     }
+
+
+'''"advanced_math": {
+                "equivalent_expressions": equivalent_expressions_prompt,
+                "nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables": nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables_prompt,
+                "nonlinear_functions": nonlinear_functions_prompt,
+            },
+            "problem_solving_and_data_analysis": {
+                "ratios_rates_proportional_relationships_and_units": ratios_rates_proportional_relationships_and_units_prompt,
+                "percentages": percentages_prompt,
+                "one_variable_data_distributions_and_measures_of_center_and_spread": one_variable_data_distributions_and_measures_of_center_and_spread_prompt,
+                "two_variable_data_models_and_scatterplots": two_variable_data_models_and_scatterplots_prompt,
+                "probability_and_conditional_probability": probability_and_conditional_probability_prompt,
+                "inference_from_sample_statistics_and_margin_of_error": inference_from_sample_statistics_and_margin_of_error_prompt,
+                "evaluating_statistical_claims_observational_studies_and_experiments": evaluating_statistical_claims_observational_studies_and_experiments_prompt,
+            },
+            "geometry_and_trigonometry": {
+                "area_and_volume": area_and_volume_prompt,
+                "lines_angles_and_triangles": lines_angles_and_triangles_prompt,
+                "right_triangles_and_trigonometry": right_triangles_and_trigonometry_prompt,
+                "circles": circles_prompt,
+            },
+        },'''
 def load_prompts():
 
     # Craft and Structure
@@ -222,6 +386,54 @@ def load_prompts():
     with open("prompts/reading_and_writing/expression_of_ideas/transitions.txt", "r") as f:
         transitions_prompt = f.read()
 
+
+    with open("prompts/math/algebra/linear_equations_in_one_variable.txt", "r") as f:
+        linear_equations_in_one_variable_prompt = f.read()
+    with open("prompts/math/algebra/linear_equations_in_two_variables.txt", "r") as f:
+        linear_equations_in_two_variables_prompt = f.read()
+    with open("prompts/math/algebra/linear_functions.txt", "r") as f:
+        linear_functions_prompt = f.read()
+    with open("prompts/math/algebra/systems_of_two_linear_equations_in_two_variables.txt", "r") as f:
+        systems_of_two_linear_equations_in_two_variables_prompt = f.read()
+    with open("prompts/math/algebra/linear_inequalities_in_one_or_two_variables.txt", "r") as f:
+        linear_inequalities_in_one_or_two_variables_prompt = f.read()
+    '''
+    # Advanced Math
+    with open("prompts/math/advanced_math/equivalent_expressions.txt", "r") as f:
+        equivalent_expressions_prompt = f.read()
+    with open("prompts/math/advanced_math/nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables.txt", "r") as f:
+        nonlinear_equations_in_one_variable_and_systems_of_equations_in_two_variables_prompt = f.read()
+    with open("prompts/math/advanced_math/nonlinear_functions.txt", "r") as f:
+        nonlinear_functions_prompt = f.read()
+
+    # Problem-Solving and Data Analysis
+    with open("prompts/math/problem_solving_and_data_analysis/ratios_rates_proportional_relationships_and_units.txt", "r") as f:
+        ratios_rates_proportional_relationships_and_units_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/percentages.txt", "r") as f:
+        percentages_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/one_variable_data_distributions_and_measures_of_center_and_spread.txt", "r") as f:
+        one_variable_data_distributions_and_measures_of_center_and_spread_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/two_variable_data_models_and_scatterplots.txt", "r") as f:
+        two_variable_data_models_and_scatterplots_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/probability_and_conditional_probability.txt", "r") as f:
+        probability_and_conditional_probability_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/inference_from_sample_statistics_and_margin_of_error.txt", "r") as f:
+        inference_from_sample_statistics_and_margin_of_error_prompt = f.read()
+    with open("prompts/math/problem_solving_and_data_analysis/evaluating_statistical_claims_observational_studies_and_experiments.txt", "r") as f:
+        evaluating_statistical_claims_observational_studies_and_experiments_prompt = f.read()
+
+    # Geometry and Trigonometry
+    with open("prompts/math/geometry_and_trigonometry/area_and_volume.txt", "r") as f:
+        area_and_volume_prompt = f.read()
+    with open("prompts/math/geometry_and_trigonometry/lines_angles_and_triangles.txt", "r") as f:
+        lines_angles_and_triangles_prompt = f.read()
+    with open("prompts/math/geometry_and_trigonometry/right_triangles_and_trigonometry.txt", "r") as f:
+        right_triangles_and_trigonometry_prompt = f.read()
+    with open("prompts/math/geometry_and_trigonometry/circles.txt", "r") as f:
+        circles_prompt = f.read()
+
+    '''
+
     with open ("prompts/mainprompt.txt", "r") as f:
         main_prompt = f.read()
     
@@ -237,13 +449,58 @@ def load_prompts():
     with open ("prompts/refineprompt.txt", "r") as f:
         refine_prompt = f.read()
 
-    return {"craft_and_structure": {"words_in_context": words_in_context_prompt, "text_structure_and_purpose": text_structure_and_purpose_prompt, "cross_text_connections": cross_text_connections_prompt}, "information_and_ideas":{"central_ideas_and_details": central_ideas_and_details_prompt, "command_of_evidence": command_of_evidence_prompt, "inferences": inferences_prompt}, "standard_english_conventions": {"boundaries": boundaries_prompt, "form_structure_and_sense": form_structure_and_sense_prompt}, "expression_of_ideas": {"rhetorical_synthesis": rhetorical_synthesis_prompt, "transitions": transitions_prompt}, "main_prompt": main_prompt, "format_prompt": format_prompt, "explanation_prompt": explanation_prompt, "evaluation_prompt": evaluation_prompt, "refine_prompt": refine_prompt}
+    with open ("prompts/humanfeedbackprompt.txt", "r") as f:
+        human_feedback_prompt = f.read()
+
+    return {
+        "reading_and_writing": {
+            "craft_and_structure": {
+                "words_in_context": words_in_context_prompt,
+                "text_structure_and_purpose": text_structure_and_purpose_prompt,
+                "cross_text_connections": cross_text_connections_prompt
+            },
+            "information_and_ideas": {
+                "central_ideas_and_details": central_ideas_and_details_prompt,
+                "command_of_evidence": command_of_evidence_prompt,
+                "inferences": inferences_prompt
+            },
+            "standard_english_conventions": {
+                "boundaries": boundaries_prompt,
+                "form_structure_and_sense": form_structure_and_sense_prompt
+            },
+            "expression_of_ideas": {
+                "rhetorical_synthesis": rhetorical_synthesis_prompt,
+                "transitions": transitions_prompt
+            },
+        },
+        "math": { # NEW MATH SUPERSTRUCTURE
+            "algebra": {
+                "linear_equations_in_one_variable": linear_equations_in_one_variable_prompt,
+                "linear_equations_in_two_variables": linear_equations_in_two_variables_prompt,
+                "linear_functions": linear_functions_prompt,
+                "systems_of_two_linear_equations_in_two_variables": systems_of_two_linear_equations_in_two_variables_prompt,
+                "linear_inequalities_in_one_or_two_variables": linear_inequalities_in_one_or_two_variables_prompt,
+            },
+
+        },
+        # Miscellaneous Prompts (kept at the same top level)
+        "main_prompt": main_prompt,
+        "format_prompt": format_prompt,
+        "explanation_prompt": explanation_prompt,
+        "evaluation_prompt": evaluation_prompt,
+        "refine_prompt": refine_prompt,
+        "human_feedback_prompt": human_feedback_prompt
+    }
+
+
+
+
 
 prompts = load_prompts()
 
 sources = load_sources()
 
-def evaluate_question_difficulty(raw_question_data, section, domain, skill_category, difficulty, target_difficulty_ranking, ref_system_prompt):
+def evaluate_question_difficulty(raw_question_data, section, domain, skill_category, difficulty, ref_system_prompt):
     print("# Evaluating difficulty\n")
     evaluation_system_prompt = prompts["evaluation_prompt"]
     evaluation_prompt = f"Please evaluate the difficulty of the following question: {raw_question_data}.\nThe question is from the section {section}, domain {domain}, skill category {skill_category}, and is of difficulty {difficulty}.\n"
@@ -257,7 +514,7 @@ def evaluate_question_difficulty(raw_question_data, section, domain, skill_categ
             system_instruction=[evaluation_system_prompt]
         )
     )
-
+    print(f"metadata: {response.usage_metadata}")
     evaluation = response.text
 
     print(evaluation)
@@ -285,11 +542,12 @@ def refine_question(raw_question_data, question_evaluation, section, domain, ski
         )
     )
     print(f"# Refine notes: {response} ")
-    return response
+    print(f"metadata: {response.usage_metadata}")
+    return response.text
 
-def format_question(raw_question_data, section, domain, skill_category, difficulty, difficulty_ranking):
+def format_question(raw_question_data, section, domain, skill_category, difficulty):
     format_prompt = prompts["format_prompt"]
-    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
+    format_prompt = format_prompt.format(section=section, domain=domain, skill_category=skill_category, difficulty=difficulty)
     print("format prompt formatted")
     format_messages = [{"role": "system", "content": format_prompt}]
     format_messages.append({"role": "user", "content": f"Please format this for me: {raw_question_data}."})
@@ -306,13 +564,16 @@ def format_question(raw_question_data, section, domain, skill_category, difficul
         ),
     )
 
+    print(f"metadata: {gemini_response.usage_metadata}")
     #response = response.choices[0].message.content
     gemini_response = gemini_response.text
+
     
     print(gemini_response)
     return gemini_response
 
-def generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, target_difficulty_ranking, messages):
+
+def generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, messages):
     print("# Generating Question\n")
     #messages.append({"role": "system", "content": system_prompt})
     #messages.append({"role": "user", "parts": [user_prompt]})
@@ -323,24 +584,25 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         temperature=1,
     )
     '''
-    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)\n Questions from this session: {str(messages)}\n Questions from database: {all_questions}"
-
+    section_questions = all_questions["SAT"].get(section, [])
+    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)\n Questions from this session: {str(messages)}\n Questions from database: {section_questions}"
     #print ("Generating questions!")
-    #print(generated_questions)
+    print(generated_questions)
 
     gemini_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
         #messages = str(messages)
         #print(generated_questions)
-        contents=[generated_questions, sources[section][domain][skill_category], user_prompt],
+        contents=[generated_questions, sources[section][domain][skill_category], str(all_feedback), user_prompt],
         config=GenerateContentConfig(
             system_instruction=[system_prompt],
-            temperature=1.05
+            temperature=1.0
         ),
     )
 
     question = gemini_response.text
     print(f"# Question: {question}")
+    print(f"metadata: {gemini_response.usage_metadata}")
 
    # explanations = re.search(r'\{.*\}', explanations_response.text, re.DOTALL)
     '''
@@ -353,12 +615,12 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     #response = response.choices[0].message.content
     #messages.append({"role": "assistant", "content": response})
 
-    evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
-    evaluation = evaluation + f"\n current difficulty ranking: {difficulty_ranking}"
-    question = refine_question(question, evaluation, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
-    evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    #evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    #evaluation = evaluation + f"\n current difficulty ranking: {difficulty_ranking}"
+    #question = refine_question(question, evaluation, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
+    #evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
 
-    formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, difficulty_ranking=difficulty_ranking)
+    formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty)
     
     question = re.search(r'\{.*\}', formatted_response, re.DOTALL)
 
@@ -370,15 +632,146 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     else:
         raise ValueError("No valid JSON found in response")
 
+def load_feedback_log():
+    if not os.path.exists("feedback_log.json"):
+        return []  # Return empty list if file doesn't exist
+
+    try:
+        with open("feedback_log.json", "r") as f:
+            return json.load(f)
+    except json.JSONDecodeError:
+        # Handle corrupt file
+        return []
+
+def append_to_feedback_log(feedback_entry, log_file="feedback_log.json"):
+    """
+    Appends a feedback entry to the local feedback log.
+    If the file does not exist, it will create it.
+    """
+    try:
+        feedback_log = []
+        if os.path.exists(log_file):
+            with open(log_file, "r") as f:
+                feedback_log = json.load(f)
+                if not isinstance(feedback_log, list):
+                    print("Feedback log is corrupted. Resetting to empty list.")
+                    feedback_log = []
+
+        feedback_log.append(feedback_entry)
+
+        with open(log_file, "w") as f:
+            json.dump(feedback_log, f, indent=4)
+
+        print("Feedback successfully appended to feedback_log.json")
+
+    except Exception as e:
+        print(f"Error appending to feedback log: {e}")
+def save_human_feedback(feedback, question_id):
+    try:
+        original_question = feedback["original_question"]
+
+        if not isinstance(original_question, dict):
+            raise ValueError("original_question must be a dict.")
+
+        section = original_question.get("section")
+        if not isinstance(section, str):
+            raise ValueError("Missing or invalid 'section' in original_question.")
+
+        timestamp = datetime.utcnow().isoformat()
+
+        feedback_data = {
+            "feedback": feedback,
+            "timestamp": timestamp,
+            "id": question_id,
+        }
+
+        # Path: feedback/SAT/{section}/{question_id}
+        question_doc_ref = db.collection("feedback") \
+                             .document("SAT") \
+                             .collection(section) \
+                             .document(question_id)
+
+        # Ensure the question document exists (you can also save metadata here)
+        question_doc_ref.set({
+            "question_id": question_id,
+            "timestamp": timestamp
+        }, merge=True)  # merge=True ensures existing data isn't overwritten
+
+        # Add feedback entry to the "entries" subcollection
+        print(f"Writing feedback to: feedback/SAT/{section}/{question_id}/entries")
+        question_doc_ref.collection("entries").add(feedback_data)
+
+        print("✅ Feedback successfully added.")
+
+    except Exception as e:
+        logging.error(f"❌ Failed to add feedback: {e}")
+        return None
+
+
+
+def get_human_feedback(question, question_index, feedback: str, ref_system_prompt):
+    human_feedback_system_prompt = prompts["human_feedback_prompt"]
+
+
+    feedback_response = gemini_client.models.generate_content(
+        model=GEMINI_MODEL,
+        contents=[str(question), feedback, sources[question["section"]][question["domain"]][question["skill_category"]], ref_system_prompt],
+        config=GenerateContentConfig(
+            system_instruction=[human_feedback_system_prompt],
+            temperature=1.0
+        ),
+    )
+
+    feedback_response = feedback_response.text
+    updated_question = re.search(r'\{.*\}', feedback_response, re.DOTALL)
+
+
+
+    if updated_question:
+        updated_question_json = updated_question.group(0)
+        print (f"Question json generated: {json.loads(updated_question_json)}")
+        update_local_questions_data(json.loads(updated_question_json))
+        append_to_feedback_log({
+        "original_question": question,
+        "updated_question": feedback_response,
+        "feedback": feedback,
+        "original_difficulty_rating": question.get("difficulty_rating", "unknown"),
+        "question_index": question_index,
+        "timestamp": datetime.utcnow().isoformat()
+        })
+        return json.loads(updated_question_json)
+    else:
+        raise ValueError("No valid JSON found in response")
+
 
 def add_question(question):
-    question["timestamp"] = datetime.utcnow().isoformat()
-    question["id"] = question_id = str(uuid.uuid4())
-    question["test"] = "SAT"
+    try:
+        # Validate input
+        if not isinstance(question, dict):
+            raise ValueError("Input must be a dictionary.")
 
-    db.collection("questions").document(question_id).set(question)
-    return question_id
+        required_fields = ["section"]
+        for field in required_fields:
+            if field not in question or not isinstance(question[field], str):
+                raise ValueError(f"Missing or invalid field: {field}")
 
+        # Add metadata
+        question["timestamp"] = datetime.utcnow().isoformat()
+        question["id"] = question_id = str(uuid.uuid4())
+        question["test"] = "SAT"
+
+        # Save to Firestore
+        db.collection("questions") \
+          .document(question["test"]) \
+          .collection(question["section"]) \
+          .document(question_id) \
+          .set(question)
+
+        return question_id
+
+    except Exception as e:
+        logging.error(f"Failed to add question: {e}")
+        return None  # or raise if you want the caller to handle it
 args = None
 
 def generate():

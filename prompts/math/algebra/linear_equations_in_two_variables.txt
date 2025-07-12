@@ -1,0 +1,65 @@
+Level 1: Easy Difficulty
+
+Goal: To test foundational skills like basic modeling, interpreting simple equations, or applying core geometric properties of lines.
+
+Step 1: Choose an "Easy" Scenario (Select ONE)
+
+    A. Direct Modeling: Create a word problem where two items with different constant values sum to a total. The student must select the correct equation in the form ax + by = c.
+
+    B. Basic Word Problem: Create a word problem that can be solved with a simple linear equation in two variables, where one variable's value is given.
+
+    C. Parallel/Perpendicular Lines (Slope-Intercept Form): Give the equation of a line in y = mx + b form. Ask for the slope of a line that is parallel or perpendicular to it.
+
+    D. Graph-to-Table Matching: Show a simple graph of a line with clear integer intercepts and ask the student to select the table of values that matches the graph.
+
+Step 2: Construct the Question
+
+    Use simple integers and clear, unambiguous language.
+
+    Present equations in straightforward forms.
+
+    Distractors should represent common errors: swapping coefficients (ax+by vs. bx+ay), confusing parallel and perpendicular slope rules, or misreading points from a graph.
+
+Level 2: Medium Difficulty
+
+Goal: To test multi-step procedural problems or interpretation of equations in more complex contexts.
+
+Step 1: Choose a "Medium" Scenario (Select ONE)
+
+    A. Interpret Coefficients in Context: Give an equation in standard form (ax + by = c) representing a real-world scenario (e.g., perimeter, cost). Ask for the best interpretation of a coefficient (a or b).
+
+    B. Find the Equation from Two Points: Give two coordinate points (x1, y1) and (x2, y2) and ask for the equation of the line that passes through them.
+
+    C. Algebraic Manipulation to Find Slope: Give an equation not in slope-intercept form (e.g., with parentheses that need to be distributed) and ask for the slope.
+
+    D. Modeling a Geometric Scenario: Describe a situation involving the perimeters of multiple shapes and ask the student to formulate the equation that represents the total perimeter.
+
+Step 2: Construct the Question
+
+    The problem will require two or three distinct logical steps (e.g., find perimeter of one shape, then another, then sum them).
+
+    Equations may involve fractions or require simplification before key features can be identified.
+
+    Distractors should represent plausible errors in calculation (e.g., slope formula errors) or modeling (e.g., confusing area with perimeter).
+
+Level 3: Hard Difficulty
+
+Goal: To test the synthesis of multiple algebraic concepts, abstract reasoning, and complex modeling.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Multi-Step Transformation and Analysis: Give a line (via table, graph, or equation). State that it is transformed (e.g., translated vertically or horizontally). The student must then find a key feature (e.g., the x-intercept) of the new, transformed line.
+
+    B. Abstract Properties of Perpendicular Lines: Give a pair of perpendicular lines with unknown constants (e.g., ax + by = 1). Ask the student to identify another pair of lines from the options that must also be perpendicular, based on the abstract relationship between a and b.
+
+    C. Interpret and Calculate from Coefficients: Give an equation in standard form (ax + by = c) representing a real-world scenario. The question requires the student to first interpret the meaning of the coefficients a and b and then perform a calculation based on that interpretation (e.g., find b - a).
+
+    D. Find Intercepts and Calculate a Ratio: Give an equation in standard form. Ask the student to find the x-intercept (a, 0) and y-intercept (0, b), and then compute a value based on them, such as their ratio a/b.
+
+Step 2: Construct the Question
+
+    Problems should have multiple layers. The initial information is used to find intermediate values, which are then used in a final step.
+
+    The format can be algebraic, graphical, or tabular, but the cognitive load should be high.
+
+    Distractors must be sophisticated, representing common conceptual errors (e.g., confusing the x- and y-intercepts, making a sign error in the slope relationship) or misinterpretations of the required transformation. Student-produced response formats are particularly effective for this level.

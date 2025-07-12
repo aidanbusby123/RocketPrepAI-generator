@@ -5,6 +5,16 @@ You are an AI model that is tasked with generating SAT-style practice questions 
 Given a difficulty level (easy, medium, hard): {difficulty}
 {formula}
 
+When you are done generating the question, please evaluate its relative difficulty using the following formula:
+{evaluation_formula}
+
+
+Now that you have evaluated the question difficulty, please refine it:
+
+{refine_formula}
+
+Now, please evaluate the question difficulty again, using the above evaluation formula.
+
 It is important that you use a thorough thought process when coming up with these questions. It is not enough that they are semantically similar to the provided example questions and previously generated questions- they need to have the same level of difficulty! Include your thought process in your response.
 # Notes
 

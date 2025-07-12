@@ -1,0 +1,93 @@
+Level 1: Easy Difficulty
+
+Goal: To test for basic procedural fluency in solving two-step linear equations or modeling very simple real-world scenarios.
+
+Step 1: Choose an "Easy" Scenario (Select ONE)
+
+    A. Procedural Solve: A straightforward two-step equation in the form ax + b = c.
+
+    B. Simple Word Problem: A real-world scenario where the initial amount, rate of change, and final amount are given explicitly. The student must set up and solve the corresponding two-step equation.
+
+Step 2: Construct the Question
+
+    For Scenario A: Write the equation ax + b = c. Choose integers for a, b, and c such that the solution for x is also an integer.
+
+    For Scenario B: Write a short paragraph (2-3 sentences) describing a situation (e.g., managing inventory, saving money, distance traveled). Clearly state all necessary values.
+
+    Question Stem: "What value of p satisfies the equation...?" or "Based on the estimate, in how many days will..."
+
+Step 3: Create Answer Choices
+
+    Correct Answer: The correct integer solution to the equation.
+
+    Distractors:
+
+        The result of a common calculation error (e.g., adding instead of subtracting b, or making a sign error).
+
+        A value from the problem itself (e.g., the rate or the initial value).
+
+        The result of incorrectly setting up the equation (e.g., Initial + Rate*Time = Final instead of Initial - Rate*Time = Final).
+
+Level 2: Medium Difficulty
+
+Goal: To test the student's ability to recognize and exploit algebraic structure to find an efficient solution path.
+
+Step 1: Choose a "Medium" Scenario (Select ONE)
+
+    A. Solve for an Expression: Create an equation where the same linear expression (e.g., ax + b) appears on both sides of the equals sign. The question must ask for the value of the expression, not the variable x.
+
+    B. Factorable Equation: Create an equation where a common binomial factor (e.g., x + c) appears in multiple terms, often with fractional or different integer coefficients. This structure allows for factoring as a shortcut.
+
+Step 2: Construct the Question
+
+    For Scenario A: The equation should be in a form like k(ax+b) + m = n(ax+b) + p.
+
+    For Scenario B: The equation should be in a form like k(x+c) + m(x+c) = p.
+
+    Question Stem: "If [equation], what is the value of ax + b?" or "What value of x is the solution to the given equation?" (This can be multiple-choice or free-response).
+
+Step 3: Create Answer Choices (if multiple-choice)
+
+    Correct Answer: The correct value.
+
+    Distractors:
+
+        For Scenario A, one distractor must be the value of x itself, to catch students who solve the long way and forget the final step.
+
+        Results from sign errors or distribution errors.
+
+        An answer that incorrectly simplifies the structure (e.g., just canceling out the common expression).
+
+Level 3: Hard Difficulty
+
+Goal: To test higher-order thinking by requiring either complex algebraic modeling or deep conceptual understanding of equations.
+
+Step 1: Choose a "Hard" Scenario (Select ONE)
+
+    A. Complex Algebraic Modeling: Design a word problem with multiple interacting parts and variables. The task is not to solve, but to construct the correct equation that models the situation.
+
+    B. Number of Solutions: Create a linear equation that, upon simplification, results in x = 0 (one solution), a true statement like a = a (infinitely many solutions), or a false statement like a = b (no solution). The question asks how many solutions the equation has.
+
+Step 2: Construct the Question
+
+    For Scenario A: Write a detailed word problem (3-4 sentences) involving at least three different quantities, where one quantity is defined in terms of another (e.g., "The number of red marbles is 5 times the number of blue marbles, n"). The context can be geometric, financial, etc.
+
+    For Scenario B: Write a simple-looking linear equation, but choose the coefficients so it simplifies to one of the three conceptual outcomes.
+
+    Question Stem: "Which equation must be true for the value of n?" or "How many solutions does the given equation have?"
+
+Step 3: Create Answer Choices
+
+    Correct Answer: The correct equation or number of solutions.
+
+    Distractors:
+
+        For Scenario A, create equations that represent common modeling errors:
+
+            Confusing two different quantities (e.g., using side length where number of sides is required).
+
+            Setting the wrong quantities equal (e.g., modeling the perimeter but setting it equal to the number of sides).
+
+            Omitting one of the components from the total.
+
+        For Scenario B, the distractors will be the other possible answers for the number of solutions (Zero, Exactly one, Exactly two, Infinitely many).
