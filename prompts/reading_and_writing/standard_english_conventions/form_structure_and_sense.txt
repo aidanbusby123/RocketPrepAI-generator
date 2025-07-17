@@ -87,3 +87,11 @@ Step 2: Construct the Sentence and Choices
     The correct choice will be the only one that creates a logically and grammatically sound sentence.
 
     Distractors will be tempting because they might sound plausible at first glance but create subtle yet critical grammatical errors like dangling modifiers or subject-verb disagreement.
+
+# Notes
+
+Not all of the questions should be of this form: By methodically mapping the palindromic repeats in bacterial DNA and later identifying the crucial role of the Cas9 protein, a process that spanned several years of intensive research, ___ the foundational principles of what would become a revolutionary gene-editing tool.
+
+A. Jennifer Doudna and Emmanuelle Charpentier established, B. the discovery of the CRISPR-Cas9 system established, C. it was through the work of Jennifer Doudna and Emmanuelle Charpentier that, D. the foundational principles of a revolutionary gene-editing tool were established by
+
+Right now, all of questions have answers like A correct, where there is a sentence that starts with a subject and then an action. Mix things up a bit!

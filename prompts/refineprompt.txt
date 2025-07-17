@@ -3,3 +3,4 @@ You are an SAT prompt refining agent. Your job is to take an SAT question of sec
 {evaluation}
 
 If the question is of difficulty level easy, its difficulty rating should be between 0.0 and 0.33, if medium, between 0.33 and 0.66..., and if hard, between 0.666...7 and 1. Figure out how to make the question harder or easier to fit into the correct difficulty ranking!
+If the question is to hard, make it easier, if it is too easy, make it harder!

@@ -125,7 +125,15 @@ def generate_questions_for_skill_category(section: str, skill_category: str, dif
 
                     user_prompt = base_user_prompt.format(difficulty=difficulty, random_choice=random_choice)
                     print(f"domain: {domain}, section: {section}")
-                    system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[section][domain][skill_category], difficulty=difficulty, evaluation_formula=prompts["evaluation_prompt"], refine_formula=prompts["refine_prompt"])
+                    system_prompt = f"Using the sources as a guide, generate an authentic and unique question of the given difficulty level. Make questions harder than you think they should be always, \
+                    and ensure that the tone and style does not differ drastically from those of the examples. The only way in which your question should differ \
+is that it is allowed to be harder than the others. Realistically, your easiest questions for each difficulty should be as hard as the harder ones in the provided sources. (the files). To ensure question diversity, use the sources as reference to decide when you need to switch gears and " \
+"generate questions of a different style, for example expository vs fictional, based off of how many questions of different styles there are.\
+ \
+Using the prompt above, here is a new, generated question of difficulty {difficulty}. Please ensure you achieve the correct difficulty level. \
+"
+                    system_prompt = str(system_prompt)
+                    #system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[section][domain][skill_category], difficulty=difficulty, evaluation_formula=prompts["evaluation_prompt"], refine_formula=prompts["refine_prompt"])
                     question = generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, generated_questions)
                     print(f"question JSON: {question}")
                     question_queue.put(question)
@@ -160,7 +168,7 @@ async def generate_questions(request: QuestionRequest):
 
         while not question_queue.empty():
             generated_questions.append(question_queue.get())
-        print(generated_questions)
+        #print(generated_questions)
         save_pending_questions(generated_questions)
         return {"questions": generated_questions}
     except Exception as e:
@@ -186,7 +194,7 @@ async def remove_question(request: Request):
         save_pending_questions(generated_questions)
 
         return {
-            "questions": generate_questions
+            "questions": generated_questions
         }
 
     except Exception as e:
@@ -203,7 +211,11 @@ async def human_feedback(request: FeedbackRequest):
     original_question = generated_questions[question_index]
     old_difficulty_rating = original_question.get("difficulty_ranking", "unknown")
 
-    revised_question = get_human_feedback(original_question, question_index, feedback_content, prompts["main_prompt"])
+    section = original_question.get("section", "unknown")
+    difficulty = original_question.get("difficulty", "unknown")
+    skill_category = original_question.get("skill_category", "unknown")
+
+    revised_question = get_human_feedback(original_question, section, skill_category, difficulty, question_index, feedback_content, prompts["main_prompt"])
     generated_questions[question_index] = revised_question  # Update in place
 
 
@@ -232,13 +244,15 @@ async def send_questions(request: Request):
                 if entry["question_index"] == idx:
                     entry["question_id"] = question_id  # Add the unique ID here
                     print("saving feedback")
-                    save_human_feedback(
+                    ''' save_human_feedback(
                         feedback=entry,
                         question_id=question_id,
-                    )
+                    )'''
                     
 
         load_questions_from_firebase()
+        global generated_questions
+        generated_questions = []
         with open("pending_questions.json", "w") as f:
             json.dump([], f)
 

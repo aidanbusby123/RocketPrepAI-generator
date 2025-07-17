@@ -1,233 +1,601 @@
 [
     {
-        "question": "A lay conception of history often treats it as a veridical chronicle of bygone eras, a straightforward ledger of events as they occurred. However, scholars working in the field of historical memory have long contended that this view is, at best, incomplete. They argue that what societies treat as their collective past is not a passive reflection but an active, and often contentious, construction. This process of remembering is profoundly shaped by present-day imperatives\u2014(by, for example, the need to forge a national identity or legitimize a political order)\u2014and is thus inherently selective. By this logic, the past that is \"remembered\" is less a definitive record and more a discursive field, a terrain where meanings are produced and contested, often with a teleological aim of explaining or justifying the present.\n\nWhich choice best states the main idea of the text?",
+        "choices": [
+            "A. Consequently,",
+            "B. Specifically,",
+            "C. Furthermore,",
+            "D. In effect,"
+        ],
+        "timestamp": "2025-07-13T05:35:10.148123",
+        "section": "reading_and_writing",
+        "id": "2da1c03e-ac7b-4573-8a9d-b4528d9c5b6b",
+        "explanations": {
+            "A": "This choice is correct. The first sentence describes a cause (sea otters preying on sea urchins). The second sentence describes the direct logical outcome or consequence of that action (sea urchin populations are controlled, preserving kelp forests). 'Consequently' best captures this cause-and-effect relationship.",
+            "B": "This choice is incorrect. 'Specifically' is used to narrow a general statement into a more precise or focused detail. While the second sentence provides details, its primary function is to explain the overall outcome or result of the otters' predation, not just to offer a narrower specification of it.",
+            "C": "This choice is incorrect. 'Furthermore' is used to add another, distinct piece of information. The second sentence is not an additional, separate point about sea otters; it is the direct result of the specific action mentioned in the first sentence.",
+            "D": "This choice is incorrect. 'In effect' is used to introduce a summary or practical upshot of a situation, suggesting 'in essence' or 'basically'. While close, 'Consequently' is more precise here because it emphasizes a direct logical sequence (this happened, therefore that happened), which is the core structure of the argument."
+        },
+        "difficulty_ranking": "0.68",
+        "skill_category": "transitions",
+        "test": "SAT",
+        "difficulty": "hard",
+        "correct_answer": "A",
+        "domain": "expression_of_ideas",
+        "question": "Sea otters, marine mammals found along the northern and eastern coasts of the North Pacific Ocean, are a classic example of a keystone species. They play a crucial role in maintaining the health of kelp forest ecosystems, primarily by preying on sea urchins. _______, by keeping the sea urchin population in check, sea otters prevent these herbivores from overgrazing on kelp, which in turn preserves the vital habitat for countless other marine species.\n\nWhich choice completes the text with the most logical transition?"
+    },
+    {
+        "question": "The intricate tapestries of the renowned artist, much like the single, overarching theme that connects her entire body of work, ___ a narrative of resilience and cultural heritage.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. weave",
+            "B. weaves",
+            "C. are weaving",
+            "D. have woven"
+        ],
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "This is the correct answer. The subject of the sentence is 'The intricate tapestries,' which is plural. Therefore, it requires the plural verb 'weave'. The intervening phrase, 'much like the single, overarching theme that connects her entire body of work,' contains singular nouns ('theme,' 'body') intended to distract from the main subject.",
+            "B": "This choice is incorrect because the singular verb 'weaves' does not agree with the plural subject 'tapestries'. A test-taker might mistakenly choose this option if they are misled by the singular noun 'theme' in the phrase that separates the subject from the verb.",
+            "C": "This choice is incorrect. While 'are weaving' is a plural verb that agrees with the subject 'tapestries', the present progressive tense suggests an action currently in progress. The simple present 'weave' is more stylistically appropriate for describing a general, timeless quality of the artist's work.",
+            "D": "This choice is incorrect. Although 'have woven' is a plural verb that agrees with the subject 'tapestries,' the present perfect tense implies a recently completed action. The context calls for the simple present tense ('weave') to describe an ongoing, essential quality of the artwork."
+        }
+    },
+    {
+        "choices": [
+            "A. its",
+            "B. their",
+            "C. one's",
+            "D. her"
+        ],
+        "timestamp": "2025-07-28T11:45:19.321876",
+        "section": "reading_and_writing",
+        "id": "e9a0c1f2-b8e7-4f3d-9a1b-6d7c5432a9b1",
+        "explanations": {
+            "A": "This choice is incorrect but is a plausible distractor. The pronoun 'its' could grammatically refer to the singular noun 'reign,' which appears just before the blank. However, a 'reign' is an abstract concept and cannot conduct 'deft trade negotiations.' The logical agent is the person, Hatshepsut, requiring a personal pronoun.",
+            "B": "This choice is incorrect. 'Their' is a plural pronoun. Although 'powerful pharaohs' is mentioned earlier, the specific subject of the final clause is Hatshepsut's reign and, by extension, Hatshepsut herself, who is a singular individual.",
+            "C": "This choice is incorrect. 'One's' is an impersonal, indefinite pronoun used for general statements. The sentence describes the specific actions of a particular historical figure, Hatshepsut.",
+            "D": "This is the correct answer. The pronoun refers to the agent who conducted the 'deft trade negotiations.' Although the noun 'reign' is closer to the blank, the logical antecedent is the person, Hatshepsut. The pronoun must therefore be the singular, feminine, possessive pronoun 'her' to agree with Hatshepsut."
+        },
+        "difficulty_ranking": "0.85",
+        "skill_category": "pronoun_antecedent_agreement",
+        "test": "SAT",
+        "difficulty": "hard",
+        "correct_answer": "D",
+        "domain": "standard_english_conventions",
+        "question": "The New Kingdom of Egypt, an era defined by the reigns of powerful pharaohs like Hatshepsut, owed much of its stability to their diplomatic prowess. Hatshepsut\u2019s reign, in particular, was a masterclass in political maneuvering; indeed, it was through ______ deft trade negotiations that the kingdom secured immense wealth."
+    },
+    {
+        "question": "The resilience of the tardigrade, or water bear, is legendary among biologists; this microscopic invertebrate has a unique survival ___ it can enter a state of suspended animation called cryptobiosis to withstand conditions lethal to nearly all other organisms.",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "boundaries",
+        "choices": [
+            "A. mechanism, and",
+            "B. mechanism,",
+            "C. mechanism;",
+            "D. mechanism:"
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.8",
+        "explanations": {
+            "A": "This choice is incorrect. While a comma followed by a coordinating conjunction like 'and' can be used to connect two independent clauses, the relationship here is one of direct explanation. The second clause elaborates on the 'unique survival mechanism.' A colon is the more precise and stylistically appropriate punctuation to signal this specific logical relationship.",
+            "B": "This choice is incorrect because it creates a comma splice, which occurs when two independent clauses (complete sentences) are joined only by a comma. This is a grammatical error.",
+            "C": "This is a plausible but incorrect choice. A semicolon is used to connect two closely related independent clauses. However, when the second clause directly explains, defines, or elaborates on the first, a colon is the more appropriate and precise form of punctuation. The second clause here explains what the 'mechanism' is, making the colon a better choice.",
+            "D": "This is the correct answer. A colon is used to introduce an explanation or elaboration that is directly cued by a preceding independent clause. The first clause states that the tardigrade has a 'unique survival mechanism,' and the second clause explains exactly what that mechanism is. The colon perfectly signals this explanatory relationship."
+        }
+    },
+    {
+        "question": "In 1928, bacteriologist Alexander Fleming returned from a holiday to find that a petri dish containing *Staphylococcus* bacteria had been contaminated by a mold, *Penicillium notatum*. He observed a clear zone around the mold where the bacteria could not grow, indicating that the mold produced a substance that inhibited bacterial growth. This initial observation, though crucial, was largely a curiosity until Howard Florey and Ernst Chain began their work at Oxford over a decade later. <u>It was their team that developed a method to purify the active substance\u2014penicillin\u2014and demonstrate its potent ability to cure systemic bacterial infections in mice, a breakthrough that Fleming\u2019s work alone had not achieved.</u> This success paved the way for the mass production of penicillin, which saved countless lives during World War II and ushered in the age of antibiotics.\n\nWhich choice best describes the function of the underlined sentence in the text as a whole?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "text_structure_and_purpose",
+        "choices": [
+            "A. It establishes the text\u2019s central argument that practical application is more valuable than initial discovery in science.",
+            "B. It details the technical procedures that were foundational to the mass production of penicillin.",
+            "C. It transitions the text's focus from the history of a discovery to the scientific details of an experiment.",
+            "D. It specifies the achievement that differentiated the work of Florey and Chain from Fleming's initial finding."
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "This choice is incorrect. While the text as a whole may imply this theme, the specific function of the underlined sentence is not to state a broad argument. Instead, its role is to provide the key evidence\u2014the specific contribution of Florey and Chain\u2014that supports this larger idea.",
+            "B": "This choice is incorrect. The work described (purification and demonstration of efficacy) was indeed foundational to mass production. However, the sentence's primary rhetorical purpose in the text's argument is to contrast this achievement with Fleming's earlier observation, a nuance this choice fails to capture.",
+            "C": "This choice is incorrect. Although the sentence does shift the text's focus toward the work of Florey and Chain, describing this function as a mere 'transition' is too general. Its more precise purpose is to clarify and distinguish the specific breakthrough their team achieved, making it a less accurate description than the correct answer.",
+            "D": "This choice is correct. The sentence's primary role is to pinpoint the exact contribution of Florey and Chain's team (purifying penicillin and proving it could cure infections) and explicitly state how this 'breakthrough' was different from and went beyond 'Fleming's work alone.'"
+        }
+    },
+    {
+        "question": "In response to the disproportionately high crime rates plaguing many mid-20th-century public housing projects, architect Oscar Newman developed the theory of 'defensible space.' Newman argued that rather than relying on reactive measures like increased policing, the built environment itself could proactively deter crime. His core thesis was that architectural designs fostering a sense of territoriality and community\u2014such as low fences and clustered housing around semi-private courtyards\u2014were key. **He theorized that such features encourage 'natural surveillance,' a process wherein inhabitants instinctively monitor and protect their shared environment, thereby deterring criminal activity.**\n\nWhich choice best describes the function of the underlined sentence in the text as a whole?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "text_structure_and_purpose",
+        "choices": [
+            "A. It summarizes the core principles of Newman\u2019s overarching theory of defensible space.",
+            "B. It defines the psychological concept of 'natural surveillance' as distinct from territoriality.",
+            "C. It explains the causal process through which Newman's recommended features are expected to work.",
+            "D. It offers a specific, concrete illustration of the architectural changes Newman advocated for."
+        ],
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.75",
+        "explanations": {
+            "A": "This distractor is an overgeneralization. The underlined sentence describes one specific component of the theory (the mechanism of natural surveillance), not a summary of its 'overarching principles,' which would also include the critique of policing and the concept of territoriality.",
+            "B": "This distractor mischaracterizes the relationship between concepts. The sentence presents natural surveillance as a *result* of features that foster territoriality; it does not explicitly define it as a *distinct* concept. The focus is on the process, not a formal definition or contrast.",
+            "C": "This is the correct answer. The sentence explains the 'causal process'\u2014how one thing leads to another. The architectural features (cause) lead to natural surveillance, which in turn leads to crime deterrence (effect). The phrase 'expected to work' accurately captures the theoretical nature of the claim.",
+            "D": "This is a plausible distractor that misidentifies the function. It describes the role of the *previous* sentence, which gives concrete illustrations ('low fences and clustered housing'). The underlined sentence explains the *abstract process* that those illustrations set in motion, rather than being an illustration itself."
+        }
+    },
+    {
+        "question": "The process of language change is often so gradual that it is imperceptible to its speakers within a single generation. These subtle shifts in pronunciation, vocabulary, and grammar accumulate over centuries. ___, a modern English speaker would find the Old English of *Beowulf*, written a millennium ago, almost entirely incomprehensible without specialized training, demonstrating the profound cumulative effect of these minor alterations.\n\nWhich choice completes the text with the most logical transition?",
+        "section": "reading_and_writing",
+        "domain": "Expression of Ideas",
+        "skill_category": "Transitions",
+        "choices": [
+            "A. Consequently,",
+            "B. For example,",
+            "C. Indeed,",
+            "D. In effect,"
+        ],
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.85",
+        "explanations": {
+            "A": "This choice is incorrect. 'Consequently' signals a direct cause-and-effect relationship. While the incomprehensibility of Old English is a result of language change, the primary rhetorical function of this sentence is not simply to state a logical result but to provide a powerful piece of evidence that confirms and emphasizes the initial claim about the cumulative effect of gradual change. 'Indeed' captures this emphatic role more precisely.",
+            "B": "This choice is a plausible but incorrect distractor. 'For example' introduces a specific instance of a general claim. While the relationship between Old and Modern English is an example of language change, the sentence's primary function, signaled by the phrase 'profound cumulative effect,' is to emphasize the extent and consequence of the gradual process, making a stronger, more confirmatory transition word more appropriate.",
+            "C": "This is the correct answer. 'Indeed' is used to introduce a statement that confirms, emphasizes, or strengthens the preceding one. The first sentences state that language change is a slow, cumulative process. The third sentence provides a striking piece of evidence\u2014the incomprehensibility of *Beowulf*\u2014that powerfully confirms this claim by showing its long-term result. 'Indeed' effectively signals this emphatic and confirmatory relationship.",
+            "D": "This choice is incorrect. 'In effect' is used to summarize or state the practical upshot of something, often rephrasing what was just said. This sentence does not rephrase the initial claim; it introduces a new, specific, and powerful piece of evidence to support and emphasize it."
+        }
+    },
+    {
+        "question": "The research expedition yielded three significant findings: a new species of deep-sea isopod, which thrives near hydrothermal ______ detailed oceanographic data mapping previously unknown underwater canyons; and sediment cores that offered a glimpse into millennia of climate history.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. vents,",
+            "B. vents;",
+            "C. vents",
+            "D. vents:"
+        ],
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "Incorrect. This choice is a plausible distractor for a student who does not read the full sentence. Because the first list item ('a new species of deep-sea isopod, which thrives...') contains internal commas, a simple comma is insufficient to separate it from the next item. The semicolon after 'canyons' confirms that semicolons are being used to separate the items in this complex series.",
+            "B": "Correct. The sentence presents a list of three complex items. The first item itself contains a comma ('a new species of deep-sea isopod, which thrives...'). To avoid confusion and maintain parallel structure in such cases, semicolons must be used to separate the main items. The key context clue is the semicolon placed after 'canyons,' which separates the second and third items. This establishes the pattern that the student must apply to separate the first and second items.",
+            "C": "Incorrect. Omitting punctuation here creates a run-on error by fusing the first two items of the list. A punctuation mark is grammatically required to separate the elements in the series.",
+            "D": "Incorrect. A colon is used to introduce a list or an explanation, not to separate items within an existing list. A semicolon is the appropriate choice for separating complex items in a series."
+        }
+    },
+    {
+        "question": "For much of the 20th century, biologists operated under the assumption that complex ecosystems were fundamentally dependent on sunlight as their primary energy source. This \u201cphotosynthesis-centric\u201d view posited that life thrived where light was plentiful. _______, the 1977 discovery of teeming ecosystems around deep-sea hydrothermal vents, fueled not by light but by chemical energy from Earth\u2019s interior, fundamentally altered this paradigm.\n\nWhich choice completes the text with the most logical transition?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "transitions",
+        "choices": [
+            "A. In contrast,",
+            "B. Instead,",
+            "C. Nevertheless,",
+            "D. Conversely,"
+        ],
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.78",
+        "explanations": {
+            "A": "This choice is incorrect. While the new discovery does contrast with the old view, 'In contrast' is typically used to compare two distinct but somewhat parallel items. 'Nevertheless' is a stronger choice because it introduces a fact that is surprising or contradictory in light of the preceding statement, capturing the paradigm-shifting nature of the discovery.",
+            "B": "This choice is incorrect. 'Instead' suggests a direct replacement or substitution, and it is most effective when the preceding clause presents a negated option. While the new discovery does challenge the old view, 'Nevertheless' is better suited for transitioning from a widely held belief to a surprising finding that exists despite that belief.",
+            "C": "This choice is correct. 'Nevertheless' is used to introduce a statement that contrasts with or is surprising in light of the preceding one. The first sentence establishes a long-held scientific assumption. The second sentence presents a groundbreaking discovery that upended that very assumption, making 'Nevertheless' the most logical transition to signal this concessive contrast.",
+            "D": "This choice is incorrect. 'Conversely' is used to introduce an idea that is a direct logical opposite or inverse of the previous one. The relationship here is not one of strict logical opposition but rather a refutation of a general belief with a specific, surprising counterexample."
+        },
+        "timestamp": "2025-07-13T05:28:10.123456",
+        "id": "1b084931-c06b-4e6a-a1b7-b08e7ef9e67a_rev1",
+        "test": "SAT"
+    },
+    {
+        "question": "In the profound darkness of the abyssal zone, where sunlight never penetrates, the evolutionary pressure to maintain complex visual systems is greatly reduced. The fact that many deep-sea species are either blind or possess only rudimentary eyes is, ______, not surprising to biologists, though it does make the function of their often-spectacular bioluminescent displays more perplexing.",
+        "choices": [
+            "A. consequently",
+            "B. in effect",
+            "C. similarly",
+            "D. therefore"
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "skill_category": "transitions",
+        "domain": "expression_of_ideas",
+        "explanations": {
+            "A": "This choice is an extremely close but incorrect distractor. 'Consequently' suggests a direct result that flows from a preceding action or event. The text, however, presents a logical deduction based on an established principle. The blindness is an expected state given the premise, making 'therefore,' which signals a logical conclusion, the more precise choice.",
+            "B": "This choice is incorrect. 'In effect' is used to introduce a summary or the practical upshot of a situation. The sentence is not summarizing the preceding statement but is drawing a logical conclusion from it, making this choice less precise.",
+            "C": "This choice is incorrect. 'Similarly' is used to draw a comparison between two like things. The sentence is stating a conclusion that follows from the premise about evolutionary pressure, not comparing it to another, similar concept.",
+            "D": "This choice is correct. The text establishes a premise (reduced evolutionary pressure for sight). The sentence then states a logical conclusion that follows from this premise (it is unsurprising that species there have poor eyesight). 'Therefore' is the ideal transition to signal such a logical inference."
+        }
+    },
+    {
+        "question": "The term \"Luddite\" is often used today as a pejorative to describe someone who opposes new technology. This modern usage, however, misrepresents the historical Luddite movement of early 19th-century England. These were not irrational technophobes but skilled textile artisans whose livelihoods were threatened by the rapid mechanization of their trade. The Luddites' primary grievance was not against the machines themselves\u2014such as the new stocking frames and power looms\u2014but against the factory owners who used this machinery to deskill labor, drive down wages, and produce lower-quality goods, all while maximizing their own profits. Their famous acts of \"machine breaking\" were not mindless vandalism; they were a targeted tactic, a form of collective bargaining by riot when legal means of protest were unavailable. **Therefore, the Luddite rebellion is more accurately understood as a protest against the disruptive and unregulated economic changes of the Industrial Revolution, not a simple rejection of technological progress.**\n\nWhich choice best describes the function of the underlined sentence in the text as a whole?",
         "section": "reading_and_writing",
         "domain": "information_and_ideas",
-        "skill_category": "central_ideas_and_details",
+        "skill_category": "craft_and_structure",
         "choices": [
-            "A. The text argues that contrary to the common perception of history as a factual record, scholarly analysis reveals it to be a selective construction of the past that is actively shaped by the concerns and goals of the present.",
-            "B. The text explains that the primary function of historical memory is to help societies forge a cohesive national identity and legitimize their existing political structures.",
-            "C. The text suggests that because historical memory is a discursive field where meanings are contested, it is impossible to arrive at any objective or truthful understanding of past events.",
-            "D. The text traces the academic shift from viewing history as a static record to understanding it as a dynamic field of contested meanings."
+            "A. It identifies 'machine breaking' as the primary tactic the Luddites used to negotiate with factory owners.",
+            "B. It concludes that the Luddites' primary goal was to prevent the deskilling of their trade by new machinery.",
+            "C. It argues that the Luddites' protest against factory owners was more significant than their concern for the quality of goods.",
+            "D. It reframes the Luddite movement as a response to economic exploitation rather than as a reaction against technological innovation."
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.82",
+        "explanations": {
+            "A": "This choice is incorrect. The idea that 'machine breaking' was a tactic is presented in the sentence *preceding* the underlined one. The underlined sentence serves as the overall conclusion of the argument, not as an identification of a specific tactic.",
+            "B": "This choice is too narrow. While preventing the deskilling of their trade was a key grievance mentioned in the text, the underlined sentence presents a much broader conclusion, summarizing the Luddite rebellion as a protest against all 'disruptive and unregulated economic changes,' which includes wages and profits, not just the single issue of deskilling.",
+            "C": "This choice presents a false dichotomy. The text presents the protest against factory owners and the concern for quality as related grievances stemming from the same economic pressures. The underlined sentence synthesizes these issues into a single, comprehensive conclusion; it does not prioritize one over the other.",
+            "D": "This choice is correct. The underlined sentence acts as the thesis and conclusion of the paragraph. It synthesizes the preceding points (grievances about deskilling, wages, and profit-seeking) to challenge the common misconception about Luddites and reframe their movement as a response to economic exploitation during the Industrial Revolution, not a simple opposition to technology."
+        }
+    },
+    {
+        "question": "The term \u201cjunk DNA,\u201d once used to describe the vast majority of the human genome that does not code for proteins, is increasingly considered a misnomer born of a limited perspective. For decades, the prevailing view was that these non-coding regions were largely functionless evolutionary remnants. However, large-scale genomic projects, such as the Encyclopedia of DNA Elements (ENCODE), have systematically dismantled this assumption. Research now shows that a significant portion of this so-called \u201cjunk\u201d is transcribed into non-coding RNAs that play crucial roles in gene regulation, controlling when and where genes are turned on or off. Furthermore, many non-coding sequences act as binding sites for proteins that orchestrate the complex three-dimensional folding of chromosomes, a process vital for proper gene expression. The dismissal of non-coding DNA as mere \"junk\" stemmed not from its actual lack of utility, but from an overly narrow definition of biological function.\n\nWhich choice most accurately describes the author\u2019s primary line of reasoning?",
+        "section": "reading_and_writing",
+        "domain": "Information and Ideas",
+        "skill_category": "Command of Evidence",
+        "choices": [
+            "A. The author argues that the primary function of non-coding DNA is to orchestrate the three-dimensional folding of chromosomes.",
+            "B. The author suggests that non-coding RNAs are ultimately more important for gene regulation than the proteins coded by the rest of the genome.",
+            "C. The author posits that the \"junk DNA\" label was a consequence of a limited conceptualization of biological function.",
+            "D. The author claims that the main achievement of projects like ENCODE was to question the traditional, protein-centric view of the genome."
+        ],
+        "correct_answer": "C",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "This choice incorrectly elevates a subordinate detail to the main point. The passage mentions the orchestration of chromosome folding as one of two examples of non-coding DNA's function, but it does not claim this is its primary function.",
+            "B": "This choice makes an unsupported comparison. While the text states that non-coding RNAs play 'crucial roles' in gene regulation, it never compares their level of importance to that of proteins. This claim goes beyond the scope of the evidence provided.",
+            "C": "This choice accurately captures the author's central argument. The passage explains that the 'junk DNA' concept arose from a narrow definition of function (limited to protein-coding) and presents evidence of other functions to show this initial perspective was flawed. The choice correctly identifies this link between a 'limited conceptualization' and the resulting 'junk DNA' label.",
+            "D": "This choice mistakes the evidence for the main claim. The author uses the findings of projects like ENCODE to support the primary argument that 'junk DNA' is a misnomer. While a consequence of ENCODE's work was questioning the protein-centric view, the author's main purpose here is to critique the 'junk DNA' label, not to summarize ENCODE's achievements."
+        }
+    },
+    {
+        "question": "While researching the 17th-century Italian Baroque painter Artemisia Gentileschi, a student has compiled the following notes. The student wants to write a sentence that introduces Gentileschi\u2019s painting *Judith Slaying Holofernes* and emphasizes the widely held interpretation connecting its visceral content to the artist's personal trauma.\n\n**Notes:**\n*   Artemisia Gentileschi (1593\u2013c. 1656) was a prominent Italian Baroque painter, trained by her father, Orazio Gentileschi.\n*   In 1611, she was assaulted by the painter Agostino Tassi, a colleague of her father's hired to be her tutor.\n*   The subsequent public trial was a humiliating and traumatic event for the young Gentileschi.\n*   Her painting *Judith Slaying Holofernes* (c. 1612\u20131613) depicts the biblical story of Judith beheading an Assyrian general.\n*   The work is renowned for its graphic depiction of violence and the raw, physical exertion of its female figures.\n*   Many art historians view the painting as a cathartic or vengeful response to Gentileschi's assault and the subsequent trial.\n\nWhich choice most effectively uses relevant information from the notes to accomplish the student's goal?",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "rhetorical_synthesis",
+        "choices": [
+            "A. Artemisia Gentileschi, a Baroque painter trained by her father, depicted the biblical story of Judith beheading a general in her famous work, *Judith Slaying Holofernes*.",
+            "B. Many art historians interpret the graphic violence and raw exertion in Artemisia Gentileschi\u2019s *Judith Slaying Holofernes* as a cathartic depiction stemming from the traumatic assault the artist endured.",
+            "C. The traumatic assault and humiliating trial Artemisia Gentileschi endured are widely seen as the primary motivation for her to paint *Judith Slaying Holofernes*, a famously violent work from the Baroque period.",
+            "D. In *Judith Slaying Holofernes*, Artemisia Gentileschi channeled her training to depict a biblical story with raw physical exertion, a feature many historians see as a vengeful commentary on the public trial."
+        ],
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.82",
+        "explanations": {
+            "A": "This choice fails to meet the second part of the student's goal. It introduces the painting but does not include the crucial interpretation connecting its content to Gentileschi's personal trauma, making it an incomplete answer.",
+            "B": "This choice correctly and effectively accomplishes the student's two-part goal. It introduces the painting (*Judith Slaying Holofernes*) and clearly states the interpretation that connects its specific content (graphic violence, raw exertion) to the artist's trauma.",
+            "C": "This choice is a plausible but incorrect distractor. It links the trauma to the painting, but it does so by suggesting the trauma was the 'primary motivation for her to paint' the work, which is a subtle shift away from the student's goal of emphasizing the interpretation of the painting's *visceral content*.",
+            "D": "This choice is an incorrect and sophisticated distractor. It uses relevant details from the notes ('raw physical exertion,' 'vengeful commentary on the public trial') but misattributes the cause by suggesting she 'channeled her training' and isolates the trial from the assault, failing to fully capture the interpretation described in the notes."
+        },
+        "id": "e4b2d1c3-a5f6-e7b8-c9d0-a1b2c3d4e5f6",
+        "timestamp": "2024-05-22T11:00:00.000000Z",
+        "test": "SAT"
+    },
+    {
+        "question": "The museum's new acquisition, a collection of the artist's early works that includes several striking portraits and a series of experimental landscapes, ___ the most significant addition to the gallery in the last decade.",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. are considered",
+            "B. is considered",
+            "C. has been considered being",
+            "D. are, it is considered"
+        ],
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.82",
+        "explanations": {
+            "A": "This choice is incorrect. The verb 'are' is plural and does not agree with the singular subject of the main clause, 'a collection'. The plural nouns 'portraits' and 'landscapes' are part of a modifying phrase and do not determine the verb of the main clause.",
+            "B": "This is the correct answer. The singular verb 'is' correctly agrees with the singular subject 'a collection.' The long phrase between the subject and verb ('of the artist's early works...landscapes') is a modifier and does not affect subject-verb agreement. The resulting sentence is grammatically correct and idiomatically sound.",
+            "C": "This choice is incorrect because the phrase 'has been considered being' is unidiomatic and awkward in Standard English. While 'has been considered' could be grammatically correct in a different context, the addition of 'being' makes this choice incorrect.",
+            "D": "This choice is incorrect for two reasons. First, it uses the plural verb 'are,' which does not agree with the singular subject 'collection.' Second, it creates a comma splice by using a comma to join two independent clauses ('The museum's...are' and 'it is considered...')."
+        },
+        "timestamp": "2025-07-13T05:36:58.123456",
+        "id": "18f9c2d1-0a3b-4e5c-9f87-a6b4cde3f09a",
+        "test": "SAT"
+    },
+    {
+        "question": "The Venus flytrap, a member of the sundew family of carnivorous plants, has a unique trapping mechanism. When an insect touches the trigger hairs on one of ___ lobes, the trap snaps shut in less than a second.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
+        "section": "reading_and_writing",
+        "domain": "standard_english_conventions",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. its'",
+            "B. its",
+            "C. it's",
+            "D. their"
+        ],
+        "correct_answer": "B",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.55",
+        "explanations": {
+            "A": "This choice is incorrect because \"its'\" is not a standard English word. The possessive form of \"it\" never uses an apostrophe.",
+            "B": "This is the correct answer. The sentence requires a singular possessive pronoun to indicate that the lobes belong to the singular subject of the sentence, \"The Venus flytrap.\" \"Its\" correctly serves this function.",
+            "C": "This choice is incorrect because \"it's\" is a contraction of \"it is.\" Substituting this into the sentence would create the nonsensical phrase \"on one of it is lobes.\"",
+            "D": "This choice is incorrect because it creates a pronoun-antecedent agreement error. While the plural noun 'plants' appears closer to the blank, the lobes belong to the singular subject of the sentence, 'The Venus flytrap.' Therefore, the singular possessive pronoun 'its' is required, not the plural 'their'."
+        },
+        "id": "e3012a64-d83a-4467-8fd4-9dd93d395c37",
+        "timestamp": "2025-07-13T05:36:22.451892",
+        "test": "SAT"
+    },
+    {
+        "question": "The transition from the inner to the outer solar system marks a dramatic escalation in satellite systems. The gas giants, for instance, each possess satellite counts that dwarf those of the rocky planets, though one of these giants has a notably larger system than its closest peer.\n\n| Planet  | Number of Moons |\n| :------ | :-------------- |\n| Earth   | 1               |\n| Mars    | 2               |\n| Jupiter | 95              |\n| Saturn  | 146             |\n\nWhich choice most effectively uses data from the table to illustrate the full claim made in the final sentence?",
+        "section": "reading_and_writing",
+        "domain": "information_and_ideas",
+        "skill_category": "command_of_evidence",
+        "choices": [
+            "A. Mars has 2 moons and Earth has 1 moon.",
+            "B. Jupiter's 95 moons far outnumber Earth's single moon.",
+            "C. Jupiter has 95 moons, whereas Mars has only 2.",
+            "D. Saturn possesses 146 moons, while Jupiter possesses 95."
+        ],
+        "correct_answer": "D",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.65",
+        "explanations": {
+            "A": "This choice is incorrect. It only compares the two inner planets from the table, which fails to address the claim's central points about the 'dramatic escalation' to the outer planets or the comparison between the gas giants.",
+            "B": "This choice is incorrect. While it supports the idea of a 'dramatic escalation' between the inner and outer planets, it does not address the second part of the claim: that one giant has a 'notably larger system than its closest peer.'",
+            "C": "This choice is incorrect. It effectively illustrates the 'dramatic escalation' from a rocky planet (Mars) to a gas giant (Jupiter). However, it fails to substantiate the final, more specific part of the claim, which compares the two gas giants to highlight that one system is 'notably larger than its closest peer.'",
+            "D": "This is the correct answer. The claim in the final sentence has two parts: the significant difference between inner and outer planets' moon counts, and the notable difference between the two gas giants themselves. This choice is the only one that provides evidence for the second, more specific part of the claim by comparing Saturn and Jupiter, thereby illustrating that one giant has a 'notably larger system than its closest peer.'"
+        }
+    },
+    {
+        "question": "The Roman Empire's vast network of roads was a marvel of ancient engineering, primarily constructed to facilitate the swift movement of its legions. These straight, durable roads allowed troops to march quickly to quell rebellions or defend frontiers, solidifying the empire's control over its territories. While these arteries of stone also spurred economic growth by making trade easier and improved communication across the provinces, their fundamental purpose was military. The famous saying 'All roads lead to Rome' underscores not just the city's centrality, but also the network's strategic importance for projecting power.\n\nAccording to the text, what was the main reason the Roman Empire built its extensive road network?",
+        "choices": [
+            "A. To enhance the empire's capacity for military projection and internal control.",
+            "B. To shift the empire's economic focus from maritime trade to land-based commerce.",
+            "C. To create a unified imperial identity by physically connecting disparate provinces to the capital.",
+            "D. To centralize the administration of the provinces by improving bureaucratic communication."
+        ],
+        "correct_answer": "A",
+        "difficulty": "medium",
+        "difficulty_ranking": "0.65",
+        "domain": "information_and_ideas",
+        "skill_category": "central_ideas_and_details",
+        "section": "reading_and_writing",
+        "test": "SAT",
+        "explanations": {
+            "A": "This is the correct answer. It accurately synthesizes the text's points about defending frontiers ('projecting power') and quelling rebellions ('solidifying...control') using more abstract terms like 'military projection' and 'internal control.'",
+            "B": "This is incorrect. This is a plausible but unsupported inference. The text provides no evidence to support the claim that the roads were meant to shift the empire's focus from maritime trade to land-based commerce.",
+            "C": "This is incorrect. This choice mischaracterizes the purpose suggested by the phrase 'All roads lead to Rome.' The text links the phrase to military strategy ('projecting power'), not cultural unity ('unified imperial identity').",
+            "D": "This is incorrect. This choice elevates a secondary benefit (improved communication) to the primary purpose. The text is clear that the 'fundamental purpose was military,' making communication a secondary effect."
+        },
+        "id": "c1f728c7-43a0-4a8e-9080-60b54378fddc",
+        "timestamp": "2025-07-28T18:05:42.123456"
+    },
+    {
+        "question": "**Text 1**\n\nFor much of the 20th century, Pluto was widely considered the ninth planet in our solar system. Discovered in 1930, it was taught in schools as the farthest and smallest planet orbiting the Sun. This classification solidified Pluto\u2019s status in the public imagination as a full-fledged member of the solar system's planetary family, a view that went largely unchallenged for decades.\n\n**Text 2**\n\nIn 2006, the International Astronomical Union (IAU) established a formal definition for the term \u201cplanet.\u201d According to the IAU, a celestial body must orbit the Sun, be nearly round, and have \u201ccleared the neighborhood\u201d around its orbit. While Pluto meets the first two criteria, it fails the third because its orbit is populated by many other objects in the Kuiper Belt. As a result, the IAU reclassified Pluto as a \u201cdwarf planet.\u201d\n\nHow does Text 2 respond to the information presented in Text 1?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "cross_text_connections",
+        "choices": [
+            "A. By providing the formal criteria that prompted a reevaluation of Pluto\u2019s long-standing classification.",
+            "B. By arguing that the historical classification of Pluto was based more on public acceptance than on a consistent scientific standard.",
+            "C. By presenting recent astronomical observations that invalidated the evidence used to initially classify Pluto as a planet.",
+            "D. By confirming that Pluto\u2019s planetary status has been a subject of continuous scientific debate since its discovery."
+        ],
+        "correct_answer": "A",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "This choice accurately and precisely describes the function of Text 2. Text 1 establishes Pluto's 'long-standing classification,' and Text 2 responds by introducing the 'formal criteria' (the three IAU rules) that forced a 'reevaluation.' The language is precise and avoids the 'explainey' tone of the original.",
+            "B": "This is a tempting distractor that makes an unsupported inference. While Text 1 mentions the 'public imagination' and Text 2 introduces a new 'scientific standard,' the texts do not explicitly state that the *original* classification was based more on public opinion than science. This choice creates a plausible but logically flawed bridge between the two texts.",
+            "C": "This distractor uses the 'misleading detail' trap. Text 2 is about a change in *definition*, not the invalidation of old *observations*. A student might incorrectly assume that reclassification requires new observational evidence, making this choice tempting.",
+            "D": "This is a subtle overstatement. Text 1 states that Pluto's status went 'largely unchallenged for decades,' which directly contradicts the idea of a 'continuous scientific debate.' This distractor is plausible only if a student misreads or forgets that key detail in Text 1."
+        },
+        "id": "396d197d-cbdd-4790-be27-1f22430f5342",
+        "timestamp": "2025-07-13T05:35:17.483390",
+        "test": "SAT"
+    },
+    {
+        "choices": [
+            "A. Accordingly,",
+            "B. Indeed,",
+            "C. Nevertheless,",
+            "D. Subsequently,"
+        ],
+        "timestamp": "2025-07-13T05:36:58.114321",
+        "section": "reading_and_writing",
+        "id": "1803ea4e-9d22-487b-a0d3-3760a5e8f192",
+        "explanations": {
+            "A": "This choice is incorrect. 'Accordingly' implies a logical consequence. The challenges of waste and cost are not a logical result of the initial arguments for nuclear power; they are contrasting counterpoints.",
+            "B": "This choice is incorrect. 'Indeed' is used to confirm or emphasize a preceding statement. The second sentence introduces problems that challenge the initial positive view, rather than confirming or strengthening it. This is a tempting distractor if a student misreads the sentence as adding more information rather than qualifying the initial enthusiasm.",
+            "C": "This is the correct answer. The first part of the text presents the positive arguments for nuclear energy. The second part introduces significant drawbacks that 'tempered enthusiasm.' 'Nevertheless' correctly signals this contrast: despite the stated benefits, these other significant problems exist.",
+            "D": "This choice is incorrect. 'Subsequently' indicates a sequence in time. While the understanding of these challenges may have developed over time, the primary logical relationship in the sentence is one of contrast, not chronology. The sentence contrasts two aspects of the same perspective, not events in a timeline."
+        },
+        "difficulty_ranking": "0.80",
+        "skill_category": "transitions",
+        "test": "SAT",
+        "difficulty": "hard",
+        "correct_answer": "C",
+        "domain": "expression_of_ideas",
+        "question": "Early proponents of nuclear energy celebrated it as a source of nearly limitless, clean power, a view that shaped energy policy for decades. They argued its high energy density and lack of direct carbon emissions made it an ideal successor to fossil fuels. _______, this perspective often underemphasized the substantial, long-term challenges of radioactive waste disposal and the high costs of decommissioning plants, complexities that have tempered enthusiasm for new nuclear projects."
+    },
+    {
+        "question": "The reintroduction of gray wolves to Yellowstone National Park in 1995 triggered a remarkable ecological chain reaction known as a trophic cascade. ______ the wolves began preying on the park's large elk population, the elk's grazing habits changed, and they avoided open areas like valleys and riverbanks. This behavioral shift allowed young willow and aspen trees, which had been over-browsed by elk for decades, to flourish. The recovery of these trees, in turn, provided better habitats and food sources for beavers and songbirds, demonstrating the wolves' profound impact on the entire ecosystem.\n\nWhich choice completes the text with the most logical transition?",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "form_structure_and_sense",
+        "choices": [
+            "A. Once",
+            "B. Therefore,",
+            "C. Initially,",
+            "D. In effect,"
         ],
         "correct_answer": "A",
         "difficulty": "hard",
         "difficulty_ranking": "0.85",
         "explanations": {
-            "A": "This choice accurately synthesizes the text's central argument. It captures the contrast between the 'lay conception' of history as a 'veridical chronicle' (factual record) and the scholarly view that it is an 'active...construction' that is 'profoundly shaped by present-day imperatives' (shaped by the concerns and goals of the present).",
-            "B": "This is a 'Detail as Main Idea' error. The text offers 'the need to forge a national identity or legitimize a political order' as an explicit example of 'present-day imperatives,' but these are subordinate details used to support the broader claim, not the main idea itself.",
-            "C": "This is a 'Mischaracterization / Subtle Twist' error. The text calls the common view 'incomplete,' not entirely false, and describes meaning as 'produced and contested,' not non-existent. To claim that an objective understanding is 'impossible' is an extreme conclusion that the nuanced language of the passage ('at best, incomplete') does not support.",
-            "D": "This is an 'Out-of-Scope' error combined with a subtle wording flaw. While the text describes a conceptual shift, it does not 'trace' the history of that academic shift (i.e., it doesn't narrate how the field of historical memory developed over time). Instead, it presents a static contrast between a lay view and an established scholarly perspective."
-        }
+            "A": "This choice is correct. 'Once' properly creates a dependent clause ('Once the wolves began preying...') that establishes a specific point in time when the subsequent event ('the elk's grazing habits changed...') began. It perfectly captures the cause-and-effect sequence initiated by the wolves' predation.",
+            "B": "This choice is incorrect. While the predation is a result of the reintroduction, 'Therefore,' is typically used to introduce a logical conclusion or summary. The sentence's function is not to conclude the previous statement but to begin a narrative sequence of events, making 'Therefore,' rhetorically inappropriate here.",
+            "C": "This choice is incorrect. 'Initially,' is a very tempting distractor because the predation was the initial event in the cascade. However, 'Initially,' functions as an adverb that modifies the verb 'began,' whereas 'Once' functions as a subordinating conjunction that links the two clauses in a more direct cause-and-effect relationship ('Once this happened, then that happened'). The structure with 'Once' is more logical and syntactically precise.",
+            "D": "This choice is incorrect. 'In effect,' is used to mean 'in essence' or to summarize the result of something. While the predation was an effect of the reintroduction, the purpose of this sentence is to start detailing a specific sequence of events, not to provide a summary or state the essence of the situation."
+        },
+        "id": "e6f4773d-9d21-4b10-a4a3-769a68a1f8b4",
+        "timestamp": "2025-07-13T05:36:22.102345",
+        "test": "SAT"
     },
     {
-        "question": "**Text 1**\n\nThe \u201cGreat Man\u201d theory of history, a concept popularized in the 19th century, posits that historical change is driven primarily by the will and actions of exceptional individuals. Proponents of this view argue that figures like Napoleon Bonaparte or Julius Caesar were not merely products of their time but were, in fact, powerful catalysts whose singular vision and personal charisma fundamentally altered the course of events. In this framework, major historical turning points are seen as the direct result of the choices and leadership of these influential figures, without whom history would have unfolded very differently.\n\n**Text 2**\n\nHistorian Jia Li critiques the traditional \u201cGreat Man\u201d theory as overly simplistic. While acknowledging the significant impact of certain individuals, Li argues that their influence is largely contingent upon pre-existing societal conditions. For a leader\u2019s vision to be realized, the social, technological, and economic currents of the era must be receptive. According to Li, a figure like Napoleon could only rise to power because the French Revolution had already destabilized the old order and created a widespread desire for strong leadership. Thus, such individuals are better understood as successful navigators of historical forces rather than their originators.\n\nHow would the author of Text 2 most likely respond to the characterization of historical change presented in Text 1?",
-        "section": "reading_and_writing",
-        "domain": "craft_and_structure",
-        "skill_category": "cross_text_connections",
-        "choices": [
-            "A. By arguing that the \u201cGreat Man\u201d theory is only applicable to military leaders like Napoleon and Caesar.",
-            "B. By suggesting that influential individuals are actually less important to historical outcomes than economic forces.",
-            "C. By claiming that the actions of influential individuals are the most easily identifiable causes of historical change.",
-            "D. By accepting that such individuals are impactful but asserting that their success depends on favorable historical circumstances."
-        ],
-        "correct_answer": "D",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.55",
-        "explanations": {
-            "A": "This choice is a mischaracterization. Text 2 critiques the theory's core premise, not its scope of application. The author doesn't limit the theory to military leaders but challenges its general explanatory power.",
-            "B": "This is an overstatement. Text 2 argues that individuals are 'contingent upon' societal conditions, not necessarily 'less important' than them. It reframes their role as 'navigators' rather than dismissing their importance relative to other forces.",
-            "C": "This is a plausible but irrelevant statement. Neither text discusses the ease of identifying historical causes. The debate is about the nature of causality, not the methodology of historical research.",
-            "D": "This choice accurately captures the relationship between the texts. Text 2 qualifies Text 1's claim. It 'accepts' that individuals are impactful ('acknowledging the significant impact') but 'asserts' that this impact is conditional ('contingent upon pre-existing societal conditions'). This reflects the nuanced 'Yes, but...' stance of Text 2."
-        }
-    },
-    {
-        "question": "Many animal species have evolved complex social behaviors that, while appearing selfless, ultimately enhance an individual's own long-term survival and reproductive success. ___, vampire bats have been observed sharing blood meals with unrelated roostmates who were unsuccessful in foraging, an act that strengthens social bonds and makes it more likely the donor will be helped in the future.",
-        "section": "reading_and_writing",
-        "domain": "expression_of_ideas",
-        "skill_category": "transitions",
-        "choices": [
-            "A. In contrast,",
-            "B. For example,",
-            "C. Consequently,",
-            "D. Meanwhile,"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.45",
-        "explanations": {
-            "A": "This choice is incorrect. 'In contrast,' signals an opposition or difference between two ideas. The behavior of the vampire bats is not a contrast to the principle described in the first sentence; rather, it is a clear illustration of it.",
-            "B": "This is the correct answer. The first sentence presents a general claim about animal behavior (seemingly selfless acts can provide long-term benefits). The second sentence provides a specific illustration of this claim (vampire bats sharing food to build social capital). 'For example,' correctly introduces a specific instance that supports a general statement.",
-            "C": "This choice is incorrect. 'Consequently,' indicates that the second idea is a direct result or effect of the first. The general principle of social evolution did not directly cause this specific bat behavior; instead, the behavior is an instance or manifestation of the principle.",
-            "D": "This choice is incorrect. 'Meanwhile,' is used to introduce an event happening at the same time as another but in a different place or context. It implies a parallel but separate relationship. The two ideas in the text are directly and logically connected as a principle and an example, not as two unrelated, simultaneous events."
-        }
-    },
-    {
-        "question": "An early conception of medieval European guilds cast them as benevolent, protective brotherhoods of artisans. This _______ view, however, has been significantly complicated by modern historians. Their research reveals that while guilds did offer members some security, they were also intensely monopolistic and exclusionary, often using their power to stifle competition and limit entry into their trades.\n\nWhich choice completes the text with the most logical and precise word or phrase?",
+        "question": "The origin of the teddy bear is a notable episode in early 20th-century commerce. After a widely circulated cartoon depicted President Theodore Roosevelt refusing to shoot a captured bear, a Brooklyn toy maker was inspired. He created a stuffed bear and, seeking to act respectfully while capitalizing on the event, ________ Roosevelt\u2019s permission to name the creation \u201cTeddy\u2019s Bear.\u201d",
         "section": "reading_and_writing",
         "domain": "craft_and_structure",
         "skill_category": "words_in_context",
         "choices": [
-            "A. rose-tinted",
-            "B. antiquated",
-            "C. meticulous",
-            "D. controversial"
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.55",
-        "explanations": {
-            "A": "The text contrasts an early view of guilds as 'benevolent' and 'protective' with the modern historical understanding of them as 'monopolistic and exclusionary.' The word 'rose-tinted,' which means viewing something in an overly positive or optimistic way, perfectly captures the nature of this early, simplistic conception. The student must infer this overly positive quality from the contrast provided.",
-            "B": "This word means old-fashioned. While the view is indeed old, this choice is less precise than 'rose-tinted' because it only addresses the age of the view, not its specific flaw of being overly positive and incomplete, which is the main point of contrast in the text.",
-            "C": "This word means showing great attention to detail. This is the opposite of the kind of view described, which is a broad generalization that ignores complex negative details.",
-            "D": "This word means causing public disagreement. The text does not suggest that the early view was itself the subject of controversy when it was prevalent. Rather, the controversy exists between the early view and the modern historical analysis."
-        }
-    },
-    {
-        "question": "An analysis of regional dialects, with its detailed maps of vowel shifts and lexical variations, ___ a fascinating look into the evolution of language.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
-        "section": "reading_and_writing",
-        "domain": "standard_english_conventions",
-        "skill_category": "form_structure_and_sense",
-        "choices": [
-            "A. offer",
-            "B. offers",
-            "C. offering",
-            "D. to offer"
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.40",
-        "explanations": {
-            "A": "This choice is incorrect because the plural verb 'offer' does not agree with the singular subject of the sentence, 'An analysis'. The plural nouns in the intervening phrase ('dialects', 'maps', 'shifts', 'variations') are distractors.",
-            "B": "This is the correct answer. The subject of the sentence is 'An analysis', which is singular. The verb must also be singular to agree with the subject. 'Offers' is the correct singular, present-tense verb form.",
-            "C": "This choice is incorrect because 'offering' is a present participle, a non-finite verb form. Using it here would create a sentence fragment, as the main clause would lack a main verb.",
-            "D": "This choice is incorrect because 'to offer' is an infinitive, which is a non-finite verb form. Using it here would result in a sentence fragment because the main clause would be missing its main verb."
-        }
-    },
-    {
-        "question": "Many species of fungi form mycorrhizal associations with plant roots, a symbiotic relationship that benefits both ___ the fungus receives carbohydrates from the plant, while the plant gains enhanced access to water and nutrients from the soil.",
-        "section": "reading_and_writing",
-        "domain": "standard_english_conventions",
-        "skill_category": "boundaries",
-        "choices": [
-            "A. organisms",
-            "B. organisms,",
-            "C. organisms;",
-            "D. organisms:"
+            "A. solicited",
+            "B. procured",
+            "C. secured",
+            "D. assumed"
         ],
         "correct_answer": "C",
         "difficulty": "medium",
-        "difficulty_ranking": "0.45",
-        "explanations": {
-            "A": "This choice creates a run-on sentence by fusing two independent clauses without any punctuation. An independent clause is a complete thought that can stand alone as a sentence. Both the clause before and the clause after the blank are independent.",
-            "B": "This choice creates a comma splice. A comma alone is not strong enough to connect two independent clauses. This is a very common grammatical error.",
-            "C": "This is the correct answer. The sentence consists of two closely related independent clauses. A semicolon is the appropriate punctuation to connect them, showing their strong logical connection.",
-            "D": "This choice incorrectly uses a colon. A colon is used to introduce a list, an explanation, or an example that is directly cued by the preceding clause. The second clause here describes the reciprocal benefits in the relationship, but it doesn't serve as a direct explanation or itemization of the phrase 'benefits both organisms.' A semicolon is better for linking two balanced, related clauses."
-        }
-    },
-    {
-        "question": "While researching the history of keyboard layouts, a student has compiled the following notes:\n\n*   The QWERTY layout, designed by Christopher Latham Sholes in the 1870s, became standard on early mechanical typewriters.\n*   A primary design goal of QWERTY was to prevent the machine's internal mechanical arms from jamming.\n*   To achieve this, Sholes's layout intentionally separated commonly used letter pairs to slow down typing speed.\n*   In the 1930s, August Dvorak patented the Dvorak Simplified Keyboard.\n*   Dvorak\u2019s layout was engineered for maximum efficiency and ergonomic comfort, placing the most frequent letters on the home row to minimize finger movement.\n*   Despite studies showing Dvorak allows for faster typing with less effort, the QWERTY layout remains the dominant standard for keyboards worldwide.\n\nThe student wants to write a sentence introducing the Dvorak keyboard layout, explaining both its intended purpose and its relationship to the established QWERTY layout. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-        "section": "reading_and_writing",
-        "domain": "expression_of_ideas",
-        "skill_category": "rhetorical_synthesis",
-        "choices": [
-            "A. The Dvorak keyboard layout places the most frequently used letters on the home row to minimize finger movement and increase typing speed.",
-            "B. As a direct response to QWERTY's known inefficiencies, the Dvorak layout was later developed with the specific goal of maximizing typing speed and ergonomic comfort, though it has never achieved widespread adoption.",
-            "C. The QWERTY layout, designed in the 1870s, was an intentional effort to slow typists down by separating common letter pairs to prevent mechanical jams in early typewriters.",
-            "D. Because the Dvorak layout proved to be faster and more ergonomic, it quickly replaced the original QWERTY layout that was designed to prevent typewriter jams."
-        ],
-        "correct_answer": "B",
-        "difficulty": "medium",
         "difficulty_ranking": "0.55",
         "explanations": {
-            "A": "This choice accurately describes the design of the Dvorak keyboard but fails to accomplish the full rhetorical goal. It explains Dvorak's purpose (efficiency) but does not place it in its historical or competitive relationship with the QWERTY layout, which is a required part of the task.",
-            "B": "This choice successfully synthesizes all the required elements from the notes. It introduces the Dvorak layout by framing it as a \"response to QWERTY's known inefficiencies,\" explains its purpose (\"maximizing typing speed and ergonomic comfort\"), and describes its relationship to QWERTY's dominance (\"it has never achieved widespread adoption\").",
-            "C": "This choice provides a good summary of the origin of the QWERTY layout, synthesizing information from the first three bullet points. However, the student's stated goal is to introduce the Dvorak layout, not to explain the history of QWERTY. This choice accomplishes a different rhetorical task.",
-            "D": "This choice directly contradicts the information in the final bullet point. While it correctly identifies Dvorak's benefits, it falsely claims that Dvorak \"quickly replaced\" QWERTY, when the notes explicitly state that QWERTY remains the dominant standard."
-        }
+            "A": "This choice is incorrect. To 'solicit' means to ask for or request. While the toy maker likely did solicit permission, the context implies that he was successful in his request. 'Secured' is more precise as it indicates a successful outcome, not just the attempt.",
+            "B": "This choice is plausible but subtly incorrect. To 'procure' means to obtain something, especially with effort. However, 'secure' is more idiomatically used for obtaining abstract concepts like permission or approval, making it a better fit for the specific context of the sentence.",
+            "C": "This is the correct answer. To 'secure' something means to succeed in obtaining it, often after effort. This word precisely captures the idea that the toy maker successfully got the president's permission, which is implied by the respectful context and the toy's subsequent creation and naming.",
+            "D": "This choice is incorrect. To 'assume' permission would mean to take it for granted without asking. This contradicts the detail that the toy maker was 'seeking to act respectfully,' which implies he would explicitly ask for and receive permission."
+        },
+        "id": "d636990a-1888-408c-9d7f-92f0120f5d2a",
+        "timestamp": "2025-07-13T05:35:16.896122",
+        "test": "SAT"
     },
     {
-        "question": "The \"edge effect\" is a significant ecological principle that describes the changes in population or community structures that occur at the boundary, or \"edge,\" of two habitats. When a forest is fragmented by a road or a clear-cut, for example, a new edge habitat is created. This transitional zone often experiences altered environmental conditions, such as increased sunlight, higher temperatures, and greater wind exposure, compared to the forest interior. These changes can be beneficial for some \"edge generalist\" species, which are adapted to more variable conditions. However, \"interior specialist\" species that rely on the stable, sheltered environment of the deep forest may struggle to survive. Consequently, while the creation of edges can sometimes lead to a local increase in the total number of species, it often comes at the cost of losing those species most dependent on intact, core habitats.\n\nWhich choice best states the main idea of the text?",
+        "question": "While often associated with forensic science, the mass spectrometer\u2014a versatile analytical instrument that measures the mass-to-charge ratio of ions and whose development was spurred by early 20th-century ______ become indispensable in fields ranging from environmental science to clinical diagnostics.\n\nWhich choice completes the text so that it conforms to the conventions of Standard English?",
         "section": "reading_and_writing",
-        "domain": "information_and_ideas",
-        "skill_category": "central_ideas_and_details",
+        "domain": "Standard English Conventions",
+        "skill_category": "Form, Structure, and Sense",
         "choices": [
-            "A. The text focuses on how human activities like road building fragment habitats, thereby creating transitional zones with altered environmental conditions.",
-            "B. The text warns that the edge effect is ultimately harmful, as the new habitats it creates are less stable and supportive for most species than the original forest interior.",
-            "C. The text explains that the edge effect involves the creation of habitat boundaries with unique conditions that benefit some species while leading to the decline of others.",
-            "D. The text indicates that the primary result of the edge effect is a sharp decline in the total number of species that can live in a fragmented landscape."
-        ],
-        "correct_answer": "C",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.65",
-        "explanations": {
-            "A": "This choice is incorrect because it describes a supporting detail, not the main idea. While the text does mention that human activities create edges with altered conditions, this is the cause of the edge effect, not the central point about its complex impact on biodiversity.",
-            "B": "This choice is incorrect because it mischaracterizes the text's claims. The text presents a trade-off, noting that the edge effect can be 'beneficial for some' species. By stating it is 'ultimately harmful' and less supportive for 'most species,' this choice presents a value judgment and generalization that the text does not make.",
-            "C": "This choice accurately synthesizes the main idea of the text. It captures the definition of the edge effect (creation of boundaries with unique conditions) and its dual consequences: the positive impact on some species ('benefit some') and the negative impact on others ('decline of others').",
-            "D": "This choice is incorrect because it contradicts a specific point made in the text. The passage explicitly states that the creation of edges 'can sometimes lead to a local increase in the total number of species,' which is the opposite of the 'sharp decline' this choice claims is the primary result."
-        }
-    },
-    {
-        "question": "For decades, scientists understood that sleep was crucial for memory consolidation, but the precise mechanism remained unclear. Was sleep simply a quiet period allowing memories to solidify passively, or did the brain take a more active role? <u>To investigate this question, neuroscientists Matthew Wilson and Bruce McNaughton monitored the brain activity of rats, first as they learned to navigate a maze and then during subsequent periods of slow-wave sleep.</u> They discovered that the specific patterns of hippocampal neurons that fired while the rats were learning were reactivated during sleep. This finding provided strong evidence that memory consolidation is an active process involving neural replay.\n\nWhich choice best describes the function of the underlined sentence in the text as a whole?",
-        "section": "reading_and_writing",
-        "domain": "craft_and_structure",
-        "skill_category": "text_structure_and_purpose",
-        "choices": [
-            "A. It outlines the experimental approach used to resolve the uncertainty introduced in the previous sentence.",
-            "B. It summarizes the key finding that emerged from the study discussed in the text.",
-            "C. It offers evidence to support the idea that spatial memories are particularly dependent on sleep.",
-            "D. It questions the adequacy of a prevailing model of memory consolidation."
+            "A. physics\u2014has",
+            "B. physics, has",
+            "C. physics; has",
+            "D. physics has"
         ],
         "correct_answer": "A",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.55",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.85",
         "explanations": {
-            "A": "This choice is correct. The preceding sentence poses a question about whether memory consolidation is passive or active. The underlined sentence, starting with 'To investigate this question,' directly explains the experimental method (monitoring rats in a maze) used to answer it.",
-            "B": "This choice is incorrect. The underlined sentence describes the study's method, not its results. The key finding is presented in the sentence that follows: 'They discovered that the specific patterns of hippocampal neurons... were reactivated during sleep.'",
-            "C": "This choice is incorrect. Although the study uses a maze, which involves spatial memory, the primary purpose of this sentence is to describe the experiment's design, not to offer evidence specifically about spatial memories. It explains *how* the researchers investigated the broader question of memory consolidation.",
-            "D": "This choice is incorrect. The text describes the mechanism as 'unclear' and presents two possibilities, not a single 'prevailing model' that is being challenged. The study's aim was to clarify an unknown, not to question an established theory."
+            "A": "This choice is correct. The sentence uses a pair of dashes to set off the long, nonessential appositive phrase that starts with 'a versatile analytical instrument...' The first dash opens the appositive, so a matching dash is required to close it before the main verb 'has become'. This choice correctly provides the closing dash and the main verb.",
+            "B": "This choice is incorrect because it creates a mismatched punctuation pair. The nonessential element begins with a dash but ends with a comma. Punctuation used to enclose a phrase or clause must be a matching pair (either two commas or two dashes).",
+            "C": "This choice is incorrect. A semicolon is used to connect two independent clauses. The phrase 'has become indispensable...' is not an independent clause because it lacks a subject. Therefore, a semicolon is grammatically inappropriate here.",
+            "D": "This choice is incorrect because it fails to set off the long nonessential appositive from the rest of the sentence. The appositive must be separated from the main verb 'has become' with punctuation to maintain grammatical clarity."
         }
     },
     {
-        "question": "Researchers in cognitive science are exploring the \"bilingual advantage\" hypothesis. A more specific version of this theory, proposed by a team led by Dr. Anya Sharma, hypothesizes that cognitive benefits, particularly in executive functions like task-switching, are most pronounced in late bilinguals\u2014individuals who acquired a second language after age ten. Sharma\u2019s team contends that this advantage stems not from merely knowing two languages, but from the continuous mental effort required to manage interference from and suppress their dominant first language.\n\nWhich finding, if true, would most directly support the researchers' hypothesis?",
-        "section": "reading_and_writing",
-        "domain": "information_and_ideas",
-        "skill_category": "command_of_evidence",
-        "choices": [
-            "A. In a study comparing monolinguals, early bilinguals, and late bilinguals on a task requiring them to rapidly switch between sorting objects by color and by shape, the late bilinguals demonstrated significantly better performance than the other two groups.",
-            "B. Brain imaging studies revealed that when speaking their second language, late bilinguals show heightened activity in brain regions associated with cognitive control compared to early bilinguals.",
-            "C. When tested on vocabulary size and grammatical complexity in their shared native language, both early and late bilinguals performed at a level equivalent to their monolingual peers.",
-            "D. A large-scale survey indicated that both early and late bilinguals report a subjective sense of being better at multitasking in their daily lives than their monolingual peers."
-        ],
-        "correct_answer": "A",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.55",
-        "explanations": {
-            "A": "This choice directly supports the team's specific hypothesis. The hypothesis claims a benefit in 'task-switching' that is 'most pronounced in late bilinguals.' This finding shows exactly that: late bilinguals outperformed both early bilinguals and monolinguals on a task-switching exercise, confirming the key components of the claim.",
-            "B": "This is a misleading focus. While this finding supports the proposed *mechanism* for the advantage (the mental effort of 'cognitive control'), it doesn't confirm the hypothesized *outcome* (better task-switching performance). The most direct support for the overall hypothesis would be evidence of the effect itself, making choice A a better answer.",
-            "C": "This is out-of-scope. The hypothesis is about cognitive functions (task-switching), not linguistic proficiency (vocabulary size or grammar). This finding is irrelevant to the claim being tested.",
-            "D": "This is an overly general finding. The hypothesis specifies that the benefit is *most pronounced* in late bilinguals, creating a distinction between early and late bilinguals. This finding groups both types of bilinguals together, failing to support that specific distinction. Furthermore, it relies on a 'subjective sense' rather than objective performance data."
-        }
-    },
-    {
-        "question": "An influential but long-held assumption in genetics was that complex, instinctual behaviors in animals, such as the multigenerational migration of monarch butterflies, were likely governed by a single, critical \"migration gene.\" This gene was presumed to act as a primary switch, being active in migratory populations and inactive in non-migratory ones. However, a 2014 genomic study challenged this view. After sequencing the DNA of both migratory and non-migratory monarchs, researchers found no single gene that could account for the behavior. Instead, they discovered that migratory ability is linked to a collection of different genes related to muscle function and metabolism, and that the differing *expression* of these genes is what distinguishes the two groups. This finding suggests that ______\n\nWhich choice most logically completes the text?",
+        "question": "In archaeological interpretation, the line between data-driven analysis and informed speculation is often blurred, particularly when studying prehistoric cultures that left behind no written records. The Cycladic figurines of the Bronze Age Aegean are a quintessential example. These enigmatic marble figures, characterized by their minimalist, abstract forms, have been variously interpreted as religious idols, toys for children, or funerary companions. Such theories, however, remain largely conjectural. Even recent scientific advancements, which have revealed tantalizing new details\u2014for instance, faint traces of pigment suggest the figurines were once brightly painted, not stark white\u2014fall short of resolving the core mystery of their purpose. These findings enrich our understanding of the objects' material properties but do not illuminate their cultural significance. Thus, ______\n\nWhich choice most logically completes the text?",
         "section": "reading_and_writing",
         "domain": "information_and_ideas",
         "skill_category": "inferences",
         "choices": [
-            "A. the genetic mechanisms controlling migration are likely similar across most butterfly species.",
-            "B. there is no fundamental genetic difference between migratory and non-migratory monarch butterflies.",
-            "C. the capacity for long-distance migration in monarchs is not determined by the presence or absence of one specific gene but by a more complex genetic regulation.",
-            "D. the primary evolutionary advantage of non-migratory monarch populations is the conservation of energy."
+            "A. archaeological focus must now shift from speculating on purpose to cataloging the figurines' material properties.",
+            "B. the discovery of pigment complicates earlier theories that connected the figurines' minimalist form to their function.",
+            "C. a full understanding of the figurines will require combining material evidence with new interpretations of their cultural context.",
+            "D. the meaning of these artifacts remains a matter of interpretation despite advances in material analysis."
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.88",
+        "explanations": {
+            "A": "This choice incorrectly proposes a shift in archaeological focus. The text uses the failure of material analysis to solve the core mystery as its concluding point, not as a reason to abandon speculation in favor of cataloging.",
+            "B": "This choice makes a plausible but unsupported inference. While the discovery of paint might seem to complicate theories about form, the text does not make this specific connection. It states only that the discovery does not resolve the broader mystery of the figurines' purpose.",
+            "C": "This choice is out of scope. It suggests a future direction for research, but the text's purpose is to describe the current state of knowledge\u2014an impasse where material evidence has proven insufficient. It doesn't prescribe a solution.",
+            "D": "This choice accurately captures the text's conclusion. The passage demonstrates that even with new scientific findings (material analysis), the cultural significance (meaning) of the figurines cannot be determined and is still a matter for interpretation."
+        }
+    },
+    {
+        "question": "The theory of universal grammar, famously championed by linguist Noam Chomsky, posits that the human brain possesses an innate neurological framework that underpins the acquisition of all languages. This framework is thought to constrain the grammatical structures possible in any human language, explaining the relative ease and speed with which children learn to speak. ___, extensive research has documented profound structural differences between languages\u2014such as the free word order of Warlpiri versus the rigid subject-verb-object structure of English\u2014that challenge the notion of a single, universal template.",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "transitions",
+        "choices": [
+            "A. On the contrary,",
+            "B. In reality,",
+            "C. Conversely,",
+            "D. Nevertheless,"
+        ],
+        "correct_answer": "D",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.80",
+        "explanations": {
+            "A": "This choice is incorrect. 'On the contrary' implies a direct and complete negation of the preceding statement. The text doesn't outright reject the theory but presents evidence that complicates or challenges it, making the concessional tone of 'Nevertheless' more appropriate.",
+            "B": "This choice is incorrect. While the final sentence does introduce a factual challenge, 'In reality,' can be too dismissive, implying the initial theory is pure fiction. 'Nevertheless' offers a more nuanced transition, acknowledging the theory's existence before presenting a counterpoint.",
+            "C": "This choice is incorrect. 'Conversely' is used to present an opposing but often parallel idea or situation. The relationship here is not one of parallel opposites but of a general theory being challenged by specific evidence. The final sentence challenges the first idea rather than presenting its inverse.",
+            "D": "This is the correct answer. The first two sentences describe the theory of universal grammar. The final sentence introduces contrasting evidence that challenges this theory. 'Nevertheless' effectively signals this concession or contrast, indicating that despite the claims of the theory, contradictory evidence exists."
+        },
+        "timestamp": "2025-07-16T18:05:43.123456",
+        "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+        "test": "SAT"
+    },
+    {
+        "question": "The horologist's workshop was a world condensed onto a single worn oak bench. Under the focused beam of a brass lamp, he coaxed a gear the size of a pinhead into place with tweezers that seemed extensions of his own fingers. Each tick of the escapement was not a measure of passing time, but a heartbeat he was carefully restarting. He rarely thought of the grand, abstract hours his creations would mark for others. For him, the process was not about conquering time in the abstract; ______",
+        "domain": "craft_and_structure",
+        "skill_category": "logical_completions",
+        "choices": [
+            "A. it was a quest for an abstract ideal, a solitary pursuit of mechanical perfection.",
+            "B. it was a means of mastering a finite system, of achieving certainty through precision.",
+            "C. it was an act of nurturing a delicate mechanism, of coaxing a pulse from silence.",
+            "D. it was the fulfillment of an inherited discipline, a way of honoring a past tradition."
         ],
         "correct_answer": "C",
-        "difficulty": "medium",
-        "difficulty_ranking": "0.55",
+        "difficulty": "hard",
         "explanations": {
-            "A": "This choice makes a generalization that is not supported by the text. The passage discusses a finding specific to 'monarch butterflies.' There is no information provided to suggest that these findings would apply to 'most butterfly species.' A student must infer only what the text warrants, and generalizing from one species to many is a classic inferential error.",
-            "B": "This choice incorrectly interprets the study's findings. While the study found 'no single gene' that acted as a simple switch, it did find that migratory ability is 'linked to a collection of different genes.' This means there are genetic differences, making the claim that there is 'no fundamental genetic difference' a direct contradiction of the evidence presented. This distractor preys on a misreading of 'no single gene' as 'no genes at all.'",
-            "C": "The text presents a direct contrast between an old assumption and a new finding. The old assumption was that a 'single, critical \\\"migration gene\\\"' was responsible for the behavior. The new finding is that 'no single gene' is responsible; rather, it is a 'collection of different genes' and their 'differing *expression*.' The correct choice, C, perfectly synthesizes this contrast by stating that migration is determined not by a single gene's presence/absence but by 'a more complex genetic regulation,' which is a precise summary of the role of gene expression across a suite of genes.",
-            "D": "This choice makes a plausible-sounding leap that is not supported by the text. The passage mentions that the relevant genes are related to 'metabolism,' which is linked to energy. However, the text is purely descriptive of the genetic mechanism; it makes no claims about the *evolutionary advantages* of either migrating or not migrating. Concluding that energy conservation is the 'primary evolutionary advantage' is an assumption that goes beyond the scope of the provided information."
+            "A": "This is a highly plausible distractor. The horologist is clearly meticulous. However, the text's central metaphor is about life and animation ('heartbeat'), not the achievement of a static 'ideal' or 'perfection'. The focus is on a dynamic process, not a final, perfect state.",
+            "B": "This distractor captures the precision of the work but misidentifies the core motivation. The text frames the process through an organic metaphor ('heartbeat') rather than a logical one ('mastering a finite system', 'achieving certainty'). The horologist is portrayed as a nurturer, not a logician.",
+            "C": "This choice correctly captures the central metaphor of the text. 'Nurturing a delicate mechanism' and 'coaxing a pulse from silence' are sophisticated paraphrases of the idea of restarting a 'heartbeat'. It focuses on the life-giving, dynamic aspect of the work, aligning perfectly with the established tone and imagery.",
+            "D": "This is an unsupported but plausible motivation. Many artisans work within a tradition. However, the text provides no evidence for this; its focus is exclusively on the horologist's immediate, personal relationship with the object, not on his connection to the past or a sense of duty."
+        }
+    },
+    {
+        "question": "The reintroduction of gray wolves to Yellowstone National Park in 1995 is a classic example of a trophic cascade, a phenomenon where the actions of an apex predator trigger a series of indirect effects down the food chain. Prior to the wolves\u2019 return, the elk population had surged, leading to overgrazing of young willow, aspen, and cottonwood trees, particularly along rivers and streams. ______ the decline in these woody plants had a profound impact on beavers, which rely on willows for food and for building the dams that create their pond habitats.\n\nWhich choice completes the text with the most logical transition?",
+        "section": "reading_and_writing",
+        "domain": "expression_of_ideas",
+        "skill_category": "transitions",
+        "choices": [
+            "A. Furthermore,",
+            "B. Consequently,",
+            "C. In effect,",
+            "D. Specifically,"
+        ],
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.75",
+        "explanations": {
+            "A": "This choice is incorrect. 'Furthermore' is used to add another piece of information. While the impact on beavers is an additional point in the ecological story, the primary relationship is one of direct causation. The decline in plants caused the impact on beavers, a cause-and-effect relationship that 'Consequently' captures more precisely.",
+            "B": "This choice correctly indicates a cause-and-effect relationship. The overgrazing by elk led to the decline in woody plants (the cause), which directly resulted in a profound impact on the beaver population (the consequence). 'Consequently' is the most logical transition to signal this direct outcome.",
+            "C": "This choice is incorrect. 'In effect' is used to summarize or state the practical upshot of a situation. While plausible, it is less precise than 'Consequently,' which is used to describe the next step in a direct causal sequence. The text describes a linear chain of events, making 'Consequently' the better fit.",
+            "D": "This choice is incorrect. 'Specifically' is used to narrow a general statement down to a particular detail. The previous sentence already provides specific information (the types of trees being overgrazed). The following sentence describes the result of this action, not a more specific example or detail of it. The core logical relationship is causal."
+        }
+    },
+    {
+        "question": "The reintroduction of gray wolves to Yellowstone National Park in 1995 had a profound, cascading effect on the entire ecosystem. ______ the elk population, which had overgrazed much of the park, was brought under control. This allowed willow and aspen groves to recover, which in turn provided better habitats for beavers and songbirds.\n\nWhich choice completes the text with the most logical transition?",
+        "section": "reading_and_writing",
+        "domain": "craft_and_structure",
+        "skill_category": "transitions",
+        "choices": [
+            "A. For example,",
+            "B. Specifically,",
+            "C. In effect,",
+            "D. Subsequently,"
+        ],
+        "correct_answer": "B",
+        "difficulty": "hard",
+        "difficulty_ranking": "0.85",
+        "explanations": {
+            "A": "This is a very plausible distractor. 'For example' is used to introduce an illustration. However, 'Specifically' is more precise here. The text isn't just providing one of several possible examples of a general effect; it's identifying the primary, initial component of the 'cascading effect' that the rest of the text will build upon. 'Specifically' better captures this function of narrowing a broad concept to its key mechanism.",
+            "B": "This is the correct answer. The first sentence makes a general statement about a 'profound, cascading effect.' The second sentence transitions from this general claim to the particular, initial mechanism of that effect\u2014the control of the elk population. 'Specifically' is the most precise transition to signal this move from a broad idea to a focused, defining detail.",
+            "C": "This distractor is incorrect. 'In effect' suggests that the second sentence is a restatement of the consequence or essence of the first. While the elk control is part of the effect, this phrase doesn't accurately capture the rhetorical function, which is to provide the first illustrative detail in a chain of events, not to summarize the outcome.",
+            "D": "'Subsequently' correctly identifies a temporal relationship but is less precise than 'Specifically.' The logical connection is more than just a sequence of events in time; the control of the elk population is presented as a direct illustration that defines the 'cascading effect.' The question asks for the most logical transition, and 'Specifically' better describes that illustrative logic."
         }
     }
 ]
