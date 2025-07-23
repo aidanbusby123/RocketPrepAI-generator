@@ -577,7 +577,7 @@ def generate_ai_feedback(question, section, domain, skill_category, difficulty, 
 
     difficulty_feedback = str(get_feedback_by_difficulty(all_feedback, str(section), str(difficulty)))
 
-    ref_system_prompt = f"reference system prompt: {ref_system_prompt}"
+    ref_system_prompt = f"reference system prompt: {ref_system_prompt}. This question should be of difficulty {difficulty}. Do not take an easy question and make it a hard, or vice versa, for example."
     feedback_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
         contents=[str(question), difficulty_feedback, difficulty_questions, sources[section][domain][skill_category][difficulty], ref_system_prompt],
@@ -598,9 +598,10 @@ def get_ai_feedback(question, section, domain, skill_category, difficulty, feedb
     section_questions = str(all_questions["SAT"].get(section, []))
     difficulty_questions = str(get_questions_by_difficulty(all_questions, str(section), skill_category, str(difficulty)))
     ref_system_prompt = f"reference system prompt: {ref_system_prompt}"
+    feedback_prompt=f"section: {section}, domain: {domain}, skill_category: {skill_category}, difficulty:{difficulty}. Please ensure that the question remains in the target difficulty {difficulty}"
     feedback_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=[str(question), str(feedback), difficulty_questions, sources[section][domain][skill_category][difficulty], ref_system_prompt],
+        contents=[feedback_prompt, str(question), str(feedback), difficulty_questions, sources[section][domain][skill_category][difficulty], ref_system_prompt],
         config=GenerateContentConfig(
             system_instruction=[human_feedback_system_prompt],
             temperature=1.0
@@ -776,7 +777,7 @@ def get_human_feedback(question, section, skill_category, difficulty, question_i
 
     feedback_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=[str(question), feedback, difficulty_questions, sources[question["section"]][question["domain"]][question["skill_category"]], ref_system_prompt],
+        contents=[str(question), str(feedback), str(difficulty_questions), sources[question["section"]][question["domain"]][question["skill_category"]][question["difficulty"]], ref_system_prompt],
         config=GenerateContentConfig(
             system_instruction=[human_feedback_system_prompt],
             temperature=1.0

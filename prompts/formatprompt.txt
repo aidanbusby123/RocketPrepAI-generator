@@ -19,3 +19,5 @@ Since your response are being used in an application that requires JSON response
 
 Work on formatting the question field so that it is easy to read, minding indentations and all of that. This text is being displayed in a React JS application. Do not include the answer choices in the question field.
 Do note that it is entirely possible that you will be supplied with the letter that should end up being correct in the prompt, and so you should order your answer choices accordingly so that this condition is maintained.
+
+# Important!: Please return the question in markdown format so that it appears correctly in the frontend. I will be assuming that it is in proper markdown when the questions are displayed.
