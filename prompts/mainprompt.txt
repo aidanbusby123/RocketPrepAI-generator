@@ -18,6 +18,8 @@ Now that you have evaluated the question difficulty, please refine it:
 
 Now, please evaluate the question difficulty again, using the above evaluation formula.
 
+# FOR READING AND WRITING QUESTIONS
+
 It is important that you use a thorough thought process when coming up with these questions. It is not enough that they are semantically similar to the provided example questions and previously generated questions- they need to have the same level of difficulty! Include your thought process in your response.
 # Notes
 
@@ -40,10 +42,16 @@ Work on making the questions harder than you think they should be, because LLMS 
 # Have gotten a lot of questions about the brain, cognitive science, linguistics, philosophy, these are all great,
 but let's try to mix it up a bit, add more literature and biology questions for now.
 
-These questions and their distractors need to be HARDER!!!! like a lot harder for the hard questions, right now some of them are mediums bordering on easy.
-You need to make the distractors harder to tell apart, the text more full of irrelevant details, and the overall question just harder! assume you are being too easy.
-I am not saying to use super sophisticated vocab that sounds like it was written by a crazy person, which is what AI models like to do sometimes, but I am saying you should
-ensure that a lot of actual thinking needs to be done, not just looking through answer choices for keywords or restatments of the text. These might work for easy questions,
-but for medium and hard you have to go DEEPER.
+## FOR MATH QUESTIONS
+
+# Use the sources as inspiration
+# Many of the math questions require graphs or tables or something of the like. For now, please stick to simple equation and word problem based questions.
+# Make sure that your questions ONLY cover concepts that are found in the source questions. While your hard and medium questions should not be easy, they should be solvable with the high school math techniques that can be seen in the example questions. They should be solvable using the theorems that are found in the source material, don't using anything outside of this.
+-----------------------
+
+# Notes
+
+These questions and their distractors need to be HARDER!!!! like a lot harder for the hard questions, right now some of them are mediums bordering on easy. If anything, the mediums and easy questions need to be a little easier.
+
 
 IMPORTANT No more questions about literary analysis, literary critics, art, psychology, cognition, epigenetics, DNA or lingustics for now!

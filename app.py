@@ -125,12 +125,15 @@ def generate_questions_for_skill_category(section: str, skill_category: str, dif
 
                     user_prompt = base_user_prompt.format(difficulty=difficulty, random_choice=random_choice)
                     print(f"domain: {domain}, section: {section}")
-                    system_prompt = f"Using the sources as a guide, generate an authentic and unique question of the given difficulty level. Make questions harder than you think they should be always, \
+                    system_prompt = f"Using the sources as a guide, generate an authentic and unique question of the given difficulty level.\
+                    # For RW Questions \
+                    Make questions harder than you think they should be always, \
                     and ensure that the tone and style does not differ drastically from those of the examples. The only way in which your question should differ \
-is that it is allowed to be harder than the others. Realistically, your easiest questions for each difficulty should be as hard as the harder ones in the provided sources. (the files). To ensure question diversity, use the sources as reference to decide when you need to switch gears and " \
-"generate questions of a different style, for example expository vs fictional, based off of how many questions of different styles there are.\
- \
-Using the prompt above, here is a new, generated question of difficulty {difficulty}. Please ensure you achieve the correct difficulty level. \
+is that it is allowed to be harder than the others. Realistically, your easiest questions for each difficulty should be as hard as the harder ones in the provided sources. (the files). To ensure question diversity, use the sources as reference to decide when you need to switch gears and  \
+generate questions of a different style, for example expository vs fictional (for reading and writing questions), based off of how many questions of different styles there are. For now, any math questions should be multiple choice and that are numerical or use a clearly formatted table. For the reading and writing questions, unlike the math do NOT make each question an image of one of the source questions. Your reading and writing questions should be original and they should not be copies, but should take inspiration. Ensure to make your distractors harder too for reading and writing questions. (if its a math question, obviously, otherwise ignore this). Make them HARDER! \
+# For math questions\
+      please use the relevant sources as inspiration when generating your question, only testing topics that are covered in those questions. DO NOT USE ANY CONCEPTS/STRATEGIES THAT DO NOT APPEAR IN THE SOURCE QUESTIONS. The questions should only contain mathematical concepts that you can find in the source questions (CollegeBoard questions), and should be indestinguishable from real SAT math question, besides the fact they should be a litte bit harder. Harder does not mean using concepts that are not covered in the source questions, however. You should basically be taking the provided source questions and making a replica of them for the math questions (but not for RW) to avoid creating questions that don't look exactly like SAT questions, because these math questions need to be of the *exact same format and style*  as the example ones. You are given less creative leeway with the math questions, as they should be made in the image of one of the source questions. NOTHING SUPER CREATIVE OR OFF TOPIC OR NOT IN THE EXACT FORMAT OF ONE OF THE EXAMPLES! THIS MEANS YOUR QUESTIONS SHOULD BE SOLVABLE ALMOST EXACTLY LIKE ONE OF THE SOURCE QUESTIONS. You should really take one of the source questions and just modify it to have different equations/whatever instead of just writing the question from scratch.\
+                   Using the prompt above, here is a new, generated question of difficulty {difficulty}, domain {domain}, and section {section}. Please ensure you achieve the correct difficulty level. \
 "
                     system_prompt = str(system_prompt)
                     #system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[section][domain][skill_category], difficulty=difficulty, evaluation_formula=prompts["evaluation_prompt"], refine_formula=prompts["refine_prompt"])
@@ -244,10 +247,10 @@ async def send_questions(request: Request):
                 if entry["question_index"] == idx:
                     entry["question_id"] = question_id  # Add the unique ID here
                     print("saving feedback")
-                    ''' save_human_feedback(
+                    save_human_feedback(
                         feedback=entry,
                         question_id=question_id,
-                    )'''
+                    )
                     
 
         load_questions_from_firebase()

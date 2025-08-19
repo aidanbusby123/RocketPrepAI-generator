@@ -13,6 +13,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 import logging
 import atexit
+import random
 
 all_questions = []
 
@@ -449,50 +450,75 @@ def load_prompts():
 prompts = load_prompts()
 
 sources = load_sources()
-def get_questions_by_difficulty(questions_data, section, skill_category, target_difficulty):
+def get_questions_by_difficulty(questions_data, section, skill_category, target_difficulty, limit=10):
     """
     Retrieves a list of questions filtered by a specific difficulty level
     from the loaded questions data.
-
+    
     Args:
         questions_data (dict): The dictionary containing all loaded questions
-                                (e.g., from load_questions_from_firebase).
+            (e.g., from load_questions_from_firebase).
         section (str): The section of the SAT (e.g., "reading_and_writing", "math").
-        domain (str): The domain within the section (e.g., "craft_and_structure", "algebra").
+        skill_category (str): The skill category within the section (e.g., "craft_and_structure", "algebra").
         target_difficulty (str): The desired difficulty level ("easy", "medium", "hard").
-
+        limit (int, optional): Maximum number of questions to return. If None, returns all matching questions.
+            If the number of matching questions exceeds this limit, randomly selects up to this many questions.
+    
     Returns:
         list: A list of question dictionaries that match the specified difficulty.
             Returns an empty list if no questions are found for the criteria.
+            If limit is specified and exceeded, returns a random sample of questions up to the limit.
     """
     if "SAT" not in questions_data:
         return []
-
+    
     section_data = questions_data["SAT"].get(section, {})
     domain_questions = []
-    #print(section_data)
-
-    # Iterate through all skill categories within the domain
+    
+    # Iterate through all questions within the section
     for question in section_data:
-            
-            if question.get("difficulty", "").lower() == target_difficulty.lower() and question.get("skill_category", "").lower() == skill_category.lower():
-                domain_questions.append(question)
-
+        if (question.get("difficulty", "").lower() == target_difficulty.lower() and 
+            question.get("skill_category", "").lower() == skill_category.lower()):
+            domain_questions.append(question)
+    
+    # Apply limit with random selection if specified and exceeded
+    if limit is not None and len(domain_questions) > limit:
+        domain_questions = random.sample(domain_questions, limit)
+    
     return domain_questions
 
-def get_feedback_by_difficulty(feedback_data, section, difficulty):
+
+def get_feedback_by_difficulty(feedback_data, section, difficulty, limit=15):
+    """
+    Retrieves feedback entries filtered by difficulty level.
+    
+    Args:
+        feedback_data (dict): The dictionary containing all feedback data.
+        section (str): The section to filter by.
+        difficulty (str): The difficulty level to filter by.
+        limit (int, optional): Maximum number of feedback entries to return. If None, returns all matching entries.
+            If the number of matching entries exceeds this limit, randomly selects up to this many entries.
+    
+    Returns:
+        list: A list of feedback entries that match the specified difficulty.
+            If limit is specified and exceeded, returns a random sample of entries up to the limit.
+    """
     section_data = feedback_data.get(section, {})
     difficulty_feedback = []
-
+    
     for question_id, entries in section_data.items():
         for feedback in entries:
             # Check if feedback contains a difficulty key (inside .get("feedback") if saved that way)
             feedback_info = feedback.get("feedback", feedback)  # handles both nested and flat formats
             feedback_difficulty = feedback_info.get("original_question", {}).get("difficulty", "").lower()
-
+            
             if feedback_difficulty == difficulty.lower():
                 difficulty_feedback.append(feedback)
-
+    
+    # Apply limit with random selection if specified and exceeded
+    if limit is not None and len(difficulty_feedback) > limit:
+        difficulty_feedback = random.sample(difficulty_feedback, limit)
+    
     return difficulty_feedback
 
 
@@ -503,9 +529,10 @@ def evaluate_question_difficulty(raw_question_data, section, domain, skill_categ
     reference_prompt = f"Original system prompt, for reference: {ref_system_prompt}"
     print("evaluating difficulty")
     all_questions_text = json.dumps(all_questions)
+    difficulty_questions = str(get_questions_by_difficulty(all_questions, str(section), skill_category, str(difficulty), 25))
     response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=[evaluation_prompt, all_questions_text, reference_prompt],
+        contents=[evaluation_prompt, difficulty_questions, reference_prompt],
         config=GenerateContentConfig(
             system_instruction=[evaluation_system_prompt]
         )
@@ -559,14 +586,21 @@ def format_question(raw_question_data, section, domain, skill_category, difficul
             system_instruction=[format_prompt]
         ),
     )
-
+    print(f"format question response: {gemini_response.text}")
     print(f"metadata: {gemini_response.usage_metadata}")
     #response = response.choices[0].message.content
     gemini_response = gemini_response.text
 
-    
-    print(gemini_response)
-    return gemini_response
+    question = re.search(r'\{.*\}', gemini_response, re.DOTALL)
+    if question:
+        question_json = question.group(0) # changed from question.group(0)
+        print (f"Question json generated: {json.loads(question_json)}")
+        update_local_questions_data(json.loads(question_json))
+        return json.loads(question_json)
+        return question
+    else:
+        raise ValueError("No valid JSON found in response")
+
 
 
 def generate_ai_feedback(question, section, domain, skill_category, difficulty, ref_system_prompt):
@@ -580,16 +614,17 @@ def generate_ai_feedback(question, section, domain, skill_category, difficulty, 
     ref_system_prompt = f"reference system prompt: {ref_system_prompt}. This question should be of difficulty {difficulty}. Do not take an easy question and make it a hard, or vice versa, for example."
     feedback_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=[str(question), difficulty_feedback, difficulty_questions, sources[section][domain][skill_category][difficulty], ref_system_prompt],
+        contents=[str(question), "feedback:", difficulty_feedback, "other questions that have been generated of this difficulty: ", difficulty_questions, "source questions", sources[section][domain][skill_category][difficulty], ref_system_prompt],
         config=GenerateContentConfig(
             system_instruction=[ai_feedback_system_prompt],
             temperature=1.0
         ),
     )
-
+    print(f"feedback metadata: {feedback_response.usage_metadata}")
     feedback_response = feedback_response.text
 
     print(feedback_response)
+    
     return feedback_response
 
 
@@ -598,10 +633,10 @@ def get_ai_feedback(question, section, domain, skill_category, difficulty, feedb
     section_questions = str(all_questions["SAT"].get(section, []))
     difficulty_questions = str(get_questions_by_difficulty(all_questions, str(section), skill_category, str(difficulty)))
     ref_system_prompt = f"reference system prompt: {ref_system_prompt}"
-    feedback_prompt=f"section: {section}, domain: {domain}, skill_category: {skill_category}, difficulty:{difficulty}. Please ensure that the question remains in the target difficulty {difficulty}"
+    feedback_prompt=f"section: {section}, domain: {domain}, skill_category: {skill_category}, difficulty:{difficulty}. Please ensure that the question remains in the target difficulty {difficulty}. Please ensure response is in proper markdown for formatting, and that you only test concepts that appear in the source questions. You do have more freedom for readining and writing questions however, those should be more diverse"
     feedback_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
-        contents=[feedback_prompt, str(question), str(feedback), difficulty_questions, sources[section][domain][skill_category][difficulty], ref_system_prompt],
+        contents=[feedback_prompt, str(question), str(feedback), difficulty_questions, "source questions: ", sources[section][domain][skill_category][difficulty], ref_system_prompt],
         config=GenerateContentConfig(
             system_instruction=[human_feedback_system_prompt],
             temperature=1.0
@@ -609,20 +644,9 @@ def get_ai_feedback(question, section, domain, skill_category, difficulty, feedb
     )
 
     feedback_response = feedback_response.text
+   
 
-    updated_question = format_question(str(feedback_response), section, domain, skill_category, difficulty)
-    updated_question = re.search(r'\{.*\}', feedback_response, re.DOTALL)
-
-
-
-    if updated_question:
-        updated_question_json = updated_question.group(0)
-        #print (f"Question json generated: {json.loads(updated_question_json)}")
-        update_local_questions_data(json.loads(updated_question_json))
-        return json.loads(updated_question_json)
-    else:
-        raise ValueError("No valid JSON found in response")
-
+    return feedback_response
 
     
 
@@ -640,7 +664,11 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     section_questions = all_questions["SAT"].get(section, [])
     difficulty_questions = str(get_questions_by_difficulty(all_questions, section, skill_category, difficulty))
     difficulty_session_questions = str(get_questions_by_difficulty(messages, section, skill_category, difficulty))
-    generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)THis session: {difficulty_session_questions} from database: \n{difficulty_questions}"
+
+    if domain == "reading_and_writing":
+        generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)THis session: {difficulty_session_questions} from database: \n{difficulty_questions}. THESE ARE NOT SOURCE QUESTIONS, THEY ARE PROVIDED ONLY SO YOU CAN ENSURE QUESTION DIVERSITY"
+    else:
+        generated_questions = ""
     #print ("Generating questions!")
 # print(generated_questions)
 
@@ -648,7 +676,7 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         model=GEMINI_MODEL,
         #messages = str(messages)
         #print(generated_questions)
-        contents=[sources[section][domain][skill_category][difficulty], str(generated_questions), user_prompt],
+        contents=["source questions from CollegeBoard: ", sources[section][domain][skill_category][difficulty], str(generated_questions), user_prompt],
         config=GenerateContentConfig(
             system_instruction=[system_prompt],
             temperature=1.0
@@ -656,6 +684,7 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     )
 
     question = gemini_response.text
+    print(f"question draft: {question}")
 # print(f"# Question: {question}")
     print(f"metadata: {gemini_response.usage_metadata}")
 
@@ -670,18 +699,16 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
     #response = response.choices[0].message.content
     #messages.append({"role": "assistant", "content": response})
 
-    #evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
-    #evaluation = evaluation + f"\n current difficulty ranking: {difficulty_ranking}"
     #question = refine_question(question, evaluation, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
     #evaluation, difficulty_ranking = evaluate_question_difficulty(question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty, target_difficulty_ranking=target_difficulty_ranking, ref_system_prompt=system_prompt)
-
     ai_feedback = generate_ai_feedback(question, section, domain, skill_category, difficulty, system_prompt)
 
     question = get_ai_feedback(question, section, domain, skill_category, difficulty, ai_feedback, system_prompt)
 
-
-    #formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty)
     
+
+    formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty)
+    question = formatted_response
     #question = re.search(r'\{.*\}', formatted_response, re.DOTALL)
 
     if question:
