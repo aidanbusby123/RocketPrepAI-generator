@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import ReviewQuestions from './ReviewQuestions'; // Import the new component
+import FirebaseQuestionReview from './FirebaseQuestionReview'; // Import Firebase review component
 import { useEffect } from 'react';
 import { loadCachedQuestions, saveCachedQuestions } from '../utils/localStorage';
 const CACHE_KEY="cached_questions"
@@ -12,6 +13,7 @@ const QuestionGenerator = () => {
   const [questions, setQuestions] = useState([]);
   const [numQuestions, setNumQuestions] = useState(1);
   const [reviewMode, setReviewMode] = useState(false);
+  const [firebaseReviewMode, setFirebaseReviewMode] = useState(false);
   const [loading, setLoading] = useState(false);
   const [selectedSection, setSelectedSection] = useState("");
   const [selectedSkills, setSelectedSkills] = useState({});
@@ -227,7 +229,7 @@ const QuestionGenerator = () => {
           >
             Load from Backend Cache
           </button>
-      {!reviewMode ? (
+      {!reviewMode && !firebaseReviewMode ? (
         <form onSubmit={(e) => e.preventDefault()}>
           {/* Domain and Skills Selection */}
           {Object.entries(questionDomains[selectedSection] || {}).map(([domain, skills]) => (
@@ -268,18 +270,25 @@ const QuestionGenerator = () => {
           </div>
           <button onClick={handleGenerateQuestions} disabled={loading}>Generate Questions</button>
           <button onClick={() => setReviewMode(true)} disabled={questions.length === 0 || loading}>
-            Review Questions
+            Review Pending Questions
+          </button>
+          <button onClick={() => setFirebaseReviewMode(true)} disabled={loading}>
+            Review Firebase Questions
           </button>
         </form>
-      ) : (
-<ReviewQuestions
-  questions={questions}
-  setQuestions={setQuestions}
-  onSendToFirebase={sendQuestionsToFirebase}
-  onBackToGeneration={() => setReviewMode(false)}
-  onRefresh={reloadQuestionsFromBackend}
-/>
-      )}
+      ) : reviewMode ? (
+        <ReviewQuestions
+          questions={questions}
+          setQuestions={setQuestions}
+          onSendToFirebase={sendQuestionsToFirebase}
+          onBackToGeneration={() => setReviewMode(false)}
+          onRefresh={reloadQuestionsFromBackend}
+        />
+      ) : firebaseReviewMode ? (
+        <FirebaseQuestionReview
+          onBackToGeneration={() => setFirebaseReviewMode(false)}
+        />
+      ) : null}
     </div>
   );
 };

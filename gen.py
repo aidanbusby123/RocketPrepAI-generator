@@ -10,10 +10,12 @@ import json
 from datetime import datetime
 import uuid
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, storage
 import logging
 import atexit
 import random
+import tempfile
+import subprocess
 
 all_questions = []
 
@@ -34,9 +36,12 @@ parser.add_argument("--epochs", default=1)
 args = parser.parse_args()
 '''
 cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred)
+firebase_admin.initialize_app(cred, {
+    "storageBucket": "rocketprepai.firebasestorage.app"
+})
 
 db = firestore.client()
+bucket = storage.bucket()
 
 base_user_prompt = "Please generate a question, where the correct answer is {random_choice} and the difficulty is {difficulty}"
 
@@ -648,7 +653,54 @@ def get_ai_feedback(question, section, domain, skill_category, difficulty, feedb
 
     return feedback_response
 
-    
+def generate_and_upload_graphic(generation_latex):
+    graphic_id = str(uuid.uuid4())
+    with tempfile.TemporaryDirectory() as temp_dir:
+        tex_file_path = os.path.join(temp_dir, f"{graphic_id}.tex")
+        with open(tex_file_path, 'w') as f:
+            f.write(generation_latex)
+        try:
+            subprocess.run(
+                ['pdflatex', '-halt-on-error', '-output-directory', temp_dir, tex_file_path],
+                check=True,
+                capture_output=True,
+                text=True
+            )
+        except subprocess.CalledProcessError as e:
+            raise Exception(f"LaTeX compilation failed: {e.stderr}")
+        
+        pdf_file_path = os.path.join(temp_dir, f'{graphic_id}.pdf')
+        png_file_path = os.path.join(temp_dir, f'{graphic_id}.png')
+        try:
+            subprocess.run(
+                [
+                    'gs',
+                    '-dSAFER', '-dBATCH', '-dNOPAUSE',
+                    '-sDEVICE=png16m',
+                    '-r300',
+                    f'-sOutputFile={png_file_path}',
+                    pdf_file_path
+                ],
+                check=True,
+                capture_output=True,
+                text=True
+            )
+        except FileNotFoundError:
+            raise Exception("Ghostscript not found. Please ensure it's installed and in your PATH.")
+        except subprocess.CalledProcessError as e:
+            raise Exception(f"PDF to PNG conversion failed: {e.stderr}")
+
+        # Step 4: Read the PNG file contents and upload to Firestore
+        with open(png_file_path, 'rb') as f:
+            png_bytes = f.read()
+            
+        blob_path = f'SAT/math/graphics/{graphic_id}.png'
+        blob = bucket.blob(blob_path)
+        blob.upload_from_string(png_bytes, content_type='image/png')
+        blob.make_public()
+        public_url = blob.public_url
+
+        return public_url
 
 def generate_question(system_prompt, user_prompt, section, domain, skill_category, difficulty, messages):
     print("# Generating Question\n")
@@ -661,22 +713,25 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
         temperature=1,
     )
     '''
+    special_instructions = "for now, if relevant, for math questions ONLY create questions that require a graph/shapes with the latex graphic generator. This is for question diversity. Do not do this for skill categories that do not contain source questions with graphs or shapes, but if the source questions do contain a question like this, THEN GENERATE ONE OF THOSE !!!!!! For Words in Context problems, MAKE SURE YOU ARE ADHEREING TO THE SOURCES! I SHOULD NOT BE GETTING TEXT STRUCTURE AND PURPOSE QUESTIONS FOR WORDS IN CONTEXT QUESTIONS! BAD BAD BAD!!! ONLY WORDS SHOULD BE THE ANSWER CHOICES FOR WORDS IN CONTEEXT!!!!!\n##The current ones are too wordy, maintain difficulty but be between 25-150 words, and more concise"
     section_questions = all_questions["SAT"].get(section, [])
     difficulty_questions = str(get_questions_by_difficulty(all_questions, section, skill_category, difficulty))
     difficulty_session_questions = str(get_questions_by_difficulty(messages, section, skill_category, difficulty))
 
     if domain == "reading_and_writing":
-        generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)THis session: {difficulty_session_questions} from database: \n{difficulty_questions}. THESE ARE NOT SOURCE QUESTIONS, THEY ARE PROVIDED ONLY SO YOU CAN ENSURE QUESTION DIVERSITY"
+        #generated_questions = f"Here are the existing questions, including the questions generated during this session and those that are already in the database. Make your next one different than these to ensure question diversity (no copycats!)THis session: {difficulty_session_questions} from database: \n{difficulty_questions}. THESE ARE NOT SOURCE QUESTIONS, THEY ARE PROVIDED ONLY SO YOU CAN ENSURE QUESTION DIVERSITY. DO NOT USE THESE AS REFERENCE TO GENERATE THE QUESTION, EXCEPT FOR GENERAL UNDERSTANDING OF APPROPRIATE STRUCTURE. THE TOPICS SHOULD NOT BE THE SAME"
+        generated_questions = ""
     else:
         generated_questions = ""
     #print ("Generating questions!")
 # print(generated_questions)
 
+
     gemini_response = gemini_client.models.generate_content(
         model=GEMINI_MODEL,
         #messages = str(messages)
         #print(generated_questions)
-        contents=["source questions from CollegeBoard: ", sources[section][domain][skill_category][difficulty], str(generated_questions), user_prompt],
+        contents=["Question type:", skill_category, "source questions from CollegeBoard: ", sources[section][domain][skill_category][difficulty], str(generated_questions), user_prompt, f"special instructions: {special_instructions}"],
         config=GenerateContentConfig(
             system_instruction=[system_prompt],
             temperature=1.0
@@ -709,6 +764,19 @@ def generate_question(system_prompt, user_prompt, section, domain, skill_categor
 
     formatted_response = format_question(raw_question_data=question, section=section, domain=domain, skill_category=skill_category, difficulty=difficulty)
     question = formatted_response
+
+
+    generation_latex = question.get("generation_latex")
+    
+    if generation_latex != None:
+        try:
+            graphic_url = generate_and_upload_graphic(generation_latex)
+            if graphic_url is not None:
+                question["graphic_url"] = graphic_url
+                del question["generation_latex"]
+        except Exception as e:
+            print(f"Unable to generate graphic: {e}")
+
     #question = re.search(r'\{.*\}', formatted_response, re.DOTALL)
 
     if question:

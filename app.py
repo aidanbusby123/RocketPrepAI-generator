@@ -2,12 +2,14 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, ValidationError
 from gen import generate_question, add_question, load_prompts, load_questions_from_firebase, get_human_feedback, save_human_feedback, load_feedback_log
-from typing import List, Dict
+from typing import List, Dict, Optional
 import os
 import json
 import random
 import threading
 import queue
+import firebase_admin
+from firebase_admin import credentials, firestore
 
 
 app = FastAPI()
@@ -30,9 +32,9 @@ app.add_middleware(
 
 class QuestionRequest(BaseModel):
     section: str
-    domains: list[str]
-    skill_categories: list[str]
-    difficulties: list[str]
+    domains: List[str]
+    skill_categories: List[str]
+    difficulties: List[str]
     num_questions: int
 
     
@@ -47,6 +49,8 @@ class Question(BaseModel):
     difficulty: str
     difficulty_ranking: str
     explanations: Dict[str, str]
+    graphic_url: Optional[str] = None
+
 
 class FeedbackRequest(BaseModel):
     index: int
@@ -97,6 +101,14 @@ skill_category_to_domain = {
 
 generated_questions = []
 
+# Initialize Firebase (if not already initialized)
+if not firebase_admin._apps:
+    cred = credentials.Certificate("serviceAccountKey.json")
+    firebase_admin.initialize_app(cred, {
+        "storageBucket": "rocketprepai.firebasestorage.app"
+    })
+
+db = firestore.client()
 
 @app.middleware("http")
 async def log_request_body(request: Request, call_next):
@@ -129,11 +141,14 @@ def generate_questions_for_skill_category(section: str, skill_category: str, dif
                     # For RW Questions \
                     Make questions harder than you think they should be always, \
                     and ensure that the tone and style does not differ drastically from those of the examples. The only way in which your question should differ \
-is that it is allowed to be harder than the others. Realistically, your easiest questions for each difficulty should be as hard as the harder ones in the provided sources. (the files). To ensure question diversity, use the sources as reference to decide when you need to switch gears and  \
-generate questions of a different style, for example expository vs fictional (for reading and writing questions), based off of how many questions of different styles there are. For now, any math questions should be multiple choice and that are numerical or use a clearly formatted table. For the reading and writing questions, unlike the math do NOT make each question an image of one of the source questions. Your reading and writing questions should be original and they should not be copies, but should take inspiration. Ensure to make your distractors harder too for reading and writing questions. (if its a math question, obviously, otherwise ignore this). Make them HARDER! \
-# For math questions\
-      please use the relevant sources as inspiration when generating your question, only testing topics that are covered in those questions. DO NOT USE ANY CONCEPTS/STRATEGIES THAT DO NOT APPEAR IN THE SOURCE QUESTIONS. The questions should only contain mathematical concepts that you can find in the source questions (CollegeBoard questions), and should be indestinguishable from real SAT math question, besides the fact they should be a litte bit harder. Harder does not mean using concepts that are not covered in the source questions, however. You should basically be taking the provided source questions and making a replica of them for the math questions (but not for RW) to avoid creating questions that don't look exactly like SAT questions, because these math questions need to be of the *exact same format and style*  as the example ones. You are given less creative leeway with the math questions, as they should be made in the image of one of the source questions. NOTHING SUPER CREATIVE OR OFF TOPIC OR NOT IN THE EXACT FORMAT OF ONE OF THE EXAMPLES! THIS MEANS YOUR QUESTIONS SHOULD BE SOLVABLE ALMOST EXACTLY LIKE ONE OF THE SOURCE QUESTIONS. You should really take one of the source questions and just modify it to have different equations/whatever instead of just writing the question from scratch.\
-                   Using the prompt above, here is a new, generated question of difficulty {difficulty}, domain {domain}, and section {section}. Please ensure you achieve the correct difficulty level. \
+                    is that it is allowed to be harder than the others. Realistically, your easiest questions for each difficulty should be as hard as the harder ones in the provided sources. (the files). To ensure question diversity, use the sources as reference to decide when you need to switch gears and  \
+                    generate questions of a different style, for example expository vs fictional (for reading and writing questions), based off of how many questions of different styles there are. For now, any math questions should be multiple choice and that are numerical or use a clearly formatted table. For the reading and writing questions, unlike the math do NOT make each question an image of one of the source questions. Your reading and writing questions should be original and they should not be copies, but should take inspiration. Ensure to make your distractors harder too for reading and writing questions. (if its a math question, obviously, otherwise ignore this). Make them HARDER! \
+                    However, to make questions harder, you should not just make questions wordier- they should be concise actually. They should be difficult because they mirror the logical thinkng that is required on the SAT.\
+                    # For math questions\
+                    please use the relevant sources as inspiration when generating your question, only testing topics that are covered in those questions. DO NOT USE ANY CONCEPTS/STRATEGIES THAT DO NOT APPEAR IN THE SOURCE QUESTIONS. The questions should only contain mathematical concepts that you can find in the source questions (CollegeBoard questions), and should be indestinguishable from real SAT math question, besides the fact they should be a litte bit harder. Harder does not mean using concepts that are not covered in the source questions, however. You should basically be taking the provided source questions and making a replica of them for the math questions (but not for RW) to avoid creating questions that don't look exactly like SAT questions, because these math questions need to be of the *exact same format and style*  as the example ones. You are given less creative leeway with the math questions, as they should be made in the image of one of the source questions. NOTHING SUPER CREATIVE OR OFF TOPIC OR NOT IN THE EXACT FORMAT OF ONE OF THE EXAMPLES! THIS MEANS YOUR QUESTIONS SHOULD BE SOLVABLE ALMOST EXACTLY LIKE ONE OF THE SOURCE QUESTIONS. You should really take one of the source questions and just modify it to have different equations/whatever instead of just writing the question from scratch. Don't try to combine a bunch of things, just focus on testing one thing at a time- only the hardest questions should have multiple steps\
+                    If you need to create a graphic for your math problem (not all problems need one), please generate latex code for the graph or diagram that you need generated. This latex should use pgfplots for graphs and tikz for shapes. ONLY USE LATEX FOR THE GRAPHS/DIAGRAMS/TABLES, and ONLY IN THE MATH SECTION!!! Not for anything else! THE LATEX IS ONLY TO GENERATE IMAGES, YOU SHOULD TREAT EQUATIONS AND EVERYTHING ELSE LIKE NORMAL TEXT, WE WILL FORMAT EQUATIONS AS VALID LATEX IN REACT, BUT WE WANT IMAGES FOR SHAPES AND STUFF. LIKE IF YOU DECIDE TO DO A GRAPH QUESTION OR A SHAPE QUESTION, THEN DO DO THE LATEX GENERATION THING, OTHERWISE DONT.\
+                    If you do generate a math graphic, IT NEEDS TO BE OF THE EXACT SAME FORMAT AS ONE OF THE SOURCE QUESTION GRAPHICS. NO FANCY SHIT THAT DOESN'T ACTUALLY APPEAR ON THE SAT!!! Ensure i can pass your output directly to a latex generator! Don't just pass newline caracters (\\n), actually generate a newline! pretend this text is going straight to a latex generatr!\
+                    Using the prompt above, here is a new, generated question of difficulty {difficulty}, domain {domain}, skill category {skill_category} and section {section}. Please ensure you achieve the correct difficulty level. \
 "
                     system_prompt = str(system_prompt)
                     #system_prompt = main_prompt.format(section=section, domain=domain, skill_category=skill_category, formula=prompts[section][domain][skill_category], difficulty=difficulty, evaluation_formula=prompts["evaluation_prompt"], refine_formula=prompts["refine_prompt"])
@@ -274,3 +289,97 @@ async def send_questions(request: Request):
 def load_pending_questions_from_file():
     pending_questions = load_pending_questions()
     return {"questions": pending_questions}
+
+@app.get("/firebase-questions")
+async def get_firebase_questions(
+    section: Optional[str] = None,
+    domain: Optional[str] = None,
+    skill_category: Optional[str] = None,
+    difficulty: Optional[str] = None
+):
+    """
+    Load questions from Firebase with optional filtering
+    """
+    try:
+        # Load all questions from Firebase
+        all_firebase_questions = load_questions_from_firebase()
+        
+        if not all_firebase_questions or "SAT" not in all_firebase_questions:
+            return {"questions": []}
+        
+        questions = []
+        
+        # Extract questions from the nested structure
+        for section_key, section_data in all_firebase_questions["SAT"].items():
+            if section and section_key != section:
+                continue
+                
+            if isinstance(section_data, list):
+                for question in section_data:
+                    # Apply filters
+                    if domain and question.get("domain") != domain:
+                        continue
+                    if skill_category and question.get("skill_category") != skill_category:
+                        continue
+                    if difficulty and question.get("difficulty") != difficulty:
+                        continue
+                    
+                    questions.append(question)
+        
+        return {"questions": questions}
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error loading Firebase questions: {str(e)}")
+
+@app.put("/firebase-questions/{question_id}")
+async def update_firebase_question(question_id: str, request: Request):
+    """
+    Update a specific question in Firebase
+    """
+    try:
+        data = await request.json()
+        updated_question = data.get("question")
+        
+        if not updated_question:
+            raise HTTPException(status_code=400, detail="Missing question data")
+        
+        # Get the section from the question data
+        section = updated_question.get("section")
+        if not section:
+            raise HTTPException(status_code=400, detail="Missing section in question data")
+        
+        # Update the question in Firebase
+        db.collection("questions") \
+          .document("SAT") \
+          .collection(section) \
+          .document(question_id) \
+          .set(updated_question, merge=True)
+        
+        # Reload questions to update local cache
+        load_questions_from_firebase()
+        
+        return {"message": "Question updated successfully", "question": updated_question}
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error updating question: {str(e)}")
+
+@app.delete("/firebase-questions/{question_id}")
+async def delete_firebase_question(question_id: str, section: str):
+    """
+    Delete a specific question from Firebase
+    """
+    try:
+        # Delete the question from Firebase
+        db.collection("questions") \
+          .document("SAT") \
+          .collection(section) \
+          .document(question_id) \
+          .delete()
+        
+        # Reload questions to update local cache
+        load_questions_from_firebase()
+        
+        return {"message": "Question deleted successfully"}
+    
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error deleting question: {str(e)}")

@@ -109,7 +109,18 @@ const ReviewQuestions = ({
         <td>{question.domain}</td>
         <td>{question.skill_category}</td>
         <td>{question.difficulty}</td>
-        <td>{question.question}</td>
+
+        <td>
+          {/* Conditional rendering for the question graphic */}
+          {question.graphic_url ? (
+            <div className="question-content">
+              <img src={question.graphic_url} alt="Question Diagram" className="question-graphic" />
+              <p>{question.question}</p>
+            </div>
+          ) : (
+            <p>{question.question}</p>
+          )}
+        </td>
         <td>{question.choices.join(', ')}</td>
         <td>
           <button

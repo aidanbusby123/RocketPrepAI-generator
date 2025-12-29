@@ -14,9 +14,10 @@ Since your response are being used in an application that requires JSON response
   "difficulty": "{difficulty}",
   "difficulty_ranking": "difficulty_ranking. should be present in question data. Needs to be a string"
   "explanations": "should be a valid dictionary like so: {{"A": "A explanation", "B": "B explanation", etc}}"
+  "generation_latex": "only include this if this is a math problem and if you there is generation latex included. This is different from normal equation latex in that instead of just modelling functions, we are doing graphs or shapes. That is the only difference! should be a valid and compilable string, with all the necessary headers and what not. Don't use fake newlines (\\n), actually output a newline, so that it can actually compile. Ensure that the returned latex is an entire document, including all of the relevant headers- that way it actually compiles! (ensure you aren't accidentally using double slashes)"
 }}
 ```
-
+DO NOT INCLUDE GRAPHIC GENERATION LATEX IN THE QUESTION FIELD, ONLY IN THE generation_latex FIELD!!! 
 Work on formatting the question field so that it is easy to read, minding indentations and all of that. This text is being displayed in a React JS application. Do not include the answer choices in the question field.
 Do note that it is entirely possible that you will be supplied with the letter that should end up being correct in the prompt, and so you should order your answer choices accordingly so that this condition is maintained.
 
